@@ -786,11 +786,15 @@
             <div class="job-detail-value">${firmJobs.map(function(fj) {
               var contactName = fj.contact ? fj.contact.name : 'Unassigned';
               var contactTitle = fj.contact ? fj.contact.title : '';
-              return '<div class="recruiter-match-item" style="padding:var(--space-2) 0;border-bottom:1px solid var(--color-border);">' +
-                '<div><strong>' + esc(fj.job.title) + '</strong> at ' + esc(fj.job.company) + '</div>' +
+              var jobUrl = fj.job.source_url || '';
+              return '<a href="' + esc(jobUrl) + '" target="_blank" rel="noopener" class="recruiter-job-link card-link" style="display:block;padding:var(--space-2) var(--space-2);margin:0 calc(-1 * var(--space-2));border-bottom:1px solid var(--color-border);border-radius:var(--radius-sm);text-decoration:none;color:inherit;transition:background .15s;"' + (jobUrl ? '' : ' onclick="event.preventDefault()"') + '>' +
+                '<div style="display:flex;align-items:center;justify-content:space-between;gap:var(--space-2);">' +
+                  '<div><strong style="color:var(--color-primary);">' + esc(fj.job.title) + '</strong> at ' + esc(fj.job.company) + '</div>' +
+                  (jobUrl ? '<span style="flex-shrink:0;font-size:var(--text-xs);color:var(--color-blue);">Apply \u2197</span>' : '') +
+                '</div>' +
                 '<div style="font-size:var(--text-xs);color:var(--color-primary);margin-top:2px;">Hiring Manager: ' + esc(contactName) + (contactTitle ? ' (' + esc(contactTitle) + ')' : '') + '</div>' +
                 (fj.job.region ? '<div style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:1px;">' + esc(fj.job.region) + '</div>' : '') +
-              '</div>';
+              '</a>';
             }).join('')}</div>
           </div>` : ''}
           ${r.engagement_process ? `

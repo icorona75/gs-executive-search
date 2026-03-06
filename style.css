@@ -551,6 +551,12 @@ table { border-collapse: collapse; width: 100%; }
 .recruiter-match-item:last-child {
   border-bottom: none;
 }
+.recruiter-job-link:hover {
+  background: var(--color-surface-alt, rgba(0,0,0,.03));
+}
+.recruiter-job-link:last-child {
+  border-bottom: none;
+}
 
 /* ============================================ Platform Comparison ============================================ */
 .comparison-hero {

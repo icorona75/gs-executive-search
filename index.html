@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GS Executive Search — Goldie Shturman Career Intelligence Platform</title>
+<meta name="description" content="AI-powered executive job search engine tailored for Goldie Shturman — Managing Director+ level finance, private equity, fund-of-funds, and development finance opportunities worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0e5c61">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="GS Search">
+<link rel="apple-touch-icon" href="icon-192.png">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-label="GS Executive Search">
+          <rect width="32" height="32" rx="8" fill="var(--color-primary)"/>
+          <text x="16" y="21" text-anchor="middle" fill="var(--color-text-inverse)" font-family="'DM Serif Display', serif" font-size="16" font-weight="700">GS</text>
+        </svg>
+        <span class="logo-text">GS Search</span>
+      </div>
+      <button class="sidebar-close" id="sidebarClose" aria-label="Close menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <ul class="nav-items" role="list">
+      <li><a href="#" class="nav-link active" data-section="dashboard" aria-current="page">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        <span>Dashboard</span>
+      </a></li>
+      <li><a href="#" class="nav-link" data-section="jobs">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+        <span>Job Openings</span>
+      </a></li>
+      <li><a href="#" class="nav-link" data-section="pipeline">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H2v7l6.29 6.29c.94.94 2.48.94 3.42 0l4.58-4.58c.94-.94.94-2.48 0-3.42L9 5z"/><path d="M6 9h.01"/><path d="M22 5l-4.5 4.5"/><path d="M17 2l5 5"/></svg>
+        <span>Pipeline</span>
+      </a></li>
+      <li><a href="#" class="nav-link" data-section="companies">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7v14m6-14v14m6-14v14m6-14v14M3 7l9-4 9 4"/></svg>
+        <span>Companies</span>
+      </a></li>
+      <li><a href="#" class="nav-link" data-section="recruiters">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        <span>Recruiters</span>
+      </a></li>
+      <li><a href="#" class="nav-link" data-section="compensation">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        <span>Compensation</span>
+      </a></li>
+      <li><a href="#" class="nav-link" data-section="profile">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span>Profile & Timeline</span>
+      </a></li>
+      <li><a href="#" class="nav-link" data-section="compare">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+        <span>Platform Comparison</span>
+      </a></li>
+      <li><a href="#" class="nav-link" data-section="updates" id="navUpdates">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg>
+        <span>Updates</span>
+        <span class="updates-badge" id="updatesBadge" style="display:none"></span>
+      </a></li>
+    </ul>
+    <div class="sidebar-footer">
+      <button data-theme-toggle aria-label="Switch theme" class="theme-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer" class="attribution-link">Created with Perplexity Computer</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content" id="mainContent">
+    <!-- Top Bar -->
+    <header class="topbar">
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <div class="search-container">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="globalSearch" placeholder="Search jobs, companies, recruiters..." class="search-input" autocomplete="off">
+      </div>
+      <div class="topbar-actions">
+        <button class="btn btn-outline btn-sm" id="refreshBtn" title="Refresh search results">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+          <span>Refresh</span>
+        </button>
+        <button class="btn btn-outline btn-sm" id="shareBtn" title="Share this page">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          <span>Share</span>
+        </button>
+        <button class="btn btn-primary btn-sm" id="downloadBtn" title="Download report">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          <span>Export</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Page Sections -->
+    <div class="page-content">
+      <!-- DASHBOARD -->
+      <section id="section-dashboard" class="section active">
+        <div class="section-header">
+          <h1 class="page-title">Career Intelligence Dashboard</h1>
+          <p class="page-subtitle">Personalized executive search results for Goldie Shturman &mdash; Managing Director+ level</p>
+        </div>
+        <div class="update-banner" id="updateBanner">
+          <div class="update-info">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Last updated: <strong id="lastUpdated">Loading...</strong></span>
+            <span class="update-schedule">Auto-refreshes daily at 7:00 AM ET</span>
+          </div>
+          <button class="btn btn-primary btn-sm" id="refreshBtnDash">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+            Update Now
+          </button>
+        </div>
+        <div class="kpi-grid" id="kpiGrid"></div>
+        <div class="dashboard-charts">
+          <div class="chart-card">
+            <h3 class="chart-title">Jobs by Region</h3>
+            <div class="chart-wrap"><canvas id="chartRegion"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h3 class="chart-title">Companies by Industry</h3>
+            <div class="chart-wrap"><canvas id="chartIndustry"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h3 class="chart-title">Compensation Ranges by Sector</h3>
+            <div class="chart-wrap chart-wrap-wide"><canvas id="chartComp"></canvas></div>
+          </div>
+        </div>
+        <div class="top-picks">
+          <h2 class="section-subtitle">Top Priority Openings</h2>
+          <div id="topJobs" class="cards-grid"></div>
+        </div>
+      </section>
+
+      <!-- JOBS -->
+      <section id="section-jobs" class="section">
+        <div class="section-header">
+          <h1 class="page-title">Executive Job Openings</h1>
+          <p class="page-subtitle"><span id="jobCount">0</span> MD+ level opportunities matched to Goldie's profile</p>
+        </div>
+        <div class="filters" id="jobFilters">
+          <select id="filterRegion" class="filter-select"><option value="">All Regions</option></select>
+          <select id="filterIndustry" class="filter-select"><option value="">All Industries</option></select>
+          <input type="text" id="filterJobSearch" class="filter-input" placeholder="Filter by title or company...">
+        </div>
+        <div id="jobsList" class="results-list"></div>
+      </section>
+
+      <!-- PIPELINE -->
+      <section id="section-pipeline" class="section">
+        <div class="section-header">
+          <h1 class="page-title">Application Pipeline</h1>
+          <p class="page-subtitle">Track your outreach, applications, and follow-ups</p>
+        </div>
+        <div class="pipeline-stats-bar" id="pipelineStatsBar"></div>
+        <div class="pipeline-toolbar">
+          <button class="btn btn-primary btn-sm" id="addPipelineItemBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            Add Item
+          </button>
+          <div class="pipeline-view-toggle">
+            <button class="btn btn-outline btn-sm pipeline-view-btn active" data-pipeline-view="list">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+              List
+            </button>
+            <button class="btn btn-outline btn-sm pipeline-view-btn" data-pipeline-view="kanban">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="5" height="18" rx="1"/><rect x="10" y="3" width="5" height="12" rx="1"/><rect x="17" y="3" width="5" height="15" rx="1"/></svg>
+              Board
+            </button>
+          </div>
+        </div>
+        <!-- List View -->
+        <div id="pipelineListView" class="pipeline-list-view">
+          <div class="pipeline-empty" id="pipelineEmpty">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-faint)" stroke-width="1.5"><path d="M9 5H2v7l6.29 6.29c.94.94 2.48.94 3.42 0l4.58-4.58c.94-.94.94-2.48 0-3.42L9 5z"/><path d="M6 9h.01"/></svg>
+            <p>No items in your pipeline yet.</p>
+            <p class="pipeline-empty-hint">Click "Add Item" above or use the Track button on any job, company, or recruiter card.</p>
+          </div>
+          <table class="pipeline-table" id="pipelineTable" style="display:none;">
+            <thead>
+              <tr>
+                <th data-sort="name">Item</th>
+                <th data-sort="type">Type</th>
+                <th data-sort="status">Status</th>
+                <th data-sort="dateAdded">Date Added</th>
+                <th data-sort="lastActivity">Last Activity</th>
+                <th>Next Step</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody id="pipelineTableBody"></tbody>
+          </table>
+        </div>
+        <!-- Kanban View -->
+        <div id="pipelineKanbanView" class="pipeline-kanban-view" style="display:none;">
+          <div class="kanban-board" id="kanbanBoard">
+            <div class="kanban-column" data-status="interested">
+              <div class="kanban-column-header"><span class="kanban-dot" style="background:#6b7280;"></span> Interested <span class="kanban-count" data-count-status="interested">0</span></div>
+              <div class="kanban-cards" data-kanban-status="interested"></div>
+            </div>
+            <div class="kanban-column" data-status="contacted">
+              <div class="kanban-column-header"><span class="kanban-dot" style="background:#1a5fa0;"></span> Contacted <span class="kanban-count" data-count-status="contacted">0</span></div>
+              <div class="kanban-cards" data-kanban-status="contacted"></div>
+            </div>
+            <div class="kanban-column" data-status="applied">
+              <div class="kanban-column-header"><span class="kanban-dot" style="background:#0e5c61;"></span> Applied <span class="kanban-count" data-count-status="applied">0</span></div>
+              <div class="kanban-cards" data-kanban-status="applied"></div>
+            </div>
+            <div class="kanban-column" data-status="interview">
+              <div class="kanban-column-header"><span class="kanban-dot" style="background:#b45309;"></span> Interview <span class="kanban-count" data-count-status="interview">0</span></div>
+              <div class="kanban-cards" data-kanban-status="interview"></div>
+            </div>
+            <div class="kanban-column" data-status="offer">
+              <div class="kanban-column-header"><span class="kanban-dot" style="background:#2d7a1e;"></span> Offer <span class="kanban-count" data-count-status="offer">0</span></div>
+              <div class="kanban-cards" data-kanban-status="offer"></div>
+            </div>
+            <div class="kanban-column" data-status="passed">
+              <div class="kanban-column-header"><span class="kanban-dot" style="background:#9ca3af;"></span> Passed <span class="kanban-count" data-count-status="passed">0</span></div>
+              <div class="kanban-cards" data-kanban-status="passed"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPANIES -->
+      <section id="section-companies" class="section">
+        <div class="section-header">
+          <h1 class="page-title">Top Target Companies</h1>
+          <p class="page-subtitle"><span id="companyCount">0</span> companies across industries and regions</p>
+        </div>
+        <div class="filters" id="companyFilters">
+          <select id="filterCompRegion" class="filter-select"><option value="">All Regions</option></select>
+          <select id="filterCompIndustry" class="filter-select"><option value="">All Industries</option></select>
+          <input type="text" id="filterCompSearch" class="filter-input" placeholder="Filter by company name...">
+        </div>
+        <div id="companiesList" class="results-list"></div>
+      </section>
+
+      <!-- RECRUITERS -->
+      <section id="section-recruiters" class="section">
+        <div class="section-header">
+          <h1 class="page-title">Executive Recruiters & Search Firms</h1>
+          <p class="page-subtitle"><span id="recruiterCount">0</span> firms specializing in executive placement</p>
+        </div>
+        <div class="filters">
+          <select id="filterRecIndustry" class="filter-select"><option value="">All Industries</option></select>
+          <select id="filterRecType" class="filter-select">
+            <option value="">All Types</option>
+            <option value="retained">Retained</option>
+            <option value="contingency">Contingency</option>
+            <option value="both">Both</option>
+          </select>
+          <input type="text" id="filterRecSearch" class="filter-input" placeholder="Filter by firm name...">
+        </div>
+        <div id="recruitersList" class="results-list"></div>
+      </section>
+
+      <!-- COMPENSATION -->
+      <section id="section-compensation" class="section">
+        <div class="section-header">
+          <h1 class="page-title">Compensation Benchmarks</h1>
+          <p class="page-subtitle">Expected salary and compensation packages by sector and level</p>
+        </div>
+        <div id="compTable" class="comp-section"></div>
+      </section>
+
+      <!-- PROFILE -->
+      <section id="section-profile" class="section">
+        <div class="section-header">
+          <h1 class="page-title">Goldie Shturman — Career Profile</h1>
+          <p class="page-subtitle">25+ years in global investment management and development finance</p>
+        </div>
+        <div class="profile-content">
+          <div class="profile-card">
+            <div class="profile-header-card">
+              <div class="profile-avatar">GS</div>
+              <div>
+                <h2 class="profile-name">Goldie Shturman</h2>
+                <p class="profile-role">Acting Vice President, Office of Investment Funds</p>
+                <p class="profile-org">U.S. International Development Finance Corporation (DFC)</p>
+                <div class="profile-meta">
+                  <span class="badge">Washington DC</span>
+                  <span class="badge">English</span>
+                  <span class="badge">Spanish</span>
+                  <span class="badge">Hebrew</span>
+                </div>
+                <a href="https://www.linkedin.com/in/goldieshturman/" target="_blank" rel="noopener" class="profile-linkedin">View LinkedIn Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-section">
+            <h3 class="section-subtitle">Career Timeline</h3>
+            <div id="careerTimeline" class="timeline"></div>
+          </div>
+          <div class="expertise-section">
+            <h3 class="section-subtitle">Areas of Expertise</h3>
+            <div id="expertiseTags" class="tags-grid"></div>
+          </div>
+          <div class="education-section">
+            <h3 class="section-subtitle">Education</h3>
+            <div id="educationCards" class="edu-grid"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PLATFORM COMPARISON -->
+      <section id="section-compare" class="section">
+        <div class="section-header">
+          <h1 class="page-title">Executive Search Platform Comparison</h1>
+          <p class="page-subtitle">How GS Search compares to other executive job platforms</p>
+        </div>
+        <div class="comparison-hero">
+          <div class="comparison-badge">Why GS Search is different</div>
+          <p class="comparison-desc">Unlike generic job boards, GS Search is built specifically around Goldie's profile, analyzing fit scores, recruiter connections, compensation benchmarks, and networking paths — all in one place.</p>
+        </div>
+        <div id="platformComparison" class="platform-table-wrap"></div>
+      </section>
+
+      <!-- UPDATES LOG -->
+      <section id="section-updates" class="section">
+        <div class="section-header">
+          <h1 class="page-title">Updates &amp; Changelog</h1>
+          <p class="page-subtitle">Track all changes from daily refreshes, audits, and system improvements</p>
+        </div>
+        <div class="updates-toolbar">
+          <div class="updates-filter-group">
+            <select id="filterUpdateType" class="filter-select">
+              <option value="">All Types</option>
+              <option value="refresh">Daily Refresh</option>
+              <option value="audit">Quality Audit</option>
+              <option value="fix">Bug Fix</option>
+              <option value="feature">New Feature</option>
+              <option value="data">Data Change</option>
+            </select>
+          </div>
+          <button class="btn btn-outline btn-sm" id="markAllReadBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Mark All Read
+          </button>
+        </div>
+        <div id="updatesList" class="updates-list"></div>
+        <div id="updatesEmpty" class="updates-empty" style="display:none">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-faint)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <p>No updates yet</p>
+          <span>Changes from daily refreshes and audits will appear here</span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div class="modal-overlay" id="shareModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Share This Platform</h3>
+        <button class="modal-close" id="shareModalClose">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-text">Share this executive search platform with colleagues or advisors:</p>
+        <div class="share-url-box">
+          <input type="text" id="shareUrl" class="share-url-input" readonly>
+          <button class="btn btn-primary btn-sm" id="copyUrl">Copy</button>
+        </div>
+        <div class="share-buttons">
+          <a id="shareEmail" class="btn btn-outline btn-sm" target="_blank">Email</a>
+          <a id="shareLinkedIn" class="btn btn-outline btn-sm" target="_blank">LinkedIn</a>
+          <a id="shareWhatsApp" class="btn btn-outline btn-sm" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Download Modal -->
+  <div class="modal-overlay" id="downloadModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Export Report</h3>
+        <button class="modal-close" id="downloadModalClose">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-text">Download a comprehensive report of all results:</p>
+        <div class="download-options">
+          <button class="download-option" id="downloadPDF">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-error)" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+            <span>PDF Document</span>
+          </button>
+          <button class="download-option" id="downloadDOC">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-blue)" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <span>Word Document</span>
+          </button>
+          <button class="download-option" id="downloadCSV">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+            <span>CSV Spreadsheet</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Job Detail Modal -->
+  <div class="modal-overlay" id="jobDetailModal">
+    <div class="modal modal-lg">
+      <div class="modal-header">
+        <h3 id="jobDetailTitle"></h3>
+        <button class="modal-close" id="jobDetailClose">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="modal-body" id="jobDetailBody"></div>
+    </div>
+  </div>
+
+  <!-- Pipeline Add/Edit Modal -->
+  <div class="modal-overlay" id="pipelineModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="pipelineModalTitle">Add Pipeline Item</h3>
+        <button class="modal-close" id="pipelineModalClose">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="pipelineForm" class="pipeline-form">
+          <input type="hidden" id="pipelineItemId">
+          <div class="form-group">
+            <label class="form-label" for="pipelineName">Name</label>
+            <input type="text" id="pipelineName" class="form-input" placeholder="e.g., Managing Director - KKR" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="pipelineType">Type</label>
+              <select id="pipelineType" class="form-select">
+                <option value="job">Job</option>
+                <option value="company">Company</option>
+                <option value="recruiter">Recruiter</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="pipelineCompany">Company</label>
+              <input type="text" id="pipelineCompany" class="form-input" placeholder="Company name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="pipelineStatus">Status</label>
+            <select id="pipelineStatus" class="form-select">
+              <option value="interested">Interested</option>
+              <option value="contacted">Contacted</option>
+              <option value="applied">Applied</option>
+              <option value="interview">Interview</option>
+              <option value="offer">Offer</option>
+              <option value="passed">Passed</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="pipelineUrl">URL</label>
+            <input type="url" id="pipelineUrl" class="form-input" placeholder="https://...">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="pipelineNextStep">Next Step</label>
+              <input type="text" id="pipelineNextStep" class="form-input" placeholder="e.g., Follow up with recruiter">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="pipelineNextStepDate">Next Step Date</label>
+              <input type="date" id="pipelineNextStepDate" class="form-input">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="pipelineNotes">Notes</label>
+            <textarea id="pipelineNotes" class="form-textarea" rows="3" placeholder="Add any notes..."></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="btn btn-outline btn-sm" id="pipelineDeleteBtn" style="display:none; color: var(--color-error); border-color: var(--color-error);">Delete</button>
+            <div style="margin-left:auto; display:flex; gap:var(--space-2);">
+              <button type="button" class="btn btn-outline btn-sm" id="pipelineCancelBtn">Cancel</button>
+              <button type="submit" class="btn btn-primary btn-sm" id="pipelineSaveBtn">Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- What's New Modal (shows on app open) -->
+  <div class="modal-overlay" id="whatsNewModal">
+    <div class="modal modal-lg">
+      <div class="modal-header">
+        <h3 id="whatsNewTitle">What's New</h3>
+        <button class="modal-close" id="whatsNewClose">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-text" style="margin-bottom:var(--space-3);">Here are the latest changes since your last visit:</p>
+        <div id="whatsNewList" class="whats-new-list"></div>
+        <div style="display:flex; justify-content:flex-end; gap:var(--space-2); margin-top:var(--space-4);">
+          <button class="btn btn-outline btn-sm" id="whatsNewViewAll">View All Updates</button>
+          <button class="btn btn-primary btn-sm" id="whatsNewDismiss">Got It</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toastContainer"></div>
+
+  <!-- Refresh Overlay -->
+  <div class="refresh-overlay" id="refreshOverlay">
+    <div class="refresh-card">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="refresh-spinner"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+      <div class="refresh-title" id="refreshTitle">Searching for new opportunities...</div>
+      <div class="refresh-text" id="refreshText">Scanning job boards, DFI career pages, and executive recruiter listings across 7+ languages for MD+ level openings matching Goldie's profile.</div>
+      <div class="refresh-progress"><div class="refresh-progress-bar" id="refreshBar"></div></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+
+  <!-- PWA Install Banner -->
+  <div id="installBanner" class="install-banner" style="display:none">
+    <div class="install-banner-content">
+      <img src="icon-192.png" alt="GS Search" class="install-banner-icon">
+      <div class="install-banner-text">
+        <strong>Install GS Search</strong>
+        <span>Add to your home screen for quick daily access</span>
+      </div>
+      <button id="installBtn" class="btn btn-primary btn-sm">Install</button>
+      <button id="installDismiss" class="install-banner-close" aria-label="Dismiss">&times;</button>
+    </div>
+  </div>
+
+  <script>
+  // Service Worker Registration
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  }
+
+  // PWA Install Prompt
+  let deferredPrompt;
+  const installBanner = document.getElementById('installBanner');
+  const installBtn = document.getElementById('installBtn');
+  const installDismiss = document.getElementById('installDismiss');
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    installBanner.style.display = 'flex';
+  });
+
+  if (installBtn) {
+    installBtn.addEventListener('click', async () => {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      const result = await deferredPrompt.userChoice;
+      if (result.outcome === 'accepted') {
+        installBanner.style.display = 'none';
+      }
+      deferredPrompt = null;
+    });
+  }
+
+  if (installDismiss) {
+    installDismiss.addEventListener('click', () => {
+      installBanner.style.display = 'none';
+    });
+  }
+
+  window.addEventListener('appinstalled', () => {
+    installBanner.style.display = 'none';
+  });
+  </script>
+</body>
+</html>

@@ -170,6 +170,14 @@
         <div class="filters" id="jobFilters">
           <select id="filterRegion" class="filter-select"><option value="">All Regions</option></select>
           <select id="filterIndustry" class="filter-select"><option value="">All Industries</option></select>
+          <select id="sortJobs" class="filter-select">
+            <option value="priority">Sort: Priority Score</option>
+            <option value="salary-desc">Sort: Compensation (High → Low)</option>
+            <option value="salary-asc">Sort: Compensation (Low → High)</option>
+            <option value="date">Sort: Most Recent</option>
+            <option value="title">Sort: Title A–Z</option>
+            <option value="company">Sort: Company A–Z</option>
+          </select>
           <input type="text" id="filterJobSearch" class="filter-input" placeholder="Filter by title or company...">
         </div>
         <div id="jobsList" class="results-list"></div>

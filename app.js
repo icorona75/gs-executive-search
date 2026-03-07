@@ -332,8 +332,64 @@
     return score;
   }
 
-  // Score all jobs and sort
-  jobs.forEach(function(j) { j._priority_score = computePriorityScore(j); });
+  // ── Salary Parser ──
+  function parseSalaryMax(j) {
+    // Extract the highest numeric salary value from salary or salary_range fields
+    var text = (j.salary || '') + ' ' + (j.salary_range || '');
+    if (!text.trim()) return 0;
+    // Normalize: remove escaped $ signs
+    text = text.replace(/\\\$/g, '$');
+    // Remove non-salary dollar amounts (e.g. "$77M-funded company", "$1.5T AUM")
+    text = text.replace(/\$[\d.,]+[MBTmbt][-\s]*(funded|raised|aum|revenue|asset|capital|company)/gi, '');
+    // Find all dollar amounts
+    var amounts = [];
+    // Match patterns like $400,000 or $400K or $47,208.33 or $1.5M
+    var re = /\$([\d,]+(?:\.\d+)?)(\s*[KkMm])?/g;
+    var m;
+    while ((m = re.exec(text)) !== null) {
+      var num = parseFloat(m[1].replace(/,/g, ''));
+      if (m[2]) {
+        var suffix = m[2].trim().toUpperCase();
+        if (suffix === 'K') num *= 1000;
+        if (suffix === 'M') num *= 1000000;
+      }
+      // Detect per-month values (e.g. CalPERS $47,208/month)
+      if (/per\s*month|monthly|month/i.test(text) && num < 100000) {
+        num *= 12;
+      }
+      // Cap at $5M — no individual comp exceeds this realistically
+      if (num <= 5000000) {
+        amounts.push(num);
+      }
+    }
+    // Also try bare number patterns like 200,000 without $
+    if (amounts.length === 0) {
+      var re2 = /(\d{3},\d{3})/g;
+      while ((m = re2.exec(text)) !== null) {
+        var val = parseFloat(m[1].replace(/,/g, ''));
+        if (val <= 5000000) amounts.push(val);
+      }
+    }
+    return amounts.length > 0 ? Math.max.apply(null, amounts) : 0;
+  }
+
+  function formatSalaryBadge(j) {
+    if (j._salary_max >= 1000000) {
+      return '$' + (j._salary_max / 1000000).toFixed(1) + 'M+';
+    }
+    if (j._salary_max >= 1000) {
+      return '$' + Math.round(j._salary_max / 1000) + 'K';
+    }
+    // Fallback to raw text
+    var raw = (j.salary_range || j.salary || '').split(';')[0].split('plus')[0].trim();
+    return raw.length > 40 ? raw.substring(0, 37) + '...' : raw;
+  }
+
+  // Score all jobs, parse salary, and sort
+  jobs.forEach(function(j) {
+    j._priority_score = computePriorityScore(j);
+    j._salary_max = parseSalaryMax(j);
+  });
   var jobsByPriority = jobs.slice().sort(function(a, b) { return b._priority_score - a._priority_score; });
 
   // ── Top Priority Jobs ──
@@ -418,8 +474,44 @@
     });
   }
 
+  function sortJobs(arr) {
+    var sortVal = document.getElementById('sortJobs').value;
+    var sorted = arr.slice();
+    switch (sortVal) {
+      case 'salary-desc':
+        sorted.sort(function(a, b) { return (b._salary_max || 0) - (a._salary_max || 0); });
+        break;
+      case 'salary-asc':
+        sorted.sort(function(a, b) {
+          // Put jobs with no salary at the end
+          var sa = a._salary_max || Number.MAX_SAFE_INTEGER;
+          var sb = b._salary_max || Number.MAX_SAFE_INTEGER;
+          return sa - sb;
+        });
+        break;
+      case 'date':
+        sorted.sort(function(a, b) {
+          var da = new Date(a.date_posted || '1970-01-01');
+          var db = new Date(b.date_posted || '1970-01-01');
+          if (isNaN(da.getTime())) da = new Date('1970-01-01');
+          if (isNaN(db.getTime())) db = new Date('1970-01-01');
+          return db - da;
+        });
+        break;
+      case 'title':
+        sorted.sort(function(a, b) { return (a.title || '').localeCompare(b.title || ''); });
+        break;
+      case 'company':
+        sorted.sort(function(a, b) { return (a.company || '').localeCompare(b.company || ''); });
+        break;
+      default: // priority
+        sorted.sort(function(a, b) { return (b._priority_score || 0) - (a._priority_score || 0); });
+    }
+    return sorted;
+  }
+
   function renderJobs() {
-    const filtered = getFilteredJobs();
+    var filtered = sortJobs(getFilteredJobs());
     document.getElementById('jobCount').textContent = filtered.length;
     const start = (jobPage - 1) * JOBS_PER_PAGE;
     const paged = filtered.slice(start, start + JOBS_PER_PAGE);
@@ -433,7 +525,7 @@
             <div class="result-title">${esc(j.title)}</div>
             <div class="result-company">${esc(j.company)}</div>
           </div>
-          ${j.salary_range ? `<span class="badge badge-salary">${esc(j.salary_range.split(';')[0].split('plus')[0].trim())}</span>` : '<span class="badge">Salary TBD</span>'}
+          ${(j.salary_range || j.salary) ? `<span class="badge badge-salary">${esc(formatSalaryBadge(j))}</span>` : '<span class="badge">Salary TBD</span>'}
         </div>
         <div class="result-meta">
           <span class="result-meta-item">📍 ${esc(j.location || 'Global')}</span>
@@ -1087,7 +1179,7 @@
   }
 
   // ── Filter Event Listeners ──
-  ['filterRegion', 'filterIndustry', 'filterJobSearch'].forEach(id => {
+  ['filterRegion', 'filterIndustry', 'filterJobSearch', 'sortJobs'].forEach(id => {
     document.getElementById(id).addEventListener(id.includes('Search') ? 'input' : 'change', debounce(() => { jobPage = 1; renderJobs(); }, 200));
   });
   ['filterCompRegion', 'filterCompIndustry', 'filterCompSearch'].forEach(id => {

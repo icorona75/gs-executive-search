@@ -189,23 +189,6 @@ window.APP_DATA = {
     },
     {
       "id": 7,
-      "title": "Managing Director (Private Equity / Alternative Asset Manager)",
-      "company": "Confidential — via Selby Jennings (alternative asset manager, South Florida)",
-      "location": "Miami, Florida, USA",
-      "region": "Latin America & Caribbean",
-      "salary_range": "$300,000 – $600,000 per year + bonus",
-      "application_url": "https://www.selbyjennings.com/en-us/job/managing-director-pr558288_1756123131",
-      "application_method": "Apply directly via Selby Jennings listing (PR/558288). Contact recruiter at selbyjennings.com. Note: listing shown as 'expired' — contact Selby Jennings directly for current openings.",
-      "date_posted": "2025-08-25",
-      "contract_type": "Full-time, permanent",
-      "requirements": "10–15 years in private equity, investment banking, consulting, or corporate development; proven deal execution track record; strong EM/regional network; advanced degree (MBA/CFA); exceptional leadership and negotiation skills; Miami-based",
-      "goldie_fit": "Miami is a hub for Latin America-focused PE. Goldie's IDB Invest background (Latin American multilateral), investment banking with Protego in Mexico, Spanish fluency, and EM expertise position her strongly for LatAm-focused PE firms based in Miami. The salary range ($300K–$600K) reflects a broad mandate. Her DFC relationships with regional fund managers are a differentiator.",
-      "suggested_recruiter": "Selby Jennings (posting firm); Heidrick & Struggles for senior PE roles",
-      "source_url": "https://www.selbyjennings.com/en-us/jobs/f-private-equity/lt-miami",
-      "notes": "Listing may be expired, but Selby Jennings regularly lists similar MD-level PE roles in Miami. Register CV with them for LatAm-focused openings."
-    },
-    {
-      "id": 8,
       "title": "Managing Director of Capital Formation",
       "company": "Confidential — Leading Alternative Asset Manager (via Selby Jennings, South Florida)",
       "location": "Miami, Florida, USA",
@@ -222,24 +205,7 @@ window.APP_DATA = {
       "notes": "Highly lucrative. Goldie should position herself as bringing a built-in global DFI/institutional LP network."
     },
     {
-      "id": 9,
-      "title": "Head of Investments / Senior Director (Private Equity & Infrastructure Funds)",
-      "company": "SIFEM — Swiss Investment Fund for Emerging Markets",
-      "location": "Bern or Zurich, Switzerland",
-      "region": "Europe",
-      "salary_range": "Estimated CHF 250,000–350,000 (~$280,000–$390,000) + benefits",
-      "application_url": "https://www.sifem.ch/about/jobs/",
-      "application_method": "Monitor SIFEM's website at sifem.ch/about/jobs/ for openings. Contact directly: info@sifem.ch. SIFEM occasionally uses impact-focused executive search firms.",
-      "date_posted": "Ongoing / to be monitored",
-      "contract_type": "Full-time, permanent",
-      "requirements": "10+ years in private equity fund-of-funds or DFI fund investment management; expertise in emerging markets; track record of fund selection and portfolio monitoring; strong ESG/impact framework knowledge; multilingual preferred (English + French or German); international background",
-      "goldie_fit": "SIFEM is Switzerland's bilateral DFI and manages a portfolio of PE, VC, and infrastructure funds in emerging markets — almost a direct analog to Goldie's current role at DFC. Her fund-of-funds management expertise, EM coverage (Sub-Saharan Africa, LAC, MENA, South/Southeast Asia), and ESG integration experience are ideal. SIFEM's current CIO Ralph Keitel spoke at the 2026 Impact Investor Global Summit — the organization is actively engaged in the global impact investing community.",
-      "suggested_recruiter": "Spencer Stuart Zurich; Egon Zehnder for Swiss DFI/impact finance roles",
-      "source_url": "https://www.peievents.com/en/event/impact-investor-global-summit/",
-      "notes": "No specific open role confirmed — but Goldie should proactively target SIFEM given near-perfect profile match. European relocation required."
-    },
-    {
-      "id": 10,
+      "id": 8,
       "title": "Managing Director, Equity (Private Equity & Funds)",
       "company": "EBRD - European Bank for Reconstruction and Development",
       "location": "London, United Kingdom",
@@ -256,7 +222,7 @@ window.APP_DATA = {
       "notes": "The prior MD Equity posting was 2023; role may be filled. Monitor for cyclical reposting. High-priority target — near-perfect fit for Goldie's career."
     },
     {
-      "id": 11,
+      "id": 9,
       "title": "Head of Private Markets / Head of Alternatives",
       "company": "GCM Grosvenor",
       "location": "Chicago, IL or New York, NY, USA",
@@ -273,7 +239,7 @@ window.APP_DATA = {
       "notes": "No specific open role confirmed, but GCM is a strong target given scale and impact capabilities. Goldie should network via GCM's emerging managers program team."
     },
     {
-      "id": 12,
+      "id": 10,
       "title": "Managing Director / Partner — Emerging Markets Fund Investments",
       "company": "StepStone Group",
       "location": "New York, NY or Washington, DC, USA",
@@ -290,7 +256,7 @@ window.APP_DATA = {
       "notes": "Strong target. StepStone has been hiring senior EM professionals to serve growing sovereign and institutional client base."
     },
     {
-      "id": 13,
+      "id": 11,
       "title": "Managing Director / Senior Director, Emerging Markets or Development Finance",
       "company": "Adams Street Partners",
       "location": "Chicago, IL or Washington, DC",
@@ -307,7 +273,7 @@ window.APP_DATA = {
       "notes": "Adams Street is a tier-1 FoF firm and a natural fit. Proactive networking through existing GP/LP relationships is the best approach."
     },
     {
-      "id": 14,
+      "id": 12,
       "title": "Head of Funds / Managing Director, Fund-of-Funds",
       "company": "British International Investment (BII) — UK's DFI",
       "location": "London, United Kingdom",
@@ -324,7 +290,7 @@ window.APP_DATA = {
       "notes": "BII's fund investments team is one of the most active in DFI-backed PE. Strong institutional fit. Work authorization is the key consideration."
     },
     {
-      "id": 15,
+      "id": 13,
       "title": "Director, IFC Corporate Strategy — CONFIRMED OPEN (deadline March 17, 2026)",
       "company": "IFC (International Finance Corporation) — World Bank Group",
       "location": "Washington, DC, USA",
@@ -342,7 +308,7 @@ window.APP_DATA = {
       "notes": "CONFIRMED OPEN as of March 5, 2026. Deadline March 17, 2026. Supersedes/upgrades job #3 with confirmed deadline. PRIORITY APPLICATION."
     },
     {
-      "id": 16,
+      "id": 14,
       "title": "IFC Regional Industry Director, Infrastructure & Natural Resources — Africa (N/W/C)",
       "company": "IFC (International Finance Corporation) — World Bank Group",
       "location": "Lagos, Nigeria (or to be confirmed — N/W/C Africa region)",
@@ -360,7 +326,7 @@ window.APP_DATA = {
       "notes": "Deadline passed February 11, 2026. May be in review stage. Contact Korn Ferry or IFC HR directly. A second similar role for East/Southern Africa also posted on ImpactPool (https://www.impactpool.org/jobs/1192812)."
     },
     {
-      "id": 17,
+      "id": 15,
       "title": "Managing Director, Industry Coverage (Clean Energy Finance)",
       "company": "Crux Climate",
       "location": "Remote, USA (optional offices: Washington DC, New York)",
@@ -377,24 +343,7 @@ window.APP_DATA = {
       "notes": "Crux is backed by a16z, Lowercarbon, Pattern Energy, OMERS. Also has a MD, Tax Investor Coverage role open at same compensation — NOT a fit for Goldie (tax accounting background required)."
     },
     {
-      "id": 18,
-      "title": "Chief Investment Officer (CIO) — Confidential Pension Fund",
-      "company": "Confidential Pension Fund (via JRG Partners)",
-      "location": "Sacramento, California, USA",
-      "region": "North America",
-      "salary_range": "Estimated $400,000–$600,000 (California public pension CIO benchmark)",
-      "application_url": "https://www.jrgpartners.com/jobs/chief-investment-officer-cio-pension-fund-sacramento-ca/",
-      "application_method": "Contact JRG Partners directly at jrgpartners.com. Note: Website may block direct access — contact info@jrgpartners.com or via LinkedIn. Reference 'CIO Pension Fund Sacramento.'",
-      "date_posted": "2026 (current posting)",
-      "contract_type": "Full-time, permanent",
-      "requirements": "Experienced CIO with track record in institutional investment management; investment strategy leadership across multi-asset class portfolio; experience managing investment teams; Sacramento area location or willingness to relocate",
-      "goldie_fit": "A CIO role at a Sacramento-area pension fund is a significant career elevation for Goldie — full P&L ownership of investment strategy. Sacramento has major public pension institutions (CalPERS $525B AUM, CalSTRS $340B AUM). Her fund-of-funds expertise, PE/VC/infrastructure/private credit coverage, ESG/impact integration, and board-level advisory experience meet CIO requirements at a mid-sized or specialty fund. JRG Partners also lists CIO roles for: (1) University Endowment, Philadelphia PA; (2) Global Endowment, Cambridge MA; (3) University Endowment, Cambridge MA — all current 2026 postings.",
-      "suggested_recruiter": "JRG Partners (posting firm — contact directly at jrgpartners.com)",
-      "source_url": "https://www.jrgpartners.com/jobs/chief-investment-officer-cio-pension-fund-sacramento-ca/",
-      "notes": "JRG Partners is a specialist executive search firm focused on pension fund CIO and institutional investment leadership. Goldie should register her profile with JRG Partners for ALL their current CIO openings (Sacramento, Philadelphia, Cambridge). These are confidential searches; institutions not publicly disclosed."
-    },
-    {
-      "id": 19,
+      "id": 16,
       "title": "Investment Banking Managing Director – Minerals & Mining",
       "company": "Mid-Market Investment Bank (confidential, via Selby Jennings)",
       "location": "Chicago, New York, Los Angeles, or Atlanta/Arlington (flexible)",
@@ -409,22 +358,7 @@ window.APP_DATA = {
       "source_url": "https://www.selbyjennings.com/en-us/job/investment-banking-managing-director-minerals-mining-pr569894_1764029555"
     },
     {
-      "id": 20,
-      "title": "Head of North America / Senior Investment Director – Metals & Mining",
-      "company": "Appian Capital Advisory",
-      "location": "New York or Toronto (with global travel)",
-      "region": "North America",
-      "salary_range": "Not posted; estimated $300,000–$600,000+ base + carry for MD/Director-level",
-      "application_url": "https://appiancapitaladvisory.com/team/working-at-appian/",
-      "application_method": "Send resume to [email protected]; note searchable keywords including commodity experience and previous employment titles",
-      "requirements": "Prior IB experience with strong natural resources exposure; significant experience with financial modeling, M&A, project valuation; ability to execute across multiple workstreams with limited supervision; strong academic record; Appian is specifically hiring for Head of North America-level roles (just filled one — pipeline likely open again given rapid growth)",
-      "goldie_fit": "Very strong. Appian ($5B AUM) just launched a $1B emerging markets fund with IFC focused on critical minerals in Africa and Latin America — the exact mandate Goldie manages at DFC. The IFC-Appian partnership was structured in October 2025, and DFC is deeply interconnected with both Appian and IFC in critical minerals. Goldie's DFC role means she has been a counterpart to Appian on deals (Serra Verde, Atlantic Nickel). She brings the fund-of-funds LP perspective combined with deal origination that Appian values — plus her Evercore IB background and Latin America/Africa networks are directly relevant. Head of North America (recently filled by Michael Li from Maxit Capital) is a precedent for the seniority level Appian targets. This is a warm outreach opportunity.",
-      "suggested_recruiter": "Direct outreach to Michael Scherb (CEO, Appian) or Andrew Todd (Head of Communications) at [email protected]; also Newmark Knight Frank mining executive search",
-      "date_posted": "Ongoing / rolling (no specific posting; firm has open mandate for senior investment professionals)",
-      "source_url": "https://appiancapitaladvisory.com/team/working-at-appian/"
-    },
-    {
-      "id": 21,
+      "id": 17,
       "title": "Managing Director / Senior Investment Professional – Critical Minerals Consortium",
       "company": "Orion Resource Partners",
       "location": "New York, NY (with Abu Dhabi and London offices)",
@@ -439,7 +373,7 @@ window.APP_DATA = {
       "source_url": "https://orionrp.com/culture"
     },
     {
-      "id": 22,
+      "id": 18,
       "title": "Partner / Managing Director – Private Equity (Critical Minerals / Metals & Mining)",
       "company": "Resource Capital Funds (RCF)",
       "location": "Denver, CO; London, UK; Toronto, Canada; Perth, Australia (multiple offices)",
@@ -454,7 +388,7 @@ window.APP_DATA = {
       "source_url": "https://resourcecapitalfunds.com"
     },
     {
-      "id": 23,
+      "id": 19,
       "title": "Managing Director – Head of Critical Minerals / Natural Resources Group",
       "company": "JPMorgan Chase – Natural Resources Investment Banking",
       "location": "New York, NY or Houston, TX",
@@ -469,7 +403,7 @@ window.APP_DATA = {
       "source_url": "https://www.reuters.com/business/finance/jpmorgan-hires-two-investment-bankers-bolster-services-energy-companies-2025-08-21/"
     },
     {
-      "id": 24,
+      "id": 20,
       "title": "Senior Managing Director / Managing Director – Critical Minerals Advisory",
       "company": "FTI Consulting – Power, Renewables & Energy Transition (PRET) Practice",
       "location": "Washington, DC or New York, NY",
@@ -484,7 +418,7 @@ window.APP_DATA = {
       "source_url": "https://www.fticonsulting.com/insights/articles/lender-market-maker-us-critical-minerals-playbook"
     },
     {
-      "id": 25,
+      "id": 21,
       "title": "Global Head / Managing Director – Metals & Mining Investment",
       "company": "IFC Asset Management Company (IFC AMC) – Critical Minerals Focus",
       "location": "Washington, DC",
@@ -499,7 +433,7 @@ window.APP_DATA = {
       "source_url": "https://appiancapitaladvisory.com/appian-and-ifc-partner-in-new-us1-billion-critical-minerals-and-metals-fund-for-emerging-markets/"
     },
     {
-      "id": 26,
+      "id": 22,
       "title": "Managing Director / Partner – Critical Minerals & Energy Transition Investments",
       "company": "Valor Mining Credit Partners (Vitol & Breakwall Capital JV)",
       "location": "New York, NY (or Houston, TX)",
@@ -514,7 +448,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/posts/kailash-dhoni-21150278_investmentbanking-manda-metalsandmining-activity-7414360756051320832-fcIo"
     },
     {
-      "id": 27,
+      "id": 23,
       "title": "Head of Investment / Managing Director – Critical Minerals",
       "company": "US Export-Import Bank (EXIM) – Supply Chain Resiliency Initiative (SCRI)",
       "location": "Washington, DC",
@@ -529,7 +463,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/posts/eximbankus_critical-minerals-critical-moment-activity-7351609936960704513-bt0n"
     },
     {
-      "id": 28,
+      "id": 24,
       "title": "Managing Director – Governance Studies (Economics / Finance / Policy)",
       "company": "The Brookings Institution",
       "location": "Washington, DC",
@@ -544,7 +478,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/view/managing-director-governance-studies-job-id-2026-3812-at-the-brookings-institution"
     },
     {
-      "id": 29,
+      "id": 25,
       "title": "Head of Americas / Senior Managing Director – Emerging Markets Fund of Funds",
       "company": "Waterton Global Resource Management",
       "location": "Beverly Hills, CA or Denver, CO",
@@ -559,7 +493,7 @@ window.APP_DATA = {
       "source_url": "https://www.prnewswire.com/news-releases/g-mining-ventures-secures-bank-credit-facility-and-equipment-financing-to-construct-oko-west-302575613.html"
     },
     {
-      "id": 30,
+      "id": 26,
       "title": "Managing Director – Emerging Markets / Critical Minerals Private Equity",
       "company": "Maryland State Retirement and Pension System – EDGE Program",
       "location": "Baltimore, MD",
@@ -574,7 +508,7 @@ window.APP_DATA = {
       "source_url": "https://privateequitycareer.com/maryland-pension-hiring-for-emerging-manager-and-esg-leadership-role/"
     },
     {
-      "id": 31,
+      "id": 27,
       "title": "Managing Director, Corporate Sector",
       "company": "EBRD - European Bank for Reconstruction and Development",
       "location": "London, United Kingdom",
@@ -591,7 +525,7 @@ window.APP_DATA = {
       "notes": "Application deadline was Feb 9, 2026 — this may be in late-stage review. Worth contacting Heidrick & Struggles directly given Goldie's profile."
     },
     {
-      "id": 32,
+      "id": 28,
       "title": "Managing Director, Southeastern Europe",
       "company": "EBRD - European Bank for Reconstruction and Development",
       "location": "Belgrade, Serbia (Regional Hub)",
@@ -608,7 +542,7 @@ window.APP_DATA = {
       "notes": "More geographic fit needed for SEE specifically, but strong institutional fit with EBRD. Deadline was Jan 7, 2026 — check if still open or use for networking."
     },
     {
-      "id": 33,
+      "id": 29,
       "title": "Managing Director, Ground Up Investing",
       "company": "Corus International (Ground Up Investing subsidiary)",
       "location": "Washington, DC, USA (preferred; other locations considered)",
@@ -625,7 +559,7 @@ window.APP_DATA = {
       "notes": "Deadline passed October 2025. May be filled, but worth contacting Perrett Laver directly to inquire about status or similar upcoming mandates."
     },
     {
-      "id": 34,
+      "id": 30,
       "title": "Managing Director / Partner — Emerging Markets PE/Infrastructure",
       "company": "Warburg Pincus",
       "location": "New York, NY or Washington, DC",
@@ -642,7 +576,7 @@ window.APP_DATA = {
       "notes": "High compensation ceiling but highly competitive process. Warburg would value Goldie's government-sector DFI network (DFCs, MDBs) as a deal sourcing advantage."
     },
     {
-      "id": 35,
+      "id": 31,
       "title": "Managing Director – Private Investments",
       "company": "Allocate",
       "location": "Palo Alto, CA, USA",
@@ -657,7 +591,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/director-private-equity-jobs"
     },
     {
-      "id": 36,
+      "id": 32,
       "title": "Head of Investment Advisory & OCIO Solutions",
       "company": "Undisclosed Asset Manager (Warner Scott)",
       "location": "Dubai, UAE",
@@ -672,7 +606,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/view/4371838759"
     },
     {
-      "id": 37,
+      "id": 33,
       "title": "North America Head of Infrastructure Investments",
       "company": "Mercer",
       "location": "New York, NY, United States",
@@ -687,7 +621,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/view/north-america-head-of-infrastructure-investments-at-mercer-4336895196"
     },
     {
-      "id": 38,
+      "id": 34,
       "title": "Senior Managing Director - CFO Services (Alternative Assets)",
       "company": "IQ-EQ",
       "location": "New York, NY, United States",
@@ -702,7 +636,7 @@ window.APP_DATA = {
       "source_url": "https://www.builtinnyc.com/job/senior-managing-director-cfo-services-alternative-assets/8101756"
     },
     {
-      "id": 39,
+      "id": 35,
       "title": "Director/Managing Director - Fund Administration",
       "company": "The FEAT (outsourced fund admin firm)",
       "location": "Dallas, TX (Hybrid/Remote)",
@@ -717,7 +651,7 @@ window.APP_DATA = {
       "source_url": "https://www.the-feat.com/jobs/director-managing-director-fund-administration-9"
     },
     {
-      "id": 40,
+      "id": 36,
       "title": "Managing Director, Managed Services - Private Equity Fund Services",
       "company": "Baker Tilly US",
       "location": "New York, NY or Chicago, IL (flexible)",
@@ -732,7 +666,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/view/managing-director-managed-services-private-equity-fund-services-at-baker-tilly-us-4357811155"
     },
     {
-      "id": 41,
+      "id": 37,
       "title": "Managing Director, Head of Trust Services",
       "company": "CCM Administrative Services LLC",
       "location": "Reston, VA",
@@ -747,7 +681,7 @@ window.APP_DATA = {
       "source_url": "https://www.indeed.com/q-managing-director-fund-administration-jobs.html"
     },
     {
-      "id": 42,
+      "id": 38,
       "title": "Managing Director, Corporate Venture Capital",
       "company": "Western Digital",
       "location": "San Jose, CA, USA",
@@ -762,7 +696,7 @@ window.APP_DATA = {
       "source_url": "https://builtin.com/job/managing-director-corporate-venture-capital/4762519"
     },
     {
-      "id": 43,
+      "id": 39,
       "title": "Venture Capital Managing Director/Director - Healthcare/Biosciences",
       "company": "Connecticut Innovations",
       "location": "New Haven, CT, USA",
@@ -777,7 +711,7 @@ window.APP_DATA = {
       "source_url": "https://www.indeed.com/q-venture-capital-managing-director-jobs.html"
     },
     {
-      "id": 44,
+      "id": 40,
       "title": "Managing Director, Public Investments",
       "company": "The California Endowment",
       "location": "Oakland, CA",
@@ -792,37 +726,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/view/managing-director-public-investments-at-the-california-endowment-4351982535"
     },
     {
-      "id": 45,
-      "title": "Chief Investment Officer",
-      "company": "Green Climate Fund (GCF)",
-      "location": "Incheon, South Korea",
-      "region": "Asia-Pacific",
-      "salary_range": "N/A (estimated $500,000+ for level)",
-      "application_url": "https://www.impactpool.org/jobs/1188661",
-      "application_method": "Apply via headhunting firm Egon Zehnder - qualified candidates contacted directly",
-      "requirements": "Master’s+ in relevant field; 15+ years operational exp in multicultural orgs, 10+ in senior leadership preferably climate finance; deep climate knowledge; portfolio mgmt in impact investments; financial instruments exp; leadership/team mgmt",
-      "goldie_fit": "Goldie's 25+ years in emerging markets, PE, development finance, infrastructure, and climate finance directly align with GCF's focus on catalytic climate investments in developing countries. Her DFC leadership managing global MDs positions her to lead GCF's 200-person team and $19B+ portfolio. Expertise in fund-of-funds and critical minerals enhances fit for GCF's innovative financing mandate.",
-      "suggested_recruiter": "Egon Zehnder (headhunting firm)",
-      "date_posted": "Recent (deadline Jan 9, 2026)",
-      "source_url": "https://www.impactpool.org/jobs/1188661"
-    },
-    {
-      "id": 46,
-      "title": "Chief Investment Officer",
-      "company": "Prosperity - An EisnerAmper Company",
-      "location": "Minneapolis, MN",
-      "region": "North America",
-      "salary_range": "N/A (estimated $400,000 - $600,000)",
-      "application_url": "https://www.linkedin.com/jobs/view/4358361464",
-      "application_method": "Apply via LinkedIn",
-      "requirements": "Bachelor’s in Finance/Economics; 15+ years investment mgmt incl team leadership; portfolio construction, manager selection, risk mgmt; tax-aware strategies; CFA preferred; RIA/wealth mgmt exp",
-      "goldie_fit": "Goldie's senior DFC role leading global investment funds translates to overseeing Prosperity's investment committee and platform. Her PE/EM/fund-of-funds background supports multi-asset manager selection and private strategies. Development finance exp aligns with RIA's fiduciary focus on client-aligned portfolios.",
-      "suggested_recruiter": "Internal HR via LinkedIn",
-      "date_posted": "January 2026",
-      "source_url": "https://www.linkedin.com/jobs/view/chief-investment-officer-at-prosperity-an-eisneramper-company-4358361464"
-    },
-    {
-      "id": 47,
+      "id": 41,
       "title": "Managing Director / Investment Director, Public Equities",
       "company": "YMCA Retirement Fund",
       "location": "New York, NY (hybrid)",
@@ -837,22 +741,7 @@ window.APP_DATA = {
       "source_url": "https://www.indeed.com/q-managing-director-investment-endowment-jobs.html"
     },
     {
-      "id": 48,
-      "title": "Chief Investment Officer / Chief Operating Officer – Family Office",
-      "company": "Confidential Family Office",
-      "location": "Tampa, FL",
-      "region": "North America",
-      "salary_range": "$200k-$400k total package",
-      "application_url": "https://careers.taylorwhite.com/Chief-Investment-Officer-Chief-Operating-Officer-Family-Office-Jobs-in-Tampa-FL/12890628",
-      "application_method": "Apply via Taylor White careers site",
-      "requirements": "Bachelor’s in Accounting/Finance (MBA preferred); 7+ yrs in PE/real estate/banking; deal origination/underwriting/asset mgmt expertise; capital formation/IR; negotiation/modeling; strategic thinker with network.",
-      "goldie_fit": "Goldie's 25+ years in emerging markets, PE, fund-of-funds, and infrastructure align perfectly with the role's focus on PE, private credit, and real estate deals. Her leadership as Acting VP & Head of Global Investment Funds at DFC, managing MDs globally, demonstrates proven expertise in deal lifecycle, origination, and team leadership required here. DFC's development finance experience in infrastructure and climate adds unique value for strategic growth in a family office setting. (Taylor White)",
-      "suggested_recruiter": "Taylor White",
-      "date_posted": "Recent (within 60 days)",
-      "source_url": "https://careers.taylorwhite.com/Chief-Investment-Officer-Chief-Operating-Officer-Family-Office-Jobs-in-Tampa-FL/12890628"
-    },
-    {
-      "id": 49,
+      "id": 42,
       "title": "Head of Investments - Family Office",
       "company": "Confidential (Financial Services/NBFC)",
       "location": "India",
@@ -867,7 +756,7 @@ window.APP_DATA = {
       "source_url": "https://www.iimjobs.com/j/head-investments-family-office-1668750"
     },
     {
-      "id": 50,
+      "id": 43,
       "title": "Infrastructure Partners, Managing Director",
       "company": "Blackstone Infrastructure Partners",
       "location": "London, UK",
@@ -882,7 +771,7 @@ window.APP_DATA = {
       "source_url": "https://blackstone.wd1.myworkdayjobs.com/en-US/BX_External_Site/job/Infrastructure-Partners--Managing-Director_35556"
     },
     {
-      "id": 51,
+      "id": 44,
       "title": "Head of Investor Relations",
       "company": "World Fund",
       "location": "Berlin, Germany",
@@ -897,7 +786,7 @@ window.APP_DATA = {
       "source_url": "https://www.worldfund.vc/jobs/head-of-investor-relations"
     },
     {
-      "id": 52,
+      "id": 45,
       "title": "Head of Investor Relations",
       "company": "Undisclosed VC Firm",
       "location": "Chicago, IL",
@@ -912,7 +801,7 @@ window.APP_DATA = {
       "source_url": "https://www.selbyjennings.com/en-us/job/head-of-investor-relations-pr534510_1740091251"
     },
     {
-      "id": 53,
+      "id": 46,
       "title": "Head of Mining - Corporates Division",
       "company": "IDB Invest",
       "region": "North America",
@@ -925,33 +814,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 54,
-      "title": "Deputy Chief Investment Officer, Private Markets",
-      "company": "California Public Employees' Retirement System (CalPERS)",
-      "region": "North America",
-      "industry": "Pension Fund",
-      "goldie_fit": "Perfect pension fund fit; oversees private markets (PE, infrastructure) investments critical for emerging markets PE, infrastructure, DFI experience; 25+ yrs aligns with senior leadership needs; climate finance relevant for modern portfolios. CalCareers",
-      "suggested_recruiter": "CalPERS HR / Korn Ferry",
-      "source_url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=503404",
-      "date_posted": "First cutoff January 9, 2026 (open until filled)",
-      "salary": "$28,325.00 - $47,208.33 per Month",
-      "notes": "Added via 7-day backfill search on 2026-03-07"
-    },
-    {
-      "id": 55,
-      "title": "Division Chief (Chief Investment Officer - CIO), Venture Capital and Investments",
-      "company": "IDB Lab",
-      "region": "North America",
-      "industry": "Development Finance Institution",
-      "goldie_fit": "DFI (IDB Group); leads VC/equity investments in LAC (emerging markets); fund-of-funds/PE/DFI background ideal for portfolio mgmt/strategy; multilingual skills bonus for region; climate innovation focus. Devex",
-      "suggested_recruiter": "IDB Group HR / Heidrick & Struggles",
-      "source_url": "https://www.devex.com/jobs/idb-lab-venture-capital-and-investments-division-chief-chief-investment-officer-cio-1332865",
-      "date_posted": "March 24, 2025",
-      "salary": "",
-      "notes": "Added via 7-day backfill search on 2026-03-07"
-    },
-    {
-      "id": 56,
+      "id": 47,
       "title": "Managing Director - Infrastructure Private Equity/Climate/Energy Transition",
       "company": "US Insurance Investment Arm (Madison Hunt)",
       "region": "North America",
@@ -964,7 +827,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 57,
+      "id": 48,
       "title": "Managing Director, Social Impact Fund",
       "company": "American Heart Association",
       "region": "North America",
@@ -977,7 +840,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 58,
+      "id": 49,
       "title": "Director, Economic Research and Development Impact",
       "company": "Asian Development Bank (ADB)",
       "region": "Asia-Pacific",
@@ -990,7 +853,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 59,
+      "id": 50,
       "title": "Principal, Infrastructure",
       "company": "CPP Investments",
       "region": "North America",
@@ -1003,7 +866,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 60,
+      "id": 51,
       "title": "Global Alternative Investments Solutions, Head of Infrastructure Due Diligence",
       "company": "JPMorganChase",
       "region": "North America",
@@ -1016,7 +879,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 61,
+      "id": 52,
       "title": "Managing Director - Complaints-resolution, Evaluation and Integrity Unit",
       "company": "Asian Infrastructure Investment Bank (AIIB)",
       "region": "Asia-Pacific",
@@ -1029,7 +892,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 62,
+      "id": 53,
       "title": "Head of Fund Solutions Group, APAC",
       "company": "Crédit Agricole CIB",
       "region": "Asia-Pacific",
@@ -1042,7 +905,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 63,
+      "id": 54,
       "title": "Managing Director",
       "company": "Ultimus LeverPoint Private Fund Solutions",
       "region": "North America",
@@ -1055,7 +918,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 64,
+      "id": 55,
       "title": "Managing Director II MSRP (Emerging Managers, Durable Capital, and Governance Excellence)",
       "company": "Maryland State Retirement and Pension System",
       "region": "North America",
@@ -1068,7 +931,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 65,
+      "id": 56,
       "title": "SVP, Head of Investments",
       "company": "Wildflower LTD",
       "region": "North America",
@@ -1081,7 +944,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 66,
+      "id": 57,
       "title": "Senior Vice President/Managing Director, Americas Real Assets Fund Management",
       "company": "Macquarie Asset Management",
       "region": "North America",
@@ -1094,20 +957,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 67,
-      "title": "Director, Americas OCIO Client Business Sales & Relationship Management",
-      "company": "BlackRock",
-      "region": "North America",
-      "industry": "Investment Consulting",
-      "goldie_fit": "Strong fit for OCIO/investment consulting: Leads OCIO client relationships/sales for institutional investors; 10+ years exp required, leverages deep markets knowledge for whole-portfolio solutions; emerging markets exp adds value for global fiduciary/asset allocation.",
-      "suggested_recruiter": "BlackRock Talent Acquisition / Korn Ferry",
-      "source_url": "https://careers.blackrock.com/job/new-york/director-americas-ocio-client-business-sales-and-relationship-management/45831/91600531296",
-      "date_posted": "Feb 10, 2026",
-      "salary": "",
-      "notes": "Added via 7-day backfill search on 2026-03-07"
-    },
-    {
-      "id": 68,
+      "id": 58,
       "title": "Investment Principal (Client CIO)",
       "company": "Partners Capital",
       "region": "North America",
@@ -1120,7 +970,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 69,
+      "id": 59,
       "title": "Head of Investment Management",
       "company": "PIDG (Private Infrastructure Development Group)",
       "region": "Europe",
@@ -1133,20 +983,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 70,
-      "title": "Chief Investment Officer (CIO)",
-      "company": "BaRupOn LLC",
-      "region": "North America",
-      "industry": "Infrastructure",
-      "goldie_fit": "Excellent fit: CIO structuring $100M+ utility infra deals, engaging DFIs/SWFs/PE; 10-15+ yrs infra/project finance exp; leverages DFI/PE networks for blended finance in energy infra; Wharton MBA ideal for modeling/strategy. BaRupOn Careers",
-      "suggested_recruiter": "Direct Application",
-      "source_url": "https://barupon-llc.breezy.hr/p/f13e0bcde7c9-chief-investment-officer-cio",
-      "date_posted": "February 2026",
-      "salary": "Competitive executive package",
-      "notes": "Added via 7-day backfill search on 2026-03-07"
-    },
-    {
-      "id": 71,
+      "id": 60,
       "title": "Director of the Caribbean Region - Infrastructure and Energy",
       "company": "IDB Invest",
       "region": "Latin America & Caribbean",
@@ -1159,20 +996,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 72,
-      "title": "Chief Executive Officer – Infrastructure Origination and Collaboration Platform | Africa",
-      "company": "African Collaborations Group (ACG)",
-      "region": "Africa",
-      "industry": "Infrastructure",
-      "goldie_fit": "CEO platform-building in Africa infra origination/structuring; track record complex emerging projects PPPs/DFI; matches climate/infra/PE exp building scalable investments. Devex",
-      "suggested_recruiter": "Devex / Direct Application",
-      "source_url": "https://www.devex.com/jobs/chief-executive-officer-ceo-infrastructure-origination-and-collaboration-platform-africa-1407854",
-      "date_posted": "January 23, 2026",
-      "salary": "",
-      "notes": "Added via 7-day backfill search on 2026-03-07"
-    },
-    {
-      "id": 73,
+      "id": 61,
       "title": "Head of Investor Relations",
       "company": "Ariel Alternatives",
       "region": "North America",
@@ -7942,5 +7766,5 @@ window.APP_DATA = {
       ]
     }
   ],
-  "last_updated": "2026-03-07T07:02:54-05:00"
+  "last_updated": "2026-03-08T08:00:00-04:00"
 };

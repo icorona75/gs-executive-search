@@ -854,19 +854,6 @@ window.APP_DATA = {
     },
     {
       "id": 50,
-      "title": "Principal, Infrastructure",
-      "company": "CPP Investments",
-      "region": "North America",
-      "industry": "Pension Fund",
-      "goldie_fit": "Strong fit: Direct infrastructure investing at a leading pension fund; leading origination, diligence, execution of deals matches deep infra/PE experience. Emerging markets focus complements global diversification; Wharton MBA and senior expertise ideal for IC presentations, value creation plans, stakeholder management.",
-      "suggested_recruiter": "CPP Investments HR / Russell Reynolds",
-      "source_url": "https://www.builtinnyc.com/job/principal-infrastructure/4763038",
-      "date_posted": "2025",
-      "salary": "$259,600 - $350,000",
-      "notes": "Added via 7-day backfill search on 2026-03-07"
-    },
-    {
-      "id": 51,
       "title": "Global Alternative Investments Solutions, Head of Infrastructure Due Diligence",
       "company": "JPMorganChase",
       "region": "North America",
@@ -879,7 +866,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 52,
+      "id": 51,
       "title": "Managing Director - Complaints-resolution, Evaluation and Integrity Unit",
       "company": "Asian Infrastructure Investment Bank (AIIB)",
       "region": "Asia-Pacific",
@@ -892,7 +879,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 53,
+      "id": 52,
       "title": "Head of Fund Solutions Group, APAC",
       "company": "Crédit Agricole CIB",
       "region": "Asia-Pacific",
@@ -905,7 +892,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 54,
+      "id": 53,
       "title": "Managing Director",
       "company": "Ultimus LeverPoint Private Fund Solutions",
       "region": "North America",
@@ -918,20 +905,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 55,
-      "title": "Managing Director II MSRP (Emerging Managers, Durable Capital, and Governance Excellence)",
-      "company": "Maryland State Retirement and Pension System",
-      "region": "North America",
-      "industry": "Pension Fund",
-      "goldie_fit": "Solid fit at pension fund: 25+ years emerging markets PE/FoFs ideal for leading $5.4B emerging manager program; climate finance/ESG expertise perfect for governance/ESG integration; DFI background enhances fiduciary/compliance advisory to CIO/Board.",
-      "suggested_recruiter": "Maryland State HR",
-      "source_url": "https://www.jobapscloud.com/MD/sup/bulpreview.asp?b=&R1=26&R2=005013&R3=0001",
-      "date_posted": "2026-02-13",
-      "salary": "$232,143 - $371,429/year",
-      "notes": "Added via 7-day backfill search on 2026-03-07"
-    },
-    {
-      "id": 56,
+      "id": 54,
       "title": "SVP, Head of Investments",
       "company": "Wildflower LTD",
       "region": "North America",
@@ -944,7 +918,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 57,
+      "id": 55,
       "title": "Senior Vice President/Managing Director, Americas Real Assets Fund Management",
       "company": "Macquarie Asset Management",
       "region": "North America",
@@ -957,7 +931,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 58,
+      "id": 56,
       "title": "Investment Principal (Client CIO)",
       "company": "Partners Capital",
       "region": "North America",
@@ -970,7 +944,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 59,
+      "id": 57,
       "title": "Head of Investment Management",
       "company": "PIDG (Private Infrastructure Development Group)",
       "region": "Europe",
@@ -983,7 +957,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 60,
+      "id": 58,
       "title": "Director of the Caribbean Region - Infrastructure and Energy",
       "company": "IDB Invest",
       "region": "Latin America & Caribbean",
@@ -996,7 +970,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 61,
+      "id": 59,
       "title": "Head of Investor Relations",
       "company": "Ariel Alternatives",
       "region": "North America",
@@ -7766,5 +7740,5 @@ window.APP_DATA = {
       ]
     }
   ],
-  "last_updated": "2026-03-08T08:00:00-04:00"
+  "last_updated": "2026-03-09T08:01:55-04:00"
 };

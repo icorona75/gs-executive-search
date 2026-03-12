@@ -592,21 +592,6 @@ window.APP_DATA = {
     },
     {
       "id": 32,
-      "title": "Director/Managing Director - Fund Administration",
-      "company": "The FEAT (outsourced fund admin firm)",
-      "location": "Dallas, TX (Hybrid/Remote)",
-      "region": "North America",
-      "salary_range": "$300,000 - $500,000 (estimated for MD level)",
-      "application_url": "https://www.the-feat.com/jobs/director-managing-director-fund-administration-9",
-      "application_method": "Apply via website form",
-      "requirements": "10+ years fund admin/accounting/audit with PE exposure; 5+ years leading teams; partnership accounting/waterfalls; fund platforms (Investran etc.); CPA preferred; US GAAP",
-      "goldie_fit": "Goldie's 25+ years in emerging markets, fund-of-funds, PE and development finance directly aligns with leading complex fund admin for PE funds. Her current role as Acting VP & Head of Global Investment Funds at U.S. DFC managing MDs globally demonstrates proven leadership at MD level in fund operations. Experience in infrastructure and climate finance positions her to handle specialized fund structures and waterfalls.",
-      "suggested_recruiter": "The FEAT",
-      "date_posted": "~July 2025 (within 60 days)",
-      "source_url": "https://www.the-feat.com/jobs/director-managing-director-fund-administration-9"
-    },
-    {
-      "id": 33,
       "title": "Managing Director, Managed Services - Private Equity Fund Services",
       "company": "Baker Tilly US",
       "location": "New York, NY or Chicago, IL (flexible)",
@@ -621,7 +606,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/view/managing-director-managed-services-private-equity-fund-services-at-baker-tilly-us-4357811155"
     },
     {
-      "id": 34,
+      "id": 33,
       "title": "Managing Director, Head of Trust Services",
       "company": "CCM Administrative Services LLC",
       "location": "Reston, VA",
@@ -636,7 +621,7 @@ window.APP_DATA = {
       "source_url": "https://www.indeed.com/q-managing-director-fund-administration-jobs.html"
     },
     {
-      "id": 35,
+      "id": 34,
       "title": "Managing Director, Corporate Venture Capital",
       "company": "Western Digital",
       "location": "San Jose, CA, USA",
@@ -651,7 +636,7 @@ window.APP_DATA = {
       "source_url": "https://builtin.com/job/managing-director-corporate-venture-capital/4762519"
     },
     {
-      "id": 36,
+      "id": 35,
       "title": "Venture Capital Managing Director/Director - Healthcare/Biosciences",
       "company": "Connecticut Innovations",
       "location": "New Haven, CT, USA",
@@ -666,7 +651,7 @@ window.APP_DATA = {
       "source_url": "https://www.indeed.com/q-venture-capital-managing-director-jobs.html"
     },
     {
-      "id": 37,
+      "id": 36,
       "title": "Managing Director, Public Investments",
       "company": "The California Endowment",
       "location": "Oakland, CA",
@@ -681,7 +666,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/view/managing-director-public-investments-at-the-california-endowment-4351982535"
     },
     {
-      "id": 38,
+      "id": 37,
       "title": "Managing Director / Investment Director, Public Equities",
       "company": "YMCA Retirement Fund",
       "location": "New York, NY (hybrid)",
@@ -696,7 +681,7 @@ window.APP_DATA = {
       "source_url": "https://www.indeed.com/q-managing-director-investment-endowment-jobs.html"
     },
     {
-      "id": 39,
+      "id": 38,
       "title": "Head of Investments - Family Office",
       "company": "Confidential (Financial Services/NBFC)",
       "location": "India",
@@ -711,7 +696,7 @@ window.APP_DATA = {
       "source_url": "https://www.iimjobs.com/j/head-investments-family-office-1668750"
     },
     {
-      "id": 40,
+      "id": 39,
       "title": "Infrastructure Partners, Managing Director",
       "company": "Blackstone Infrastructure Partners",
       "location": "London, UK",
@@ -726,7 +711,7 @@ window.APP_DATA = {
       "source_url": "https://blackstone.wd1.myworkdayjobs.com/en-US/BX_External_Site/job/Infrastructure-Partners--Managing-Director_35556"
     },
     {
-      "id": 41,
+      "id": 40,
       "title": "Head of Investor Relations",
       "company": "World Fund",
       "location": "Berlin, Germany",
@@ -741,7 +726,7 @@ window.APP_DATA = {
       "source_url": "https://www.worldfund.vc/jobs/head-of-investor-relations"
     },
     {
-      "id": 42,
+      "id": 41,
       "title": "Head of Investor Relations",
       "company": "Undisclosed VC Firm",
       "location": "Chicago, IL",
@@ -756,7 +741,7 @@ window.APP_DATA = {
       "source_url": "https://www.selbyjennings.com/en-us/job/head-of-investor-relations-pr534510_1740091251"
     },
     {
-      "id": 43,
+      "id": 42,
       "title": "Head of Mining - Corporates Division",
       "company": "IDB Invest",
       "region": "North America",
@@ -769,7 +754,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 44,
+      "id": 43,
       "title": "Managing Director - Infrastructure Private Equity/Climate/Energy Transition",
       "company": "US Insurance Investment Arm (Madison Hunt)",
       "region": "North America",
@@ -782,7 +767,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 45,
+      "id": 44,
       "title": "Managing Director, Social Impact Fund",
       "company": "American Heart Association",
       "region": "North America",
@@ -795,7 +780,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 46,
+      "id": 45,
       "title": "Director, Economic Research and Development Impact",
       "company": "Asian Development Bank (ADB)",
       "region": "Asia-Pacific",
@@ -808,7 +793,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 47,
+      "id": 46,
       "title": "Global Alternative Investments Solutions, Head of Infrastructure Due Diligence",
       "company": "JPMorganChase",
       "region": "North America",
@@ -821,7 +806,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 48,
+      "id": 47,
       "title": "Managing Director - Complaints-resolution, Evaluation and Integrity Unit",
       "company": "Asian Infrastructure Investment Bank (AIIB)",
       "region": "Asia-Pacific",
@@ -834,7 +819,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 49,
+      "id": 48,
       "title": "Head of Fund Solutions Group, APAC",
       "company": "Crédit Agricole CIB",
       "region": "Asia-Pacific",
@@ -847,7 +832,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 50,
+      "id": 49,
       "title": "Managing Director",
       "company": "Ultimus LeverPoint Private Fund Solutions",
       "region": "North America",
@@ -860,7 +845,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 51,
+      "id": 50,
       "title": "SVP, Head of Investments",
       "company": "Wildflower LTD",
       "region": "North America",
@@ -873,7 +858,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 52,
+      "id": 51,
       "title": "Investment Principal (Client CIO)",
       "company": "Partners Capital",
       "region": "North America",
@@ -886,7 +871,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 53,
+      "id": 52,
       "title": "Head of Investment Management",
       "company": "PIDG (Private Infrastructure Development Group)",
       "region": "Europe",
@@ -899,7 +884,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 54,
+      "id": 53,
       "title": "Director of the Caribbean Region - Infrastructure and Energy",
       "company": "IDB Invest",
       "region": "Latin America & Caribbean",
@@ -912,7 +897,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 55,
+      "id": 54,
       "title": "Head of Investor Relations",
       "company": "Ariel Alternatives",
       "region": "North America",
@@ -7682,5 +7667,5 @@ window.APP_DATA = {
       ]
     }
   ],
-  "last_updated": "2026-03-11T08:04:02-04:00"
+  "last_updated": "2026-03-12T08:02:09-04:00"
 };

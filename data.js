@@ -178,6 +178,40 @@ window.APP_DATA = {
     },
     {
       "id": 6,
+      "title": "Managing Director, Corporate Sector",
+      "company": "EBRD - European Bank for Reconstruction and Development",
+      "location": "London, United Kingdom",
+      "region": "Europe",
+      "salary_range": "Not publicly disclosed (senior DFI executive compensation; estimated £250,000–£400,000 + benefits package)",
+      "application_url": "https://www.impactpool.org/jobs/1190955",
+      "application_method": "Apply via ImpactPool or EBRD careers portal; contact Heidrick & Struggles Frankfurt (seisenreich@heidrick.com, subject: 'EBRD MD Corporate Sector')",
+      "date_posted": "2026-02-09",
+      "contract_type": "Fixed Term, 4 years with potential to renew 4 more",
+      "requirements": "Extensive international experience in one of: Manufacturing & Services, Food & Agribusiness, TMT, Natural Resources, Real Estate; first-line banking skills (origination, structuring, complex debt and equity); experience managing 200+ staff; post-graduate degree; strong stakeholder/policy dialogue experience with governments and MDBs",
+      "goldie_fit": "Goldie's 25+ years spanning DFI investment (DFC, IDB Invest), emerging markets, and PE aligns with EBRD's mandate. Her current role managing MDs globally at DFC mirrors the scale of this position. Her Spanish and Hebrew fluency supports EBRD's MEA/SEMED operations. The role is being handled by Heidrick & Struggles — a firm she can approach directly.",
+      "suggested_recruiter": "Heidrick & Struggles (confirmed handler); Spencer Stuart for backup DFI searches",
+      "source_url": "https://www.impactpool.org/jobs/1190955",
+      "notes": "Application deadline was Feb 9, 2026 — this may be in late-stage review. Worth contacting Heidrick & Struggles directly given Goldie's profile."
+    },
+    {
+      "id": 7,
+      "title": "Managing Director, Southeastern Europe",
+      "company": "EBRD - European Bank for Reconstruction and Development",
+      "location": "Belgrade, Serbia (Regional Hub)",
+      "region": "Europe",
+      "salary_range": "Senior EBRD grade; estimated £200,000–£330,000 + housing + school allowance",
+      "application_url": "https://www.impactpool.org/jobs/1188652",
+      "application_method": "Apply via ImpactPool (Req ID 36320). Posted Jan 7, 2026.",
+      "date_posted": "2026-01-07",
+      "contract_type": "Fixed Term, 4 years + potential 1-year extension",
+      "requirements": "Extensive international experience in major investment/commercial/development bank; high-level banking skills (equity, loans, commercial co-financing); experience leading policy reform dialogues with governments; experience managing large teams across multiple countries; post-graduate degree; ideally experience in Serbia and/or Romania",
+      "goldie_fit": "Her DFC and IDB Invest experience delivering cross-border structured finance and policy dialogue with governments maps directly. Her trilingual capability (English, Spanish, Hebrew) is a plus for multilateral work; EBRD's SEE mandate aligns with her EM expertise. One concern: SEE is not Goldie's primary geographic focus — but DFI leadership skills are transferable.",
+      "suggested_recruiter": "Heidrick & Struggles (EBRD's preferred executive search partner); Options Group for DFI/MDB placements",
+      "source_url": "https://www.impactpool.org/jobs/1188652",
+      "notes": "More geographic fit needed for SEE specifically, but strong institutional fit with EBRD. Deadline was Jan 7, 2026 — check if still open or use for networking."
+    },
+    {
+      "id": 8,
       "title": "Head of Private Markets / Head of Alternatives",
       "company": "GCM Grosvenor",
       "location": "Chicago, IL or New York, NY, USA",
@@ -194,7 +228,7 @@ window.APP_DATA = {
       "notes": "No specific open role confirmed, but GCM is a strong target given scale and impact capabilities. Goldie should network via GCM's emerging managers program team."
     },
     {
-      "id": 7,
+      "id": 9,
       "title": "Managing Director / Partner — Emerging Markets Fund Investments",
       "company": "StepStone Group",
       "location": "New York, NY or Washington, DC, USA",
@@ -211,7 +245,7 @@ window.APP_DATA = {
       "notes": "Strong target. StepStone has been hiring senior EM professionals to serve growing sovereign and institutional client base."
     },
     {
-      "id": 8,
+      "id": 10,
       "title": "Managing Director / Senior Director, Emerging Markets or Development Finance",
       "company": "Adams Street Partners",
       "location": "Chicago, IL or Washington, DC",
@@ -228,7 +262,7 @@ window.APP_DATA = {
       "notes": "Adams Street is a tier-1 FoF firm and a natural fit. Proactive networking through existing GP/LP relationships is the best approach."
     },
     {
-      "id": 9,
+      "id": 11,
       "title": "Head of Funds / Managing Director, Fund-of-Funds",
       "company": "British International Investment (BII) — UK's DFI",
       "location": "London, United Kingdom",
@@ -245,7 +279,7 @@ window.APP_DATA = {
       "notes": "BII's fund investments team is one of the most active in DFI-backed PE. Strong institutional fit. Work authorization is the key consideration."
     },
     {
-      "id": 10,
+      "id": 12,
       "title": "Director, IFC Corporate Strategy — CONFIRMED OPEN (deadline March 17, 2026)",
       "company": "IFC (International Finance Corporation) — World Bank Group",
       "location": "Washington, DC, USA",
@@ -263,7 +297,7 @@ window.APP_DATA = {
       "notes": "CONFIRMED OPEN as of March 5, 2026. Deadline March 17, 2026. Supersedes/upgrades job #3 with confirmed deadline. PRIORITY APPLICATION."
     },
     {
-      "id": 11,
+      "id": 13,
       "title": "IFC Regional Industry Director, Infrastructure & Natural Resources — Africa (N/W/C)",
       "company": "IFC (International Finance Corporation) — World Bank Group",
       "location": "Lagos, Nigeria (or to be confirmed — N/W/C Africa region)",
@@ -281,7 +315,7 @@ window.APP_DATA = {
       "notes": "Deadline passed February 11, 2026. May be in review stage. Contact Korn Ferry or IFC HR directly. A second similar role for East/Southern Africa also posted on ImpactPool (https://www.impactpool.org/jobs/1192812)."
     },
     {
-      "id": 12,
+      "id": 14,
       "title": "Managing Director, Industry Coverage (Clean Energy Finance)",
       "company": "Crux Climate",
       "location": "Remote, USA (optional offices: Washington DC, New York)",
@@ -298,7 +332,7 @@ window.APP_DATA = {
       "notes": "Crux is backed by a16z, Lowercarbon, Pattern Energy, OMERS. Also has a MD, Tax Investor Coverage role open at same compensation — NOT a fit for Goldie (tax accounting background required)."
     },
     {
-      "id": 13,
+      "id": 15,
       "title": "Investment Banking Managing Director – Minerals & Mining",
       "company": "Mid-Market Investment Bank (confidential, via Selby Jennings)",
       "location": "Chicago, New York, Los Angeles, or Atlanta/Arlington (flexible)",
@@ -313,7 +347,7 @@ window.APP_DATA = {
       "source_url": "https://www.selbyjennings.com/en-us/job/investment-banking-managing-director-minerals-mining-pr569894_1764029555"
     },
     {
-      "id": 14,
+      "id": 16,
       "title": "Managing Director / Senior Investment Professional – Critical Minerals Consortium",
       "company": "Orion Resource Partners",
       "location": "New York, NY (with Abu Dhabi and London offices)",
@@ -328,7 +362,7 @@ window.APP_DATA = {
       "source_url": "https://orionrp.com/culture"
     },
     {
-      "id": 15,
+      "id": 17,
       "title": "Partner / Managing Director – Private Equity (Critical Minerals / Metals & Mining)",
       "company": "Resource Capital Funds (RCF)",
       "location": "Denver, CO; London, UK; Toronto, Canada; Perth, Australia (multiple offices)",
@@ -343,7 +377,7 @@ window.APP_DATA = {
       "source_url": "https://resourcecapitalfunds.com"
     },
     {
-      "id": 16,
+      "id": 18,
       "title": "Managing Director – Head of Critical Minerals / Natural Resources Group",
       "company": "JPMorgan Chase – Natural Resources Investment Banking",
       "location": "New York, NY or Houston, TX",
@@ -358,7 +392,7 @@ window.APP_DATA = {
       "source_url": "https://www.reuters.com/business/finance/jpmorgan-hires-two-investment-bankers-bolster-services-energy-companies-2025-08-21/"
     },
     {
-      "id": 17,
+      "id": 19,
       "title": "Senior Managing Director / Managing Director – Critical Minerals Advisory",
       "company": "FTI Consulting – Power, Renewables & Energy Transition (PRET) Practice",
       "location": "Washington, DC or New York, NY",
@@ -373,7 +407,7 @@ window.APP_DATA = {
       "source_url": "https://www.fticonsulting.com/insights/articles/lender-market-maker-us-critical-minerals-playbook"
     },
     {
-      "id": 18,
+      "id": 20,
       "title": "Global Head / Managing Director – Metals & Mining Investment",
       "company": "IFC Asset Management Company (IFC AMC) – Critical Minerals Focus",
       "location": "Washington, DC",
@@ -388,7 +422,7 @@ window.APP_DATA = {
       "source_url": "https://appiancapitaladvisory.com/appian-and-ifc-partner-in-new-us1-billion-critical-minerals-and-metals-fund-for-emerging-markets/"
     },
     {
-      "id": 19,
+      "id": 21,
       "title": "Managing Director / Partner – Critical Minerals & Energy Transition Investments",
       "company": "Valor Mining Credit Partners (Vitol & Breakwall Capital JV)",
       "location": "New York, NY (or Houston, TX)",
@@ -403,7 +437,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/posts/kailash-dhoni-21150278_investmentbanking-manda-metalsandmining-activity-7414360756051320832-fcIo"
     },
     {
-      "id": 20,
+      "id": 22,
       "title": "Head of Investment / Managing Director – Critical Minerals",
       "company": "US Export-Import Bank (EXIM) – Supply Chain Resiliency Initiative (SCRI)",
       "location": "Washington, DC",
@@ -418,7 +452,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/posts/eximbankus_critical-minerals-critical-moment-activity-7351609936960704513-bt0n"
     },
     {
-      "id": 21,
+      "id": 23,
       "title": "Managing Director – Governance Studies (Economics / Finance / Policy)",
       "company": "The Brookings Institution",
       "location": "Washington, DC",
@@ -433,7 +467,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/view/managing-director-governance-studies-job-id-2026-3812-at-the-brookings-institution"
     },
     {
-      "id": 22,
+      "id": 24,
       "title": "Head of Americas / Senior Managing Director – Emerging Markets Fund of Funds",
       "company": "Waterton Global Resource Management",
       "location": "Beverly Hills, CA or Denver, CO",
@@ -448,7 +482,7 @@ window.APP_DATA = {
       "source_url": "https://www.prnewswire.com/news-releases/g-mining-ventures-secures-bank-credit-facility-and-equipment-financing-to-construct-oko-west-302575613.html"
     },
     {
-      "id": 23,
+      "id": 25,
       "title": "Managing Director – Emerging Markets / Critical Minerals Private Equity",
       "company": "Maryland State Retirement and Pension System – EDGE Program",
       "location": "Baltimore, MD",
@@ -461,40 +495,6 @@ window.APP_DATA = {
       "suggested_recruiter": "Direct application via Maryland State HR; or contact CIO Dianne Sandoval via LinkedIn",
       "date_posted": "2026-02-24 (deadline was Feb 27, 2026; may reopen)",
       "source_url": "https://privateequitycareer.com/maryland-pension-hiring-for-emerging-manager-and-esg-leadership-role/"
-    },
-    {
-      "id": 24,
-      "title": "Managing Director, Corporate Sector",
-      "company": "EBRD - European Bank for Reconstruction and Development",
-      "location": "London, United Kingdom",
-      "region": "Europe",
-      "salary_range": "Not publicly disclosed (senior DFI executive compensation; estimated £250,000–£400,000 + benefits package)",
-      "application_url": "https://www.impactpool.org/jobs/1190955",
-      "application_method": "Apply via ImpactPool or EBRD careers portal; contact Heidrick & Struggles Frankfurt (seisenreich@heidrick.com, subject: 'EBRD MD Corporate Sector')",
-      "date_posted": "2026-02-09",
-      "contract_type": "Fixed Term, 4 years with potential to renew 4 more",
-      "requirements": "Extensive international experience in one of: Manufacturing & Services, Food & Agribusiness, TMT, Natural Resources, Real Estate; first-line banking skills (origination, structuring, complex debt and equity); experience managing 200+ staff; post-graduate degree; strong stakeholder/policy dialogue experience with governments and MDBs",
-      "goldie_fit": "Goldie's 25+ years spanning DFI investment (DFC, IDB Invest), emerging markets, and PE aligns with EBRD's mandate. Her current role managing MDs globally at DFC mirrors the scale of this position. Her Spanish and Hebrew fluency supports EBRD's MEA/SEMED operations. The role is being handled by Heidrick & Struggles — a firm she can approach directly.",
-      "suggested_recruiter": "Heidrick & Struggles (confirmed handler); Spencer Stuart for backup DFI searches",
-      "source_url": "https://www.impactpool.org/jobs/1190955",
-      "notes": "Application deadline was Feb 9, 2026 — this may be in late-stage review. Worth contacting Heidrick & Struggles directly given Goldie's profile."
-    },
-    {
-      "id": 25,
-      "title": "Managing Director, Southeastern Europe",
-      "company": "EBRD - European Bank for Reconstruction and Development",
-      "location": "Belgrade, Serbia (Regional Hub)",
-      "region": "Europe",
-      "salary_range": "Senior EBRD grade; estimated £200,000–£330,000 + housing + school allowance",
-      "application_url": "https://www.impactpool.org/jobs/1188652",
-      "application_method": "Apply via ImpactPool (Req ID 36320). Posted Jan 7, 2026.",
-      "date_posted": "2026-01-07",
-      "contract_type": "Fixed Term, 4 years + potential 1-year extension",
-      "requirements": "Extensive international experience in major investment/commercial/development bank; high-level banking skills (equity, loans, commercial co-financing); experience leading policy reform dialogues with governments; experience managing large teams across multiple countries; post-graduate degree; ideally experience in Serbia and/or Romania",
-      "goldie_fit": "Her DFC and IDB Invest experience delivering cross-border structured finance and policy dialogue with governments maps directly. Her trilingual capability (English, Spanish, Hebrew) is a plus for multilateral work; EBRD's SEE mandate aligns with her EM expertise. One concern: SEE is not Goldie's primary geographic focus — but DFI leadership skills are transferable.",
-      "suggested_recruiter": "Heidrick & Struggles (EBRD's preferred executive search partner); Options Group for DFI/MDB placements",
-      "source_url": "https://www.impactpool.org/jobs/1188652",
-      "notes": "More geographic fit needed for SEE specifically, but strong institutional fit with EBRD. Deadline was Jan 7, 2026 — check if still open or use for networking."
     },
     {
       "id": 26,
@@ -755,6 +755,19 @@ window.APP_DATA = {
     },
     {
       "id": 43,
+      "title": "Director of the Caribbean Region - Infrastructure and Energy",
+      "company": "IDB Invest",
+      "region": "Latin America & Caribbean",
+      "industry": "Emerging Markets Investment",
+      "goldie_fit": "Strong DFI fit: Leads infra/energy investments in Caribbean emerging markets (LAC); 10+ yrs structured finance/project finance track record with equity/mezzanine; perfect for IDB/DFI exp, Spanish fluency, regional LAC infra expertise. Director senior at DFI. LinkedIn",
+      "suggested_recruiter": "IDB Group HR / Heidrick & Struggles",
+      "source_url": "https://www.linkedin.com/jobs/view/idb-invest-director-of-the-caribbean-region-infrastructure-and-energy-at-idb-invest-4355310492",
+      "date_posted": "3 weeks ago (Feb 2026)",
+      "salary": "",
+      "notes": "Added via 7-day backfill search on 2026-03-07"
+    },
+    {
+      "id": 44,
       "title": "Managing Director - Infrastructure Private Equity/Climate/Energy Transition",
       "company": "US Insurance Investment Arm (Madison Hunt)",
       "region": "North America",
@@ -767,7 +780,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 44,
+      "id": 45,
       "title": "Managing Director, Social Impact Fund",
       "company": "American Heart Association",
       "region": "North America",
@@ -780,7 +793,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 45,
+      "id": 46,
       "title": "Director, Economic Research and Development Impact",
       "company": "Asian Development Bank (ADB)",
       "region": "Asia-Pacific",
@@ -793,7 +806,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 46,
+      "id": 47,
       "title": "Global Alternative Investments Solutions, Head of Infrastructure Due Diligence",
       "company": "JPMorganChase",
       "region": "North America",
@@ -806,7 +819,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 47,
+      "id": 48,
       "title": "Managing Director - Complaints-resolution, Evaluation and Integrity Unit",
       "company": "Asian Infrastructure Investment Bank (AIIB)",
       "region": "Asia-Pacific",
@@ -819,7 +832,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 48,
+      "id": 49,
       "title": "Head of Fund Solutions Group, APAC",
       "company": "Crédit Agricole CIB",
       "region": "Asia-Pacific",
@@ -832,7 +845,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 49,
+      "id": 50,
       "title": "Managing Director",
       "company": "Ultimus LeverPoint Private Fund Solutions",
       "region": "North America",
@@ -845,7 +858,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 50,
+      "id": 51,
       "title": "SVP, Head of Investments",
       "company": "Wildflower LTD",
       "region": "North America",
@@ -858,7 +871,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 51,
+      "id": 52,
       "title": "Investment Principal (Client CIO)",
       "company": "Partners Capital",
       "region": "North America",
@@ -871,7 +884,7 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "id": 52,
+      "id": 53,
       "title": "Head of Investment Management",
       "company": "PIDG (Private Infrastructure Development Group)",
       "region": "Europe",
@@ -880,19 +893,6 @@ window.APP_DATA = {
       "suggested_recruiter": "PIDG HR / Spencer Stuart",
       "source_url": "https://pidg.org/job/head-of-investment-management/",
       "date_posted": "February 2026",
-      "salary": "",
-      "notes": "Added via 7-day backfill search on 2026-03-07"
-    },
-    {
-      "id": 53,
-      "title": "Director of the Caribbean Region - Infrastructure and Energy",
-      "company": "IDB Invest",
-      "region": "Latin America & Caribbean",
-      "industry": "Emerging Markets Investment",
-      "goldie_fit": "Strong DFI fit: Leads infra/energy investments in Caribbean emerging markets (LAC); 10+ yrs structured finance/project finance track record with equity/mezzanine; perfect for IDB/DFI exp, Spanish fluency, regional LAC infra expertise. Director senior at DFI. LinkedIn",
-      "suggested_recruiter": "IDB Group HR / Heidrick & Struggles",
-      "source_url": "https://www.linkedin.com/jobs/view/idb-invest-director-of-the-caribbean-region-infrastructure-and-energy-at-idb-invest-4355310492",
-      "date_posted": "3 weeks ago (Feb 2026)",
       "salary": "",
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
@@ -7667,5 +7667,5 @@ window.APP_DATA = {
       ]
     }
   ],
-  "last_updated": "2026-03-12T08:02:09-04:00"
+  "last_updated": "2026-03-13T08:03:00-04:00"
 };

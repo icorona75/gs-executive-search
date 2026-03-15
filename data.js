@@ -910,19 +910,6 @@ window.APP_DATA = {
       "notes": "Added via 7-day backfill search on 2026-03-07"
     },
     {
-      "title": "Director, Investments Department",
-      "company": "Islamic Development Bank (IsDB)",
-      "region": "Middle East",
-      "industry": "Development Finance Institution",
-      "goldie_fit": "MD-equivalent leadership over multi-asset portfolios, external managers, and ESG implementation at a major multilateral. Close match to her global funds leadership, emerging markets portfolio oversight, and DFI background. English mandatory; Arabic/French preferred.",
-      "suggested_recruiter": "IsDB recruitment / Egon Zehnder / Korn Ferry MENA",
-      "source_url": "https://www.impactpool.org/jobs/1175244",
-      "date_posted": "March 2026 (closes Mar 14)",
-      "salary": "",
-      "notes": "Grade M3; closing date 14-Mar-2026. Found via daily cron 2026-03-07.",
-      "id": 55
-    },
-    {
       "title": "Managing Director, Emerging Managers, Durable Capital & Governance Excellence (EDGE)",
       "company": "Maryland State Retirement and Pension Systems",
       "region": "North America",
@@ -933,7 +920,7 @@ window.APP_DATA = {
       "date_posted": "2026-02-13",
       "salary": "$232,143 - $371,429/year",
       "notes": "Filing deadline 2026-02-27, may be re-posted. Found via daily cron 2026-03-11.",
-      "id": 56
+      "id": 55
     },
     {
       "title": "Managing Director, Global Product Management & Investor Relations (Digital Infrastructure)",
@@ -946,7 +933,7 @@ window.APP_DATA = {
       "date_posted": "2026-03-06",
       "salary": "$275,000 - $300,000 base + bonus",
       "notes": "FINRA Series 7/63/SIE/24 required or within 180 days. Found via daily cron 2026-03-11.",
-      "id": 57
+      "id": 56
     },
     {
       "title": "Managing Director – Infrastructure Investments",
@@ -959,7 +946,7 @@ window.APP_DATA = {
       "date_posted": "2026-02-11",
       "salary": "",
       "notes": "Zurich-based. Client undisclosed. Found via daily cron 2026-03-11.",
-      "id": 58
+      "id": 57
     },
     {
       "title": "Global Head of Financial Institutions, Corporate Banking Subsidiaries (Managing Director)",
@@ -972,20 +959,7 @@ window.APP_DATA = {
       "date_posted": "March 2026",
       "salary": "",
       "notes": "New York, NY. Found via daily cron 2026-03-12.",
-      "id": 59
-    },
-    {
-      "title": "Director, Total Fund Strategies",
-      "company": "UNJSPF (United Nations Joint Staff Pension Fund) - Office of Investment Management",
-      "region": "North America",
-      "industry": "Pension Fund",
-      "goldie_fit": "Senior CIO-office role overseeing asset allocation, external managers, and quantitative investment teams for a $100B+ multi-asset portfolio. Strong match for her global funds leadership and institutional investing background. Reports to CIO.",
-      "suggested_recruiter": "UNJSPF internal / Russell Reynolds / Korn Ferry / Egon Zehnder",
-      "source_url": "https://www.impactpool.org/jobs/1193772",
-      "date_posted": "March 2026",
-      "salary": "",
-      "notes": "Requires 15+ years investment management, CFA desirable, NYC-based. Found via daily cron 2026-03-13.",
-      "id": 60
+      "id": 58
     }
   ],
   "companies": [
@@ -7745,5 +7719,5 @@ window.APP_DATA = {
       ]
     }
   ],
-  "last_updated": "2026-03-15T11:04:45-04:00"
+  "last_updated": "2026-03-15T08:04:43-04:00"
 };

@@ -971,7 +971,7 @@ window.APP_DATA = {
       "source_url": "https://www.impactpool.org/jobs/1175244",
       "date_posted": "March 2026 (closes Mar 14)",
       "salary": "",
-      "notes": "Grade M3. Director at DFI = MD equivalent. Re-added after incorrect removal by audit.",
+      "notes": "Grade M3. Director at DFI = MD equivalent. DO NOT REMOVE — DFI Director exception applies.",
       "id": 59
     },
     {
@@ -984,7 +984,7 @@ window.APP_DATA = {
       "source_url": "https://www.impactpool.org/jobs/1193772",
       "date_posted": "March 2026",
       "salary": "",
-      "notes": "Requires 15+ years investment management, CFA desirable, NYC-based. Director at UN = MD equivalent. Re-added after incorrect removal by audit.",
+      "notes": "Requires 15+ years investment management, CFA desirable, NYC-based. Director at UN = MD equivalent. DO NOT REMOVE — DFI Director exception applies.",
       "id": 60
     }
   ],
@@ -7745,5 +7745,5 @@ window.APP_DATA = {
       ]
     }
   ],
-  "last_updated": "2026-03-17T11:02:09-04:00"
+  "last_updated": "2026-03-17T12:01:06-04:00"
 };

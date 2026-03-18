@@ -960,32 +960,6 @@ window.APP_DATA = {
       "salary": "",
       "notes": "New York, NY. Found via daily cron 2026-03-12.",
       "id": 58
-    },
-    {
-      "title": "Director, Investments Department",
-      "company": "Islamic Development Bank (IsDB)",
-      "region": "Middle East",
-      "industry": "Development Finance Institution",
-      "goldie_fit": "MD-equivalent leadership over multi-asset portfolios, external managers, and ESG implementation at a major multilateral. Close match to her global funds leadership, emerging markets portfolio oversight, and DFI background.",
-      "suggested_recruiter": "IsDB recruitment / Egon Zehnder / Korn Ferry MENA",
-      "source_url": "https://www.impactpool.org/jobs/1175244",
-      "date_posted": "March 2026 (closes Mar 14)",
-      "salary": "",
-      "notes": "Grade M3. Director at DFI = MD equivalent. DO NOT REMOVE — DFI Director exception applies.",
-      "id": 59
-    },
-    {
-      "title": "Director, Total Fund Strategies",
-      "company": "UNJSPF (United Nations Joint Staff Pension Fund) - Office of Investment Management",
-      "region": "North America",
-      "industry": "Pension Fund",
-      "goldie_fit": "Senior CIO-office role overseeing asset allocation, external managers, and quantitative investment teams for a $100B+ multi-asset portfolio. Strong match for her global funds leadership and institutional investing background. Reports to CIO.",
-      "suggested_recruiter": "UNJSPF internal / Russell Reynolds / Korn Ferry / Egon Zehnder",
-      "source_url": "https://www.impactpool.org/jobs/1193772",
-      "date_posted": "March 2026",
-      "salary": "",
-      "notes": "Requires 15+ years investment management, CFA desirable, NYC-based. Director at UN = MD equivalent. DO NOT REMOVE — DFI Director exception applies.",
-      "id": 60
     }
   ],
   "companies": [
@@ -7745,5 +7719,5 @@ window.APP_DATA = {
       ]
     }
   ],
-  "last_updated": "2026-03-17T12:01:06-04:00"
+  "last_updated": "2026-03-18T08:01:54-04:00"
 };

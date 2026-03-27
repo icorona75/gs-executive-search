@@ -152,13 +152,16 @@
 
   // ── KPI Dashboard ──
   function renderKPIs() {
-    const regions = [...new Set(jobs.map(j => j.region).filter(Boolean))];
-    const avgSalary = computeAvgSalary();
+    var filtered = getFilteredJobs();
+    var filteredRegions = [...new Set(filtered.map(j => j.region).filter(Boolean))];
+    var allRegions = [...new Set(jobs.map(j => j.region).filter(Boolean))];
+    const avgSalary = computeAvgSalary(filtered);
+    var isFiltered = filtered.length !== jobs.length;
     const kpis = [
-      { label: 'Job Openings', value: jobs.length, detail: 'Matched to profile' },
+      { label: 'Job Openings', value: filtered.length, detail: isFiltered ? filtered.length + ' of ' + jobs.length + ' match filters' : 'Matched to profile' },
       { label: 'Target Companies', value: companies.length, detail: 'Across all regions' },
       { label: 'Recruiters', value: recruiters.length, detail: 'Executive search firms' },
-      { label: 'Regions Covered', value: regions.length, detail: 'Global coverage' },
+      { label: 'Regions Covered', value: filteredRegions.length, detail: isFiltered ? filteredRegions.length + ' of ' + allRegions.length + ' regions' : 'Global coverage' },
       { label: 'Avg. Base Salary', value: avgSalary, detail: 'For matched openings' },
       { label: 'Languages', value: '3', detail: 'EN, ES, HE' }
     ];
@@ -171,9 +174,9 @@
     `).join('');
   }
 
-  function computeAvgSalary() {
+  function computeAvgSalary(jobList) {
     let total = 0, count = 0;
-    jobs.forEach(j => {
+    (jobList || jobs).forEach(j => {
       const match = (j.salary_range || '').match(/\$[\d,]+/g);
       if (match && match.length >= 1) {
         const nums = match.map(m => parseInt(m.replace(/[$,]/g, '')));
@@ -192,7 +195,7 @@
 
     const textColor = getComputedStyle(root).getPropertyValue('--color-text-muted').trim();
     const gridColor = getComputedStyle(root).getPropertyValue('--color-divider').trim();
-    const chartColors = ['#0e5c61', '#1a5fa0', '#2d7a1e', '#b45309', '#6b32a8', '#c49000', '#a12c5b', '#437a22'];
+    const chartColors = ['#0e5c61', '#1a5fa0', '#c49a2a', '#2d7a1e', '#b45309', '#6b32a8', '#a12c5b', '#437a22', '#5591c7', '#d49526'];
 
     Chart.defaults.color = textColor;
     Chart.defaults.borderColor = gridColor;
@@ -224,7 +227,7 @@
           const label = abbrev[i[0]] || i[0];
           return label.length > 24 ? label.substring(0, 24) + '...' : label;
         }),
-        datasets: [{ data: sortedInd.map(i => i[1]), backgroundColor: '#0e5c61', borderRadius: 4, maxBarThickness: 32 }]
+        datasets: [{ data: sortedInd.map(i => i[1]), backgroundColor: sortedInd.map(function(_, idx) { return idx === 0 ? '#c49a2a' : '#0e5c61'; }), borderRadius: 4, maxBarThickness: 32 }]
       },
       options: {
         responsive: true, maintainAspectRatio: false, indexAxis: 'y',
@@ -257,7 +260,7 @@
         labels: compLabels,
         datasets: [
           { label: 'Min ($K)', data: compMins, backgroundColor: '#1a5fa0', borderRadius: 3, maxBarThickness: 28 },
-          { label: 'Max ($K)', data: compMaxs, backgroundColor: '#0e5c61', borderRadius: 3, maxBarThickness: 28 }
+          { label: 'Max ($K)', data: compMaxs, backgroundColor: '#c49a2a', borderRadius: 3, maxBarThickness: 28 }
         ]
       },
       options: {
@@ -393,22 +396,47 @@
   var jobsByPriority = jobs.slice().sort(function(a, b) { return b._priority_score - a._priority_score; });
 
   // ── Top Priority Jobs ──
+  function formatSalaryShort(j) {
+    var raw = j.salary_range || j.salary || '';
+    // Extract dollar amounts — handles both $400,000 and $1M/$1.5M shorthand
+    var matches = raw.match(/\$[\d,]+(?:\.\d+)?\s*[MmBbKk]?/g);
+    if (!matches || matches.length === 0) return '';
+    var parseAmt = function(m) {
+      var clean = m.replace(/[$,\s]/g, '');
+      var mult = 1;
+      if (/[Mm]$/i.test(clean)) { mult = 1000000; clean = clean.replace(/[Mm]$/, ''); }
+      else if (/[Bb]$/i.test(clean)) { mult = 1000000000; clean = clean.replace(/[Bb]$/, ''); }
+      else if (/[Kk]$/i.test(clean)) { mult = 1000; clean = clean.replace(/[Kk]$/, ''); }
+      return parseFloat(clean) * mult;
+    };
+    var nums = matches.map(parseAmt).filter(function(n) { return !isNaN(n) && n > 0; });
+    if (nums.length === 0) return '';
+    var fmt = function(n) {
+      if (n >= 1000000) return '$' + (n / 1000000).toFixed(1).replace(/\.0$/, '') + 'M';
+      if (n >= 1000) return '$' + Math.round(n / 1000) + 'K';
+      return '$' + n;
+    };
+    if (nums.length >= 2) return fmt(nums[0]) + '–' + fmt(nums[1]);
+    return fmt(nums[0]) + '+';
+  }
+
   function renderTopJobs() {
-    const top = jobsByPriority.slice(0, 6);
+    const top = jobsByPriority.slice(0, 3);
     document.getElementById('topJobs').innerHTML = top.map((j) => {
       var scoreLabel = j._priority_score >= 80 ? 'Exceptional' : j._priority_score >= 65 ? 'Very Strong' : j._priority_score >= 50 ? 'Strong' : 'Good';
-      var scoreColor = j._priority_score >= 80 ? '#0e5c61' : j._priority_score >= 65 ? '#1a5fa0' : j._priority_score >= 50 ? '#2d7a1e' : '#b45309';
+      var scoreColor = j._priority_score >= 80 ? '#9a7b2a' : j._priority_score >= 65 ? '#0e5c61' : j._priority_score >= 50 ? '#1a5fa0' : '#6b6963';
       var origIdx = jobs.indexOf(j);
+      var salaryShort = formatSalaryShort(j);
       return `
       <div class="result-card" data-job-idx="${origIdx}">
         <div class="result-header">
-          <div>
-            <div class="result-title">${esc(j.title)}</div>
+          <div style="flex:1;min-width:0;">
+            <div class="result-title">${isNewJob(j) ? '<span class="new-badge">NEW</span>' : ''}${esc(j.title)}</div>
             <div class="result-company">${esc(j.company)}</div>
           </div>
-          <div style="display:flex; flex-direction:column; align-items:flex-end; gap:4px;">
+          <div style="display:flex; flex-direction:column; align-items:flex-end; gap:4px; flex-shrink:0;">
             <span class="badge" style="background:${scoreColor}; color:#fff; font-size:11px; padding:2px 8px; border-radius:12px;">${scoreLabel} (${j._priority_score})</span>
-            ${j.salary_range ? `<span class="badge badge-salary">${esc(j.salary_range.split(';')[0].trim())}</span>` : ''}
+            ${salaryShort ? `<span class="badge badge-salary">${esc(salaryShort)}</span>` : ''}
           </div>
         </div>
         <div class="result-meta">
@@ -420,6 +448,63 @@
     }).join('');
     bindJobClicks();
   }
+
+  // ── Job Status (Shortlist / Discard) ──
+  var JOB_STATUS_KEY = 'gs_job_status'; // localStorage key
+  var jobStatusFilter = 'all'; // 'all' | 'shortlisted' | 'discarded'
+
+  function getJobStatuses() {
+    try { return JSON.parse(localStorage.getItem(JOB_STATUS_KEY)) || {}; } catch(e) { return {}; }
+  }
+  function saveJobStatuses(statuses) {
+    try { localStorage.setItem(JOB_STATUS_KEY, JSON.stringify(statuses)); } catch(e) {}
+  }
+  function getJobKey(j) {
+    // Unique key: title + company (case-insensitive)
+    return ((j.title || '') + '||' + (j.company || '')).toLowerCase().trim();
+  }
+  function getJobStatus(j) {
+    return getJobStatuses()[getJobKey(j)] || 'none'; // 'none' | 'shortlisted' | 'discarded'
+  }
+  function setJobStatus(j, status) {
+    var statuses = getJobStatuses();
+    var key = getJobKey(j);
+    if (status === 'none') { delete statuses[key]; } else { statuses[key] = status; }
+    saveJobStatuses(statuses);
+  }
+
+  function updateStatusCounts() {
+    // Temporarily bypass status filter to get all jobs matching other filters
+    var savedFilter = jobStatusFilter;
+    jobStatusFilter = '_bypass_'; // special value that skips status filtering
+    var allJobs = getFilteredJobs('_bypass_');
+    jobStatusFilter = savedFilter;
+
+    var shortlisted = 0, discarded = 0, newCount = 0;
+    allJobs.forEach(function(j) {
+      var s = getJobStatus(j);
+      if (s === 'shortlisted') shortlisted++;
+      if (s === 'discarded') discarded++;
+      if (isNewJob(j)) newCount++;
+    });
+    var all = allJobs.length - discarded;
+    document.getElementById('countAll').textContent = all;
+    document.getElementById('countNew').textContent = newCount;
+    document.getElementById('countShortlisted').textContent = shortlisted;
+    document.getElementById('countDiscarded').textContent = discarded;
+  }
+
+  // Status bar event delegation
+  document.getElementById('jobStatusBar').addEventListener('click', function(e) {
+    var btn = e.target.closest('.job-status-btn');
+    if (!btn) return;
+    var status = btn.getAttribute('data-status');
+    jobStatusFilter = status;
+    document.querySelectorAll('.job-status-btn').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    jobPage = 1;
+    renderJobs();
+  });
 
   // ── Jobs Section ──
   let jobPage = 1;
@@ -436,40 +521,123 @@
     industries.forEach(i => { const o = document.createElement('option'); o.value = i; o.textContent = i; fInd.appendChild(o); });
   }
 
-  function getFilteredJobs() {
+  // Industry keyword map used for fuzzy matching jobs to industry tags
+  var INDUSTRY_KEY_MAP = {
+    'climate / clean energy': 'climate|clean energy|energy transition|renewab',
+    'climate/impact': 'climate|impact|esg|sustainab',
+    'impact / esg investing': 'impact|esg|sustainab|social impact',
+    'fund-of-funds': 'fund.of.fund|fof|fund invest',
+    'pension fund': 'pension|retirement|superannuation|calpers|calstrs',
+    'foundation': 'foundation|philanthrop|endowment fund',
+    'endowment': 'endowment|university invest|nyu|harvard|yale|stanford',
+    'corporate venture capital': 'corporate venture|cvc|corporate invest|venture capital.*corp',
+    'emerging markets investment': 'emerging market|frontier|developing|latam|latin america|africa|asia.pacific|idb|ifc|dfc|dfi',
+    'emerging markets': 'emerging market|frontier|developing|latam|latin america|africa|asia.pacific|idb|ifc|dfc|dfi|development finance',
+    'family office': 'family office|family invest|single.family|multi.family|uhnw|high.net.worth',
+    'investment consulting': 'investment consult|ocio|outsourced cio|advisory|cambridge associate|mercer|consultant',
+    'alternatives': 'alternative|hedge fund|real asset|private market|private capital|real estate fund',
+    'due diligence': 'due diligence|compliance|risk|integrity|investigation',
+    'investor relations': 'investor relation|\\bir\\b|capital raising|fundrais',
+    'fund solutions': 'fund solution|fund service|fund admin|custody|transfer agent|fund account',
+    'critical minerals': 'critical mineral|mining|metals|battery|lithium|cobalt|rare earth|nickel|copper|graphite|manganese|mineral',
+    'mining': 'mining|metals|mineral|lithium|cobalt|rare earth|nickel|copper',
+    'development finance institution': 'development finance|dfi|idb|ifc|ebrd|adb|afdb|aiib|dfc|world bank|multilateral',
+    'infrastructure': 'infrastructure|infra|transport|energy|utility|toll|port|airport',
+    'private equity': 'private equity|pe |buyout|leveraged|growth equity|mezzanine',
+    'sovereign wealth fund': 'sovereign wealth|swf|government invest|state invest',
+    'insurance': 'insurance|insur|underwriting|reinsur'
+  };
+
+  function jobMatchesIndustry(j, ind) {
+    // First check the job's own industry field
+    var jobInd = (j.industry || '').toLowerCase();
+    var indLower = ind.toLowerCase();
+    if (jobInd && (jobInd === indLower || jobInd.includes(indLower) || indLower.includes(jobInd))) return true;
+    // Fuzzy match against job text
+    var text = ((j.title || '') + ' ' + (j.company || '') + ' ' + (j.goldie_fit || '') + ' ' + (j.suggested_recruiter || '') + ' ' + (j.requirements || '') + ' ' + (j.notes || '')).toLowerCase();
+    var pattern = INDUSTRY_KEY_MAP[indLower] || indLower.split('/')[0].trim();
+    try { return new RegExp(pattern).test(text); } catch(e) { return text.includes(indLower); }
+  }
+
+  function jobMatchesRegion(j, activeRegions) {
+    var jobRegion = (j.region || '').toLowerCase();
+    return activeRegions.some(function(r) {
+      var rLow = r.toLowerCase();
+      return jobRegion === rLow || jobRegion.includes(rLow) || rLow.includes(jobRegion);
+    });
+  }
+
+  function jobMatchesTitleLevel(j, activeTitles) {
+    var jobTitle = (j.title || '').toLowerCase();
+    return activeTitles.some(function(t) {
+      var tLow = t.toLowerCase();
+      // Extract core keyword from format like "Managing Director (MD)"
+      var match = tLow.match(/^([^(]+)/);
+      var core = match ? match[1].trim() : tLow;
+      // Also check abbreviation in parentheses
+      var abbrMatch = tLow.match(/\(([^)]+)\)/);
+      var abbr = abbrMatch ? abbrMatch[1].trim() : '';
+      if (jobTitle.includes(core)) return true;
+      if (abbr && new RegExp('\\b' + abbr.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b').test(jobTitle)) return true;
+      // Special cases
+      if (core.includes('head of') && (jobTitle.includes('head of') || jobTitle.includes('global head'))) return true;
+      if (core.includes('chief') && jobTitle.includes('chief')) return true;
+      if (core.includes('c-suite') && /\bchief\b|\bcio\b|\bceo\b|\bcfo\b|\bcoo\b|\bcto\b/.test(jobTitle)) return true;
+      if (core.includes('director') && core.includes('dfi') && jobTitle.includes('director')) return true;
+      return false;
+    });
+  }
+
+  function getFilteredJobs(statusOverride) {
     const region = document.getElementById('filterRegion').value;
     const industry = document.getElementById('filterIndustry').value;
     const search = document.getElementById('filterJobSearch').value.toLowerCase();
+    var statusView = statusOverride || jobStatusFilter;
+
+    // Get active search parameter tags
+    var activeIndustries = getParamData('industries');
+    var activeRegions = getParamData('regions');
+    var activeTitles = getParamData('titleLevels');
 
     return jobs.filter(j => {
+      // 0. Status filter
+      if (statusView !== '_bypass_') {
+        var jStatus = getJobStatus(j);
+        if (statusView === 'new' && !isNewJob(j)) return false;
+        if (statusView === 'shortlisted' && jStatus !== 'shortlisted') return false;
+        if (statusView === 'discarded' && jStatus !== 'discarded') return false;
+        if (statusView === 'all' && jStatus === 'discarded') return false; // hide discarded from "All"
+      }
+
+      // 1. Dropdown filters (user selects specific region/industry on Job Openings page)
       if (region && j.region !== region) return false;
       if (industry) {
-        const text = ((j.title || '') + ' ' + (j.company || '') + ' ' + (j.goldie_fit || '') + ' ' + (j.suggested_recruiter || '') + ' ' + (j.requirements || '')).toLowerCase();
-        var kw = industry.toLowerCase();
-        // Map filter labels to broader search keywords
-        var keyMap = {
-          'climate/impact': 'climate|impact|esg|sustainab',
-          'fund-of-funds': 'fund.of.fund|fof|fund invest',
-          'pension fund': 'pension|retirement|superannuation|calpers|calstrs',
-          'foundation': 'foundation|philanthrop|endowment fund',
-          'endowment': 'endowment|university invest|nyu|harvard|yale|stanford',
-          'corporate venture capital': 'corporate venture|cvc|corporate invest|venture capital.*corp',
-          'emerging markets': 'emerging market|frontier|developing|latam|latin america|africa|asia.pacific|idb|ifc|dfc|dfi|development finance',
-          'family office': 'family office|family invest|single.family|multi.family|uhnw|high.net.worth',
-          'investment consulting': 'investment consult|ocio|outsourced cio|advisory|cambridge associate|mercer|consultant',
-          'alternatives': 'alternative|hedge fund|real asset|private market|private capital|real estate fund',
-          'due diligence': 'due diligence|compliance|risk|integrity|investigation',
-          'investor relations': 'investor relation|\bir\b|capital raising|fundrais',
-          'fund solutions': 'fund solution|fund service|fund admin|custody|transfer agent|fund account',
-          'critical minerals': 'critical mineral|mining|metals|battery|lithium|cobalt|rare earth|nickel|copper|graphite|manganese|mineral'
-        };
-        var pattern = keyMap[kw] || kw.split('/')[0].trim();
-        if (!new RegExp(pattern).test(text)) return false;
+        if (!jobMatchesIndustry(j, industry)) return false;
       }
       if (search) {
         const text = ((j.title || '') + ' ' + (j.company || '') + ' ' + (j.location || '')).toLowerCase();
         if (!text.includes(search)) return false;
       }
+
+      // 2. Search parameter tag filters (from Profile > Search Parameters)
+      // Job must match at least one active industry tag
+      if (activeIndustries.length > 0) {
+        var matchesAnyIndustry = activeIndustries.some(function(ind) {
+          return jobMatchesIndustry(j, ind);
+        });
+        if (!matchesAnyIndustry) return false;
+      }
+
+      // Job must match at least one active region tag
+      if (activeRegions.length > 0) {
+        if (!jobMatchesRegion(j, activeRegions)) return false;
+      }
+
+      // Job must match at least one active title level tag
+      if (activeTitles.length > 0) {
+        if (!jobMatchesTitleLevel(j, activeTitles)) return false;
+      }
+
       return true;
     });
   }
@@ -480,6 +648,17 @@
     switch (sortVal) {
       case 'salary-desc':
         sorted.sort(function(a, b) { return (b._salary_max || 0) - (a._salary_max || 0); });
+        break;
+      case 'newest':
+        sorted.sort(function(a, b) {
+          var aNew = isNewJob(a) ? 1 : 0;
+          var bNew = isNewJob(b) ? 1 : 0;
+          if (bNew !== aNew) return bNew - aNew;
+          // Among new jobs, sort by add_date desc; among old, by priority
+          var aDate = a.add_date ? new Date(a.add_date) : new Date(0);
+          var bDate = b.add_date ? new Date(b.add_date) : new Date(0);
+          return bDate - aDate || (b._priority_score || 0) - (a._priority_score || 0);
+        });
         break;
       case 'salary-asc':
         sorted.sort(function(a, b) {
@@ -510,6 +689,28 @@
     return sorted;
   }
 
+  function isNewJob(j) {
+    var now = new Date();
+    var sevenDays = 7 * 24 * 60 * 60 * 1000;
+    // Primary: check add_date field (set by cron when job is added)
+    if (j.add_date) {
+      return (now - new Date(j.add_date)) < sevenDays;
+    }
+    // Fallback: check notes for YYYY-MM-DD pattern
+    var notes = j.notes || '';
+    var dateMatch = notes.match(/(\d{4}-\d{2}-\d{2})/);
+    if (dateMatch) {
+      return (now - new Date(dateMatch[1])) < sevenDays;
+    }
+    // Fallback: check date_posted for YYYY-MM-DD
+    var posted = j.date_posted || '';
+    if (/^\d{4}-\d{2}-\d{2}/.test(posted)) {
+      var postDate = new Date(posted);
+      if (!isNaN(postDate.getTime())) return (now - postDate) < sevenDays;
+    }
+    return false;
+  }
+
   function renderJobs() {
     var filtered = sortJobs(getFilteredJobs());
     document.getElementById('jobCount').textContent = filtered.length;
@@ -518,14 +719,44 @@
 
     document.getElementById('jobsList').innerHTML = paged.map(j => {
       const idx = jobs.indexOf(j);
+      var jStatus = getJobStatus(j);
+      var cardClass = 'result-card';
+      if (jStatus === 'shortlisted') cardClass += ' card-shortlisted';
+      if (jStatus === 'discarded') cardClass += ' card-discarded';
+
+      // Build action buttons based on current status
+      var actionBtns = '';
+      if (jStatus === 'discarded') {
+        // Show restore button
+        actionBtns = '<div class="job-actions">' +
+          '<button class="job-action-btn btn-restore" data-action="restore" data-job-idx="' + idx + '" title="Restore">' +
+            '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 12a9 9 0 019-9 9 9 0 016.36 2.64L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 01-9 9 9 9 0 01-6.36-2.64L3 16"/><path d="M3 21v-5h5"/></svg>' +
+          '</button>' +
+        '</div>';
+      } else {
+        // Show shortlist + discard buttons
+        actionBtns = '<div class="job-actions">' +
+          '<button class="job-action-btn btn-shortlist' + (jStatus === 'shortlisted' ? ' active' : '') + '" data-action="shortlist" data-job-idx="' + idx + '" title="' + (jStatus === 'shortlisted' ? 'Remove from shortlist' : 'Shortlist') + '">' +
+            '<span class="shortlist-star">' + (jStatus === 'shortlisted' ? '★' : '☆') + '</span>' +
+          '</button>' +
+          '<button class="job-action-btn btn-discard" data-action="discard" data-job-idx="' + idx + '" title="Discard">' +
+            '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>' +
+          '</button>' +
+        '</div>';
+      }
+
+      var priorityLevel = j._priority_score >= 80 ? 'exceptional' : j._priority_score >= 65 ? 'very-strong' : j._priority_score >= 50 ? 'strong' : 'good';
       return `
-      <div class="result-card" data-job-idx="${idx}">
+      <div class="${cardClass}" data-job-idx="${idx}" data-priority="${priorityLevel}">
         <div class="result-header">
-          <div>
-            <div class="result-title">${esc(j.title)}</div>
+          <div style="flex:1;min-width:0;">
+            <div class="result-title">${isNewJob(j) ? '<span class="new-badge">NEW</span>' : ''}${esc(j.title)}${jStatus === 'shortlisted' ? '<span class="shortlist-badge">★ Shortlisted</span>' : ''}</div>
             <div class="result-company">${esc(j.company)}</div>
           </div>
-          ${(j.salary_range || j.salary) ? `<span class="badge badge-salary">${esc(formatSalaryBadge(j))}</span>` : '<span class="badge">Salary TBD</span>'}
+          <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;">
+            ${(j.salary_range || j.salary) ? `<span class="badge badge-salary">${esc(formatSalaryBadge(j))}</span>` : '<span class="badge">Salary TBD</span>'}
+            ${actionBtns}
+          </div>
         </div>
         <div class="result-meta">
           <span class="result-meta-item">📍 ${esc(j.location || 'Global')}</span>
@@ -539,6 +770,7 @@
     }).join('') + renderPagination(filtered.length, jobPage, JOBS_PER_PAGE, 'job');
     bindJobClicks();
     bindPagination('job', filtered.length, () => { renderJobs(); });
+    updateStatusCounts();
   }
 
   function openJobDetail(idx) {
@@ -602,10 +834,29 @@
           ${j.application_url ? `<a href="${esc(j.application_url)}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Apply Now</a>` : ''}
           ${j.source_url ? `<a href="${esc(j.source_url)}" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Source</a>` : ''}
           <button class="btn btn-outline btn-sm track-btn${isTracked('job', j.title) ? ' tracked' : ''}" data-track-type="job" data-track-name="${esc(j.title)}" data-track-company="${esc(j.company)}" data-track-url="${esc(j.application_url || j.source_url || '')}">${isTracked('job', j.title) ? '\u2713 Tracked' : '\uD83D\uDCCC Track'}</button>
+          <button class="btn btn-sm ${getJobStatus(j) === 'shortlisted' ? 'btn-primary' : 'btn-outline'} detail-shortlist-btn" data-detail-idx="${idx}">${getJobStatus(j) === 'shortlisted' ? '★ Shortlisted' : '☆ Shortlist'}</button>
+          <button class="btn btn-sm btn-tailor" onclick="window._tailorCV(${idx})">Tailor CV</button>
         </div>
       </div>
     `;
     document.getElementById('jobDetailModal').classList.add('show');
+
+    // Bind shortlist button in detail modal
+    var detailBtn = document.querySelector('.detail-shortlist-btn');
+    if (detailBtn) {
+      detailBtn.addEventListener('click', function() {
+        var dIdx = parseInt(this.getAttribute('data-detail-idx'), 10);
+        var dJob = jobs[dIdx];
+        if (!dJob) return;
+        var cur = getJobStatus(dJob);
+        setJobStatus(dJob, cur === 'shortlisted' ? 'none' : 'shortlisted');
+        renderJobs();
+        // Update button text
+        var newStatus = getJobStatus(dJob);
+        this.textContent = newStatus === 'shortlisted' ? '\u2605 Shortlisted' : '\u2606 Shortlist';
+        this.className = 'btn btn-sm ' + (newStatus === 'shortlisted' ? 'btn-primary' : 'btn-outline') + ' detail-shortlist-btn';
+      });
+    }
   }
 
   function getLinkedInConnection(job) {
@@ -638,10 +889,51 @@
   }
 
   function bindJobClicks() {
-    document.querySelectorAll('[data-job-idx]').forEach(el => {
-      el.addEventListener('click', () => openJobDetail(parseInt(el.dataset.jobIdx)));
-    });
+    // Legacy — kept as no-op since we now use event delegation below
   }
+
+  // Event delegation for result card clicks (covers both Jobs list and Top Priority)
+  document.addEventListener('click', function(e) {
+    if (e.target.closest('.job-action-btn') || e.target.closest('.btn-tailor')) return;
+    var card = e.target.closest('.result-card[data-job-idx]');
+    if (card) {
+      openJobDetail(parseInt(card.dataset.jobIdx));
+    }
+  });
+
+  // Event delegation for job action buttons (shortlist/discard/restore)
+  document.getElementById('jobsList').addEventListener('click', function(e) {
+    var btn = e.target.closest('.job-action-btn');
+    if (!btn) return;
+    e.stopPropagation();
+    var action = btn.getAttribute('data-action');
+    var idx = parseInt(btn.getAttribute('data-job-idx'), 10);
+    var job = jobs[idx];
+    if (!job) return;
+
+    var card = btn.closest('.result-card');
+
+    if (action === 'shortlist') {
+      var current = getJobStatus(job);
+      if (current === 'shortlisted') {
+        setJobStatus(job, 'none');
+      } else {
+        setJobStatus(job, 'shortlisted');
+      }
+      renderJobs();
+    } else if (action === 'discard') {
+      setJobStatus(job, 'discarded');
+      if (card && jobStatusFilter !== 'discarded') {
+        card.classList.add('card-exit');
+        card.addEventListener('animationend', function() { renderJobs(); }, { once: true });
+      } else {
+        renderJobs();
+      }
+    } else if (action === 'restore') {
+      setJobStatus(job, 'none');
+      renderJobs();
+    }
+  });
 
   // ── Companies Section ──
   let companyPage = 1;
@@ -944,11 +1236,31 @@
     document.getElementById('careerTimeline').innerHTML = timeline.map(t => `
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-role">${esc(t.role)}</div>
-        <div class="timeline-company">${esc(t.company)}</div>
+        <div class="timeline-role" title="${esc(t.role)}">${esc(t.role)}</div>
+        <div class="timeline-company" title="${esc(t.company)}">${esc(t.company)}</div>
         <div class="timeline-period">${esc(t.period)}</div>
+        ${t.year_start ? '<div class="timeline-year">' + esc(String(t.year_start)) + '</div>' : ''}
       </div>
     `).join('');
+
+    // Horizontal scroll: hide hint when scrolled to end, toggle fade
+    var tlEl = document.getElementById('careerTimeline');
+    var tlWrap = document.getElementById('timelineWrapper');
+    var tlHint = document.getElementById('timelineScrollHint');
+    if (tlEl && tlWrap) {
+      var checkScroll = function() {
+        var atEnd = tlEl.scrollLeft + tlEl.clientWidth >= tlEl.scrollWidth - 8;
+        if (atEnd) {
+          tlWrap.classList.add('scrolled-end');
+          if (tlHint) tlHint.style.display = 'none';
+        } else {
+          tlWrap.classList.remove('scrolled-end');
+          if (tlHint) tlHint.style.display = '';
+        }
+      };
+      tlEl.addEventListener('scroll', checkScroll);
+      setTimeout(checkScroll, 100);
+    }
 
     document.getElementById('expertiseTags').innerHTML = (candidate.expertise || []).map(e =>
       `<span class="badge badge-primary">${esc(e)}</span>`
@@ -961,7 +1273,146 @@
         <div class="edu-years">${esc(e.years)}</div>
       </div>
     `).join('');
+
+    renderSearchParams();
   }
+
+  // ── Interactive Search Parameters ──
+  var PARAM_DEFAULTS = {
+    titleLevels: [
+      'Managing Director (MD)', 'Senior Managing Director (SMD)', 'Partner',
+      'Chief Investment Officer (CIO)', 'Chief Executive Officer (CEO)',
+      'Executive Vice President (EVP)', 'Senior Vice President (SVP)',
+      'Head of / Global Head', 'Chief (C-suite)',
+      'Director (DFI/multilateral only)'
+    ],
+    industries: [
+      'Private Equity', 'Fund-of-Funds', 'Development Finance Institution',
+      'Infrastructure', 'Climate / Clean Energy', 'Impact / ESG Investing',
+      'Sovereign Wealth Fund', 'Insurance', 'Critical Minerals', 'Mining',
+      'Pension Fund', 'Foundation', 'Corporate Venture Capital',
+      'Emerging Markets Investment', 'Family Office', 'Investment Consulting',
+      'Alternatives', 'Endowment', 'Due Diligence', 'Investor Relations',
+      'Fund Solutions'
+    ],
+    regions: [
+      'North America', 'Latin America & Caribbean', 'Europe',
+      'Asia-Pacific', 'Africa', 'Middle East', 'Americas / Global'
+    ],
+    sources: [
+      'LinkedIn Jobs', 'Indeed', 'eFinancialCareers', 'ImpactPool',
+      'IFC Careers (World Bank Group)', 'EBRD Careers',
+      'IDB / IDB Invest Careers', 'ADB Careers', 'AfDB Careers',
+      'AIIB Careers', 'Company Career Pages', 'Executive Recruiter Boards'
+    ],
+    expertise: (candidate.expertise || []).slice()
+  };
+
+  function getParamData(key) {
+    try {
+      var saved = localStorage.getItem('gs_param_' + key);
+      if (saved) return JSON.parse(saved);
+    } catch(e) {}
+    return PARAM_DEFAULTS[key].slice();
+  }
+
+  function saveParamData(key, arr) {
+    try { localStorage.setItem('gs_param_' + key, JSON.stringify(arr)); } catch(e) {}
+  }
+
+  function renderParamCard(containerId, key, cssClass) {
+    var el = document.getElementById(containerId);
+    if (!el) return;
+    var items = getParamData(key);
+    var html = '';
+    items.forEach(function(item, idx) {
+      html += '<span class="param-tag ' + cssClass + '" data-key="' + esc(key) + '" data-idx="' + idx + '">' +
+        esc(item) +
+        '<button class="param-tag-remove" title="Remove" data-key="' + esc(key) + '" data-idx="' + idx + '">&times;</button>' +
+        '</span>';
+    });
+    html += '<button class="param-add-btn" data-key="' + esc(key) + '" title="Add new">+ Add</button>';
+    el.innerHTML = html;
+  }
+
+  function renderSearchParams() {
+    renderParamCard('titleLevelTags', 'titleLevels', 'param-tag-title');
+    renderParamCard('industryTags', 'industries', 'param-tag-industry');
+    renderParamCard('regionTags', 'regions', 'param-tag-region');
+    renderParamCard('sourceTags', 'sources', 'param-tag-source');
+    renderParamCard('matchingExpertiseTags', 'expertise', 'param-tag-expertise');
+  }
+
+  // Central function to refresh all views when search parameters change
+  function refreshAllViews() {
+    jobPage = 1; // Reset to first page since filter changed
+    renderJobs();
+    renderKPIs();
+    renderCharts();
+    // Show a brief confirmation toast
+    showParamChangeToast();
+  }
+
+  function showParamChangeToast() {
+    var existing = document.getElementById('paramChangeToast');
+    if (existing) existing.remove();
+    var filtered = getFilteredJobs();
+    var toast = document.createElement('div');
+    toast.id = 'paramChangeToast';
+    toast.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--color-primary);color:#fff;padding:10px 20px;border-radius:8px;font-size:14px;z-index:9999;box-shadow:0 4px 12px rgba(0,0,0,0.15);transition:opacity 0.3s;';
+    toast.textContent = 'Filters updated — ' + filtered.length + ' job' + (filtered.length !== 1 ? 's' : '') + ' match';
+    document.body.appendChild(toast);
+    setTimeout(function() { toast.style.opacity = '0'; setTimeout(function() { toast.remove(); }, 300); }, 2500);
+  }
+
+  function handleParamRemove(key, idx) {
+    var items = getParamData(key);
+    if (idx >= 0 && idx < items.length) {
+      items.splice(idx, 1);
+      saveParamData(key, items);
+      renderSearchParams();
+      // Immediately re-filter jobs and update all views
+      refreshAllViews();
+    }
+  }
+
+  function handleParamAdd(key) {
+    // Show inline input
+    var label = {titleLevels:'title level',industries:'industry',regions:'region',sources:'source',expertise:'expertise tag'}[key] || 'item';
+    var value = prompt('Enter new ' + label + ':');
+    if (value && value.trim()) {
+      var items = getParamData(key);
+      var trimmed = value.trim();
+      // Prevent duplicates (case-insensitive)
+      var isDup = items.some(function(i) { return i.toLowerCase() === trimmed.toLowerCase(); });
+      if (!isDup) {
+        items.push(trimmed);
+        saveParamData(key, items);
+        renderSearchParams();
+        // Immediately re-filter jobs and update all views
+        refreshAllViews();
+      }
+    }
+  }
+
+  // Event delegation for param tag interactions
+  document.addEventListener('click', function(e) {
+    // Remove button
+    if (e.target.classList.contains('param-tag-remove')) {
+      e.stopPropagation();
+      var key = e.target.getAttribute('data-key');
+      var idx = parseInt(e.target.getAttribute('data-idx'), 10);
+      handleParamRemove(key, idx);
+      return;
+    }
+    // Add button
+    if (e.target.classList.contains('param-add-btn')) {
+      e.stopPropagation();
+      var key = e.target.getAttribute('data-key');
+      handleParamAdd(key);
+      return;
+    }
+  });
 
   // ── Platform Comparison ──
   function renderPlatformComparison() {
@@ -978,11 +1429,14 @@
       'Updates & changelog log',
       'Daily auto-audit & refresh',
       'Installable app (PWA)',
+      'Interactive search parameters',
+      'Live tag-based job filtering',
+      'Horizontal career timeline',
       'Free access'
     ];
 
     const platformsToCompare = [
-      { name: 'GS Search', highlight: true, scores: [1,1,1,1,1,1,1,1,1,1,1,1,1] },
+      { name: 'GS Search', highlight: true, scores: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1] },
       ...platforms.slice(0, 6).map(p => {
         var n = p.name;
         return {
@@ -1002,6 +1456,9 @@
             0, // updates log
             0, // daily auto-audit
             n.includes('LinkedIn') ? 1 : 0, // PWA
+            0, // interactive search parameters
+            n.includes('LinkedIn') ? 1 : 0, // live filtering (LinkedIn has basic filters)
+            0, // horizontal career timeline
             n.includes('LinkedIn') ? 1 : 0  // free
           ]
         };
@@ -1196,6 +1653,15 @@
     return div.innerHTML;
   }
   function truncate(str, len) { return (str || '').length > len ? str.substring(0, len) + '...' : str || ''; }
+  function stripTags(str) { return (str || '').replace(/<[^>]*>/g, ''); }
+
+  // Safe element binding — prevents null crashes from taking down the app
+  function safeOn(id, event, handler) {
+    var el = document.getElementById(id);
+    if (el) { el.addEventListener(event, handler); }
+    else { console.warn('safeOn: element #' + id + ' not found'); }
+    return el;
+  }
 
   function bindExpandableCards(containerId) {
     const container = document.getElementById(containerId);
@@ -1976,6 +2442,7 @@
     renderCharts();
     renderTopJobs();
     populateJobFilters();
+    document.getElementById('sortJobs').value = 'salary-desc';
     renderJobs();
     populateCompanyFilters();
     renderCompanies();
@@ -1995,6 +2462,65 @@
       var hashLink = document.querySelector('[data-section="' + hash + '"]');
       if (hashLink) hashLink.click();
     }
+
+    // Auto-check for fresh data on every page load (silent background refresh)
+    silentDataRefresh();
+  }
+
+  // Silent background data refresh — runs on every page open (web or PWA)
+  // Ensures both platforms always show the latest data from GitHub Pages
+  function silentDataRefresh() {
+    var bustUrl = 'data.js?_cb=' + Date.now();
+    fetch(bustUrl, { cache: 'no-store' })
+      .then(function(response) {
+        if (!response.ok) return;
+        return response.text();
+      })
+      .then(function(scriptText) {
+        if (!scriptText) return;
+        var freshData = null;
+        try {
+          var fn = new Function('var window = {}; ' + scriptText + ' return window.APP_DATA;');
+          freshData = fn();
+        } catch(e) { return; }
+
+        if (!freshData || !freshData.jobs) return;
+
+        // Only re-render if data actually changed
+        var currentTs = data.last_updated || '';
+        var freshTs = freshData.last_updated || '';
+        if (currentTs === freshTs) return;
+
+        // Apply fresh data silently
+        Object.keys(freshData).forEach(function(key) {
+          data[key] = freshData[key];
+        });
+
+        // Re-render everything
+        try {
+          renderLastUpdated();
+          renderKPIs();
+          renderCharts();
+          renderTopJobs();
+          populateJobFilters();
+          renderJobs();
+          populateCompanyFilters();
+          renderCompanies();
+          populateRecruiterFilters();
+          renderRecruiters();
+          renderCompensation();
+          renderProfile();
+          renderPlatformComparison();
+          renderPipeline();
+          renderUpdates();
+        } catch(e) {
+          console.warn('Silent refresh re-render error:', e);
+        }
+        console.log('Data silently refreshed from server (' + freshTs + ')');
+      })
+      .catch(function() {
+        // Silently fail — user will see cached data which is fine
+      });
   }
 
   // ── Last Updated Display ──
@@ -2031,43 +2557,2358 @@
     function startRefresh() {
       overlay.classList.add('show');
       bar.style.width = '0%';
-      
-      const steps = [
-        { pct: 15, title: 'Scanning LinkedIn Jobs...', text: 'Searching for MD, Partner, CIO, and Head of roles in PE, development finance, and fund management.', delay: 800 },
-        { pct: 30, title: 'Checking DFI career pages...', text: 'Reviewing IFC, EBRD, IDB Invest, ADB, AfDB, and other development finance institutions.', delay: 1200 },
-        { pct: 45, title: 'Searching fund-of-funds firms...', text: 'Checking StepStone, HarbourVest, Pantheon, Adams Street, and other FoF managers.', delay: 1000 },
-        { pct: 60, title: 'Scanning PE firm openings...', text: 'Reviewing Carlyle, Warburg Pincus, Brookfield, TPG, and emerging markets-focused firms.', delay: 1100 },
-        { pct: 75, title: 'Checking executive recruiter listings...', text: 'Scanning Spencer Stuart, Heidrick & Struggles, Korn Ferry, and boutique search firms.', delay: 900 },
-        { pct: 85, title: 'Analyzing multilingual sources...', text: 'Checking Spanish, Hebrew, Arabic, Portuguese, and Russian language job boards.', delay: 800 },
-        { pct: 95, title: 'Matching against Goldie\'s profile...', text: 'Evaluating fit scores, compensation benchmarks, and networking paths for each opening.', delay: 700 },
-        { pct: 100, title: 'Search complete', text: 'All results are up to date. The platform refreshes automatically every day at 7:00 AM ET.', delay: 500 }
-      ];
+      title.textContent = 'Checking for updates...';
+      text.textContent = 'Fetching the latest data from the server.';
 
-      let i = 0;
-      function nextStep() {
-        if (i >= steps.length) {
-          setTimeout(() => {
-            overlay.classList.remove('show');
-            // Update the timestamp
-            const now = new Date();
-            data.last_updated = now.toISOString();
-            renderLastUpdated();
-          }, 1500);
-          return;
-        }
-        const step = steps[i];
-        bar.style.width = step.pct + '%';
-        title.textContent = step.title;
-        text.textContent = step.text;
-        i++;
-        setTimeout(nextStep, step.delay);
+      // Tell the service worker to clear cached data.js
+      if (navigator.serviceWorker && navigator.serviceWorker.controller) {
+        navigator.serviceWorker.controller.postMessage({ type: 'REFRESH_DATA' });
       }
-      nextStep();
+
+      // Actually fetch fresh data.js from GitHub Pages (cache-busted)
+      const bustUrl = 'data.js?_cb=' + Date.now();
+      bar.style.width = '30%';
+      title.textContent = 'Fetching latest data...';
+      text.textContent = 'Downloading the most recent job listings and updates.';
+
+      fetch(bustUrl, { cache: 'no-store' })
+        .then(function(response) {
+          if (!response.ok) throw new Error('Network response was not ok');
+          return response.text();
+        })
+        .then(function(scriptText) {
+          bar.style.width = '60%';
+          title.textContent = 'Processing data...';
+          text.textContent = 'Parsing updated job listings, companies, and recruiters.';
+
+          // Parse fresh data — execute in a sandboxed way
+          var freshData = null;
+          try {
+            var fn = new Function('var window = {}; ' + scriptText + ' return window.APP_DATA;');
+            freshData = fn();
+          } catch(e) {
+            console.error('Failed to parse fresh data:', e);
+          }
+
+          if (freshData && freshData.jobs) {
+            bar.style.width = '85%';
+            title.textContent = 'Updating dashboard...';
+            text.textContent = 'Applying changes to all sections.';
+
+            // Detect what changed
+            var oldCount = data.jobs ? data.jobs.length : 0;
+            var newCount = freshData.jobs.length;
+            var oldTimestamp = data.last_updated || '';
+            var newTimestamp = freshData.last_updated || '';
+
+            // Replace the global data object
+            Object.keys(freshData).forEach(function(key) {
+              data[key] = freshData[key];
+            });
+
+            setTimeout(function() {
+              bar.style.width = '100%';
+
+              if (newTimestamp !== oldTimestamp || newCount !== oldCount) {
+                title.textContent = 'Updated!';
+                var changes = [];
+                if (newCount > oldCount) changes.push((newCount - oldCount) + ' new job(s) found');
+                if (newCount < oldCount) changes.push((oldCount - newCount) + ' expired job(s) removed');
+                if (changes.length === 0 && newTimestamp !== oldTimestamp) changes.push('Data refreshed');
+                text.textContent = changes.join(', ') + '. Dashboard is now up to date.';
+              } else {
+                title.textContent = 'Already up to date';
+                text.textContent = 'No new changes since last update. The platform refreshes daily at 7:00 AM ET.';
+              }
+
+              // Re-render all sections with fresh data
+              try {
+                renderLastUpdated();
+                if (typeof renderDashboard === 'function') renderDashboard();
+                if (typeof renderJobs === 'function') renderJobs();
+                if (typeof renderCompanies === 'function') renderCompanies();
+                if (typeof renderRecruiters === 'function') renderRecruiters();
+                if (typeof renderUpdates === 'function') renderUpdates();
+                if (typeof renderCompensation === 'function') renderCompensation();
+              } catch(e) {
+                console.warn('Re-render partial error:', e);
+              }
+
+              setTimeout(function() {
+                overlay.classList.remove('show');
+              }, 2000);
+            }, 500);
+          } else {
+            throw new Error('Invalid data format');
+          }
+        })
+        .catch(function(err) {
+          console.error('Refresh failed:', err);
+          bar.style.width = '100%';
+          title.textContent = 'Update failed';
+          text.textContent = 'Could not fetch the latest data. Please check your connection and try again.';
+          setTimeout(function() {
+            overlay.classList.remove('show');
+          }, 2500);
+        });
     }
 
     if (refreshBtn) refreshBtn.addEventListener('click', startRefresh);
     if (refreshBtnDash) refreshBtnDash.addEventListener('click', startRefresh);
   }
 
-  init();
+  // ── CV Builder, Upload, Parse, Store, Tailor & Download ──
+  (function initCV() {
+    try {
+    var CV_TEXT_KEY = 'gs_cv_text';
+    var CV_META_KEY = 'gs_cv_meta';
+    var DB_NAME = 'gs_cv_store';
+    var DB_STORE = 'files';
+
+    // IndexedDB helpers
+    function openDB(cb) {
+      var req = indexedDB.open(DB_NAME, 1);
+      req.onupgradeneeded = function(e) { e.target.result.createObjectStore(DB_STORE); };
+      req.onsuccess = function(e) { cb(null, e.target.result); };
+      req.onerror = function(e) { cb(e); };
+    }
+    function saveBlobToDB(blob, cb) {
+      openDB(function(err, db) {
+        if (err) return cb && cb(err);
+        var tx = db.transaction(DB_STORE, 'readwrite');
+        tx.objectStore(DB_STORE).put(blob, 'cv_file');
+        tx.oncomplete = function() { cb && cb(null); };
+        tx.onerror = function(e) { cb && cb(e); };
+      });
+    }
+    function loadBlobFromDB(cb) {
+      openDB(function(err, db) {
+        if (err) return cb(err);
+        var tx = db.transaction(DB_STORE, 'readonly');
+        var req = tx.objectStore(DB_STORE).get('cv_file');
+        req.onsuccess = function() { cb(null, req.result); };
+        req.onerror = function(e) { cb(e); };
+      });
+    }
+    function deleteBlobFromDB(cb) {
+      openDB(function(err, db) {
+        if (err) return cb && cb(err);
+        var tx = db.transaction(DB_STORE, 'readwrite');
+        tx.objectStore(DB_STORE).delete('cv_file');
+        tx.oncomplete = function() { cb && cb(null); };
+      });
+    }
+
+    // Parse PDF using pdf.js
+    function parsePDF(arrayBuffer, cb) {
+      if (typeof pdfjsLib === 'undefined') return cb('PDF.js not loaded');
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+      pdfjsLib.getDocument({ data: arrayBuffer }).promise.then(function(pdf) {
+        var pages = [];
+        var pending = pdf.numPages;
+        for (var i = 1; i <= pdf.numPages; i++) {
+          (function(pageNum) {
+            pdf.getPage(pageNum).then(function(page) {
+              page.getTextContent().then(function(content) {
+                pages[pageNum - 1] = content.items.map(function(item) { return item.str; }).join(' ');
+                pending--;
+                if (pending === 0) cb(null, pages.join('\n\n'));
+              });
+            });
+          })(i);
+        }
+      }).catch(function(err) { cb(err); });
+    }
+
+    // Parse DOCX using mammoth
+    function parseDOCX(arrayBuffer, cb) {
+      if (typeof mammoth === 'undefined') return cb('Mammoth.js not loaded');
+      mammoth.extractRawText({ arrayBuffer: arrayBuffer }).then(function(result) {
+        cb(null, result.value);
+      }).catch(function(err) { cb(err); });
+    }
+
+    // Process uploaded file
+    function processFile(file) {
+      var ext = file.name.split('.').pop().toLowerCase();
+      if (['pdf', 'docx', 'doc'].indexOf(ext) === -1) {
+        showToast('Please upload a PDF or Word document.', 'warning');
+        return;
+      }
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        var buf = e.target.result;
+        // Store raw file in IndexedDB
+        saveBlobToDB(new Blob([buf], { type: file.type }));
+        // Parse text
+        var parseCb = function(err, text) {
+          if (err) {
+            console.error('CV parse error:', err);
+            showToast('Could not parse the document. Try pasting text instead.', 'warning');
+            return;
+          }
+          saveCVText(text, file.name, ext);
+          showToast('CV uploaded and parsed successfully.', 'success');
+        };
+        if (ext === 'pdf') parsePDF(buf, parseCb);
+        else parseDOCX(buf, parseCb);
+      };
+      reader.readAsArrayBuffer(file);
+    }
+
+    function saveCVText(text, fileName, fileType) {
+      localStorage.setItem(CV_TEXT_KEY, text);
+      localStorage.setItem(CV_META_KEY, JSON.stringify({
+        fileName: fileName || 'pasted-cv.txt',
+        fileType: fileType || 'txt',
+        uploadedAt: new Date().toISOString()
+      }));
+      renderCVState();
+    }
+
+    function getCVText() {
+      return localStorage.getItem(CV_TEXT_KEY) || '';
+    }
+    function getCVMeta() {
+      try { return JSON.parse(localStorage.getItem(CV_META_KEY)) || null; } catch(e) { return null; }
+    }
+    function removeCVData() {
+      localStorage.removeItem(CV_TEXT_KEY);
+      localStorage.removeItem(CV_META_KEY);
+      deleteBlobFromDB();
+      renderCVState();
+      showToast('CV removed.', 'info');
+    }
+
+    // Render upload vs preview state
+    function renderCVState() {
+      var uploadArea = document.getElementById('cvUploadArea');
+      var preview = document.getElementById('cvPreview');
+      var text = getCVText();
+      var meta = getCVMeta();
+      if (text && meta) {
+        uploadArea.style.display = 'none';
+        preview.style.display = 'block';
+        document.getElementById('cvFileName').textContent = meta.fileName;
+        var previewBody = document.getElementById('cvPreviewBody');
+        previewBody.textContent = text;
+        previewBody.classList.remove('expanded');
+        document.getElementById('cvExpandBtn').textContent = 'Show full CV';
+      } else {
+        uploadArea.style.display = 'block';
+        preview.style.display = 'none';
+      }
+    }
+
+    // Drag & drop
+    var dropZone = document.getElementById('cvDropZone');
+    if (dropZone) {
+      dropZone.addEventListener('dragover', function(e) { e.preventDefault(); this.classList.add('drag-over'); });
+      dropZone.addEventListener('dragleave', function() { this.classList.remove('drag-over'); });
+      dropZone.addEventListener('drop', function(e) {
+        e.preventDefault();
+        this.classList.remove('drag-over');
+        if (e.dataTransfer.files.length) processFile(e.dataTransfer.files[0]);
+      });
+      dropZone.addEventListener('click', function(e) {
+        if (e.target.closest('.cv-upload-actions')) return;
+        document.getElementById('cvFileInput').click();
+      });
+    }
+
+    // File input
+    var fileInput = document.getElementById('cvFileInput');
+    if (fileInput) {
+      fileInput.addEventListener('change', function() {
+        if (this.files.length) processFile(this.files[0]);
+        this.value = '';
+      });
+    }
+
+    // Paste button
+    var pasteBtn = document.getElementById('cvPasteBtn');
+    var pasteModal = document.getElementById('cvPasteModal');
+    var pasteClose = document.getElementById('cvPasteClose');
+    var pasteCancel = document.getElementById('cvPasteCancel');
+    var pasteSave = document.getElementById('cvPasteSave');
+    if (pasteBtn) pasteBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      pasteModal.style.display = 'block';
+    });
+    if (pasteClose) pasteClose.addEventListener('click', function() { pasteModal.style.display = 'none'; });
+    if (pasteCancel) pasteCancel.addEventListener('click', function() { pasteModal.style.display = 'none'; });
+    if (pasteSave) pasteSave.addEventListener('click', function() {
+      var text = document.getElementById('cvPasteArea').value.trim();
+      if (!text) { showToast('Please paste your CV content first.', 'warning'); return; }
+      saveCVText(text, 'pasted-cv.txt', 'txt');
+      pasteModal.style.display = 'none';
+      showToast('CV saved from pasted text.', 'success');
+    });
+
+    // Preview controls
+    var replaceBtn = document.getElementById('cvReplaceBtn');
+    if (replaceBtn) replaceBtn.addEventListener('click', function() {
+      document.getElementById('cvUploadArea').style.display = 'block';
+      document.getElementById('cvPreview').style.display = 'none';
+    });
+    var removeBtn = document.getElementById('cvRemoveBtn');
+    if (removeBtn) removeBtn.addEventListener('click', removeCVData);
+    var expandBtn = document.getElementById('cvExpandBtn');
+    if (expandBtn) expandBtn.addEventListener('click', function() {
+      var body = document.getElementById('cvPreviewBody');
+      var isExpanded = body.classList.toggle('expanded');
+      this.textContent = isExpanded ? 'Collapse CV' : 'Show full CV';
+    });
+
+    // Initialize state on load
+    renderCVState();
+
+    // ── Mode Tabs ──
+    var modeTabs = document.querySelectorAll('.cv-mode-tab');
+    modeTabs.forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        modeTabs.forEach(function(t) { t.classList.remove('active'); });
+        this.classList.add('active');
+        var mode = this.getAttribute('data-mode');
+        document.getElementById('cvBuilderPanel').style.display = mode === 'builder' ? '' : 'none';
+        document.getElementById('cvUploadPanel').style.display = mode === 'upload' ? '' : 'none';
+      });
+    });
+
+    // ── CV Builder ──
+    var BUILDER_KEY = 'gs_cv_builder';
+    var builderSections = [];
+
+    function getBuilderData() {
+      try { return JSON.parse(localStorage.getItem(BUILDER_KEY)) || null; } catch(e) { return null; }
+    }
+    function saveBuilderData() {
+      localStorage.setItem(BUILDER_KEY, JSON.stringify({
+        sections: builderSections,
+        updatedAt: new Date().toISOString()
+      }));
+    }
+
+    function renderBuilder() {
+      var container = document.getElementById('cvBuilderSections');
+      if (!builderSections.length) {
+        container.innerHTML = '<div class="cv-builder-empty"><p>No CV sections yet. Click <strong>Auto-Populate from Profile</strong> to get started, or add sections manually.</p></div>';
+        updateMasterStatus();
+        return;
+      }
+      container.innerHTML = builderSections.map(function(s, i) {
+        var bulletsHtml = '';
+        if (s.bullets && s.bullets.length) {
+          bulletsHtml = '<div class="cv-builder-bullets">' +
+            s.bullets.map(function(b, bi) {
+              return '<div class="cv-builder-bullet-row">' +
+                '<input type="text" value="' + escAttr(b) + '" data-sec="' + i + '" data-bullet="' + bi + '" class="cv-bullet-input">' +
+                '<button class="cv-builder-bullet-del" data-sec="' + i + '" data-bullet="' + bi + '">&times;</button>' +
+              '</div>';
+            }).join('') +
+            '<button class="cv-add-bullet-btn" data-sec="' + i + '">+ Add bullet</button>' +
+          '</div>';
+        } else {
+          bulletsHtml = '<button class="cv-add-bullet-btn" data-sec="' + i + '" style="margin-top:var(--space-2)">+ Add bullet points</button>';
+        }
+        return '<div class="cv-builder-card" data-idx="' + i + '">' +
+          '<div class="cv-builder-card-header">' +
+            '<div class="cv-builder-card-title"><input type="text" value="' + escAttr(s.title) + '" data-sec="' + i + '" class="cv-title-input"></div>' +
+            '<div class="cv-builder-card-actions">' +
+              (i > 0 ? '<button title="Move up" data-move="up" data-sec="' + i + '">&#x25B2;</button>' : '') +
+              (i < builderSections.length - 1 ? '<button title="Move down" data-move="down" data-sec="' + i + '">&#x25BC;</button>' : '') +
+              '<button class="cv-del-btn" title="Delete section" data-delete="' + i + '">&#x1F5D1;</button>' +
+            '</div>' +
+          '</div>' +
+          '<div class="cv-builder-card-body">' +
+            '<textarea class="cv-builder-textarea" data-sec="' + i + '" placeholder="Enter content for this section...">' + escAttr(s.content || '') + '</textarea>' +
+            bulletsHtml +
+          '</div>' +
+        '</div>';
+      }).join('');
+      bindBuilderEvents();
+      updateMasterStatus();
+      if (typeof updateWordMeter === 'function') updateWordMeter();
+    }
+
+    function escAttr(s) { return (s || '').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+    function bindBuilderEvents() {
+      // Title inputs
+      document.querySelectorAll('.cv-title-input').forEach(function(inp) {
+        inp.addEventListener('input', function() {
+          builderSections[parseInt(this.dataset.sec)].title = this.value;
+          debounceAutoSave();
+          debounceRunSuggestions();
+        });
+      });
+      // Content textareas
+      document.querySelectorAll('.cv-builder-textarea').forEach(function(ta) {
+        ta.addEventListener('input', function() {
+          builderSections[parseInt(this.dataset.sec)].content = this.value;
+          debounceAutoSave();
+          debounceRunSuggestions();
+        });
+      });
+      // Bullet inputs
+      document.querySelectorAll('.cv-bullet-input').forEach(function(inp) {
+        inp.addEventListener('input', function() {
+          var sec = parseInt(this.dataset.sec);
+          var bi = parseInt(this.dataset.bullet);
+          builderSections[sec].bullets[bi] = this.value;
+          debounceAutoSave();
+          debounceRunSuggestions();
+        });
+        inp.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            var sec = parseInt(this.dataset.sec);
+            var bi = parseInt(this.dataset.bullet);
+            builderSections[sec].bullets.splice(bi + 1, 0, '');
+            renderBuilder();
+            // Focus new bullet
+            var newInput = document.querySelector('.cv-bullet-input[data-sec="' + sec + '"][data-bullet="' + (bi + 1) + '"]');
+            if (newInput) newInput.focus();
+          }
+        });
+      });
+      // Delete bullet
+      document.querySelectorAll('.cv-builder-bullet-del').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var sec = parseInt(this.dataset.sec);
+          var bi = parseInt(this.dataset.bullet);
+          builderSections[sec].bullets.splice(bi, 1);
+          renderBuilder();
+          saveBuilderData();
+        });
+      });
+      // Add bullet
+      document.querySelectorAll('.cv-add-bullet-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var sec = parseInt(this.dataset.sec);
+          if (!builderSections[sec].bullets) builderSections[sec].bullets = [];
+          builderSections[sec].bullets.push('');
+          renderBuilder();
+          var inputs = document.querySelectorAll('.cv-bullet-input[data-sec="' + sec + '"]');
+          if (inputs.length) inputs[inputs.length - 1].focus();
+        });
+      });
+      // Move up/down
+      document.querySelectorAll('[data-move]').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var idx = parseInt(this.dataset.sec);
+          var dir = this.dataset.move;
+          var swapIdx = dir === 'up' ? idx - 1 : idx + 1;
+          var tmp = builderSections[idx];
+          builderSections[idx] = builderSections[swapIdx];
+          builderSections[swapIdx] = tmp;
+          renderBuilder();
+          saveBuilderData();
+        });
+      });
+      // Delete section
+      document.querySelectorAll('[data-delete]').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var idx = parseInt(this.dataset.delete);
+          if (confirm('Remove "' + builderSections[idx].title + '" section?')) {
+            builderSections.splice(idx, 1);
+            renderBuilder();
+            saveBuilderData();
+          }
+        });
+      });
+    }
+
+    var autoSaveTimer = null;
+    function debounceAutoSave() {
+      clearTimeout(autoSaveTimer);
+      autoSaveTimer = setTimeout(function() { saveBuilderData(); if (typeof updateWordMeter === 'function') updateWordMeter(); }, 800);
+    }
+
+    var suggestTimer = null;
+    function debounceRunSuggestions() {
+      clearTimeout(suggestTimer);
+      suggestTimer = setTimeout(runSuggestions, 1200);
+    }
+
+    // ── Auto-Populate from Profile ──
+    document.getElementById('cvAutoPopulate').addEventListener('click', function() {
+      var c = candidate;
+      if (!c || !c.name) { showToast('No profile data found.', 'warning'); return; }
+
+      builderSections = [];
+
+      // Header
+      builderSections.push({
+        title: 'CONTACT',
+        content: c.name + '\n' + (c.title || '') + ' | ' + (c.company || '') + '\n' + (c.location || '') + '\n' + (c.email || '') + (c.linkedin ? ' | LinkedIn: ' + c.linkedin : ''),
+        bullets: []
+      });
+
+      // Executive Summary
+      var expertiseStr = (c.expertise || []).slice(0, 6).join(', ');
+      builderSections.push({
+        title: 'EXECUTIVE SUMMARY',
+        content: 'Senior finance executive with ' + (c.experience_years || '25+') + ' years of progressive experience in global investment management, development finance, and emerging markets. Deep expertise in ' + expertiseStr + '. Multilingual professional (English, Spanish, Hebrew) with proven track record of managing multi-billion dollar investment portfolios across Latin America, Africa, and Asia.',
+        bullets: []
+      });
+
+      // Experience
+      if (c.career_timeline && c.career_timeline.length) {
+        var expBullets = c.career_timeline.map(function(ct) {
+          return ct.role + ' — ' + ct.company + ' (' + ct.period + ')';
+        });
+        builderSections.push({
+          title: 'PROFESSIONAL EXPERIENCE',
+          content: '',
+          bullets: expBullets
+        });
+      }
+
+      // Core Competencies
+      if (c.expertise && c.expertise.length) {
+        builderSections.push({
+          title: 'CORE COMPETENCIES',
+          content: '',
+          bullets: c.expertise.slice()
+        });
+      }
+
+      // Education
+      if (c.education && c.education.length) {
+        var eduBullets = c.education.map(function(e) {
+          return e.degree + ' — ' + e.school + ' (' + e.years + ')';
+        });
+        builderSections.push({
+          title: 'EDUCATION',
+          content: '',
+          bullets: eduBullets
+        });
+      }
+
+      // Languages
+      if (c.languages && c.languages.length) {
+        builderSections.push({
+          title: 'LANGUAGES',
+          content: c.languages.join(', '),
+          bullets: []
+        });
+      }
+
+      saveBuilderData();
+      renderBuilder();
+      showToast('CV auto-populated from profile data. Edit each section to add detail.', 'success');
+      runSuggestions();
+    });
+
+    // Add Section
+    document.getElementById('cvAddSection').addEventListener('click', function() {
+      var title = prompt('Section name (e.g., CERTIFICATIONS, BOARD MEMBERSHIPS):');
+      if (!title) return;
+      builderSections.push({ title: title.toUpperCase(), content: '', bullets: [] });
+      saveBuilderData();
+      renderBuilder();
+    });
+
+    // Save Master CV
+    document.getElementById('cvSaveBuilder').addEventListener('click', function() {
+      if (!builderSections.length) { showToast('Add some content first.', 'warning'); return; }
+      // Build master text from builder
+      var masterText = builderSections.map(function(s) {
+        var text = s.title + '\n';
+        if (s.content) text += s.content + '\n';
+        if (s.bullets && s.bullets.length) {
+          s.bullets.forEach(function(b) { if (b.trim()) text += '\u2022 ' + b + '\n'; });
+        }
+        return text;
+      }).join('\n');
+      saveCVText(masterText, 'master-cv-builder.txt', 'builder');
+      saveBuilderData();
+      showToast('Master CV saved. You can now tailor it for any job.', 'success');
+    });
+
+    // Load to Builder from uploaded CV
+    var loadToBuilderBtn = document.getElementById('cvLoadToBuilder');
+    if (loadToBuilderBtn) loadToBuilderBtn.addEventListener('click', function() {
+      var text = getCVText();
+      if (!text) return;
+      builderSections = parseCV(text);
+      saveBuilderData();
+      // Switch to builder tab
+      modeTabs.forEach(function(t) { t.classList.remove('active'); });
+      document.querySelector('[data-mode="builder"]').classList.add('active');
+      document.getElementById('cvBuilderPanel').style.display = '';
+      document.getElementById('cvUploadPanel').style.display = 'none';
+      renderBuilder();
+      showToast('CV loaded into builder. Edit each section as needed.', 'success');
+      runSuggestions();
+    });
+
+    // ── Page Length Selector ──
+    var CV_PAGES_KEY = 'gs_cv_pages';
+    var cvTargetPages = parseInt(localStorage.getItem(CV_PAGES_KEY)) || 2;
+
+    var PAGE_CONFIGS = {
+      1: { minWords: 250, maxWords: 450, label: 'Target: 1-page CV (~250\u2013450 words). Best for focused applications or career changers.', color: 'compact' },
+      2: { minWords: 500, maxWords: 800, label: 'Target: 2-page CV (~500\u2013800 words). Best for senior executives with 10\u201325 years of experience.', color: 'standard' },
+      3: { minWords: 800, maxWords: 1200, label: 'Target: 3-page CV (~800\u20131200 words). Best for C-suite with 25+ years, board roles, and publications.', color: 'extended' }
+    };
+
+    function initPageSelector() {
+      document.querySelectorAll('.cv-page-btn').forEach(function(btn) {
+        if (parseInt(btn.dataset.pages) === cvTargetPages) btn.classList.add('active');
+        else btn.classList.remove('active');
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.cv-page-btn').forEach(function(b) { b.classList.remove('active'); });
+          this.classList.add('active');
+          cvTargetPages = parseInt(this.dataset.pages);
+          localStorage.setItem(CV_PAGES_KEY, cvTargetPages);
+          updateWordMeter();
+          debounceRunSuggestions();
+        });
+      });
+    }
+    initPageSelector();
+
+    function updateWordMeter() {
+      var allText = builderSections.map(function(s) {
+        return (s.content || '') + ' ' + (s.bullets || []).join(' ');
+      }).join(' ');
+      var wordCount = allText.split(/\s+/).filter(function(w) { return w.length > 0; }).length;
+      var config = PAGE_CONFIGS[cvTargetPages];
+
+      // Update guide text
+      document.getElementById('cvPageGuideText').textContent = config.label;
+
+      // Update word count
+      document.getElementById('cvWordCount').textContent = wordCount + ' words';
+
+      // Update meter bar
+      var bar = document.getElementById('cvWordBar');
+      var pct = Math.min(100, Math.round((wordCount / config.maxWords) * 100));
+      bar.style.width = pct + '%';
+      bar.className = 'cv-word-bar';
+      if (wordCount < config.minWords * 0.6) bar.classList.add('under');
+      else if (wordCount >= config.minWords && wordCount <= config.maxWords) bar.classList.add('good');
+      else if (wordCount > config.maxWords) bar.classList.add('over');
+      else bar.classList.add('under'); // approaching but not yet in range
+    }
+
+    // Load saved builder data on startup
+    var savedBuilder = getBuilderData();
+    if (savedBuilder && savedBuilder.sections && savedBuilder.sections.length) {
+      builderSections = savedBuilder.sections;
+      renderBuilder();
+    } else {
+      renderBuilder();
+    }
+    updateWordMeter();
+
+    // ── Real-Time Suggestion Engine ──
+    function runSuggestions() {
+      var panel = document.getElementById('cvSuggestionPanel');
+      var list = document.getElementById('cvSuggestionList');
+      if (!builderSections.length) { panel.style.display = 'none'; return; }
+
+      var suggestions = [];
+      var allText = builderSections.map(function(s) { return s.content + ' ' + (s.bullets || []).join(' '); }).join(' ').toLowerCase();
+
+      // 1. Keyword gap analysis against top industries
+      var topIndustryKW = ['private equity', 'infrastructure', 'emerging markets', 'fund-of-funds', 'development finance', 'climate', 'esg', 'impact investing', 'capital mobilization', 'blended finance', 'critical minerals', 'sovereign wealth', 'pension', 'institutional investors', 'due diligence', 'portfolio management', 'deal sourcing', 'fundraising'];
+      var missing = topIndustryKW.filter(function(kw) { return allText.indexOf(kw) === -1; });
+      if (missing.length > 0) {
+        suggestions.push({
+          icon: '\uD83D\uDD0D',
+          text: '<strong>Keyword gaps:</strong> Your CV doesn\'t mention: <strong>' + missing.slice(0, 5).join('</strong>, <strong>') + '</strong>. These are high-demand terms in your target industries.'
+        });
+      }
+
+      // 2. Action verb check
+      var weakVerbs = ['responsible for', 'helped', 'assisted', 'worked on', 'involved in', 'participated'];
+      var foundWeak = weakVerbs.filter(function(v) { return allText.indexOf(v) >= 0; });
+      if (foundWeak.length) {
+        var replacements = { 'responsible for': 'Led / Directed / Managed', 'helped': 'Spearheaded / Facilitated', 'assisted': 'Collaborated / Co-led', 'worked on': 'Executed / Delivered', 'involved in': 'Drove / Orchestrated', 'participated': 'Contributed / Championed' };
+        suggestions.push({
+          icon: '\u270D\uFE0F',
+          text: '<strong>Weak action verbs found:</strong> "' + foundWeak.join('", "') + '". Replace with: ' + foundWeak.map(function(v) { return '<strong>' + (replacements[v] || 'stronger verb') + '</strong>'; }).join(', ')
+        });
+      }
+
+      // 3. Quantification check
+      var hasNumbers = /\$[\d]|\d+[%+]|\d{2,}/.test(allText);
+      if (!hasNumbers) {
+        suggestions.push({
+          icon: '\uD83D\uDCCA',
+          text: '<strong>Add metrics:</strong> Include quantifiable achievements (e.g., "Managed $2.4B portfolio", "Deployed capital across 15+ funds", "Generated 22% IRR"). Numbers make a CV stand out.'
+        });
+      }
+
+      // 4. Missing sections
+      var sectionTitles = builderSections.map(function(s) { return s.title.toLowerCase(); });
+      if (sectionTitles.indexOf('executive summary') === -1 && sectionTitles.indexOf('summary') === -1 && sectionTitles.indexOf('profile') === -1) {
+        suggestions.push({ icon: '\u2139\uFE0F', text: '<strong>Missing Executive Summary:</strong> Add a summary section — it\'s the first thing recruiters read.' });
+      }
+      if (sectionTitles.indexOf('core competencies') === -1 && sectionTitles.indexOf('skills') === -1) {
+        suggestions.push({ icon: '\u2139\uFE0F', text: '<strong>Missing Skills/Competencies:</strong> Add a competencies section to match ATS keyword scanning.' });
+      }
+
+      // 5. Length check (based on target page count)
+      var wordCount = allText.split(/\s+/).filter(Boolean).length;
+      var pgCfg = PAGE_CONFIGS[cvTargetPages] || PAGE_CONFIGS[2];
+      if (wordCount < pgCfg.minWords * 0.6) {
+        suggestions.push({ icon: '\uD83D\uDCDD', text: '<strong>Content is thin (' + wordCount + ' words):</strong> For a ' + cvTargetPages + '-page CV, aim for ' + pgCfg.minWords + '\u2013' + pgCfg.maxWords + ' words. Add more detail to your experience bullets.' });
+      } else if (wordCount > pgCfg.maxWords * 1.15) {
+        suggestions.push({ icon: '\u2702\uFE0F', text: '<strong>Content is long (' + wordCount + ' words):</strong> For a ' + cvTargetPages + '-page CV, aim for ' + pgCfg.minWords + '\u2013' + pgCfg.maxWords + ' words. Trim or switch to a ' + Math.min(3, cvTargetPages + 1) + '-page format.' });
+      }
+
+      if (suggestions.length === 0) {
+        suggestions.push({ icon: '\u2705', text: '<strong>Looking great!</strong> Your CV covers key sections, includes relevant keywords, and has good detail. Save it as your Master CV.' });
+      }
+
+      list.innerHTML = suggestions.map(function(s) {
+        return '<div class="cv-suggestion-item"><span class="tip-icon">' + s.icon + '</span><span>' + s.text + '</span></div>';
+      }).join('');
+      panel.style.display = 'block';
+    }
+
+    var suggCloseBtn = document.getElementById('cvSuggestionClose');
+    if (suggCloseBtn) suggCloseBtn.addEventListener('click', function() {
+      document.getElementById('cvSuggestionPanel').style.display = 'none';
+    });
+
+    // ── Master CV Status & Downloads ──
+    function updateMasterStatus() {
+      var statusEl = document.getElementById('cvMasterStatus');
+      var meta = getCVMeta();
+      if (meta && getCVText()) {
+        statusEl.style.display = 'flex';
+        var date = new Date(meta.uploadedAt);
+        document.getElementById('cvMasterDate').textContent = ' — Last saved: ' + date.toLocaleDateString() + ' ' + date.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+      } else {
+        statusEl.style.display = 'none';
+      }
+    }
+    updateMasterStatus();
+
+    // Master CV PDF download
+    document.getElementById('cvDownloadMasterPdf').addEventListener('click', function() {
+      var text = getCVText();
+      if (!text) return;
+      var sections = builderSections.length ? builderSections : parseCV(text);
+      window._lastTailored = { sections: sections, jobTitle: 'Master CV', company: candidate.name || 'Goldie Shturman' };
+      downloadPDF(window._lastTailored, 'Goldie_Shturman_Master_CV');
+    });
+    // Master CV DOCX download
+    document.getElementById('cvDownloadMasterDocx').addEventListener('click', function() {
+      var text = getCVText();
+      if (!text) return;
+      var sections = builderSections.length ? builderSections : parseCV(text);
+      window._lastTailored = { sections: sections, jobTitle: 'Master CV', company: candidate.name || 'Goldie Shturman' };
+      downloadDOCX(window._lastTailored, 'Goldie_Shturman_Master_CV');
+    });
+
+    // ── CV Tailoring Engine ──
+    // Exposes window._tailorCV(jobIndex) for the job detail modal
+    window._tailorCV = function(jobIdx) {
+      var j = jobs[jobIdx];
+      if (!j) return;
+      var cvText = getCVText();
+      if (!cvText) {
+        showToast('Please upload your CV first (Profile & Timeline tab).', 'warning');
+        return;
+      }
+
+      var modal = document.getElementById('tailorCvModal');
+      var loading = document.getElementById('tailorCvLoading');
+      var content = document.getElementById('tailorCvContent');
+      var actions = document.getElementById('tailorCvActions');
+      document.getElementById('tailorCvTitle').textContent = 'Tailored CV — ' + j.title;
+      loading.style.display = 'flex';
+      content.style.display = 'none';
+      actions.style.display = 'none';
+      modal.classList.add('show');
+
+      // Run tailoring in a timeout to allow the modal to render first
+      setTimeout(function() {
+        var tailored = generateTailoredCV(cvText, j);
+        content.innerHTML = tailored.html;
+        content.style.display = 'block';
+        actions.style.display = 'flex';
+        loading.style.display = 'none';
+
+        // Store data for download
+        window._lastTailored = tailored;
+      }, 400);
+    };
+
+    function extractKeywords(text) {
+      var words = text.toLowerCase().replace(/[^a-z0-9\s\-\/]/g, ' ').split(/\s+/);
+      var stopwords = 'the a an and or but in on at to for of is are was were be been being have has had do does did will would shall should may might can could this that these those it its with from by as not no'.split(' ');
+      var freq = {};
+      words.forEach(function(w) {
+        if (w.length < 3 || stopwords.indexOf(w) >= 0) return;
+        freq[w] = (freq[w] || 0) + 1;
+      });
+      return Object.keys(freq).sort(function(a, b) { return freq[b] - freq[a]; });
+    }
+
+    function generateTailoredCV(cvText, job) {
+      // Extract keywords from job description
+      var jobDesc = [job.title, job.company, job.requirements || '', job.goldie_fit || '', job.industry || '', job.notes || ''].join(' ');
+      var jobKeywords = extractKeywords(jobDesc).slice(0, 40);
+
+      // Parse CV into sections
+      var sections = parseCV(cvText);
+
+      // Rewrite sections with full optimization
+      var tailoredSections = optimizeSections(sections, job, jobKeywords);
+
+      // Build HTML preview
+      var html = '<div class="tailor-cv-output">';
+      tailoredSections.forEach(function(s) {
+        html += '<div class="tailor-cv-section">';
+        html += '<h4>' + esc(s.title) + '</h4>';
+        if (s.bullets && s.bullets.length) {
+          html += '<ul>';
+          s.bullets.forEach(function(b) {
+            html += '<li>' + highlightMatches(esc(b), jobKeywords) + '</li>';
+          });
+          html += '</ul>';
+        } else {
+          html += '<p>' + highlightMatches(esc(s.content), jobKeywords) + '</p>';
+        }
+        html += '</div>';
+      });
+      html += '</div>';
+
+      return { html: html, sections: tailoredSections, jobTitle: job.title, company: job.company };
+    }
+
+    function parseCV(text) {
+      // Try to identify sections by common headers
+      var headerPatterns = [
+        /^(SUMMARY|PROFESSIONAL SUMMARY|EXECUTIVE SUMMARY|PROFILE|OBJECTIVE|ABOUT)[:\s]*$/im,
+        /^(EXPERIENCE|PROFESSIONAL EXPERIENCE|WORK EXPERIENCE|EMPLOYMENT|CAREER HISTORY)[:\s]*$/im,
+        /^(EDUCATION|ACADEMIC|QUALIFICATIONS|ACADEMIC QUALIFICATIONS)[:\s]*$/im,
+        /^(SKILLS|CORE COMPETENCIES|KEY SKILLS|TECHNICAL SKILLS|COMPETENCIES)[:\s]*$/im,
+        /^(CERTIFICATIONS?|LICENSES?|ACCREDITATIONS?|PROFESSIONAL DEVELOPMENT)[:\s]*$/im,
+        /^(LANGUAGES?)[:\s]*$/im,
+        /^(PUBLICATIONS?|PRESENTATIONS?|SPEAKING)[:\s]*$/im,
+        /^(AWARDS?|HONORS?|ACHIEVEMENTS?|RECOGNITION)[:\s]*$/im,
+        /^(BOARD|BOARDS?|VOLUNTEER|COMMUNITY|AFFILIATIONS?|MEMBERSHIPS?)[:\s]*$/im
+      ];
+
+      var lines = text.split(/\n/);
+      var sections = [];
+      var currentSection = { title: 'Header', lines: [] };
+
+      lines.forEach(function(line) {
+        var trimmed = line.trim();
+        if (!trimmed) { currentSection.lines.push(''); return; }
+        var isHeader = false;
+        headerPatterns.forEach(function(pat) {
+          if (pat.test(trimmed)) {
+            isHeader = true;
+            if (currentSection.lines.length > 0 || currentSection.title !== 'Header') {
+              sections.push(currentSection);
+            }
+            currentSection = { title: trimmed.replace(/[:\s]+$/, ''), lines: [] };
+          }
+        });
+        // Also detect headers by ALL CAPS short lines
+        if (!isHeader && trimmed.length < 50 && trimmed === trimmed.toUpperCase() && /[A-Z]{3,}/.test(trimmed)) {
+          if (currentSection.lines.length > 0) {
+            sections.push(currentSection);
+          }
+          currentSection = { title: trimmed.replace(/[:\s]+$/, ''), lines: [] };
+        } else if (!isHeader) {
+          currentSection.lines.push(trimmed);
+        }
+      });
+      if (currentSection.lines.length > 0) sections.push(currentSection);
+
+      // Convert to structured format
+      return sections.map(function(s) {
+        var content = s.lines.filter(function(l) { return l.length > 0; });
+        var bullets = content.filter(function(l) { return /^[•\-\*\u2022\u25CF\u25CB\u2023]/.test(l) || /^\d+[\.\)]/.test(l); });
+        var prose = content.filter(function(l) { return bullets.indexOf(l) === -1; });
+        return {
+          title: s.title,
+          content: prose.join(' '),
+          bullets: bullets.map(function(b) { return b.replace(/^[•\-\*\u2022\u25CF\u25CB\u2023\d+\.\)]\s*/, ''); })
+        };
+      });
+    }
+
+    function optimizeSections(sections, job, jobKeywords) {
+      var result = [];
+      var hasHeader = false;
+      var hasSummary = false;
+
+      sections.forEach(function(s) {
+        var titleLower = s.title.toLowerCase();
+
+        // Skip empty sections
+        if (!s.content && (!s.bullets || !s.bullets.length)) return;
+
+        // Detect section type and optimize
+        if (titleLower === 'header' || (!hasSummary && !hasHeader && sections.indexOf(s) === 0)) {
+          hasHeader = true;
+          result.push({ title: s.title, content: s.content, bullets: s.bullets });
+        }
+        else if (/summary|profile|objective|about/i.test(titleLower)) {
+          hasSummary = true;
+          // Rewrite summary to target the job
+          var newSummary = rewriteSummary(s.content, job, jobKeywords);
+          result.push({ title: 'EXECUTIVE SUMMARY', content: newSummary, bullets: [] });
+        }
+        else if (/experience|employment|career|work/i.test(titleLower)) {
+          // Reorder bullets by relevance to job
+          var scoredBullets = (s.bullets || []).map(function(b) {
+            var score = 0;
+            jobKeywords.forEach(function(kw) {
+              if (b.toLowerCase().indexOf(kw) >= 0) score += 2;
+            });
+            return { text: b, score: score };
+          }).sort(function(a, b) { return b.score - a.score; });
+          result.push({
+            title: s.title,
+            content: s.content,
+            bullets: scoredBullets.map(function(b) { return b.text; })
+          });
+        }
+        else if (/skills|competenc|technical/i.test(titleLower)) {
+          // Prioritize skills that match job keywords
+          var allSkills = (s.bullets.length ? s.bullets : s.content.split(/[,;]/).map(function(x) { return x.trim(); })).filter(Boolean);
+          var scored = allSkills.map(function(sk) {
+            var score = 0;
+            jobKeywords.forEach(function(kw) {
+              if (sk.toLowerCase().indexOf(kw) >= 0) score += 3;
+            });
+            return { text: sk, score: score };
+          }).sort(function(a, b) { return b.score - a.score; });
+          result.push({
+            title: 'CORE COMPETENCIES',
+            content: '',
+            bullets: scored.map(function(s) { return s.text; })
+          });
+        }
+        else {
+          // Keep other sections as-is
+          result.push(s);
+        }
+      });
+
+      // If no summary was found, inject one at the top (after header)
+      if (!hasSummary) {
+        var insertIdx = hasHeader ? 1 : 0;
+        var allContent = sections.map(function(s) { return s.content + ' ' + (s.bullets || []).join(' '); }).join(' ');
+        result.splice(insertIdx, 0, {
+          title: 'EXECUTIVE SUMMARY',
+          content: rewriteSummary(allContent, job, jobKeywords),
+          bullets: []
+        });
+      }
+
+      return result;
+    }
+
+    function rewriteSummary(originalSummary, job, jobKeywords) {
+      // Build a job-targeted summary
+      var industry = (job.industry || '').toLowerCase();
+      var company = job.company || '';
+      var title = job.title || '';
+
+      // Skip placeholder/empty industries
+      if (!industry || industry === 'tbd' || industry === 'n/a' || industry === 'other') {
+        industry = '';
+      }
+
+      // Start with relevant parts of original summary
+      var sentences = originalSummary.split(/(?<=[.!?])\s+/).filter(function(s) { return s.length > 10; });
+
+      // Score sentences by keyword match
+      var scored = sentences.map(function(sent) {
+        var score = 0;
+        jobKeywords.forEach(function(kw) {
+          if (sent.toLowerCase().indexOf(kw) >= 0) score += 2;
+        });
+        return { text: sent, score: score };
+      }).sort(function(a, b) { return b.score - a.score; });
+
+      // Take top 3-4 relevant sentences
+      var topSentences = scored.slice(0, 4).map(function(s) { return s.text; });
+
+      if (topSentences.length === 0) return originalSummary;
+
+      // Build a clean opening line
+      var opening = '';
+      if (industry && title) {
+        opening = 'Senior executive with deep expertise in ' + industry + ', targeting the ' + title + ' role. ';
+      } else if (industry) {
+        opening = 'Senior executive with deep expertise in ' + industry + '. ';
+      } else if (title) {
+        opening = 'Senior executive targeting the ' + title + ' role. ';
+      }
+
+      return opening + topSentences.join(' ');
+    }
+
+    function highlightMatches(text, keywords) {
+      var top5 = keywords.slice(0, 8);
+      top5.forEach(function(kw) {
+        var re = new RegExp('\\b(' + kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')\\b', 'gi');
+        text = text.replace(re, '<strong style="color:var(--color-primary)">$1</strong>');
+      });
+      return text;
+    }
+
+    // ── Reusable Download Functions ──
+    function downloadPDF(data, filePrefix) {
+      try {
+        var jsPDF = window.jspdf.jsPDF;
+        var doc = new jsPDF({ unit: 'pt', format: 'a4' });
+        var margin = 50;
+        var y = margin;
+        var pageWidth = doc.internal.pageSize.getWidth();
+        var maxWidth = pageWidth - margin * 2;
+
+        doc.setFont('helvetica', 'bold');
+        doc.setFontSize(16);
+        doc.text(data.jobTitle || 'CV', margin, y);
+        y += 20;
+        doc.setFont('helvetica', 'normal');
+        doc.setFontSize(10);
+        doc.setTextColor(100);
+        doc.text(data.company || '', margin, y);
+        y += 25;
+        doc.setTextColor(0);
+
+        data.sections.forEach(function(s) {
+          if (y > 750) { doc.addPage(); y = margin; }
+          doc.setFont('helvetica', 'bold');
+          doc.setFontSize(11);
+          doc.setTextColor(14, 92, 97);
+          doc.text(s.title.toUpperCase(), margin, y);
+          y += 4;
+          doc.setDrawColor(14, 92, 97);
+          doc.setLineWidth(0.5);
+          doc.line(margin, y, margin + maxWidth, y);
+          y += 14;
+          doc.setTextColor(0);
+          doc.setFont('helvetica', 'normal');
+          doc.setFontSize(10);
+          if (s.content) {
+            var cleanContent = stripTags(s.content);
+            var lines = doc.splitTextToSize(cleanContent, maxWidth);
+            lines.forEach(function(line) {
+              if (y > 780) { doc.addPage(); y = margin; }
+              doc.text(line, margin, y);
+              y += 14;
+            });
+            y += 4;
+          }
+          if (s.bullets && s.bullets.length) {
+            s.bullets.forEach(function(b) {
+              var cleanB = stripTags(b);
+              if (!cleanB.trim()) return;
+              if (y > 780) { doc.addPage(); y = margin; }
+              doc.text('\u2022', margin, y);
+              var bLines = doc.splitTextToSize(cleanB, maxWidth - 15);
+              bLines.forEach(function(bl) {
+                if (y > 780) { doc.addPage(); y = margin; }
+                doc.text(bl, margin + 15, y);
+                y += 13;
+              });
+            });
+            y += 4;
+          }
+          y += 8;
+        });
+        doc.setFontSize(8);
+        doc.setTextColor(150);
+        doc.text('Generated by GS Executive Search | ' + new Date().toLocaleDateString(), margin, doc.internal.pageSize.getHeight() - 20);
+        doc.save((filePrefix || 'Goldie_Shturman_CV') + '.pdf');
+        showToast('PDF downloaded.', 'success');
+      } catch(e) {
+        console.error('PDF generation error:', e);
+        showToast('PDF generation failed.', 'warning');
+      }
+    }
+
+    function downloadDOCX(data, filePrefix) {
+      try {
+        var D = window.docx;
+        var children = [];
+        children.push(new D.Paragraph({
+          children: [new D.TextRun({ text: data.jobTitle || 'CV', bold: true, size: 28, color: '0E5C61' })],
+          spacing: { after: 100 }
+        }));
+        children.push(new D.Paragraph({
+          children: [new D.TextRun({ text: data.company || '', italics: true, size: 20, color: '666666' })],
+          spacing: { after: 300 }
+        }));
+        data.sections.forEach(function(s) {
+          children.push(new D.Paragraph({
+            children: [new D.TextRun({ text: s.title.toUpperCase(), bold: true, size: 22, color: '0E5C61' })],
+            spacing: { before: 200, after: 80 },
+            border: { bottom: { color: '0E5C61', space: 4, size: 6, style: D.BorderStyle.SINGLE } }
+          }));
+          if (s.content) {
+            children.push(new D.Paragraph({
+              children: [new D.TextRun({ text: stripTags(s.content), size: 20 })],
+              spacing: { after: 100 }
+            }));
+          }
+          if (s.bullets && s.bullets.length) {
+            s.bullets.forEach(function(b) {
+              var cleanB = stripTags(b);
+              if (!cleanB.trim()) return;
+              children.push(new D.Paragraph({
+                children: [new D.TextRun({ text: cleanB, size: 20 })],
+                bullet: { level: 0 },
+                spacing: { after: 40 }
+              }));
+            });
+          }
+        });
+
+        children.push(new D.Paragraph({
+          children: [new D.TextRun({ text: 'Generated by GS Executive Search | ' + new Date().toLocaleDateString(), size: 16, color: '999999' })],
+          spacing: { before: 400 }
+        }));
+        var docxDoc = new D.Document({ sections: [{ properties: {}, children: children }] });
+        D.Packer.toBlob(docxDoc).then(function(blob) {
+          var url = URL.createObjectURL(blob);
+          var a = document.createElement('a');
+          a.href = url;
+          a.download = (filePrefix || 'Goldie_Shturman_CV') + '.docx';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+          showToast('DOCX downloaded.', 'success');
+        });
+      } catch(e) {
+        console.error('DOCX generation error:', e);
+        showToast('DOCX generation failed.', 'warning');
+      }
+    }
+
+    // Tailored CV modal download buttons
+    document.getElementById('tailorDownloadPdf').addEventListener('click', function() {
+      var data = window._lastTailored;
+      if (!data) return;
+      downloadPDF(data, 'Goldie_Shturman_CV_' + (data.company || '').replace(/[^a-zA-Z0-9]/g, '_').substring(0, 30));
+    });
+    document.getElementById('tailorDownloadDocx').addEventListener('click', function() {
+      var data = window._lastTailored;
+      if (!data) return;
+      downloadDOCX(data, 'Goldie_Shturman_CV_' + (data.company || '').replace(/[^a-zA-Z0-9]/g, '_').substring(0, 30));
+    });
+    document.getElementById('tailorCopyBtn').addEventListener('click', function() {
+      var data = window._lastTailored;
+      if (!data) return;
+      var plainText = data.sections.map(function(s) {
+        var text = s.title.toUpperCase() + '\n';
+        if (s.content) text += stripTags(s.content) + '\n';
+        if (s.bullets && s.bullets.length) {
+          s.bullets.forEach(function(b) { text += '  \u2022 ' + stripTags(b) + '\n'; });
+        }
+        return text;
+      }).join('\n');
+      navigator.clipboard.writeText(plainText).then(function() {
+        showToast('Tailored CV copied to clipboard.', 'success');
+      });
+    });
+
+    // Close tailor modal
+    document.getElementById('tailorCvClose').addEventListener('click', function() {
+      document.getElementById('tailorCvModal').classList.remove('show');
+    });
+    document.getElementById('tailorCvModal').addEventListener('click', function(e) {
+      if (e.target === this) this.classList.remove('show');
+    });
+
+    // ── Tailor Modal Tabs (CV / Cover Letter) ──
+    document.querySelectorAll('.tailor-tab').forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.tailor-tab').forEach(function(t) { t.classList.remove('active'); });
+        this.classList.add('active');
+        var mode = this.dataset.tailorTab;
+        document.getElementById('tailorCvPanel').style.display = mode === 'cv' ? '' : 'none';
+        document.getElementById('tailorCoverPanel').style.display = mode === 'cover' ? '' : 'none';
+        // Auto-generate cover letter on first switch
+        if (mode === 'cover' && !window._lastCoverLetter && window._lastTailorJob) {
+          generateCoverLetter(window._lastTailorJob);
+        }
+      });
+    });
+
+    // ── Cover Letter Generation Engine ──
+    function generateCoverLetter(job) {
+      var loading = document.getElementById('tailorCoverLoading');
+      var content = document.getElementById('tailorCoverContent');
+      var actions = document.getElementById('tailorCoverActions');
+      loading.style.display = 'flex';
+      content.style.display = 'none';
+      actions.style.display = 'none';
+
+      setTimeout(function() {
+        var c = candidate;
+        var today = new Date();
+        var dateStr = today.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+        // Extract key info
+        var companyName = (job.company || '').replace(/\s*\(.*?\)\s*/g, '').trim();
+        var jobTitle = job.title || '';
+        var industry = (job.industry || '').toLowerCase();
+        var requirements = job.requirements || '';
+        var goldieFit = job.goldie_fit || '';
+        var location = job.location || '';
+
+        // Extract 3-5 key requirements as talking points
+        var reqKeywords = extractKeywords(requirements + ' ' + jobTitle).slice(0, 6);
+
+        // Build paragraphs
+        var openingLine = 'I am writing to express my strong interest in the ' + jobTitle + ' position at ' + companyName + '.';
+
+        // Paragraph 1: Hook + current role
+        var para1 = openingLine + ' As ' + (c.title || 'a senior finance executive') + ' at ' + (c.company || 'a leading development finance institution') + ', I bring ' + (c.experience_years || '25+') + ' years of progressive experience in global investment management, development finance, and emerging markets that directly aligns with this opportunity.';
+
+        // Paragraph 2: Relevant experience mapped to job requirements
+        var relevantExp = [];
+        if (/fund|portfolio|invest/i.test(requirements)) {
+          relevantExp.push('managing multi-billion dollar fund-of-funds portfolios across private equity, infrastructure, and venture capital');
+        }
+        if (/emerging|developing|latin|africa|asia/i.test(requirements + ' ' + industry)) {
+          relevantExp.push('deploying capital across emerging markets in Latin America, Africa, and Asia through both direct investments and fund structures');
+        }
+        if (/climate|esg|impact|sustain/i.test(requirements + ' ' + industry)) {
+          relevantExp.push('integrating ESG frameworks and climate finance considerations into investment decision-making');
+        }
+        if (/mineral|mining|critical/i.test(requirements + ' ' + industry)) {
+          relevantExp.push('deep expertise in critical minerals financing and mining sector investment');
+        }
+        if (/dfi|development|multilateral|ifc|idb|world bank/i.test(requirements + ' ' + industry)) {
+          relevantExp.push('extensive experience working with DFIs and multilateral institutions including IDB Invest and the U.S. DFC');
+        }
+        if (/fundrais|capital raise|lp|investor relation/i.test(requirements)) {
+          relevantExp.push('raising institutional capital and managing LP relationships with sovereign wealth funds, pension funds, and endowments');
+        }
+        if (/due diligence|deal sourc|origination/i.test(requirements)) {
+          relevantExp.push('leading end-to-end deal origination, due diligence, and portfolio management processes');
+        }
+        if (relevantExp.length === 0) {
+          relevantExp.push('managing complex investment portfolios and leading cross-functional teams in global financial institutions');
+        }
+
+        var para2 = 'Throughout my career, I have developed deep expertise in ' + relevantExp.slice(0, 3).join('; ') + '. At DFC, I currently oversee the Office of Investment Funds, managing strategic investment decisions across multiple geographies and asset classes.';
+
+        // Paragraph 3: Why this company/role specifically (using goldie_fit)
+        var para3 = '';
+        if (goldieFit) {
+          // Extract the most compelling sentence from goldie_fit
+          var fitSentences = goldieFit.split(/(?<=[.!?])\s+/).filter(function(s) { return s.length > 30; });
+          var bestFit = fitSentences.length > 0 ? fitSentences[0] : '';
+          if (bestFit) {
+            // Rewrite from first-person perspective
+            para3 = 'I am particularly drawn to ' + companyName + ' because of its strategic positioning in the ' + industry + ' space. ' + 'My background uniquely positions me to contribute immediately \u2014 my experience at IDB Invest across Latin America, combined with my current leadership at DFC, has given me a comprehensive understanding of both the institutional investor landscape and the operational demands of the role.';
+          }
+        }
+        if (!para3) {
+          para3 = 'I am particularly drawn to this role at ' + companyName + ' because it represents a natural convergence of my expertise in ' + (c.expertise || []).slice(0, 3).join(', ') + '. I am confident that my track record and network would enable me to make an immediate and meaningful impact.';
+        }
+
+        // Paragraph 4: Education + languages + closing
+        var eduLine = '';
+        if (c.education && c.education.length) {
+          eduLine = 'My ' + c.education[0].degree + ' from ' + c.education[0].school + ' provides a strong analytical foundation, ';
+        }
+        var langLine = '';
+        if (c.languages && c.languages.length > 1) {
+          langLine = 'and my fluency in ' + c.languages.join(', ') + ' enables me to operate effectively across diverse markets. ';
+        }
+        var para4 = eduLine + langLine + 'I would welcome the opportunity to discuss how my experience and vision can contribute to ' + companyName + '\u2019s continued growth and success.';
+
+        // Build HTML
+        var html = '<div class="cl-date">' + dateStr + '</div>';
+        html += '<div class="cl-address">';
+        html += 'Hiring Committee<br>' + esc(companyName);
+        if (location) html += '<br>' + esc(location);
+        html += '</div>';
+        html += '<div class="cl-greeting">Dear Hiring Committee,</div>';
+        html += '<div class="cl-body">';
+        html += '<p>' + esc(para1) + '</p>';
+        html += '<p>' + esc(para2) + '</p>';
+        html += '<p>' + esc(para3) + '</p>';
+        html += '<p>' + esc(para4) + '</p>';
+        html += '</div>';
+        html += '<div class="cl-closing">Sincerely,</div>';
+        html += '<div class="cl-signature">' + esc(c.name || 'Goldie Shturman') + '<br>';
+        html += '<span style="font-weight:400;color:var(--color-text-muted);font-size:var(--text-xs);">' + esc(c.email || '') + '</span></div>';
+
+        content.innerHTML = html;
+        content.style.display = 'block';
+        actions.style.display = 'flex';
+        loading.style.display = 'none';
+
+        // Store for download
+        window._lastCoverLetter = {
+          date: dateStr,
+          company: companyName,
+          jobTitle: jobTitle,
+          location: location,
+          paragraphs: [para1, para2, para3, para4],
+          candidateName: c.name || 'Goldie Shturman',
+          candidateEmail: c.email || ''
+        };
+      }, 500);
+    }
+
+    // Store the job reference when tailoring
+    var _origTailorCV = window._tailorCV;
+    window._tailorCV = function(jobIdx) {
+      window._lastTailorJob = jobs[jobIdx];
+      window._lastCoverLetter = null; // Reset so it regenerates
+      // Reset tabs to CV
+      document.querySelectorAll('.tailor-tab').forEach(function(t) { t.classList.remove('active'); });
+      document.querySelector('[data-tailor-tab="cv"]').classList.add('active');
+      document.getElementById('tailorCvPanel').style.display = '';
+      document.getElementById('tailorCoverPanel').style.display = 'none';
+      _origTailorCV(jobIdx);
+    };
+
+    // ── Cover Letter Downloads ──
+    document.getElementById('coverDownloadPdf').addEventListener('click', function() {
+      var cl = window._lastCoverLetter;
+      if (!cl) return;
+      downloadCoverLetterPDF(cl);
+    });
+
+    document.getElementById('coverDownloadDocx').addEventListener('click', function() {
+      var cl = window._lastCoverLetter;
+      if (!cl) return;
+      downloadCoverLetterDOCX(cl);
+    });
+
+    document.getElementById('coverCopyBtn').addEventListener('click', function() {
+      var cl = window._lastCoverLetter;
+      if (!cl) return;
+      var text = cl.date + '\n\nHiring Committee\n' + cl.company + (cl.location ? '\n' + cl.location : '') + '\n\nDear Hiring Committee,\n\n';
+      text += cl.paragraphs.join('\n\n');
+      text += '\n\nSincerely,\n' + cl.candidateName;
+      navigator.clipboard.writeText(text).then(function() {
+        showToast('Cover letter copied to clipboard.', 'success');
+      });
+    });
+
+    // Download Both (CV + Cover Letter as separate files)
+    document.getElementById('downloadBothBtn').addEventListener('click', function() {
+      var cvData = window._lastTailored;
+      var cl = window._lastCoverLetter;
+      if (!cvData) { showToast('No tailored CV available.', 'warning'); return; }
+      if (!cl) {
+        if (window._lastTailorJob) generateCoverLetter(window._lastTailorJob);
+        showToast('Generating cover letter first...', 'info');
+        return;
+      }
+      var prefix = 'Goldie_Shturman_' + cl.company.replace(/[^a-zA-Z0-9]/g, '_').substring(0, 25);
+      downloadPDF(cvData, prefix + '_CV');
+      setTimeout(function() { downloadCoverLetterPDF(cl); }, 500);
+      showToast('Downloading CV and Cover Letter.', 'success');
+    });
+
+    function downloadCoverLetterPDF(cl) {
+      try {
+        var jsPDF = window.jspdf.jsPDF;
+        var doc = new jsPDF({ unit: 'pt', format: 'a4' });
+        var margin = 60;
+        var y = margin;
+        var pageWidth = doc.internal.pageSize.getWidth();
+        var maxWidth = pageWidth - margin * 2;
+
+        // Date
+        doc.setFont('helvetica', 'normal');
+        doc.setFontSize(10);
+        doc.setTextColor(100);
+        doc.text(cl.date, margin, y);
+        y += 30;
+
+        // Address
+        doc.setTextColor(0);
+        doc.text('Hiring Committee', margin, y); y += 14;
+        doc.text(cl.company, margin, y); y += 14;
+        if (cl.location) { doc.text(cl.location, margin, y); y += 14; }
+        y += 16;
+
+        // Greeting
+        doc.setFont('helvetica', 'bold');
+        doc.setFontSize(10);
+        doc.text('Dear Hiring Committee,', margin, y);
+        y += 22;
+
+        // Body paragraphs
+        doc.setFont('helvetica', 'normal');
+        doc.setFontSize(10);
+        cl.paragraphs.forEach(function(p) {
+          var lines = doc.splitTextToSize(p, maxWidth);
+          lines.forEach(function(line) {
+            if (y > 760) { doc.addPage(); y = margin; }
+            doc.text(line, margin, y);
+            y += 14;
+          });
+          y += 8;
+        });
+
+        // Closing
+        y += 10;
+        doc.text('Sincerely,', margin, y);
+        y += 22;
+        doc.setFont('helvetica', 'bold');
+        doc.text(cl.candidateName, margin, y);
+        y += 14;
+        doc.setFont('helvetica', 'normal');
+        doc.setFontSize(9);
+        doc.setTextColor(100);
+        if (cl.candidateEmail) doc.text(cl.candidateEmail, margin, y);
+
+        // Footer
+        doc.setFontSize(8);
+        doc.setTextColor(150);
+        doc.text('Generated by GS Executive Search | ' + new Date().toLocaleDateString(), margin, doc.internal.pageSize.getHeight() - 20);
+
+        var prefix = 'Goldie_Shturman_Cover_Letter_' + cl.company.replace(/[^a-zA-Z0-9]/g, '_').substring(0, 25);
+        doc.save(prefix + '.pdf');
+        showToast('Cover letter PDF downloaded.', 'success');
+      } catch(e) {
+        console.error('Cover letter PDF error:', e);
+        showToast('PDF generation failed.', 'warning');
+      }
+    }
+
+    function downloadCoverLetterDOCX(cl) {
+      try {
+        var D = window.docx;
+        var children = [];
+
+        // Date
+        children.push(new D.Paragraph({
+          children: [new D.TextRun({ text: cl.date, size: 20, color: '666666' })],
+          spacing: { after: 200 }
+        }));
+
+        // Address
+        children.push(new D.Paragraph({
+          children: [new D.TextRun({ text: 'Hiring Committee', size: 20 })],
+          spacing: { after: 40 }
+        }));
+        children.push(new D.Paragraph({
+          children: [new D.TextRun({ text: cl.company, size: 20 })],
+          spacing: { after: cl.location ? 40 : 200 }
+        }));
+        if (cl.location) {
+          children.push(new D.Paragraph({
+            children: [new D.TextRun({ text: cl.location, size: 20 })],
+            spacing: { after: 200 }
+          }));
+        }
+
+        // Greeting
+        children.push(new D.Paragraph({
+          children: [new D.TextRun({ text: 'Dear Hiring Committee,', bold: true, size: 20 })],
+          spacing: { after: 150 }
+        }));
+
+        // Body
+        cl.paragraphs.forEach(function(p) {
+          children.push(new D.Paragraph({
+            children: [new D.TextRun({ text: p, size: 20 })],
+            spacing: { after: 120 }
+          }));
+        });
+
+        // Closing
+        children.push(new D.Paragraph({
+          children: [new D.TextRun({ text: 'Sincerely,', size: 20 })],
+          spacing: { before: 200, after: 100 }
+        }));
+        children.push(new D.Paragraph({
+          children: [new D.TextRun({ text: cl.candidateName, bold: true, size: 20 })],
+          spacing: { after: 40 }
+        }));
+        if (cl.candidateEmail) {
+          children.push(new D.Paragraph({
+            children: [new D.TextRun({ text: cl.candidateEmail, size: 18, color: '666666' })]
+          }));
+        }
+
+        // Footer
+        children.push(new D.Paragraph({
+          children: [new D.TextRun({ text: 'Generated by GS Executive Search | ' + new Date().toLocaleDateString(), size: 16, color: '999999' })],
+          spacing: { before: 400 }
+        }));
+
+        var docxDoc = new D.Document({ sections: [{ properties: {}, children: children }] });
+        D.Packer.toBlob(docxDoc).then(function(blob) {
+          var url = URL.createObjectURL(blob);
+          var a = document.createElement('a');
+          a.href = url;
+          a.download = 'Goldie_Shturman_Cover_Letter_' + cl.company.replace(/[^a-zA-Z0-9]/g, '_').substring(0, 25) + '.docx';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+          showToast('Cover letter DOCX downloaded.', 'success');
+        });
+      } catch(e) {
+        console.error('Cover letter DOCX error:', e);
+        showToast('DOCX generation failed.', 'warning');
+      }
+    }
+
+  } catch(cvErr) {
+      console.error('CV Builder init error (non-fatal):', cvErr);
+    }
+  })();
+
+  // ── Network / Contact Book ──
+  (function initNetwork() {
+    try {
+    // Safe element getter for this module — logs warning instead of crashing
+    function el(id) {
+      var e = document.getElementById(id);
+      if (!e) console.warn('Network: missing #' + id);
+      return e;
+    }
+    var CONTACTS_KEY = 'gs_contacts';
+
+    function getContacts() {
+      try { return JSON.parse(localStorage.getItem(CONTACTS_KEY)) || []; } catch(e) { return []; }
+    }
+    function saveContacts(contacts) {
+      localStorage.setItem(CONTACTS_KEY, JSON.stringify(contacts));
+    }
+
+    var editingIdx = -1; // -1 = new contact
+
+    function renderContacts() {
+      var contacts = getContacts();
+      var statusFilter = document.getElementById('filterContactStatus').value;
+      var tagFilter = document.getElementById('filterContactTag').value;
+      var sourceFilter = document.getElementById('filterContactSource').value;
+      var search = (document.getElementById('filterContactSearch').value || '').toLowerCase();
+
+      var filtered = contacts.filter(function(c) {
+        if (statusFilter && c.status !== statusFilter) return false;
+        if (tagFilter && c.tag !== tagFilter) return false;
+        if (sourceFilter === 'linkedin' && c.source !== 'linkedin') return false;
+        if (sourceFilter === 'conference' && c.source !== 'conference') return false;
+        if (sourceFilter === 'manual' && (c.source === 'linkedin' || c.source === 'conference' || c.source === 'import')) return false;
+        if (sourceFilter === 'matched' && !c.linkedCompany) return false;
+        if (search) {
+          var text = [c.name, c.company, c.title, c.email, c.notes, c.context].join(' ').toLowerCase();
+          if (text.indexOf(search) === -1) return false;
+        }
+        return true;
+      });
+
+      // Stats
+      var stats = { total: contacts.length, new: 0, 'reached-out': 0, 'in-conversation': 0, active: 0 };
+      contacts.forEach(function(c) { if (stats[c.status] !== undefined) stats[c.status]++; });
+      document.getElementById('networkStats').innerHTML =
+        '<span>Total: <span class="network-stat">' + stats.total + '</span></span>' +
+        '<span>New: <span class="network-stat">' + stats['new'] + '</span></span>' +
+        '<span>Reached Out: <span class="network-stat">' + stats['reached-out'] + '</span></span>' +
+        '<span>In Conversation: <span class="network-stat">' + stats['in-conversation'] + '</span></span>' +
+        '<span>Active: <span class="network-stat">' + stats.active + '</span></span>';
+
+      if (filtered.length === 0) {
+        document.getElementById('contactsList').innerHTML = '<div class="network-empty"><p>No contacts yet.</p><p>Click <strong>Add Contact</strong> or <strong>Scan Business Card</strong> to start building your network.</p></div>';
+        return;
+      }
+
+      var statusLabels = { 'new': 'New', 'reached-out': 'Reached Out', 'in-conversation': 'In Conversation', 'active': 'Active' };
+      var tagLabels = { recruiter: 'Recruiter', 'hiring-manager': 'Hiring Manager', 'fund-manager': 'Fund Manager', 'board-member': 'Board', conference: 'Conference', dfi: 'DFI', investor: 'Investor/LP', other: 'Other' };
+
+      document.getElementById('contactsList').innerHTML = filtered.map(function(c, i) {
+        var realIdx = contacts.indexOf(c);
+        return '<div class="contact-card" data-status="' + esc(c.status || 'new') + '" data-contact-idx="' + realIdx + '">' +
+          '<div class="contact-header">' +
+            '<div>' +
+              '<div class="contact-name">' + esc(c.name) + '</div>' +
+              '<div class="contact-title-co">' + esc(c.title || '') + (c.company ? ' \u2014 ' + esc(c.company) : '') + '</div>' +
+            '</div>' +
+            '<div class="contact-actions">' +
+              '<button class="contact-action-btn" data-edit="' + realIdx + '" title="Edit">\u270E</button>' +
+              '<button class="contact-action-btn btn-del" data-del="' + realIdx + '" title="Delete">\u2715</button>' +
+            '</div>' +
+          '</div>' +
+          '<div class="contact-meta">' +
+            (c.email ? '<span>\u2709 ' + esc(c.email) + '</span>' : '') +
+            (c.phone ? '<span>\u260E ' + esc(c.phone) + '</span>' : '') +
+            (c.location ? '<span>\uD83D\uDCCD ' + esc(c.location) + '</span>' : '') +
+            (c.context ? '<span>\uD83E\uDD1D ' + esc(c.context) + '</span>' : '') +
+          '</div>' +
+          '<div class="contact-tags">' +
+            '<span class="contact-tag tag-status">' + (statusLabels[c.status] || 'New') + '</span>' +
+            '<span class="contact-tag">' + (tagLabels[c.tag] || c.tag || '') + '</span>' +
+            (c.source === 'linkedin' ? '<span class="contact-tag" style="background:#E8F4F8;color:#0077B5">in LinkedIn</span>' : '') +
+            (c.linkedCompany ? '<span class="contact-tag tag-linked">\uD83C\uDFE2 ' + esc(c.linkedCompany) + '</span>' : '') +
+            (c.linkedJob ? '<span class="contact-tag tag-linked">\uD83D\uDCBC Job linked</span>' : '') +
+          '</div>' +
+          (c.notes ? '<div class="contact-notes-preview">' + esc(c.notes) + '</div>' : '') +
+        '</div>';
+      }).join('');
+
+      // Bind edit/delete
+      document.querySelectorAll('[data-edit]').forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          openContactModal(parseInt(this.dataset.edit));
+        });
+      });
+      document.querySelectorAll('[data-del]').forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var idx = parseInt(this.dataset.del);
+          var contacts = getContacts();
+          if (confirm('Delete contact "' + contacts[idx].name + '"?')) {
+            contacts.splice(idx, 1);
+            saveContacts(contacts);
+            renderContacts();
+            showToast('Contact deleted.', 'info');
+          }
+        });
+      });
+    }
+
+    // Populate company/job dropdowns
+    function populateContactDropdowns() {
+      var compSelect = document.getElementById('contactLinkCompany');
+      var jobSelect = document.getElementById('contactLinkJob');
+      compSelect.innerHTML = '<option value="">None</option>';
+      jobSelect.innerHTML = '<option value="">None</option>';
+      companies.forEach(function(c) {
+        var o = document.createElement('option');
+        o.value = c.name;
+        o.textContent = c.name;
+        compSelect.appendChild(o);
+      });
+      jobs.forEach(function(j) {
+        var o = document.createElement('option');
+        o.value = j.title + ' | ' + j.company;
+        o.textContent = j.title.substring(0, 40) + ' \u2014 ' + j.company.substring(0, 25);
+        jobSelect.appendChild(o);
+      });
+    }
+
+    function openContactModal(idx) {
+      editingIdx = (idx !== undefined && idx >= 0) ? idx : -1;
+      document.getElementById('contactModalTitle').textContent = editingIdx >= 0 ? 'Edit Contact' : 'Add Contact';
+      populateContactDropdowns();
+
+      // Clear or fill form
+      var fields = ['contactName','contactTitle','contactCompany','contactEmail','contactPhone','contactLinkedin','contactLocation','contactContext','contactNotes'];
+      if (editingIdx >= 0) {
+        var c = getContacts()[editingIdx];
+        document.getElementById('contactName').value = c.name || '';
+        document.getElementById('contactTitle').value = c.title || '';
+        document.getElementById('contactCompany').value = c.company || '';
+        document.getElementById('contactEmail').value = c.email || '';
+        document.getElementById('contactPhone').value = c.phone || '';
+        document.getElementById('contactLinkedin').value = c.linkedin || '';
+        document.getElementById('contactLocation').value = c.location || '';
+        document.getElementById('contactContext').value = c.context || '';
+        document.getElementById('contactNotes').value = c.notes || '';
+        document.getElementById('contactIndustry').value = c.industry || '';
+        document.getElementById('contactTag').value = c.tag || 'conference';
+        document.getElementById('contactStatus').value = c.status || 'new';
+        document.getElementById('contactLinkCompany').value = c.linkedCompany || '';
+        document.getElementById('contactLinkJob').value = c.linkedJob || '';
+      } else {
+        fields.forEach(function(id) { document.getElementById(id).value = ''; });
+        document.getElementById('contactIndustry').value = '';
+        document.getElementById('contactTag').value = 'conference';
+        document.getElementById('contactStatus').value = 'new';
+        document.getElementById('contactLinkCompany').value = '';
+        document.getElementById('contactLinkJob').value = '';
+      }
+      // Reset card upload
+      document.getElementById('cardPreview').style.display = 'none';
+      document.getElementById('ocrStatus').style.display = 'none';
+      document.getElementById('contactModal').classList.add('show');
+    }
+
+    function saveContact() {
+      var name = document.getElementById('contactName').value.trim();
+      if (!name) { showToast('Name is required.', 'warning'); return; }
+
+      var contact = {
+        name: name,
+        title: document.getElementById('contactTitle').value.trim(),
+        company: document.getElementById('contactCompany').value.trim(),
+        email: document.getElementById('contactEmail').value.trim(),
+        phone: document.getElementById('contactPhone').value.trim(),
+        linkedin: document.getElementById('contactLinkedin').value.trim(),
+        location: document.getElementById('contactLocation').value.trim(),
+        industry: document.getElementById('contactIndustry').value,
+        tag: document.getElementById('contactTag').value,
+        status: document.getElementById('contactStatus').value,
+        context: document.getElementById('contactContext').value.trim(),
+        notes: document.getElementById('contactNotes').value.trim(),
+        linkedCompany: document.getElementById('contactLinkCompany').value,
+        linkedJob: document.getElementById('contactLinkJob').value,
+        addedDate: new Date().toISOString().split('T')[0],
+        lastUpdated: new Date().toISOString()
+      };
+
+      var contacts = getContacts();
+      if (editingIdx >= 0) {
+        contact.addedDate = contacts[editingIdx].addedDate || contact.addedDate;
+        contacts[editingIdx] = contact;
+        showToast('Contact updated.', 'success');
+      } else {
+        contacts.push(contact);
+        showToast('Contact added.', 'success');
+      }
+      saveContacts(contacts);
+      document.getElementById('contactModal').classList.remove('show');
+      renderContacts();
+    }
+
+    // Business Card OCR
+    function processCardImage(file) {
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        var preview = document.getElementById('cardPreview');
+        preview.innerHTML = '<img src="' + e.target.result + '" class="card-preview-img">';
+        preview.style.display = 'block';
+
+        var ocrStatus = document.getElementById('ocrStatus');
+        ocrStatus.textContent = 'Reading business card...';
+        ocrStatus.style.display = 'block';
+
+        // Use Tesseract.js for OCR
+        if (typeof Tesseract !== 'undefined') {
+          Tesseract.recognize(e.target.result, 'eng+heb+spa+por', { logger: function() {} })
+            .then(function(result) {
+              var text = result.data.text;
+              parseBusinessCard(text);
+              ocrStatus.textContent = '\u2705 Card read successfully. Review and edit the fields below.';
+            })
+            .catch(function() {
+              ocrStatus.textContent = 'Could not read the card. Please fill in manually.';
+            });
+        } else {
+          // Tesseract not loaded — try loading it
+          ocrStatus.textContent = 'Loading OCR engine...';
+          var script = document.createElement('script');
+          script.src = 'https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js';
+          script.onload = function() {
+            Tesseract.recognize(e.target.result, 'eng+heb+spa+por', { logger: function() {} })
+              .then(function(result) {
+                parseBusinessCard(result.data.text);
+                ocrStatus.textContent = '\u2705 Card read successfully. Review and edit the fields below.';
+              })
+              .catch(function() {
+                ocrStatus.textContent = 'Could not read the card. Please fill in manually.';
+              });
+          };
+          script.onerror = function() {
+            ocrStatus.textContent = 'OCR engine failed to load. Please fill in manually.';
+          };
+          document.head.appendChild(script);
+        }
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function parseBusinessCard(text) {
+      var lines = text.split('\n').map(function(l) { return l.trim(); }).filter(function(l) { return l.length > 1; });
+
+      // Try to extract email
+      var emailMatch = text.match(/[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}/);
+      if (emailMatch) document.getElementById('contactEmail').value = emailMatch[0];
+
+      // Phone
+      var phoneMatch = text.match(/[+]?[\d\s\-().]{7,}/);
+      if (phoneMatch) document.getElementById('contactPhone').value = phoneMatch[0].trim();
+
+      // LinkedIn
+      var linkedinMatch = text.match(/linkedin\.com\/in\/[a-zA-Z0-9\-]+/i);
+      if (linkedinMatch) document.getElementById('contactLinkedin').value = 'https://' + linkedinMatch[0];
+
+      // Name is usually the first or second line (largest text)
+      if (lines.length > 0 && !lines[0].match(/@|http|www|\d{5,}/)) {
+        document.getElementById('contactName').value = lines[0];
+      }
+      // Title is often the second line
+      if (lines.length > 1 && !lines[1].match(/@|http|www|\d{5,}/)) {
+        var titleLine = lines[1];
+        // Check if it looks like a title
+        if (/director|manager|partner|vp|president|head|chief|officer|analyst|associate|counsel/i.test(titleLine)) {
+          document.getElementById('contactTitle').value = titleLine;
+        } else {
+          document.getElementById('contactCompany').value = titleLine;
+        }
+      }
+      // Company might be on line 3
+      if (lines.length > 2 && !document.getElementById('contactCompany').value) {
+        var compLine = lines.find(function(l) { return !l.match(/@|http|www|\+|\d{5,}/) && l.length > 3 && l !== document.getElementById('contactName').value && l !== document.getElementById('contactTitle').value; });
+        if (compLine) document.getElementById('contactCompany').value = compLine;
+      }
+    }
+
+    // ── LinkedIn CSV Smart Merge Import ──
+    var LI_META_KEY = 'gs_linkedin_import_meta';
+
+    function getLiMeta() {
+      try { return JSON.parse(localStorage.getItem(LI_META_KEY)) || {}; } catch(e) { return {}; }
+    }
+    function saveLiMeta(meta) { localStorage.setItem(LI_META_KEY, JSON.stringify(meta)); }
+
+    function renderLinkedinInfo() {
+      var meta = getLiMeta();
+      var el = document.getElementById('linkedinImportInfo');
+      if (!meta.lastImport) { el.style.display = 'none'; return; }
+      var d = new Date(meta.lastImport);
+      var dateStr = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      el.style.display = 'flex';
+      el.innerHTML = '<span class="li-icon">in</span> ' +
+        'Last LinkedIn sync: <span class="li-date">' + dateStr + '</span> &middot; ' +
+        '<span class="li-count">' + (meta.totalImported || 0) + '</span> contacts imported &middot; ' +
+        '<span class="li-count">' + (meta.matchedCompanies || 0) + '</span> matched to database';
+    }
+
+    function parseCSVRow(row) {
+      var fields = [];
+      var inQuote = false;
+      var field = '';
+      for (var ch = 0; ch < row.length; ch++) {
+        var c = row[ch];
+        if (c === '"') { inQuote = !inQuote; }
+        else if (c === ',' && !inQuote) { fields.push(field.trim()); field = ''; }
+        else { field += c; }
+      }
+      fields.push(field.trim());
+      return fields;
+    }
+
+    function matchCompanyInDB(companyName) {
+      if (!companyName) return null;
+      var cl = companyName.toLowerCase();
+      for (var i = 0; i < companies.length; i++) {
+        var cn = companies[i].name.toLowerCase();
+        if (cl === cn || cl.includes(cn) || cn.includes(cl)) return companies[i].name;
+      }
+      return null;
+    }
+
+    function companyHasOpenJob(companyName) {
+      if (!companyName) return false;
+      var cl = companyName.toLowerCase();
+      for (var i = 0; i < jobs.length; i++) {
+        if (jobs[i].company.toLowerCase() === cl) return true;
+      }
+      return false;
+    }
+
+    function showImportSummary(stats) {
+      var html = '<div class="import-summary">' +
+        '<div class="import-summary-stat"><span class="label">Total in CSV</span><span class="value">' + stats.totalInCSV + '</span></div>' +
+        '<div class="import-summary-stat"><span class="label">New contacts added</span><span class="value highlight">' + stats.added + '</span></div>' +
+        '<div class="import-summary-stat"><span class="label">Existing updated (title/company)</span><span class="value">' + stats.updated + '</span></div>' +
+        '<div class="import-summary-stat"><span class="label">Unchanged (skipped)</span><span class="value">' + stats.skipped + '</span></div>' +
+        '<div class="import-summary-stat"><span class="label">Matched to GS companies</span><span class="value gold">' + stats.matched + '</span></div>' +
+        '<div class="import-summary-stat"><span class="label">With open jobs</span><span class="value gold">' + stats.withJobs + '</span></div>' +
+      '</div>';
+      if (stats.updatedNames.length > 0) {
+        html += '<div class="import-updated-list"><strong style="font-size:11px;color:var(--color-text)">Updated contacts:</strong>';
+        stats.updatedNames.forEach(function(u) {
+          html += '<div class="import-updated-item"><span class="upd-name">' + esc(u.name) + '</span> &mdash; ' + esc(u.change) + '</div>';
+        });
+        html += '</div>';
+      }
+      html += '<div class="import-summary-note">Your edits (notes, tags, status, phone, context) are always preserved. Only title and company are updated from LinkedIn if they changed. Re-import anytime to add new connections.</div>';
+      document.getElementById('importSummaryBody').innerHTML = html;
+      document.getElementById('importSummaryModal').classList.add('show');
+    }
+
+    safeOn('importLinkedinBtn', 'click', function() {
+      var fi = el('linkedinFileInput'); if(fi) fi.click();
+    });
+
+    safeOn('linkedinFileInput', 'change', function() {
+      if (!this.files.length) return;
+      var file = this.files[0];
+      this.value = '';
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        var text = e.target.result;
+        var lines = text.split('\n');
+        if (lines.length < 2) { showToast('Empty or invalid CSV file.', 'warning'); return; }
+
+        // Parse header
+        var header = lines[0].split(',').map(function(h) { return h.trim().replace(/"/g, '').toLowerCase(); });
+        var fnIdx = header.indexOf('first name');
+        var lnIdx = header.indexOf('last name');
+        var emailIdx = header.indexOf('email address');
+        var compIdx = header.indexOf('company');
+        var posIdx = header.indexOf('position');
+        var urlIdx = header.indexOf('url');
+        var connIdx = header.indexOf('connected on');
+
+        if (fnIdx === -1 && lnIdx === -1) {
+          fnIdx = header.findIndex(function(h) { return h.includes('first'); });
+          lnIdx = header.findIndex(function(h) { return h.includes('last'); });
+        }
+
+        var contacts = getContacts();
+        // Build lookup by name (lowercase) and by LinkedIn URL for matching
+        var byName = {};
+        var byLinkedin = {};
+        contacts.forEach(function(c, idx) {
+          byName[c.name.toLowerCase()] = idx;
+          if (c.linkedin) byLinkedin[c.linkedin.toLowerCase().replace(/\/$/, '')] = idx;
+        });
+
+        var stats = { totalInCSV: 0, added: 0, updated: 0, skipped: 0, matched: 0, withJobs: 0, updatedNames: [] };
+
+        for (var i = 1; i < lines.length; i++) {
+          var row = lines[i];
+          if (!row.trim()) continue;
+
+          var fields = parseCSVRow(row);
+          var firstName = (fnIdx >= 0 ? fields[fnIdx] : '').replace(/"/g, '').trim();
+          var lastName = (lnIdx >= 0 ? fields[lnIdx] : '').replace(/"/g, '').trim();
+          var fullName = (firstName + ' ' + lastName).trim();
+          if (!fullName || fullName.length < 2) continue;
+
+          stats.totalInCSV++;
+
+          var company = (compIdx >= 0 ? fields[compIdx] : '').replace(/"/g, '').trim();
+          var position = (posIdx >= 0 ? fields[posIdx] : '').replace(/"/g, '').trim();
+          var email = (emailIdx >= 0 ? fields[emailIdx] : '').replace(/"/g, '').trim();
+          var linkedinUrl = (urlIdx >= 0 ? fields[urlIdx] : '').replace(/"/g, '').trim();
+
+          var dbMatch = matchCompanyInDB(company);
+          var hasJob = companyHasOpenJob(company);
+          if (dbMatch || hasJob) stats.matched++;
+          if (hasJob) stats.withJobs++;
+
+          // Smart merge: find existing contact by LinkedIn URL or name
+          var existIdx = -1;
+          if (linkedinUrl) {
+            var liKey = linkedinUrl.toLowerCase().replace(/\/$/, '');
+            if (byLinkedin[liKey] !== undefined) existIdx = byLinkedin[liKey];
+          }
+          if (existIdx === -1 && byName[fullName.toLowerCase()] !== undefined) {
+            existIdx = byName[fullName.toLowerCase()];
+          }
+
+          if (existIdx >= 0) {
+            // Existing contact — smart merge: update title/company if changed, preserve everything else
+            var existing = contacts[existIdx];
+            var changes = [];
+            if (position && position !== existing.title) {
+              changes.push('title: ' + (existing.title || '(empty)') + ' \u2192 ' + position);
+              existing.title = position;
+            }
+            if (company && company !== existing.company) {
+              changes.push('company: ' + (existing.company || '(empty)') + ' \u2192 ' + company);
+              existing.company = company;
+            }
+            // Fill in empty fields (never overwrite user edits)
+            if (!existing.email && email) existing.email = email;
+            if (!existing.linkedin && linkedinUrl) existing.linkedin = linkedinUrl;
+            // Re-check company matching in case company changed
+            if (dbMatch && !existing.linkedCompany) existing.linkedCompany = dbMatch;
+            if (dbMatch || hasJob) {
+              var jobNote = hasJob ? '\u2B50 Company has open jobs' : '';
+              var dbNote = dbMatch ? '\u2B50 Company in GS Search database' : '';
+              if (existing.notes && existing.notes.indexOf('\u2B50') === -1) {
+                existing.notes = (dbNote + ' ' + jobNote + ' | ' + existing.notes).trim();
+              }
+            }
+            if (changes.length > 0) {
+              existing.lastUpdated = new Date().toISOString();
+              stats.updated++;
+              stats.updatedNames.push({ name: fullName, change: changes.join(', ') });
+            } else {
+              stats.skipped++;
+            }
+          } else {
+            // New contact
+            var newContact = {
+              name: fullName,
+              title: position,
+              company: company,
+              email: email,
+              phone: '',
+              linkedin: linkedinUrl,
+              location: '',
+              industry: '',
+              tag: hasJob ? 'hiring-manager' : (dbMatch ? 'fund-manager' : 'other'),
+              status: 'new',
+              context: 'Imported from LinkedIn',
+              notes: (dbMatch ? '\u2B50 Company in GS Search database ' : '') + (hasJob ? '\u2B50 Company has open jobs' : ''),
+              linkedCompany: dbMatch || '',
+              linkedJob: '',
+              addedDate: new Date().toISOString().split('T')[0],
+              lastUpdated: new Date().toISOString(),
+              source: 'linkedin'
+            };
+            contacts.push(newContact);
+            byName[fullName.toLowerCase()] = contacts.length - 1;
+            if (linkedinUrl) byLinkedin[linkedinUrl.toLowerCase().replace(/\/$/, '')] = contacts.length - 1;
+            stats.added++;
+          }
+        }
+
+        saveContacts(contacts);
+        // Save import metadata
+        var liContacts = contacts.filter(function(c) { return c.source === 'linkedin'; }).length;
+        saveLiMeta({ lastImport: new Date().toISOString(), totalImported: liContacts, matchedCompanies: stats.matched });
+        renderContacts();
+        renderLinkedinInfo();
+        showImportSummary(stats);
+      };
+      reader.readAsText(file);
+    });
+
+    // Export contacts as CSV
+    safeOn('exportContactsBtn', 'click', function() {
+      var contacts = getContacts();
+      if (!contacts.length) { showToast('No contacts to export.', 'warning'); return; }
+      var headers = ['Name','Title','Company','Email','Phone','LinkedIn','Location','Industry','Tag','Status','Context','Notes','Linked Company','Added Date','Source'];
+      var rows = contacts.map(function(c) {
+        return [c.name, c.title, c.company, c.email, c.phone, c.linkedin, c.location, c.industry, c.tag, c.status, c.context, c.notes, c.linkedCompany, c.addedDate, c.source || 'manual'].map(function(v) {
+          return '"' + (v || '').replace(/"/g, '""') + '"';
+        }).join(',');
+      });
+      var csv = headers.join(',') + '\n' + rows.join('\n');
+      var blob = new Blob([csv], { type: 'text/csv' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url; a.download = 'gs_contacts_' + new Date().toISOString().split('T')[0] + '.csv';
+      a.click(); URL.revokeObjectURL(url);
+      showToast('Exported ' + contacts.length + ' contacts.', 'success');
+    });
+
+    // Import summary modal close
+    safeOn('importSummaryClose', 'click', function() { var m = el('importSummaryModal'); if(m) m.classList.remove('show'); });
+    safeOn('importSummaryDone', 'click', function() { var m = el('importSummaryModal'); if(m) m.classList.remove('show'); });
+    safeOn('importSummaryModal', 'click', function(e) { if (e.target === this) this.classList.remove('show'); });
+
+    // ── Universal CSV / Conference List Importer ──
+    var pendingImportData = null; // { headers: [], rows: [[]], mapping: {} }
+
+    // Smart column detection — maps our fields to common column name variations
+    var FIELD_PATTERNS = {
+      name:     [/^full\s*name$/i, /^name$/i, /^contact\s*name$/i, /^attendee\s*name$/i, /^participant$/i, /^delegate$/i, /^speaker$/i, /^\u05E9\u05DD\s*\u05DE\u05DC\u05D0$/i, /^\u05E9\u05DD$/i, /^\u05E9\u05DD\s*\u05D4\u05DE\u05E9\u05EA\u05EA\u05E3$/i, /^\u05E0\u05D5\u05DB\u05D7$/i],
+      firstName:[/^first\s*name$/i, /^first$/i, /^given\s*name$/i, /^fname$/i, /^prenom$/i, /^nombre$/i, /^\u05E9\u05DD\s*\u05E4\u05E8\u05D8\u05D9$/i, /^\u05E9\u05DD\s*\u05E8\u05D0\u05E9\u05D5\u05DF$/i],
+      lastName: [/^last\s*name$/i, /^last$/i, /^sur\s*name$/i, /^family\s*name$/i, /^lname$/i, /^apellido$/i, /^\u05E9\u05DD\s*\u05DE\u05E9\u05E4\u05D7\u05D4$/i],
+      title:    [/^title$/i, /^job\s*title$/i, /^position$/i, /^role$/i, /^designation$/i, /^cargo$/i, /^job\s*role$/i, /^function$/i, /^\u05EA\u05E4\u05E7\u05D9\u05D3$/i, /^\u05EA\u05D5\u05D0\u05E8$/i, /^\u05DE\u05E9\u05E8\u05D4$/i],
+      company:  [/^company$/i, /^organization$/i, /^organisation$/i, /^org$/i, /^firm$/i, /^employer$/i, /^institution$/i, /^affiliation$/i, /^entity$/i, /^empresa$/i, /^compan/i, /^\u05D7\u05D1\u05E8\u05D4$/i, /^\u05D0\u05E8\u05D2\u05D5\u05DF$/i, /^\u05DE\u05D5\u05E1\u05D3$/i, /^\u05D0\u05E8\u05D2\u05D5\u05DF/i],
+      email:    [/^e-?mail$/i, /^email\s*address$/i, /^mail$/i, /^correo$/i, /^e-?mail\s*1$/i, /^primary\s*email$/i, /^work\s*email$/i, /^\u05D3\u05D5\u05D0\u05F4\u05DC$/i, /^\u05D0\u05D9\u05DE\u05D9\u05D9\u05DC$/i, /^\u05DB\u05EA\u05D5\u05D1\u05EA\s*\u05D3\u05D5\u05D0\u05F4\u05DC$/i],
+      phone:    [/^phone$/i, /^telephone$/i, /^mobile$/i, /^cell$/i, /^tel$/i, /^phone\s*number$/i, /^contact\s*number$/i, /^celular$/i, /^whatsapp$/i, /^work\s*phone$/i, /^direct$/i, /^\u05D8\u05DC\u05E4\u05D5\u05DF$/i, /^\u05E0\u05D9\u05D9\u05D3$/i, /^\u05E0\u05D9\u05D9\u05D3\u05D9$/i, /^\u05E4\u05DC\u05D0\u05E4\u05D5\u05DF$/i, /^\u05E1\u05DC\u05D5\u05DC\u05E8\u05D9$/i],
+      linkedin: [/^linkedin$/i, /^linkedin\s*url$/i, /^linkedin\s*profile$/i, /^url$/i, /^profile\s*url$/i, /^web$/i, /^website$/i, /^\u05DC\u05D9\u05E0\u05E7\u05D3\u05D0\u05D9\u05DF$/i, /^\u05D0\u05EA\u05E8$/i],
+      location: [/^location$/i, /^city$/i, /^country$/i, /^region$/i, /^office$/i, /^based\s*in$/i, /^ciudad$/i, /^pais$/i, /^sede$/i, /^\u05DE\u05D9\u05E7\u05D5\u05DD$/i, /^\u05E2\u05D9\u05E8$/i, /^\u05DE\u05D3\u05D9\u05E0\u05D4$/i, /^\u05D0\u05E8\u05E5$/i],
+      industry: [/^industry$/i, /^sector$/i, /^area$/i, /^field$/i, /^practice$/i, /^industria$/i, /^\u05EA\u05E2\u05E9\u05D9\u05D9\u05D4$/i, /^\u05E2\u05E0\u05E3$/i, /^\u05DE\u05D2\u05D6\u05E8$/i, /^\u05EA\u05D7\u05D5\u05DD$/i]
+    };
+
+    function autoDetectColumns(headers) {
+      var mapping = {};
+      var usedCols = new Set();
+      // First pass: exact-ish matches
+      Object.keys(FIELD_PATTERNS).forEach(function(field) {
+        if (mapping[field] !== undefined) return;
+        for (var hi = 0; hi < headers.length; hi++) {
+          if (usedCols.has(hi)) continue;
+          var h = headers[hi].trim();
+          var patterns = FIELD_PATTERNS[field];
+          for (var pi = 0; pi < patterns.length; pi++) {
+            if (patterns[pi].test(h)) {
+              mapping[field] = hi;
+              usedCols.add(hi);
+              return;
+            }
+          }
+        }
+      });
+      return mapping;
+    }
+
+    function renderColumnMapping(headers, sampleRows, mapping) {
+      var fields = [
+        { key: 'name', label: 'Full Name' },
+        { key: 'firstName', label: 'First Name' },
+        { key: 'lastName', label: 'Last Name' },
+        { key: 'title', label: 'Title / Role' },
+        { key: 'company', label: 'Company' },
+        { key: 'email', label: 'Email' },
+        { key: 'phone', label: 'Phone' },
+        { key: 'linkedin', label: 'LinkedIn / URL' },
+        { key: 'location', label: 'Location' },
+        { key: 'industry', label: 'Industry' }
+      ];
+
+      var gridHtml = '';
+      fields.forEach(function(f) {
+        var opts = '<option value="-1">— Skip —</option>';
+        for (var i = 0; i < headers.length; i++) {
+          var sel = (mapping[f.key] === i) ? ' selected' : '';
+          opts += '<option value="' + i + '"' + sel + '>' + esc(headers[i]) + '</option>';
+        }
+        gridHtml += '<div class="colmap-field">' +
+          '<label>' + f.label + '</label>' +
+          '<select data-field="' + f.key + '"' + (mapping[f.key] !== undefined ? ' class="mapped"' : '') + '>' + opts + '</select>' +
+        '</div>';
+      });
+      document.getElementById('colmapGrid').innerHTML = gridHtml;
+
+      // Update mapped class on change
+      document.querySelectorAll('#colmapGrid select').forEach(function(sel) {
+        sel.addEventListener('change', function() {
+          this.classList.toggle('mapped', this.value !== '-1');
+        });
+      });
+
+      // Sample data table
+      if (sampleRows.length > 0) {
+        var thtml = '<table><thead><tr>';
+        headers.forEach(function(h) { thtml += '<th>' + esc(h) + '</th>'; });
+        thtml += '</tr></thead><tbody>';
+        sampleRows.slice(0, 5).forEach(function(row) {
+          thtml += '<tr>';
+          for (var i = 0; i < headers.length; i++) {
+            thtml += '<td>' + esc(row[i] || '') + '</td>';
+          }
+          thtml += '</tr>';
+        });
+        thtml += '</tbody></table>';
+        document.getElementById('colmapSample').innerHTML = thtml;
+      }
+    }
+
+    function getColumnMapping() {
+      var mapping = {};
+      document.querySelectorAll('#colmapGrid select').forEach(function(sel) {
+        var field = sel.dataset.field;
+        var val = parseInt(sel.value);
+        if (val >= 0) mapping[field] = val;
+      });
+      return mapping;
+    }
+
+    function executeConferenceImport() {
+      if (!pendingImportData) return;
+      var rows = pendingImportData.rows;
+      var mapping = getColumnMapping();
+      var eventName = document.getElementById('colmapEventName').value.trim();
+
+      var contacts = getContacts();
+      var byName = {};
+      var byLinkedin = {};
+      contacts.forEach(function(c, idx) {
+        byName[c.name.toLowerCase()] = idx;
+        if (c.linkedin) byLinkedin[c.linkedin.toLowerCase().replace(/\/$/, '')] = idx;
+      });
+
+      var stats = { totalInCSV: 0, added: 0, updated: 0, skipped: 0, matched: 0, withJobs: 0, updatedNames: [] };
+
+      rows.forEach(function(fields) {
+        // Build full name
+        var fullName = '';
+        if (mapping.name !== undefined) {
+          fullName = (fields[mapping.name] || '').replace(/"/g, '').trim();
+        } else if (mapping.firstName !== undefined || mapping.lastName !== undefined) {
+          var fn = mapping.firstName !== undefined ? (fields[mapping.firstName] || '').replace(/"/g, '').trim() : '';
+          var ln = mapping.lastName !== undefined ? (fields[mapping.lastName] || '').replace(/"/g, '').trim() : '';
+          fullName = (fn + ' ' + ln).trim();
+        }
+        if (!fullName || fullName.length < 2) return;
+        stats.totalInCSV++;
+
+        var company = mapping.company !== undefined ? (fields[mapping.company] || '').replace(/"/g, '').trim() : '';
+        var position = mapping.title !== undefined ? (fields[mapping.title] || '').replace(/"/g, '').trim() : '';
+        var email = mapping.email !== undefined ? (fields[mapping.email] || '').replace(/"/g, '').trim() : '';
+        var phone = mapping.phone !== undefined ? (fields[mapping.phone] || '').replace(/"/g, '').trim() : '';
+        var linkedinUrl = mapping.linkedin !== undefined ? (fields[mapping.linkedin] || '').replace(/"/g, '').trim() : '';
+        var location = mapping.location !== undefined ? (fields[mapping.location] || '').replace(/"/g, '').trim() : '';
+        var industry = mapping.industry !== undefined ? (fields[mapping.industry] || '').replace(/"/g, '').trim() : '';
+
+        var dbMatch = matchCompanyInDB(company);
+        var hasJob = companyHasOpenJob(company);
+        if (dbMatch || hasJob) stats.matched++;
+        if (hasJob) stats.withJobs++;
+
+        // Smart merge
+        var existIdx = -1;
+        if (linkedinUrl) {
+          var liKey = linkedinUrl.toLowerCase().replace(/\/$/, '');
+          if (byLinkedin[liKey] !== undefined) existIdx = byLinkedin[liKey];
+        }
+        if (existIdx === -1 && byName[fullName.toLowerCase()] !== undefined) {
+          existIdx = byName[fullName.toLowerCase()];
+        }
+
+        if (existIdx >= 0) {
+          var existing = contacts[existIdx];
+          var changes = [];
+          if (position && position !== existing.title) {
+            changes.push('title: ' + (existing.title || '(empty)') + ' \u2192 ' + position);
+            existing.title = position;
+          }
+          if (company && company !== existing.company) {
+            changes.push('company: ' + (existing.company || '(empty)') + ' \u2192 ' + company);
+            existing.company = company;
+          }
+          if (!existing.email && email) existing.email = email;
+          if (!existing.phone && phone) existing.phone = phone;
+          if (!existing.linkedin && linkedinUrl) existing.linkedin = linkedinUrl;
+          if (!existing.location && location) existing.location = location;
+          if (dbMatch && !existing.linkedCompany) existing.linkedCompany = dbMatch;
+          // Add event to context if not already there
+          if (eventName && (!existing.context || existing.context.indexOf(eventName) === -1)) {
+            existing.context = existing.context ? existing.context + ', ' + eventName : eventName;
+          }
+          if (changes.length > 0) {
+            existing.lastUpdated = new Date().toISOString();
+            stats.updated++;
+            stats.updatedNames.push({ name: fullName, change: changes.join(', ') });
+          } else {
+            stats.skipped++;
+          }
+        } else {
+          var newContact = {
+            name: fullName,
+            title: position,
+            company: company,
+            email: email,
+            phone: phone,
+            linkedin: linkedinUrl,
+            location: location,
+            industry: industry,
+            tag: hasJob ? 'hiring-manager' : (dbMatch ? 'fund-manager' : 'conference'),
+            status: 'new',
+            context: eventName || 'Imported from list',
+            notes: (dbMatch ? '\u2B50 Company in GS Search database ' : '') + (hasJob ? '\u2B50 Company has open jobs' : ''),
+            linkedCompany: dbMatch || '',
+            linkedJob: '',
+            addedDate: new Date().toISOString().split('T')[0],
+            lastUpdated: new Date().toISOString(),
+            source: eventName ? 'conference' : 'import'
+          };
+          contacts.push(newContact);
+          byName[fullName.toLowerCase()] = contacts.length - 1;
+          if (linkedinUrl) byLinkedin[linkedinUrl.toLowerCase().replace(/\/$/, '')] = contacts.length - 1;
+          stats.added++;
+        }
+      });
+
+      saveContacts(contacts);
+      renderContacts();
+      document.getElementById('columnMapModal').classList.remove('show');
+      showImportSummary(stats);
+      pendingImportData = null;
+    }
+
+    // File trigger
+    safeOn('importConferenceBtn', 'click', function() {
+      var fi = el('conferenceFileInput'); if(fi) fi.click();
+    });
+
+    safeOn('conferenceFileInput', 'change', function() {
+      if (!this.files.length) return;
+      var file = this.files[0];
+      this.value = '';
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        var text = e.target.result;
+        // Detect delimiter: tab or comma
+        var firstLine = text.split('\n')[0];
+        var delimiter = (firstLine.split('\t').length > firstLine.split(',').length) ? '\t' : ',';
+
+        var lines = text.split('\n').filter(function(l) { return l.trim().length > 0; });
+        if (lines.length < 2) { showToast('File is empty or has no data rows.', 'warning'); return; }
+
+        // Parse header and rows
+        var headers, allRows;
+        if (delimiter === '\t') {
+          headers = lines[0].split('\t').map(function(h) { return h.trim().replace(/"/g, ''); });
+          allRows = lines.slice(1).map(function(line) {
+            return line.split('\t').map(function(f) { return f.trim().replace(/"/g, ''); });
+          });
+        } else {
+          headers = parseCSVRow(lines[0]).map(function(h) { return h.replace(/"/g, ''); });
+          allRows = lines.slice(1).map(function(line) {
+            return parseCSVRow(line).map(function(f) { return f.replace(/"/g, ''); });
+          });
+        }
+
+        // Auto-detect columns
+        var mapping = autoDetectColumns(headers);
+
+        // Store for later
+        pendingImportData = { headers: headers, rows: allRows, mapping: mapping };
+
+        // Show column mapping modal
+        document.getElementById('colmapEventName').value = '';
+        document.getElementById('colmapRowCount').textContent = allRows.length + ' contacts found in file';
+        renderColumnMapping(headers, allRows, mapping);
+        document.getElementById('columnMapModal').classList.add('show');
+      };
+      reader.readAsText(file);
+    });
+
+    // Column map modal buttons (all safe-bound)
+    safeOn('colmapImport', 'click', executeConferenceImport);
+    safeOn('colmapCancel', 'click', function() { var m = el('columnMapModal'); if(m) m.classList.remove('show'); pendingImportData = null; });
+    safeOn('columnMapClose', 'click', function() { var m = el('columnMapModal'); if(m) m.classList.remove('show'); pendingImportData = null; });
+    safeOn('columnMapModal', 'click', function(e) { if (e.target === this) { this.classList.remove('show'); pendingImportData = null; } });
+
+    // Event listeners (all safe-bound)
+    safeOn('addContactBtn', 'click', function() { openContactModal(-1); });
+    safeOn('scanCardBtn', 'click', function() { openContactModal(-1); var fi = el('cardFileInput'); if(fi) fi.click(); });
+    safeOn('saveContactBtn', 'click', saveContact);
+    safeOn('cancelContactBtn', 'click', function() { var m = el('contactModal'); if(m) m.classList.remove('show'); });
+    safeOn('contactModalClose', 'click', function() { var m = el('contactModal'); if(m) m.classList.remove('show'); });
+    safeOn('contactModal', 'click', function(e) { if (e.target === this) this.classList.remove('show'); });
+
+    // Card upload
+    var cardZone = el('cardUploadZone');
+    var cardInput = el('cardFileInput');
+    if (cardZone && cardInput) {
+      cardZone.addEventListener('click', function() { cardInput.click(); });
+      cardZone.addEventListener('dragover', function(e) { e.preventDefault(); this.classList.add('drag-over'); });
+      cardZone.addEventListener('dragleave', function() { this.classList.remove('drag-over'); });
+      cardZone.addEventListener('drop', function(e) { e.preventDefault(); this.classList.remove('drag-over'); if (e.dataTransfer.files.length) processCardImage(e.dataTransfer.files[0]); });
+      cardInput.addEventListener('change', function() { if (this.files.length) processCardImage(this.files[0]); this.value = ''; });
+    }
+
+    // Filters
+    ['filterContactStatus', 'filterContactTag', 'filterContactSource'].forEach(function(id) {
+      safeOn(id, 'change', renderContacts);
+    });
+    safeOn('filterContactSearch', 'input', debounce(renderContacts, 200));
+
+    // Click on contact card to edit
+    safeOn('contactsList', 'click', function(e) {
+      var card = e.target.closest('.contact-card');
+      if (card && !e.target.closest('.contact-action-btn')) {
+        openContactModal(parseInt(card.dataset.contactIdx));
+      }
+    });
+
+    // Init
+    renderContacts();
+    renderLinkedinInfo();
+    } catch(networkErr) {
+      console.error('Network/Contact Book init error (non-fatal):', networkErr);
+    }
+  })();
+
+  try { init(); } catch(initErr) { console.error('App init error:', initErr); }
 })();

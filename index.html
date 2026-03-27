@@ -18,6 +18,25 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script>
+// Force clear all caches and service workers
+(function() {
+  if ('caches' in window) {
+    caches.keys().then(function(names) {
+      names.forEach(function(name) { caches.delete(name); });
+    });
+  }
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(function(regs) {
+      regs.forEach(function(r) { r.unregister(); });
+    });
+  }
+})();
+</script>
 <title>GS Executive Search — Goldie Shturman Career Intelligence Platform</title>
 <meta name="description" content="AI-powered executive job search engine tailored for Goldie Shturman — Managing Director+ level finance, private equity, fund-of-funds, and development finance opportunities worldwide.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,6 +52,25 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
 </head>
 <body>
+  <!-- Login Screen -->
+  <div id="loginScreen" class="login-screen" style="display:flex">
+    <div class="login-card">
+      <svg width="48" height="48" viewBox="0 0 32 32" fill="none" style="margin-bottom:16px">
+        <rect width="32" height="32" rx="8" fill="#0e5c61"/>
+        <text x="16" y="21" text-anchor="middle" fill="#fff" font-family="'DM Serif Display', serif" font-size="16" font-weight="700">GS</text>
+      </svg>
+      <h2 class="login-title">GS Executive Search</h2>
+      <p class="login-subtitle">Sign in to access your personalized job search platform</p>
+      <button class="login-google-btn" onclick="window.gsFirebase && window.gsFirebase.signIn()">
+        <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+        Sign in with Google
+      </button>
+      <div id="loginError" class="login-error" style="display:none"></div>
+      <p class="login-footer">Authorized access only</p>
+    </div>
+  </div>
+
+  <div id="appWrapper">
   <!-- Sidebar Navigation -->
   <nav class="sidebar" id="sidebar">
     <div class="sidebar-header">
@@ -59,6 +97,10 @@
       <li><a href="#" class="nav-link" data-section="pipeline">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H2v7l6.29 6.29c.94.94 2.48.94 3.42 0l4.58-4.58c.94-.94.94-2.48 0-3.42L9 5z"/><path d="M6 9h.01"/><path d="M22 5l-4.5 4.5"/><path d="M17 2l5 5"/></svg>
         <span>Pipeline</span>
+      </a></li>
+      <li><a href="#" class="nav-link" data-section="network">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        <span>Network</span>
       </a></li>
       <li><a href="#" class="nav-link" data-section="companies">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7v14m6-14v14m6-14v14m6-14v14M3 7l9-4 9 4"/></svg>
@@ -87,9 +129,15 @@
       </a></li>
     </ul>
     <div class="sidebar-footer">
-      <button data-theme-toggle aria-label="Switch theme" class="theme-btn">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-      </button>
+      <div id="syncStatus" class="sync-status"></div>
+      <div class="sidebar-footer-row">
+        <button data-theme-toggle aria-label="Switch theme" class="theme-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <button class="theme-btn" onclick="window.gsFirebase && window.gsFirebase.signOut()" aria-label="Sign out" title="Sign out">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        </button>
+      </div>
       <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer" class="attribution-link">Created with Perplexity Computer</a>
     </div>
   </nav>
@@ -167,12 +215,26 @@
           <h1 class="page-title">Executive Job Openings</h1>
           <p class="page-subtitle"><span id="jobCount">0</span> MD+ level opportunities matched to Goldie's profile</p>
         </div>
+        <div class="job-status-bar" id="jobStatusBar">
+          <button class="job-status-btn active" data-status="all">All <span class="status-count" id="countAll">0</span></button>
+          <button class="job-status-btn" data-status="new">New <span class="status-count status-count-new" id="countNew">0</span></button>
+          <button class="job-status-btn" data-status="shortlisted">★ Shortlisted <span class="status-count" id="countShortlisted">0</span></button>
+          <button class="job-status-btn" data-status="discarded">Discarded <span class="status-count" id="countDiscarded">0</span></button>
+        </div>
+        <div class="priority-legend">
+          <span class="priority-legend-label">Priority:</span>
+          <span class="priority-legend-item"><span class="priority-dot" style="background:var(--color-accent)"></span>Exceptional</span>
+          <span class="priority-legend-item"><span class="priority-dot" style="background:var(--color-primary)"></span>Very Strong</span>
+          <span class="priority-legend-item"><span class="priority-dot" style="background:var(--color-purple)"></span>Strong</span>
+          <span class="priority-legend-item"><span class="priority-dot" style="background:var(--color-text-faint)"></span>Good</span>
+        </div>
         <div class="filters" id="jobFilters">
           <select id="filterRegion" class="filter-select"><option value="">All Regions</option></select>
           <select id="filterIndustry" class="filter-select"><option value="">All Industries</option></select>
           <select id="sortJobs" class="filter-select">
-            <option value="priority">Sort: Priority Score</option>
             <option value="salary-desc">Sort: Compensation (High → Low)</option>
+            <option value="newest">Sort: Newest Added</option>
+            <option value="priority">Sort: Priority Score</option>
             <option value="salary-asc">Sort: Compensation (Low → High)</option>
             <option value="date">Sort: Most Recent</option>
             <option value="title">Sort: Title A–Z</option>
@@ -259,6 +321,250 @@
         </div>
       </section>
 
+      <!-- NETWORK / CONTACTS -->
+      <section id="section-network" class="section">
+        <div class="section-header">
+          <h1 class="page-title">Network & Contacts</h1>
+          <p class="page-subtitle">Track relationships, conferences, and networking contacts</p>
+        </div>
+        <div class="network-toolbar">
+          <button class="btn btn-primary btn-sm" id="addContactBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+            Add Contact
+          </button>
+          <button class="btn btn-outline btn-sm" id="importLinkedinBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            Import / Refresh LinkedIn
+          </button>
+          <input type="file" id="linkedinFileInput" accept=".csv" style="display:none">
+          <button class="btn btn-outline btn-sm" id="importConferenceBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            Import List
+          </button>
+          <input type="file" id="conferenceFileInput" accept=".csv,.xlsx,.xls,.tsv,.txt" style="display:none">
+          <button class="btn btn-outline btn-sm" id="exportContactsBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Export CSV
+          </button>
+          <button class="btn btn-outline btn-sm" id="scanCardBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            Scan Business Card
+          </button>
+          <div class="network-filters">
+            <select id="filterContactStatus" class="filter-select">
+              <option value="">All Contacts</option>
+              <option value="new">New Contact</option>
+              <option value="reached-out">Reached Out</option>
+              <option value="in-conversation">In Conversation</option>
+              <option value="active">Active Relationship</option>
+            </select>
+            <select id="filterContactSource" class="filter-select">
+              <option value="">All Sources</option>
+              <option value="linkedin">LinkedIn Import</option>
+              <option value="conference">Conference / Event</option>
+              <option value="manual">Manual / Card Scan</option>
+              <option value="matched">Matched to Companies</option>
+            </select>
+            <select id="filterContactTag" class="filter-select">
+              <option value="">All Tags</option>
+              <option value="recruiter">Recruiter</option>
+              <option value="hiring-manager">Hiring Manager</option>
+              <option value="fund-manager">Fund Manager</option>
+              <option value="board-member">Board Member</option>
+              <option value="conference">Conference Contact</option>
+              <option value="dfi">DFI / Multilateral</option>
+              <option value="investor">Investor / LP</option>
+              <option value="other">Other</option>
+            </select>
+            <input type="text" id="filterContactSearch" class="filter-input" placeholder="Search contacts...">
+          </div>
+        </div>
+        <div class="network-stats" id="networkStats"></div>
+        <div id="linkedinImportInfo" class="linkedin-import-info" style="display:none"></div>
+        <div id="contactsList" class="results-list"></div>
+      </section>
+
+      <!-- Contact Add/Edit Modal -->
+      <div class="modal-overlay" id="contactModal">
+        <div class="modal modal-lg">
+          <div class="modal-header">
+            <h3 id="contactModalTitle">Add Contact</h3>
+            <button class="modal-close" id="contactModalClose">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+          </div>
+          <div class="modal-body" id="contactModalBody">
+            <div class="contact-form">
+              <!-- Business Card Upload -->
+              <div class="card-upload-zone" id="cardUploadZone">
+                <div class="card-upload-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                </div>
+                <p class="card-upload-text">Drop a business card photo here or click to upload</p>
+                <input type="file" id="cardFileInput" accept="image/*" style="display:none">
+                <div id="cardPreview" style="display:none"></div>
+                <div id="ocrStatus" style="display:none" class="ocr-status"></div>
+              </div>
+              <!-- Contact Fields -->
+              <div class="contact-fields">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" id="contactName" class="form-input" placeholder="Jane Smith">
+                  </div>
+                  <div class="form-group">
+                    <label>Title / Role</label>
+                    <input type="text" id="contactTitle" class="form-input" placeholder="Managing Director">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Company / Organization</label>
+                    <input type="text" id="contactCompany" class="form-input" placeholder="Company name">
+                  </div>
+                  <div class="form-group">
+                    <label>Industry</label>
+                    <select id="contactIndustry" class="form-input">
+                      <option value="">Select...</option>
+                      <option value="Private Equity">Private Equity</option>
+                      <option value="Fund-of-Funds">Fund-of-Funds</option>
+                      <option value="DFI">DFI / Multilateral</option>
+                      <option value="Infrastructure">Infrastructure</option>
+                      <option value="Climate/Clean Energy">Climate / Clean Energy</option>
+                      <option value="Impact/ESG">Impact / ESG</option>
+                      <option value="Pension Fund">Pension Fund</option>
+                      <option value="Insurance">Insurance</option>
+                      <option value="Family Office">Family Office</option>
+                      <option value="Investment Consulting">Investment Consulting</option>
+                      <option value="Alternatives">Alternatives</option>
+                      <option value="Executive Search">Executive Search / Recruiter</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="contactEmail" class="form-input" placeholder="jane@company.com">
+                  </div>
+                  <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" id="contactPhone" class="form-input" placeholder="+1 (555) 000-0000">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>LinkedIn</label>
+                    <input type="url" id="contactLinkedin" class="form-input" placeholder="https://linkedin.com/in/...">
+                  </div>
+                  <div class="form-group">
+                    <label>Location</label>
+                    <input type="text" id="contactLocation" class="form-input" placeholder="City, Country">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Relationship Tag</label>
+                    <select id="contactTag" class="form-input">
+                      <option value="conference">Conference Contact</option>
+                      <option value="recruiter">Recruiter</option>
+                      <option value="hiring-manager">Hiring Manager</option>
+                      <option value="fund-manager">Fund Manager</option>
+                      <option value="board-member">Board Member</option>
+                      <option value="dfi">DFI / Multilateral</option>
+                      <option value="investor">Investor / LP</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Status</label>
+                    <select id="contactStatus" class="form-input">
+                      <option value="new">New Contact</option>
+                      <option value="reached-out">Reached Out</option>
+                      <option value="in-conversation">In Conversation</option>
+                      <option value="active">Active Relationship</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group" style="flex:1">
+                    <label>Link to Company</label>
+                    <select id="contactLinkCompany" class="form-input">
+                      <option value="">None</option>
+                    </select>
+                  </div>
+                  <div class="form-group" style="flex:1">
+                    <label>Link to Job</label>
+                    <select id="contactLinkJob" class="form-input">
+                      <option value="">None</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Where Met / Context</label>
+                  <input type="text" id="contactContext" class="form-input" placeholder="e.g., IFC Annual Meeting 2026, LinkedIn introduction">
+                </div>
+                <div class="form-group">
+                  <label>Notes</label>
+                  <textarea id="contactNotes" class="form-input" rows="3" placeholder="Key talking points, follow-up actions, impressions..."></textarea>
+                </div>
+              </div>
+              <div class="contact-form-actions">
+                <button class="btn btn-primary btn-sm" id="saveContactBtn">Save Contact</button>
+                <button class="btn btn-outline btn-sm" id="cancelContactBtn">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LinkedIn Import Summary Modal -->
+      <div class="modal-overlay" id="importSummaryModal">
+        <div class="modal modal-md">
+          <div class="modal-header">
+            <h3>LinkedIn Import Summary</h3>
+            <button class="modal-close" id="importSummaryClose">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+          </div>
+          <div class="modal-body" id="importSummaryBody"></div>
+          <div class="modal-footer" style="padding:var(--space-3) var(--space-5);border-top:1px solid var(--color-divider);text-align:right">
+            <button class="btn btn-primary btn-sm" id="importSummaryDone">Done</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column Mapping Modal -->
+      <div class="modal-overlay" id="columnMapModal">
+        <div class="modal modal-lg">
+          <div class="modal-header">
+            <h3>Map Your Columns</h3>
+            <button class="modal-close" id="columnMapClose">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="colmap-context">
+              <div class="form-group" style="margin-bottom:var(--space-3)">
+                <label>Event / List Name</label>
+                <input type="text" id="colmapEventName" class="form-input" placeholder="e.g., IFC Annual Meeting 2026, LAVCA Summit">
+              </div>
+              <p class="colmap-hint">We detected your columns below. Please confirm or adjust the mapping, then click Import.</p>
+            </div>
+            <div class="colmap-preview" id="colmapPreview"></div>
+            <div class="colmap-grid" id="colmapGrid"></div>
+            <div class="colmap-sample" id="colmapSample"></div>
+          </div>
+          <div class="modal-footer" style="padding:var(--space-3) var(--space-5);border-top:1px solid var(--color-divider);display:flex;justify-content:space-between;align-items:center">
+            <span id="colmapRowCount" style="font-size:var(--text-xs);color:var(--color-text-muted)"></span>
+            <div style="display:flex;gap:var(--space-2)">
+              <button class="btn btn-outline btn-sm" id="colmapCancel">Cancel</button>
+              <button class="btn btn-primary btn-sm" id="colmapImport">Import Contacts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- COMPANIES -->
       <section id="section-companies" class="section">
         <div class="section-header">
@@ -327,7 +633,13 @@
           </div>
           <div class="timeline-section">
             <h3 class="section-subtitle">Career Timeline</h3>
-            <div id="careerTimeline" class="timeline"></div>
+            <div class="timeline-wrapper" id="timelineWrapper">
+              <div id="careerTimeline" class="timeline"></div>
+            </div>
+            <div class="timeline-scroll-hint" id="timelineScrollHint">
+              <span>Scroll for more</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
           </div>
           <div class="expertise-section">
             <h3 class="section-subtitle">Areas of Expertise</h3>
@@ -336,6 +648,171 @@
           <div class="education-section">
             <h3 class="section-subtitle">Education</h3>
             <div id="educationCards" class="edu-grid"></div>
+          </div>
+
+          <!-- CV SECTION -->
+          <div class="cv-section">
+            <h3 class="section-subtitle">Resume / CV</h3>
+            <p class="cv-section-intro">Build, upload, or paste your master CV. Use it to generate tailored versions for any job.</p>
+
+            <!-- Mode selector tabs -->
+            <div class="cv-mode-tabs" id="cvModeTabs">
+              <button class="cv-mode-tab active" data-mode="builder">CV Builder</button>
+              <button class="cv-mode-tab" data-mode="upload">Upload / Paste</button>
+            </div>
+
+            <!-- MODE 1: CV Builder -->
+            <div id="cvBuilderPanel" class="cv-panel">
+              <div class="cv-builder-toolbar">
+                <button class="btn btn-primary btn-sm" id="cvAutoPopulate">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                  Auto-Populate from Profile
+                </button>
+                <button class="btn btn-outline btn-sm" id="cvAddSection">+ Add Section</button>
+                <button class="btn btn-outline btn-sm" id="cvSaveBuilder">Save Master CV</button>
+                <div class="cv-page-selector">
+                  <label class="cv-page-label">Pages:</label>
+                  <div class="cv-page-options" id="cvPageOptions">
+                    <button class="cv-page-btn" data-pages="1">1</button>
+                    <button class="cv-page-btn active" data-pages="2">2</button>
+                    <button class="cv-page-btn" data-pages="3">3</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Page length guidance -->
+              <div class="cv-page-guide" id="cvPageGuide">
+                <span class="cv-page-guide-icon">📄</span>
+                <span class="cv-page-guide-text" id="cvPageGuideText">Target: 2-page CV (~500–800 words). Best for senior executives with 10–25 years of experience.</span>
+                <div class="cv-word-meter">
+                  <div class="cv-word-bar" id="cvWordBar"></div>
+                </div>
+                <span class="cv-word-count" id="cvWordCount">0 words</span>
+              </div>
+              <div id="cvBuilderSections" class="cv-builder-sections"></div>
+              <div id="cvSuggestionPanel" class="cv-suggestion-panel" style="display:none">
+                <div class="cv-suggestion-header">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+                  <span>Suggestions</span>
+                  <button class="cv-suggestion-close" id="cvSuggestionClose">&times;</button>
+                </div>
+                <div id="cvSuggestionList" class="cv-suggestion-list"></div>
+              </div>
+            </div>
+
+            <!-- MODE 2: Upload / Paste -->
+            <div id="cvUploadPanel" class="cv-panel" style="display:none">
+              <div id="cvUploadArea" class="cv-upload-area">
+                <div class="cv-upload-zone" id="cvDropZone">
+                  <div class="cv-upload-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                      <polyline points="14 2 14 8 20 8"/>
+                      <line x1="12" y1="18" x2="12" y2="12"/>
+                      <polyline points="9 15 12 12 15 15"/>
+                    </svg>
+                  </div>
+                  <p class="cv-upload-text">Drag & drop your CV here</p>
+                  <p class="cv-upload-subtext">PDF or Word (.docx) accepted</p>
+                  <div class="cv-upload-actions">
+                    <label class="btn btn-primary btn-sm cv-file-label">
+                      <input type="file" id="cvFileInput" accept=".pdf,.docx,.doc" style="display:none">
+                      Browse Files
+                    </label>
+                    <button class="btn btn-outline btn-sm" id="cvPasteBtn">Paste Text</button>
+                  </div>
+                </div>
+                <div class="cv-paste-modal" id="cvPasteModal" style="display:none">
+                  <div class="cv-paste-header">
+                    <h4>Paste CV Text</h4>
+                    <button class="cv-paste-close" id="cvPasteClose">&times;</button>
+                  </div>
+                  <textarea id="cvPasteArea" class="cv-paste-textarea" placeholder="Paste your CV content here..."></textarea>
+                  <div class="cv-paste-actions">
+                    <button class="btn btn-primary btn-sm" id="cvPasteSave">Save CV</button>
+                    <button class="btn btn-outline btn-sm" id="cvPasteCancel">Cancel</button>
+                  </div>
+                </div>
+              </div>
+              <div id="cvPreview" class="cv-preview" style="display:none">
+                <div class="cv-preview-header">
+                  <div class="cv-preview-file-info">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                      <polyline points="14 2 14 8 20 8"/>
+                    </svg>
+                    <span id="cvFileName">resume.pdf</span>
+                    <span class="badge badge-success" id="cvStatus">Uploaded</span>
+                  </div>
+                  <div class="cv-preview-actions">
+                    <button class="btn btn-outline btn-sm" id="cvLoadToBuilder">Edit in Builder</button>
+                    <button class="btn btn-outline btn-sm" id="cvReplaceBtn">Replace</button>
+                    <button class="btn btn-outline btn-sm cv-remove-btn" id="cvRemoveBtn">Remove</button>
+                  </div>
+                </div>
+                <div class="cv-preview-body" id="cvPreviewBody"></div>
+                <button class="btn btn-outline btn-sm cv-expand-btn" id="cvExpandBtn">Show full CV</button>
+              </div>
+            </div>
+
+            <!-- Master CV status bar -->
+            <div id="cvMasterStatus" class="cv-master-status" style="display:none">
+              <div class="cv-master-info">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Master CV saved</span>
+                <span class="cv-master-date" id="cvMasterDate"></span>
+              </div>
+              <div class="cv-master-actions">
+                <button class="btn btn-primary btn-sm" id="cvDownloadMasterPdf">Download PDF</button>
+                <button class="btn btn-outline btn-sm" id="cvDownloadMasterDocx">Download DOCX</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="search-params-section">
+            <h3 class="section-subtitle">Search Parameters</h3>
+            <p class="search-params-intro">The engine uses the following criteria to find and rank opportunities.</p>
+
+            <div class="params-grid">
+              <div class="param-card">
+                <div class="param-card-header">
+                  <span class="param-icon">&#x1F4CB;</span>
+                  <h4 class="param-title">Title Levels</h4>
+                </div>
+                <div id="titleLevelTags" class="param-tags"></div>
+              </div>
+
+              <div class="param-card">
+                <div class="param-card-header">
+                  <span class="param-icon">&#x1F3ED;</span>
+                  <h4 class="param-title">Industries</h4>
+                </div>
+                <div id="industryTags" class="param-tags"></div>
+              </div>
+
+              <div class="param-card">
+                <div class="param-card-header">
+                  <span class="param-icon">&#x1F30D;</span>
+                  <h4 class="param-title">Regions</h4>
+                </div>
+                <div id="regionTags" class="param-tags"></div>
+              </div>
+
+              <div class="param-card">
+                <div class="param-card-header">
+                  <span class="param-icon">&#x1F50D;</span>
+                  <h4 class="param-title">Sources</h4>
+                </div>
+                <div id="sourceTags" class="param-tags"></div>
+              </div>
+
+              <div class="param-card param-card-wide">
+                <div class="param-card-header">
+                  <span class="param-icon">&#x1F3AF;</span>
+                  <h4 class="param-title">Expertise Tags Used for Matching</h4>
+                </div>
+                <div id="matchingExpertiseTags" class="param-tags"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -450,6 +927,72 @@
     </div>
   </div>
 
+  <!-- Tailored CV Modal -->
+  <div class="modal-overlay" id="tailorCvModal">
+    <div class="modal modal-lg">
+      <div class="modal-header">
+        <h3 id="tailorCvTitle">Tailored CV</h3>
+        <button class="modal-close" id="tailorCvClose">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="modal-body" id="tailorCvBody">
+        <!-- Tabs: CV / Cover Letter -->
+        <div class="tailor-tabs" id="tailorTabs">
+          <button class="tailor-tab active" data-tailor-tab="cv">Tailored CV</button>
+          <button class="tailor-tab" data-tailor-tab="cover">Cover Letter</button>
+        </div>
+
+        <!-- CV Panel -->
+        <div id="tailorCvPanel" class="tailor-panel">
+          <div id="tailorCvLoading" class="tailor-loading">
+            <div class="tailor-spinner"></div>
+            <p>Optimizing CV for this role...</p>
+          </div>
+          <div id="tailorCvContent" style="display:none"></div>
+          <div id="tailorCvActions" class="tailor-actions" style="display:none">
+            <button class="btn btn-primary btn-sm" id="tailorDownloadPdf">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Download PDF
+            </button>
+            <button class="btn btn-outline btn-sm" id="tailorDownloadDocx">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Download DOCX
+            </button>
+            <button class="btn btn-outline btn-sm" id="tailorCopyBtn">
+              Copy to Clipboard
+            </button>
+          </div>
+        </div>
+
+        <!-- Cover Letter Panel -->
+        <div id="tailorCoverPanel" class="tailor-panel" style="display:none">
+          <div id="tailorCoverLoading" class="tailor-loading" style="display:none">
+            <div class="tailor-spinner"></div>
+            <p>Generating cover letter...</p>
+          </div>
+          <div id="tailorCoverContent" class="cover-letter-preview" style="display:none"></div>
+          <div id="tailorCoverActions" class="tailor-actions" style="display:none">
+            <button class="btn btn-primary btn-sm" id="coverDownloadPdf">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Download PDF
+            </button>
+            <button class="btn btn-outline btn-sm" id="coverDownloadDocx">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Download DOCX
+            </button>
+            <button class="btn btn-outline btn-sm" id="coverCopyBtn">
+              Copy to Clipboard
+            </button>
+            <button class="btn btn-outline btn-sm" id="downloadBothBtn">
+              Download Both (CV + Letter)
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Pipeline Add/Edit Modal -->
   <div class="modal-overlay" id="pipelineModal">
     <div class="modal">
@@ -555,7 +1098,14 @@
   </div>
 
   <script src="data.js"></script>
+  <!-- CV Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mammoth@1.6.0/mammoth.browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
   <script src="app.js"></script>
+  <script src="firebase-sync.js"></script>
+  </div><!-- /appWrapper -->
 
   <!-- PWA Install Banner -->
   <div id="installBanner" class="install-banner" style="display:none">
@@ -571,10 +1121,10 @@
   </div>
 
   <script>
-  // Service Worker Registration
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').catch(() => {});
-  }
+  // Service Worker DISABLED — causes caching issues.
+  // All files are served fresh from GitHub Pages CDN.
+  </script>
+  <script>
 
   // PWA Install Prompt
   let deferredPrompt;

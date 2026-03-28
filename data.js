@@ -3839,6 +3839,24 @@ window.APP_DATA = {
       "url": "https://fa-evlj-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/19858/",
       "description": "Senior ICT leadership role (Director level) leading IOM global information technology systems and governance.",
       "add_date": "2026-03-27"
+    },
+    {
+      "title": "Vice President, Healthcare Staffing (Travel Nursing & Allied)",
+      "company": "MeeDerby",
+      "location": "Peachtree Corners, GA 30092, USA",
+      "region": "Americas",
+      "industry": "Staffing & Recruiting / Healthcare",
+      "contract_type": "Full-time",
+      "salary_range": "Six-figure base + upside incentive (details not specified)",
+      "date_posted": "2026-03-25",
+      "source_url": "https://www.meederby.com/2026/03/25/great-opportunity-alert-vice-president-healthcare-staffing-travel-nursing-allied-peachtree-corners-ga/",
+      "application_url": "https://jobs.meederby.com/jb/Vice-President-Healthcare-Staffing-Jobs-in-Peachtree-Corners-Georgia/13955857",
+      "application_method": "Apply via MeeDerby jobs portal link; for details contact Jill Balick (jill@meederby.com).",
+      "requirements": "Leadership experience in healthcare staffing (travel nursing / travel allied preferred); proven success leading sales and recruiting; P&L and operational metrics management; ability to lead leaders; execution-focused.",
+      "suggested_recruiter": "MeeDerby (Jill Balick)",
+      "goldie_fit": "Senior leadership role in healthcare staffing; relevant if Goldie is exploring executive search / staffing leadership roles. Less directly aligned with PE/DFI background, but could be a diversification option if interested in staffing sector leadership.",
+      "notes": "Role leads a healthcare staffing division across two established brands; oversees team of five senior leaders; full P&L responsibility.",
+      "id": 206
     }
   ],
   "companies": [
@@ -12010,5 +12028,5 @@ window.APP_DATA = {
       ]
     }
   ],
-  "last_updated": "2026-03-27T21:30:11.237Z"
+  "last_updated": "2026-03-28T11:05:51.283Z"
 };

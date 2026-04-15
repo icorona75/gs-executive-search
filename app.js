@@ -513,16 +513,27 @@
   function renderJobs() {
     var filtered = sortJobs(getFilteredJobs());
     document.getElementById('jobCount').textContent = filtered.length;
+    var newCount = jobs.filter(isJobNew).length;
+    var newInd = document.getElementById('newJobIndicator');
+    var newCnt = document.getElementById('newJobCount');
+    if (newInd && newCnt) {
+      if (newCount > 0) {
+        newInd.style.display = 'inline';
+        newCnt.textContent = newCount;
+      } else {
+        newInd.style.display = 'none';
+      }
+    }
     const start = (jobPage - 1) * JOBS_PER_PAGE;
     const paged = filtered.slice(start, start + JOBS_PER_PAGE);
 
     document.getElementById('jobsList').innerHTML = paged.map(j => {
       const idx = jobs.indexOf(j);
       return `
-      <div class="result-card" data-job-idx="${idx}">
+      <div class="result-card${isJobNew(j) ? ' result-card-new' : ''}" data-job-idx="${idx}">
         <div class="result-header">
           <div>
-            <div class="result-title">${esc(j.title)}</div>
+            <div class="result-title">${isJobNew(j) ? '<span class="new-badge">NEW</span> ' : ''}${esc(j.title)}</div>
             <div class="result-company">${esc(j.company)}</div>
           </div>
           ${(j.salary_range || j.salary) ? `<span class="badge badge-salary">${esc(formatSalaryBadge(j))}</span>` : '<span class="badge">Salary TBD</span>'}
@@ -560,7 +571,7 @@
         </div>
         <div class="job-detail-section">
           <div class="job-detail-label">Compensation</div>
-          <div class="job-detail-value">${esc(j.salary_range || 'Contact recruiter for details')}</div>
+          <div class="job-detail-value">${esc(j.salary_range || j.salary || 'Contact recruiter for details')}</div>
         </div>
         <div class="job-detail-section">
           <div class="job-detail-label">Requirements</div>
@@ -1283,6 +1294,14 @@
     return (now - added) < 86400000;
   }
 
+  function isJobNew(job) {
+    var d = job.date_added || '';
+    if (!d) return false;
+    var added = new Date(d + 'T00:00:00');
+    var now = new Date();
+    return (now - added) < 7 * 86400000; // 7 days
+  }
+
   var STATUS_CONFIG = {
     interested: { label: 'Interested', color: '#6b7280' },
     contacted: { label: 'Contacted', color: '#1a5fa0' },
@@ -1738,11 +1757,30 @@
 
   function getUpdates() {
     try {
+      // Merge data file updates with stored updates
+      var dataUpdates = (window.APP_DATA && window.APP_DATA.updates) ? window.APP_DATA.updates : [];
+      var stored = [];
       if (_store) {
-        var stored = _store.getItem(UPDATES_KEY);
-        if (stored) return JSON.parse(stored);
+        var s = _store.getItem(UPDATES_KEY);
+        if (s) stored = JSON.parse(s);
       }
-      return _updatesMemory || INITIAL_UPDATES;
+      if (!stored.length) stored = _updatesMemory || INITIAL_UPDATES;
+      // Merge: data file updates + stored, dedup by id
+      var seen = {};
+      var merged = [];
+      var all = dataUpdates.concat(stored);
+      for (var i = 0; i < all.length; i++) {
+        var uid = all[i].id || all[i].title;
+        if (!seen[uid]) {
+          seen[uid] = true;
+          merged.push(all[i]);
+        }
+      }
+      // Sort by date descending
+      merged.sort(function(a, b) {
+        return new Date(b.date || 0) - new Date(a.date || 0);
+      });
+      return merged;
     } catch (e) { return INITIAL_UPDATES; }
   }
 

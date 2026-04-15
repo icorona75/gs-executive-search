@@ -529,23 +529,30 @@
       if (isNewJob(j)) newCount++;
     });
     var all = allJobs.length - discarded;
-    document.getElementById('countAll').textContent = all;
-    document.getElementById('countNew').textContent = newCount;
-    document.getElementById('countShortlisted').textContent = shortlisted;
-    document.getElementById('countDiscarded').textContent = discarded;
+    var elAll = document.getElementById('countAll');
+    var elNew = document.getElementById('countNew');
+    var elShort = document.getElementById('countShortlisted');
+    var elDisc = document.getElementById('countDiscarded');
+    if (elAll) elAll.textContent = all;
+    if (elNew) elNew.textContent = newCount;
+    if (elShort) elShort.textContent = shortlisted;
+    if (elDisc) elDisc.textContent = discarded;
   }
 
   // Status bar event delegation
-  document.getElementById('jobStatusBar').addEventListener('click', function(e) {
-    var btn = e.target.closest('.job-status-btn');
-    if (!btn) return;
-    var status = btn.getAttribute('data-status');
-    jobStatusFilter = status;
-    document.querySelectorAll('.job-status-btn').forEach(function(b) { b.classList.remove('active'); });
-    btn.classList.add('active');
-    jobPage = 1;
-    renderJobs();
-  });
+  var jobStatusBarEl = document.getElementById('jobStatusBar');
+  if (jobStatusBarEl) {
+    jobStatusBarEl.addEventListener('click', function(e) {
+      var btn = e.target.closest('.job-status-btn');
+      if (!btn) return;
+      var status = btn.getAttribute('data-status');
+      jobStatusFilter = status;
+      document.querySelectorAll('.job-status-btn').forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      jobPage = 1;
+      renderJobs();
+    });
+  }
 
   // ── Jobs Section ──
   let jobPage = 1;

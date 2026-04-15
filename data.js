@@ -130,7 +130,7 @@ window.APP_DATA = {
       "title": "Managing Director, Private Equity Business Development",
       "company": "Partners Group",
       "location": "Broomfield, Colorado, USA (Americas)",
-      "region": "Americas",
+      "region": "North America",
       "salary_range": "$450,000 – $550,000 base + performance bonus + long-term equity/carry",
       "application_url": "https://www.indeed.com/q-private-equity-managing-director-jobs.html",
       "application_method": "Apply via Partners Group careers portal at partnersgroup.com/careers or Indeed. Search 'Managing Director Private Equity Business Development'.",
@@ -147,7 +147,7 @@ window.APP_DATA = {
       "title": "Managing Director of Capital Formation",
       "company": "Confidential — Leading Alternative Asset Manager (via Selby Jennings, South Florida)",
       "location": "Miami, Florida, USA",
-      "region": "Americas",
+      "region": "North America",
       "salary_range": "$500,000 – $700,000 per year",
       "application_url": "https://www.selbyjennings.com/en-us/jobs/f-private-equity/lt-miami",
       "application_method": "Apply via Selby Jennings Miami jobs page. Search 'Managing Director Capital Formation Miami'. Contact selbyjennings.com directly.",
@@ -232,7 +232,7 @@ window.APP_DATA = {
       "title": "Managing Director / Partner — Emerging Markets Fund Investments",
       "company": "StepStone Group",
       "location": "New York, NY or Washington, DC, USA",
-      "region": "Americas / Global",
+      "region": "Global",
       "salary_range": "MD/Partner compensation: estimated $400,000–$900,000 total comp (base + bonus + carry); StepStone is publicly traded (STEP)",
       "application_url": "https://www.stepstonegroup.com/careers/",
       "application_method": "Apply via stepstonegroup.com/careers/ or through executive search. StepStone uses Options Group and Korn Ferry for senior investment hires.",
@@ -249,7 +249,7 @@ window.APP_DATA = {
       "title": "Managing Director / Senior Director, Emerging Markets or Development Finance",
       "company": "Adams Street Partners",
       "location": "Chicago, IL or Washington, DC",
-      "region": "Americas / Global",
+      "region": "Global",
       "salary_range": "MD-level: estimated $400,000–$800,000 total comp",
       "application_url": "https://www.adamsstreetpartners.com/careers/",
       "application_method": "Apply via adamsstreetpartners.com/careers/ or through executive search. Adams Street uses Korn Ferry and Spencer Stuart.",
@@ -518,7 +518,7 @@ window.APP_DATA = {
       "title": "Managing Director / Partner — Emerging Markets PE/Infrastructure",
       "company": "Warburg Pincus",
       "location": "New York, NY or Washington, DC",
-      "region": "Americas / Global",
+      "region": "Global",
       "salary_range": "Partner-level compensation at Warburg: estimated $800,000–$2,000,000+ total comp (base + bonus + carry)",
       "application_url": "https://www.warburgpincus.com/careers/",
       "application_method": "Apply via warburgpincus.com/careers/ or through executive search firms. Warburg uses Korn Ferry and Spencer Stuart for senior hires.",
@@ -988,20 +988,6 @@ window.APP_DATA = {
       "salary_range": "UN D-1/D-2 grade; estimated $180,000-$250,000 + UN benefits",
       "notes": "PROTECTED: Director at UN/UNJSPF = MD equivalent per DFI exception rule. DO NOT REMOVE.",
       "id": 60
-    },
-    {
-      "title": "Manager, Metals and Minerals Solutions & Impact",
-      "company": "IFC (International Finance Corporation) - World Bank Group",
-      "region": "North America",
-      "industry": "Critical Minerals",
-      "goldie_fit": "Direct alignment with DFC priority sector (critical minerals). Senior leadership in investment strategy and pipeline scaling across regions and products at a major DFI.",
-      "suggested_recruiter": "IFC/World Bank Group HR / Spencer Stuart",
-      "source_url": "https://appliedeconjobs.substack.com/p/manager-for-metals-and-minerals-solutions",
-      "date_posted": "2026-03-13",
-      "salary": "",
-      "salary_range": "IFC Manager grade; estimated $250,000-$350,000 + WBG benefits",
-      "notes": "PROTECTED: Manager at IFC = senior grade per DFI exception rule. DO NOT REMOVE. Req35978.",
-      "id": 61
     }
   ],
   "companies": [
@@ -7761,5 +7747,5 @@ window.APP_DATA = {
       ]
     }
   ],
-  "last_updated": "2026-04-15T08:09:00-04:00"
+  "last_updated": "2026-04-15T12:14:57Z"
 };

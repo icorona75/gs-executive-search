@@ -2110,6 +2110,7 @@
     renderPipeline();
     initUpdates();
     initWhatsNew();
+    initApplicationTools();
 
     // Support hash-based deep linking
     var hash = window.location.hash.replace('#', '');
@@ -2189,6 +2190,451 @@
 
     if (refreshBtn) refreshBtn.addEventListener('click', startRefresh);
     if (refreshBtnDash) refreshBtnDash.addEventListener('click', startRefresh);
+  }
+
+  // ── Application Tools (CV, Cover Letter, Outreach) ──
+  function initApplicationTools() {
+    // Helper: populate a <select> with active jobs
+    function populateJobSelect(selectEl) {
+      if (!selectEl) return;
+      selectEl.innerHTML = '<option value="">— Choose a job opening —</option>';
+      jobs.forEach(function(j, idx) {
+        var opt = document.createElement('option');
+        opt.value = idx;
+        opt.textContent = esc(j.title) + ' — ' + esc(j.company);
+        selectEl.appendChild(opt);
+      });
+    }
+
+    // Helper: open a modal
+    function openModal(modalEl) {
+      if (modalEl) modalEl.classList.add('show');
+    }
+    function closeModal(modalEl) {
+      if (modalEl) modalEl.classList.remove('show');
+    }
+
+    // --- CV Generator ---
+    var cvModal = document.getElementById('cvModal');
+    var cvJobSelect = document.getElementById('cvJobSelect');
+    var cvFocusAreas = document.getElementById('cvFocusAreas');
+    var cvOutput = document.getElementById('cvOutput');
+    var btnCreateCV = document.getElementById('btnCreateCV');
+    var btnGenerateCV = document.getElementById('btnGenerateCV');
+    var btnCopyCV = document.getElementById('btnCopyCV');
+    var btnDownloadCV = document.getElementById('btnDownloadCV');
+    var cvModalClose = document.getElementById('cvModalClose');
+
+    if (btnCreateCV) btnCreateCV.addEventListener('click', function() {
+      populateJobSelect(cvJobSelect);
+      if (cvOutput) { cvOutput.style.display = 'none'; cvOutput.textContent = ''; }
+      if (btnCopyCV) btnCopyCV.style.display = 'none';
+      if (btnDownloadCV) btnDownloadCV.style.display = 'none';
+      openModal(cvModal);
+    });
+    if (cvModalClose) cvModalClose.addEventListener('click', function() { closeModal(cvModal); });
+    if (cvModal) cvModal.addEventListener('click', function(e) { if (e.target === cvModal) closeModal(cvModal); });
+
+    if (btnGenerateCV) btnGenerateCV.addEventListener('click', function() {
+      var idx = cvJobSelect ? cvJobSelect.value : '';
+      if (idx === '') { alert('Please select a target job.'); return; }
+      var job = jobs[parseInt(idx)];
+      var focus = (cvFocusAreas ? cvFocusAreas.value : '').trim();
+      var cv = generateCV(job, focus);
+      if (cvOutput) { cvOutput.textContent = cv; cvOutput.style.display = 'block'; }
+      if (btnCopyCV) btnCopyCV.style.display = 'inline-flex';
+      if (btnDownloadCV) btnDownloadCV.style.display = 'inline-flex';
+    });
+
+    if (btnCopyCV) btnCopyCV.addEventListener('click', function() {
+      copyText(cvOutput ? cvOutput.textContent : '', btnCopyCV);
+    });
+    if (btnDownloadCV) btnDownloadCV.addEventListener('click', function() {
+      downloadText(cvOutput ? cvOutput.textContent : '', 'Goldie_Shturman_CV.txt');
+    });
+
+    function generateCV(job, focusAreas) {
+      var c = candidate;
+      var tl = c.career_timeline || [];
+      var lines = [];
+      lines.push('GOLDIE SHTURMAN');
+      lines.push(c.title + ' | ' + c.company);
+      lines.push(c.location + ' | ' + (c.languages || []).join(', '));
+      lines.push('LinkedIn: ' + (c.linkedin || ''));
+      lines.push('');
+      lines.push('═══════════════════════════════════════════════');
+      lines.push('PROFESSIONAL SUMMARY');
+      lines.push('═══════════════════════════════════════════════');
+      var summary = 'Senior global investment executive with ' + (c.experience_years || 25) + '+ years of leadership in ';
+      // Tailor summary to the target job
+      var jobIndustry = (job.industry || '').toLowerCase();
+      var jobTitle = (job.title || '').toLowerCase();
+      if (/critical mineral|mining|metals|battery/.test(jobIndustry + ' ' + jobTitle)) {
+        summary += 'emerging markets investment, critical minerals finance, and development finance. ';
+        summary += 'Extensive experience in fund-of-funds strategy, infrastructure investment, and supply chain minerals at the U.S. DFC. ';
+      } else if (/infrastructure|climate|energy/.test(jobIndustry + ' ' + jobTitle)) {
+        summary += 'infrastructure investment, climate finance, and emerging markets fund management. ';
+        summary += 'Proven track record deploying capital into renewable energy, climate adaptation, and sustainable infrastructure through DFI platforms. ';
+      } else if (/private equity|\bpe\b|fund.of.fund|venture/.test(jobIndustry + ' ' + jobTitle)) {
+        summary += 'private equity fund-of-funds, direct investments, and LP portfolio management across global markets. ';
+        summary += 'Pioneered fund investment strategies at the U.S. DFC and IDB Invest covering Latin America, Africa, and Asia. ';
+      } else if (/development finance|dfi|multilateral|world bank|ifc/.test(jobIndustry + ' ' + jobTitle + ' ' + (job.company || '').toLowerCase())) {
+        summary += 'development finance, multilateral fund management, and international investment policy. ';
+        summary += 'Led cross-border investment programs at the U.S. DFC and IDB Invest, managing teams of Managing Directors and deploying billions in development capital. ';
+      } else {
+        summary += 'global fund management, private equity, and development finance across emerging markets. ';
+        summary += 'Track record of managing multi-billion dollar fund-of-funds portfolios and leading senior investment teams at the U.S. DFC and IDB Invest. ';
+      }
+      if (focusAreas) {
+        summary += 'Specialized focus on ' + focusAreas + '. ';
+      }
+      summary += 'Wharton MBA. Fluent in English, Spanish, and Hebrew.';
+      lines.push(summary);
+      lines.push('');
+      lines.push('═══════════════════════════════════════════════');
+      lines.push('TARGET POSITION');
+      lines.push('═══════════════════════════════════════════════');
+      lines.push(job.title + ' — ' + job.company);
+      if (job.region) lines.push('Region: ' + job.region);
+      if (job.industry) lines.push('Industry: ' + job.industry);
+      lines.push('');
+      lines.push('═══════════════════════════════════════════════');
+      lines.push('PROFESSIONAL EXPERIENCE');
+      lines.push('═══════════════════════════════════════════════');
+      tl.forEach(function(t) {
+        lines.push('');
+        lines.push(t.role.toUpperCase());
+        lines.push(t.company + ' | ' + t.period);
+        // Generate context-aware bullet points per role
+        var bullets = getExperienceBullets(t, job);
+        bullets.forEach(function(b) { lines.push('  • ' + b); });
+      });
+      lines.push('');
+      lines.push('═══════════════════════════════════════════════');
+      lines.push('EDUCATION');
+      lines.push('═══════════════════════════════════════════════');
+      (c.education || []).forEach(function(e) {
+        lines.push(e.degree + ' — ' + e.school + ' (' + e.years + ')');
+      });
+      lines.push('');
+      lines.push('═══════════════════════════════════════════════');
+      lines.push('CORE COMPETENCIES');
+      lines.push('═══════════════════════════════════════════════');
+      lines.push((c.expertise || []).join(' · '));
+      lines.push('');
+      lines.push('═══════════════════════════════════════════════');
+      lines.push('LANGUAGES');
+      lines.push('═══════════════════════════════════════════════');
+      lines.push((c.languages || []).join(', '));
+      lines.push('');
+      lines.push('— Tailored for: ' + job.title + ' at ' + job.company + ' —');
+      return lines.join('\n');
+    }
+
+    function getExperienceBullets(role, targetJob) {
+      var jobContext = ((targetJob.industry || '') + ' ' + (targetJob.title || '') + ' ' + (targetJob.goldie_fit || '')).toLowerCase();
+      var r = (role.role || '').toLowerCase();
+      var bullets = [];
+      if (/acting vp|head of.*fund|office of investment/i.test(r)) {
+        bullets.push('Lead the Office of Investment Funds overseeing a portfolio of Managing Directors across global fund strategies');
+        bullets.push('Direct fund-of-funds investment programs covering private equity, infrastructure, and climate finance across 70+ countries');
+        if (/mineral|mining|metal|battery/.test(jobContext)) bullets.push('Spearheaded critical minerals investment framework including lithium, cobalt, and rare earth supply chain funds');
+        if (/climate|energy|infra/.test(jobContext)) bullets.push('Championed climate and clean energy fund investments as part of DFC priority sectors');
+        bullets.push('Manage relationships with institutional co-investors, sovereign wealth funds, and multilateral partners');
+      } else if (/managing director|md.*latam/i.test(r)) {
+        bullets.push('Managed $2B+ fund-of-funds portfolio across Latin America and Caribbean markets');
+        bullets.push('Led origination, due diligence, and structuring of PE, infrastructure, and climate fund investments');
+        if (/emerging|latam|latin/.test(jobContext)) bullets.push('Built deep LP networks across Latin American pension funds, family offices, and development agencies');
+        bullets.push('Served on investment committees and fund advisory boards for multiple portfolio funds');
+      } else if (/consultant|advisory/i.test(r)) {
+        bullets.push('Provided strategic advisory to institutional investors on emerging markets PE fund allocations');
+        bullets.push('Conducted fund due diligence and portfolio construction for DFI and private sector clients');
+        if (/esg|impact|sustain/.test(jobContext)) bullets.push('Developed ESG and impact measurement frameworks for fund investment programs');
+      } else if (/senior investment officer|idb invest/i.test(r)) {
+        bullets.push('Sourced and executed fund-of-funds investments across IDB Invest\'s Latin America and Caribbean portfolio');
+        bullets.push('Structured blended finance vehicles mobilizing private capital alongside development funding');
+        if (/dfi|development|multilateral/.test(jobContext)) bullets.push('Collaborated with IDB Group, IFC, and bilateral DFIs on co-investment platforms');
+      } else if (/investment banking|evercore|protego/i.test(r)) {
+        bullets.push('Executed M&A, capital markets, and restructuring transactions in Latin American financial services');
+        bullets.push('Advised sovereign and corporate clients on cross-border capital raising and strategic transactions');
+      } else if (/glencore|commodit/i.test(r)) {
+        bullets.push('Summer internship on the commodities/aluminum trading desk at one of the world\'s largest commodity firms');
+        if (/mineral|mining|metal|commod/.test(jobContext)) bullets.push('Gained hands-on experience in metals trading, supply chain logistics, and commodity market analysis');
+      } else {
+        bullets.push('Contributed to investment origination, portfolio management, and stakeholder engagement');
+      }
+      return bullets;
+    }
+
+    // --- Cover Letter Generator ---
+    var letterModal = document.getElementById('letterModal');
+    var letterJobSelect = document.getElementById('letterJobSelect');
+    var letterTone = document.getElementById('letterTone');
+    var letterOutput = document.getElementById('letterOutput');
+    var btnCreateLetter = document.getElementById('btnCreateLetter');
+    var btnGenerateLetter = document.getElementById('btnGenerateLetter');
+    var btnCopyLetter = document.getElementById('btnCopyLetter');
+    var btnDownloadLetter = document.getElementById('btnDownloadLetter');
+    var letterModalClose = document.getElementById('letterModalClose');
+
+    if (btnCreateLetter) btnCreateLetter.addEventListener('click', function() {
+      populateJobSelect(letterJobSelect);
+      if (letterOutput) { letterOutput.style.display = 'none'; letterOutput.textContent = ''; }
+      if (btnCopyLetter) btnCopyLetter.style.display = 'none';
+      if (btnDownloadLetter) btnDownloadLetter.style.display = 'none';
+      openModal(letterModal);
+    });
+    if (letterModalClose) letterModalClose.addEventListener('click', function() { closeModal(letterModal); });
+    if (letterModal) letterModal.addEventListener('click', function(e) { if (e.target === letterModal) closeModal(letterModal); });
+
+    if (btnGenerateLetter) btnGenerateLetter.addEventListener('click', function() {
+      var idx = letterJobSelect ? letterJobSelect.value : '';
+      if (idx === '') { alert('Please select a target job.'); return; }
+      var job = jobs[parseInt(idx)];
+      var tone = letterTone ? letterTone.value : 'professional';
+      var letter = generateCoverLetter(job, tone);
+      if (letterOutput) { letterOutput.textContent = letter; letterOutput.style.display = 'block'; }
+      if (btnCopyLetter) btnCopyLetter.style.display = 'inline-flex';
+      if (btnDownloadLetter) btnDownloadLetter.style.display = 'inline-flex';
+    });
+
+    if (btnCopyLetter) btnCopyLetter.addEventListener('click', function() {
+      copyText(letterOutput ? letterOutput.textContent : '', btnCopyLetter);
+    });
+    if (btnDownloadLetter) btnDownloadLetter.addEventListener('click', function() {
+      downloadText(letterOutput ? letterOutput.textContent : '', 'Goldie_Shturman_Cover_Letter.txt');
+    });
+
+    function generateCoverLetter(job, tone) {
+      var c = candidate;
+      var today = new Date();
+      var dateStr = today.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+      var greeting = 'Dear Hiring Manager,';
+      var signoff = 'Sincerely,';
+      var openingStyle = '';
+      var closingStyle = '';
+
+      if (tone === 'warm') {
+        greeting = 'Dear Hiring Team,';
+        signoff = 'Warm regards,';
+        openingStyle = 'I was delighted to come across the ';
+        closingStyle = 'I would welcome the chance to discuss how my experience can contribute to ';
+      } else if (tone === 'formal') {
+        greeting = 'Dear Sir or Madam,';
+        signoff = 'Respectfully yours,';
+        openingStyle = 'I am writing to express my keen interest in the ';
+        closingStyle = 'I respectfully request the opportunity to discuss my qualifications for ';
+      } else {
+        openingStyle = 'I am writing to express my strong interest in the ';
+        closingStyle = 'I would welcome the opportunity to discuss how my leadership experience aligns with ';
+      }
+
+      var jobIndustry = (job.industry || '').toLowerCase();
+      var jobTitle = (job.title || '').toLowerCase();
+      var companyLower = (job.company || '').toLowerCase();
+
+      // Contextual paragraphs
+      var p1 = openingStyle + job.title + ' position at ' + job.company + '. ';
+      p1 += 'With over ' + (c.experience_years || 25) + ' years of senior leadership in global investment management, ';
+      p1 += 'including my current role as ' + c.title + ' at the ' + c.company + ', ';
+      p1 += 'I am confident in my ability to deliver immediate and measurable impact in this role.';
+
+      var p2 = '';
+      if (/critical mineral|mining|metals|battery/.test(jobIndustry + ' ' + jobTitle)) {
+        p2 = 'My career has been defined by deploying capital into strategic sectors including critical minerals — lithium, cobalt, rare earths, and battery metals — through fund-of-funds structures at the U.S. DFC. I have led investment teams focused on securing supply chains essential to energy transition and national security, working closely with mining operators, sovereign partners, and institutional co-investors across multiple continents.';
+      } else if (/infrastructure|climate|energy/.test(jobIndustry + ' ' + jobTitle)) {
+        p2 = 'Throughout my career, I have led substantial infrastructure and climate finance programs across emerging markets. At the DFC, I directed fund investments into renewable energy, climate adaptation infrastructure, and sustainable development projects spanning Latin America, Africa, and Asia. My expertise in blended finance structures has enabled the mobilization of private capital at scale alongside development funding.';
+      } else if (/private equity|\bpe\b|fund.of.fund|venture|alternative/.test(jobIndustry + ' ' + jobTitle)) {
+        p2 = 'I bring deep expertise in private equity fund-of-funds strategy, having managed multi-billion dollar portfolios at both the U.S. DFC and IDB Invest. My investment philosophy combines rigorous due diligence with strategic portfolio construction across emerging and frontier markets. I have originated, structured, and overseen PE fund commitments that delivered strong risk-adjusted returns while advancing development outcomes.';
+      } else if (/development finance|dfi|multilateral/.test(jobIndustry + ' ' + jobTitle + ' ' + companyLower)) {
+        p2 = 'My career in development finance institutions — spanning the U.S. DFC and IDB Invest — has given me a comprehensive understanding of multilateral investment operations, policy frameworks, and stakeholder engagement at the highest levels. I currently manage teams of Managing Directors across global fund strategies, overseeing investment programs that span 70+ countries and multiple asset classes.';
+      } else if (/pension|endowment|foundation|sovereign|insurance/.test(jobIndustry + ' ' + jobTitle + ' ' + companyLower)) {
+        p2 = 'My extensive experience managing institutional capital across diverse asset classes — from fund-of-funds and private equity to infrastructure and climate finance — positions me to contribute meaningfully to your investment strategy. I have built deep relationships with sovereign wealth funds, pension systems, family offices, and multilateral institutions throughout my career at the DFC and IDB Invest.';
+      } else {
+        p2 = 'In my current role, I lead the Office of Investment Funds at the U.S. DFC, overseeing a global team of Managing Directors responsible for fund-of-funds investments across private equity, infrastructure, climate, and critical minerals. Previously, I served as Managing Director for Latin American Investment Funds at DFC and as Senior Investment Officer at IDB Invest, where I originated and managed fund commitments across the region.';
+      }
+
+      var p3 = '';
+      if (job.goldie_fit) {
+        p3 = 'I believe my profile is particularly aligned with this opportunity: ' + job.goldie_fit.split('.').slice(0, 2).join('.') + '.';
+      } else {
+        p3 = 'My combination of operational investment leadership, multilateral relationships, and deep emerging markets expertise positions me uniquely for this role.';
+      }
+
+      var p4 = closingStyle + job.company + '\'s objectives. I hold an MBA from Wharton and am fluent in English, Spanish, and Hebrew, enabling effective engagement across diverse global markets.';
+
+      var lines = [];
+      lines.push(dateStr);
+      lines.push('');
+      lines.push(job.company);
+      lines.push('Re: ' + job.title);
+      lines.push('');
+      lines.push(greeting);
+      lines.push('');
+      lines.push(p1);
+      lines.push('');
+      lines.push(p2);
+      lines.push('');
+      lines.push(p3);
+      lines.push('');
+      lines.push(p4);
+      lines.push('');
+      lines.push(signoff);
+      lines.push('Goldie Shturman');
+      lines.push(c.title);
+      lines.push(c.company);
+      lines.push(c.linkedin || '');
+      return lines.join('\n');
+    }
+
+    // --- Networking Outreach Drafter ---
+    var outreachModal = document.getElementById('outreachModal');
+    var outreachJobSelect = document.getElementById('outreachJobSelect');
+    var outreachRecipient = document.getElementById('outreachRecipient');
+    var outreachChannel = document.getElementById('outreachChannel');
+    var outreachOutput = document.getElementById('outreachOutput');
+    var btnCreateOutreach = document.getElementById('btnCreateOutreach');
+    var btnGenerateOutreach = document.getElementById('btnGenerateOutreach');
+    var btnCopyOutreach = document.getElementById('btnCopyOutreach');
+    var outreachModalClose = document.getElementById('outreachModalClose');
+
+    if (btnCreateOutreach) btnCreateOutreach.addEventListener('click', function() {
+      populateJobSelect(outreachJobSelect);
+      if (outreachOutput) { outreachOutput.style.display = 'none'; outreachOutput.textContent = ''; }
+      if (btnCopyOutreach) btnCopyOutreach.style.display = 'none';
+      openModal(outreachModal);
+    });
+    if (outreachModalClose) outreachModalClose.addEventListener('click', function() { closeModal(outreachModal); });
+    if (outreachModal) outreachModal.addEventListener('click', function(e) { if (e.target === outreachModal) closeModal(outreachModal); });
+
+    if (btnGenerateOutreach) btnGenerateOutreach.addEventListener('click', function() {
+      var idx = outreachJobSelect ? outreachJobSelect.value : '';
+      if (idx === '') { alert('Please select a target job or company.'); return; }
+      var job = jobs[parseInt(idx)];
+      var recipient = outreachRecipient ? outreachRecipient.value.trim() : '';
+      var channel = outreachChannel ? outreachChannel.value : 'linkedin';
+      var msg = generateOutreach(job, recipient, channel);
+      if (outreachOutput) { outreachOutput.textContent = msg; outreachOutput.style.display = 'block'; }
+      if (btnCopyOutreach) btnCopyOutreach.style.display = 'inline-flex';
+    });
+
+    if (btnCopyOutreach) btnCopyOutreach.addEventListener('click', function() {
+      copyText(outreachOutput ? outreachOutput.textContent : '', btnCopyOutreach);
+    });
+
+    function generateOutreach(job, recipient, channel) {
+      var c = candidate;
+      var recipientName = recipient || 'there';
+      var recipientFirst = recipientName.split(',')[0].split(' ')[0];
+      if (recipientFirst === 'there') recipientFirst = 'there';
+
+      var lines = [];
+      if (channel === 'linkedin') {
+        lines.push('Hi ' + recipientFirst + ',');
+        lines.push('');
+        lines.push('I hope this message finds you well. I came across the ' + job.title + ' role at ' + job.company + ' and wanted to reach out, as my background aligns closely with the position.');
+        lines.push('');
+        lines.push('I currently serve as ' + c.title + ' at the ' + c.company + ', where I lead a global team overseeing fund-of-funds investments across private equity, infrastructure, and climate finance. Before DFC, I held senior roles at IDB Invest and Evercore/Protego.');
+        lines.push('');
+        if (job.goldie_fit) {
+          var fitSnippet = job.goldie_fit.split('.')[0] + '.';
+          lines.push('I believe there is strong alignment: ' + fitSnippet);
+          lines.push('');
+        }
+        lines.push('Would you be open to a brief conversation to explore how my experience might contribute to ' + job.company + '\'s objectives? I\'d welcome any insights you could share about the role and team.');
+        lines.push('');
+        lines.push('Thank you for your time.');
+        lines.push('');
+        lines.push('Best regards,');
+        lines.push('Goldie Shturman');
+      } else if (channel === 'email') {
+        lines.push('Subject: ' + job.title + ' Opportunity at ' + job.company + ' — Goldie Shturman');
+        lines.push('');
+        lines.push('Dear ' + recipientFirst + ',');
+        lines.push('');
+        lines.push('I am reaching out regarding the ' + job.title + ' position at ' + job.company + '. With over ' + (c.experience_years || 25) + ' years of senior leadership in global investment management — including my current role as ' + c.title + ' at the ' + c.company + ' — I believe my profile aligns strongly with this opportunity.');
+        lines.push('');
+        lines.push('Key highlights of my background:');
+        lines.push('• Currently leading the Office of Investment Funds at the U.S. DFC, overseeing Managing Directors across global fund strategies');
+        lines.push('• Former Managing Director at DFC, covering Latin American PE fund investments');
+        lines.push('• Senior Investment Officer at IDB Invest with deep multilateral networks');
+        lines.push('• Wharton MBA, fluent in English, Spanish, and Hebrew');
+        lines.push('');
+        if (job.goldie_fit) {
+          lines.push('I am particularly drawn to this role because: ' + job.goldie_fit.split('.').slice(0, 2).join('.') + '.');
+          lines.push('');
+        }
+        lines.push('I would welcome the opportunity to discuss this further at your convenience. Please find my LinkedIn profile here: ' + (c.linkedin || ''));
+        lines.push('');
+        lines.push('Thank you for your consideration.');
+        lines.push('');
+        lines.push('Best regards,');
+        lines.push('Goldie Shturman');
+        lines.push(c.title + ' | ' + c.company);
+      } else {
+        // Introduction request
+        lines.push('Hi ' + recipientFirst + ',');
+        lines.push('');
+        lines.push('I hope you\'re doing well. I\'m reaching out because I noticed the ' + job.title + ' position at ' + job.company + ', and I believe my background may be a strong fit.');
+        lines.push('');
+        lines.push('I\'m currently ' + c.title + ' at the ' + c.company + ', leading global fund-of-funds strategies across PE, infrastructure, and climate finance. Previously, I was MD at DFC and Senior Investment Officer at IDB Invest.');
+        lines.push('');
+        lines.push('Would you happen to know anyone at ' + job.company + ' or in the hiring process whom you could introduce me to? Any guidance or connection would be enormously appreciated.');
+        lines.push('');
+        lines.push('Thank you so much — happy to share more details about my background anytime.');
+        lines.push('');
+        lines.push('Warmly,');
+        lines.push('Goldie Shturman');
+        lines.push(c.linkedin || '');
+      }
+      return lines.join('\n');
+    }
+
+    // --- Utility: Copy to Clipboard ---
+    function copyText(text, btn) {
+      if (!text) return;
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(function() {
+            flashButton(btn, 'Copied!');
+          });
+        } else {
+          // Fallback
+          var ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.position = 'fixed';
+          ta.style.left = '-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          flashButton(btn, 'Copied!');
+        }
+      } catch (e) {
+        flashButton(btn, 'Copy failed');
+      }
+    }
+
+    function flashButton(btn, msg) {
+      if (!btn) return;
+      var orig = btn.textContent;
+      btn.textContent = msg;
+      setTimeout(function() { btn.textContent = orig; }, 1800);
+    }
+
+    // --- Utility: Download as Text ---
+    function downloadText(text, filename) {
+      if (!text) return;
+      var blob = new Blob([text], { type: 'text/plain' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
   }
 
   init();

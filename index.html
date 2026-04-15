@@ -345,6 +345,121 @@
             <h3 class="section-subtitle">Education</h3>
             <div id="educationCards" class="edu-grid"></div>
           </div>
+          <div class="tools-section">
+            <h3 class="section-subtitle">Application Tools</h3>
+            <div class="tools-grid">
+              <div class="tool-card" id="cvCreatorCard">
+                <div class="tool-icon">📄</div>
+                <div class="tool-info">
+                  <h4 class="tool-title">CV / Resume Generator</h4>
+                  <p class="tool-desc">Generate a tailored resume highlighting relevant experience for a specific job opening</p>
+                </div>
+                <button class="btn btn-primary btn-sm" id="btnCreateCV">Create CV</button>
+              </div>
+              <div class="tool-card" id="coverLetterCard">
+                <div class="tool-icon">✉️</div>
+                <div class="tool-info">
+                  <h4 class="tool-title">Cover Letter Generator</h4>
+                  <p class="tool-desc">Draft a personalized cover letter tailored to a specific position and company</p>
+                </div>
+                <button class="btn btn-primary btn-sm" id="btnCreateLetter">Create Letter</button>
+              </div>
+              <div class="tool-card" id="networkingCard">
+                <div class="tool-icon">🤝</div>
+                <div class="tool-info">
+                  <h4 class="tool-title">Networking Outreach Drafter</h4>
+                  <p class="tool-desc">Draft an outreach message to a recruiter, hiring manager, or connection about a specific role</p>
+                </div>
+                <button class="btn btn-primary btn-sm" id="btnCreateOutreach">Draft Message</button>
+              </div>
+            </div>
+          </div>
+          <!-- CV Creator Modal -->
+          <div class="modal-overlay" id="cvModal">
+            <div class="modal" style="max-width:700px;">
+              <div class="modal-header">
+                <h3 id="cvModalTitle">Generate Tailored CV</h3>
+                <button class="modal-close" id="cvModalClose">&times;</button>
+              </div>
+              <div class="modal-body" id="cvModalBody">
+                <div class="form-group">
+                  <label class="form-label">Select Target Job</label>
+                  <select id="cvJobSelect" class="filter-select" style="width:100%;"></select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Focus Areas (optional)</label>
+                  <input type="text" id="cvFocusAreas" class="filter-input" style="width:100%;" placeholder="e.g., infrastructure, critical minerals, fund management">
+                </div>
+                <div id="cvOutput" class="cv-output" style="display:none;"></div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary btn-sm" id="btnGenerateCV">Generate CV</button>
+                <button class="btn btn-outline btn-sm" id="btnCopyCV" style="display:none;">Copy to Clipboard</button>
+                <button class="btn btn-outline btn-sm" id="btnDownloadCV" style="display:none;">Download as Text</button>
+              </div>
+            </div>
+          </div>
+          <!-- Cover Letter Modal -->
+          <div class="modal-overlay" id="letterModal">
+            <div class="modal" style="max-width:700px;">
+              <div class="modal-header">
+                <h3 id="letterModalTitle">Generate Cover Letter</h3>
+                <button class="modal-close" id="letterModalClose">&times;</button>
+              </div>
+              <div class="modal-body" id="letterModalBody">
+                <div class="form-group">
+                  <label class="form-label">Select Target Job</label>
+                  <select id="letterJobSelect" class="filter-select" style="width:100%;"></select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Tone</label>
+                  <select id="letterTone" class="filter-select" style="width:100%;">
+                    <option value="professional">Professional & Confident</option>
+                    <option value="warm">Warm & Personable</option>
+                    <option value="formal">Formal & Institutional</option>
+                  </select>
+                </div>
+                <div id="letterOutput" class="cv-output" style="display:none;"></div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary btn-sm" id="btnGenerateLetter">Generate Letter</button>
+                <button class="btn btn-outline btn-sm" id="btnCopyLetter" style="display:none;">Copy to Clipboard</button>
+                <button class="btn btn-outline btn-sm" id="btnDownloadLetter" style="display:none;">Download as Text</button>
+              </div>
+            </div>
+          </div>
+          <!-- Outreach Modal -->
+          <div class="modal-overlay" id="outreachModal">
+            <div class="modal" style="max-width:700px;">
+              <div class="modal-header">
+                <h3>Draft Networking Outreach</h3>
+                <button class="modal-close" id="outreachModalClose">&times;</button>
+              </div>
+              <div class="modal-body" id="outreachModalBody">
+                <div class="form-group">
+                  <label class="form-label">Select Target Job or Company</label>
+                  <select id="outreachJobSelect" class="filter-select" style="width:100%;"></select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Recipient Name & Title (optional)</label>
+                  <input type="text" id="outreachRecipient" class="filter-input" style="width:100%;" placeholder="e.g., John Smith, Managing Director at Spencer Stuart">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Channel</label>
+                  <select id="outreachChannel" class="filter-select" style="width:100%;">
+                    <option value="linkedin">LinkedIn Message</option>
+                    <option value="email">Email</option>
+                    <option value="intro">Introduction Request</option>
+                  </select>
+                </div>
+                <div id="outreachOutput" class="cv-output" style="display:none;"></div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary btn-sm" id="btnGenerateOutreach">Draft Message</button>
+                <button class="btn btn-outline btn-sm" id="btnCopyOutreach" style="display:none;">Copy to Clipboard</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

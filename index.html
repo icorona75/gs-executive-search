@@ -335,7 +335,13 @@
           </div>
           <div class="timeline-section">
             <h3 class="section-subtitle">Career Timeline</h3>
-            <div id="careerTimeline" class="timeline"></div>
+            <div class="timeline-wrapper" id="timelineWrapper">
+              <div id="careerTimeline" class="timeline"></div>
+            </div>
+            <div class="timeline-scroll-hint" id="timelineScrollHint">
+              <span>Scroll for more</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
           </div>
           <div class="expertise-section">
             <h3 class="section-subtitle">Areas of Expertise</h3>
@@ -345,6 +351,107 @@
             <h3 class="section-subtitle">Education</h3>
             <div id="educationCards" class="edu-grid"></div>
           </div>
+
+          <!-- CV SECTION -->
+          <div class="cv-section">
+            <h3 class="section-subtitle">Resume / CV</h3>
+            <p class="cv-section-intro">Build, upload, or paste your master CV. Use it to generate tailored versions for any job.</p>
+            <div class="cv-mode-tabs" id="cvModeTabs">
+              <button class="cv-mode-tab active" data-mode="builder">CV Builder</button>
+              <button class="cv-mode-tab" data-mode="upload">Upload / Paste</button>
+            </div>
+            <div id="cvBuilderPanel" class="cv-panel">
+              <div class="cv-builder-toolbar">
+                <button class="btn btn-primary btn-sm" id="cvAutoPopulate">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                  Auto-Populate from Profile
+                </button>
+                <button class="btn btn-outline btn-sm" id="cvAddSection">+ Add Section</button>
+                <button class="btn btn-outline btn-sm" id="cvSaveBuilder">Save Master CV</button>
+                <div class="cv-page-selector">
+                  <label class="cv-page-label">Pages:</label>
+                  <div class="cv-page-options" id="cvPageOptions">
+                    <button class="cv-page-btn" data-pages="1">1</button>
+                    <button class="cv-page-btn active" data-pages="2">2</button>
+                    <button class="cv-page-btn" data-pages="3">3</button>
+                  </div>
+                </div>
+              </div>
+              <div class="cv-page-guide" id="cvPageGuide">
+                <span class="cv-page-guide-icon">📄</span>
+                <span class="cv-page-guide-text" id="cvPageGuideText">Target: 2-page CV (~500–800 words). Best for senior executives with 10–25 years of experience.</span>
+                <div class="cv-word-meter"><div class="cv-word-bar" id="cvWordBar"></div></div>
+                <span class="cv-word-count" id="cvWordCount">0 words</span>
+              </div>
+              <div id="cvBuilderSections" class="cv-builder-sections"></div>
+              <div id="cvSuggestionPanel" class="cv-suggestion-panel" style="display:none">
+                <div class="cv-suggestion-header">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+                  <span>Suggestions</span>
+                  <button class="cv-suggestion-close" id="cvSuggestionClose">&times;</button>
+                </div>
+                <div id="cvSuggestionList" class="cv-suggestion-list"></div>
+              </div>
+            </div>
+            <div id="cvUploadPanel" class="cv-panel" style="display:none">
+              <div id="cvUploadArea" class="cv-upload-area">
+                <div class="cv-upload-zone" id="cvDropZone">
+                  <div class="cv-upload-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 12 15 15"/></svg>
+                  </div>
+                  <p class="cv-upload-text">Drag & drop your CV here</p>
+                  <p class="cv-upload-subtext">PDF or Word (.docx) accepted</p>
+                  <div class="cv-upload-actions">
+                    <label class="btn btn-primary btn-sm cv-file-label">
+                      <input type="file" id="cvFileInput" accept=".pdf,.docx,.doc" style="display:none">
+                      Browse Files
+                    </label>
+                    <button class="btn btn-outline btn-sm" id="cvPasteBtn">Paste Text</button>
+                  </div>
+                </div>
+                <div class="cv-paste-modal" id="cvPasteModal" style="display:none">
+                  <div class="cv-paste-header">
+                    <h4>Paste CV Text</h4>
+                    <button class="cv-paste-close" id="cvPasteClose">&times;</button>
+                  </div>
+                  <textarea id="cvPasteArea" class="cv-paste-textarea" placeholder="Paste your CV content here..."></textarea>
+                  <div class="cv-paste-actions">
+                    <button class="btn btn-primary btn-sm" id="cvPasteSave">Save CV</button>
+                    <button class="btn btn-outline btn-sm" id="cvPasteCancel">Cancel</button>
+                  </div>
+                </div>
+              </div>
+              <div id="cvPreview" class="cv-preview" style="display:none">
+                <div class="cv-preview-header">
+                  <div class="cv-preview-file-info">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    <span id="cvFileName">resume.pdf</span>
+                    <span class="badge badge-success" id="cvStatus">Uploaded</span>
+                  </div>
+                  <div class="cv-preview-actions">
+                    <button class="btn btn-outline btn-sm" id="cvLoadToBuilder">Edit in Builder</button>
+                    <button class="btn btn-outline btn-sm" id="cvReplaceBtn">Replace</button>
+                    <button class="btn btn-outline btn-sm cv-remove-btn" id="cvRemoveBtn">Remove</button>
+                  </div>
+                </div>
+                <div class="cv-preview-body" id="cvPreviewBody"></div>
+                <button class="btn btn-outline btn-sm cv-expand-btn" id="cvExpandBtn">Show full CV</button>
+              </div>
+            </div>
+            <div id="cvMasterStatus" class="cv-master-status" style="display:none">
+              <div class="cv-master-info">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Master CV saved</span>
+                <span class="cv-master-date" id="cvMasterDate"></span>
+              </div>
+              <div class="cv-master-actions">
+                <button class="btn btn-primary btn-sm" id="cvDownloadMasterPdf">Download PDF</button>
+                <button class="btn btn-outline btn-sm" id="cvDownloadMasterDocx">Download DOCX</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- APPLICATION TOOLS -->
           <div class="tools-section">
             <h3 class="section-subtitle">Application Tools</h3>
             <div class="tools-grid">
@@ -374,6 +481,50 @@
               </div>
             </div>
           </div>
+
+          <!-- SEARCH PARAMETERS -->
+          <div class="search-params-section">
+            <h3 class="section-subtitle">Search Parameters</h3>
+            <p class="search-params-intro">The engine uses the following criteria to find and rank opportunities.</p>
+            <div class="params-grid">
+              <div class="param-card">
+                <div class="param-card-header">
+                  <span class="param-icon">&#x1F4CB;</span>
+                  <h4 class="param-title">Title Levels</h4>
+                </div>
+                <div id="titleLevelTags" class="param-tags"></div>
+              </div>
+              <div class="param-card">
+                <div class="param-card-header">
+                  <span class="param-icon">&#x1F3ED;</span>
+                  <h4 class="param-title">Industries</h4>
+                </div>
+                <div id="industryTags" class="param-tags"></div>
+              </div>
+              <div class="param-card">
+                <div class="param-card-header">
+                  <span class="param-icon">&#x1F30D;</span>
+                  <h4 class="param-title">Regions</h4>
+                </div>
+                <div id="regionTags" class="param-tags"></div>
+              </div>
+              <div class="param-card">
+                <div class="param-card-header">
+                  <span class="param-icon">&#x1F50D;</span>
+                  <h4 class="param-title">Sources</h4>
+                </div>
+                <div id="sourceTags" class="param-tags"></div>
+              </div>
+              <div class="param-card param-card-wide">
+                <div class="param-card-header">
+                  <span class="param-icon">&#x1F3AF;</span>
+                  <h4 class="param-title">Expertise Tags Used for Matching</h4>
+                </div>
+                <div id="matchingExpertiseTags" class="param-tags"></div>
+              </div>
+            </div>
+          </div>
+
           <!-- CV Creator Modal -->
           <div class="modal-overlay" id="cvModal">
             <div class="modal" style="max-width:700px;">

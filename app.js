@@ -424,6 +424,38 @@
   // ── Jobs Section ──
   let jobPage = 1;
   const JOBS_PER_PAGE = 20;
+  var jobPillFilter = 'all';
+  var VIEWED_JOBS_KEY = 'gs_viewed_jobs';
+
+  function getViewedJobs() {
+    try {
+      if (_store) {
+        var s = _store.getItem(VIEWED_JOBS_KEY);
+        if (s) return JSON.parse(s);
+      }
+      return [];
+    } catch (e) { return []; }
+  }
+
+  function markJobViewed(jobId) {
+    var viewed = getViewedJobs();
+    if (viewed.indexOf(jobId) === -1) {
+      viewed.push(jobId);
+      try {
+        if (_store) _store.setItem(VIEWED_JOBS_KEY, JSON.stringify(viewed));
+      } catch (e) { /* ignore */ }
+    }
+  }
+
+  function isJobUnread(job) {
+    var viewed = getViewedJobs();
+    return viewed.indexOf(job.id) === -1;
+  }
+
+  function getSavedJobIds() {
+    var items = getPipelineItems();
+    return items.filter(function(i) { return i.type === 'job'; }).map(function(i) { return i.name; });
+  }
 
   function populateJobFilters() {
     const regions = [...new Set(jobs.map(j => j.region).filter(Boolean))].sort();
@@ -442,6 +474,15 @@
     const search = document.getElementById('filterJobSearch').value.toLowerCase();
 
     return jobs.filter(j => {
+      // Pill filter
+      if (jobPillFilter === 'new' && !isJobNew(j)) return false;
+      if (jobPillFilter === 'unread' && !isJobUnread(j)) return false;
+      if (jobPillFilter === 'active' && j.status === 'networking_target') return false;
+      if (jobPillFilter === 'networking' && j.status !== 'networking_target') return false;
+      if (jobPillFilter === 'saved') {
+        var savedNames = getSavedJobIds();
+        if (savedNames.indexOf(j.title) === -1) return false;
+      }
       if (region && j.region !== region) return false;
       if (industry) {
         const text = ((j.title || '') + ' ' + (j.company || '') + ' ' + (j.goldie_fit || '') + ' ' + (j.suggested_recruiter || '') + ' ' + (j.requirements || '')).toLowerCase();
@@ -513,17 +554,7 @@
   function renderJobs() {
     var filtered = sortJobs(getFilteredJobs());
     document.getElementById('jobCount').textContent = filtered.length;
-    var newCount = jobs.filter(isJobNew).length;
-    var newInd = document.getElementById('newJobIndicator');
-    var newCnt = document.getElementById('newJobCount');
-    if (newInd && newCnt) {
-      if (newCount > 0) {
-        newInd.style.display = 'inline';
-        newCnt.textContent = newCount;
-      } else {
-        newInd.style.display = 'none';
-      }
-    }
+    updatePillCounts();
     const start = (jobPage - 1) * JOBS_PER_PAGE;
     const paged = filtered.slice(start, start + JOBS_PER_PAGE);
 
@@ -533,14 +564,18 @@
       <div class="result-card${isJobNew(j) ? ' result-card-new' : ''}" data-job-idx="${idx}">
         <div class="result-header">
           <div>
-            <div class="result-title">${isJobNew(j) ? '<span class="new-badge">NEW</span> ' : ''}${esc(j.title)}</div>
+            <div class="result-title">${isJobUnread(j) ? '<span class="unread-dot"></span>' : ''}${isJobNew(j) ? '<span class="new-badge">NEW</span> ' : ''}${esc(j.title)}</div>
             <div class="result-company">${esc(j.company)}</div>
           </div>
           ${(j.salary_range || j.salary) ? `<span class="badge badge-salary">${esc(formatSalaryBadge(j))}</span>` : '<span class="badge">Salary TBD</span>'}
         </div>
+        <div class="result-tags">
+          ${j.industry ? `<span class="tag tag-industry">${esc(j.industry.split('/')[0].split(',')[0].trim())}</span>` : ''}
+          ${j.status === 'networking_target' ? '<span class="tag tag-networking">Networking Target</span>' : '<span class="tag tag-active">Active</span>'}
+          ${j.region ? `<span class="tag tag-region">${esc(j.region)}</span>` : ''}
+        </div>
         <div class="result-meta">
           <span class="result-meta-item">📍 ${esc(j.location || 'Global')}</span>
-          <span class="result-meta-item">${esc(j.region || '')}</span>
           ${j.date_posted ? `<span class="result-meta-item">Posted: ${esc(j.date_posted)}</span>` : ''}
           ${j.suggested_recruiter ? `<span class="result-meta-item">🔍 ${esc(truncate(j.suggested_recruiter, 50))}</span>` : ''}
           ${j._hiring_managers && j._hiring_managers.length > 0 ? `<span class="result-meta-item" style="color:var(--color-primary);">👤 ${esc(j._hiring_managers[0].contact ? j._hiring_managers[0].contact.name : j._hiring_managers[0].firm)}</span>` : ''}
@@ -555,6 +590,9 @@
   function openJobDetail(idx) {
     const j = jobs[idx];
     if (!j) return;
+    markJobViewed(j.id);
+    updatePillCounts();
+    renderJobs(); // re-render to update unread dot
     document.getElementById('jobDetailTitle').textContent = j.title;
 
     const recruiterMatch = findMatchingRecruiter(j);
@@ -564,6 +602,14 @@
         <div class="job-detail-section">
           <div class="job-detail-label">Company</div>
           <div class="job-detail-value">${esc(j.company)}</div>
+        </div>
+        <div class="job-detail-section">
+          <div class="job-detail-label">Industry</div>
+          <div class="job-detail-value">${esc(j.industry || 'Not specified')}</div>
+        </div>
+        <div class="job-detail-section">
+          <div class="job-detail-label">Status</div>
+          <div class="job-detail-value">${j.status === 'networking_target' ? '<span class="tag tag-networking">Networking Target</span> — No confirmed open posting. Monitor for openings.' : '<span class="tag tag-active">Active Listing</span>'}</div>
         </div>
         <div class="job-detail-section">
           <div class="job-detail-label">Location</div>
@@ -1193,6 +1239,44 @@
   ['filterRegion', 'filterIndustry', 'filterJobSearch', 'sortJobs'].forEach(id => {
     document.getElementById(id).addEventListener(id.includes('Search') ? 'input' : 'change', debounce(() => { jobPage = 1; renderJobs(); }, 200));
   });
+
+  // Filter pill click handlers
+  document.querySelectorAll('#jobFilterPills .filter-pill').forEach(function(pill) {
+    pill.addEventListener('click', function() {
+      document.querySelectorAll('#jobFilterPills .filter-pill').forEach(function(p) { p.classList.remove('active'); });
+      pill.classList.add('active');
+      jobPillFilter = pill.dataset.filter;
+      jobPage = 1;
+      renderJobs();
+    });
+  });
+
+  function updatePillCounts() {
+    var newCount = jobs.filter(isJobNew).length;
+    var unreadCount = jobs.filter(isJobUnread).length;
+    var savedNames = getSavedJobIds();
+    var savedCount = jobs.filter(function(j) { return savedNames.indexOf(j.title) !== -1; }).length;
+    var activeCount = jobs.filter(function(j) { return j.status !== 'networking_target'; }).length;
+    var networkingCount = jobs.filter(function(j) { return j.status === 'networking_target'; }).length;
+
+    var pillNew = document.getElementById('pillNewCount');
+    var pillUnread = document.getElementById('pillUnreadCount');
+    if (pillNew) pillNew.textContent = newCount;
+    if (pillUnread) pillUnread.textContent = unreadCount;
+
+    // Also update the header new job indicator
+    var newInd = document.getElementById('newJobIndicator');
+    var newCnt = document.getElementById('newJobCount');
+    if (newInd && newCnt) {
+      if (newCount > 0) {
+        newInd.style.display = 'inline';
+        newCnt.textContent = newCount;
+      } else {
+        newInd.style.display = 'none';
+      }
+    }
+  }
+  updatePillCounts();
   ['filterCompRegion', 'filterCompIndustry', 'filterCompSearch'].forEach(id => {
     document.getElementById(id).addEventListener(id.includes('Search') ? 'input' : 'change', debounce(() => { companyPage = 1; renderCompanies(); }, 200));
   });

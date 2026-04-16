@@ -23,7 +23,7 @@ window.APP_DATA = {
         "years": "2000-2003"
       },
       {
-        "school": "Instituto Tecnol\u00f3gico Aut\u00f3nomo de M\u00e9xico (ITAM)",
+        "school": "Instituto Tecnológico Autónomo de México (ITAM)",
         "degree": "BA, International Relations (Magna Cum Laude)",
         "years": "1994-1999"
       }
@@ -99,16 +99,16 @@ window.APP_DATA = {
       "company": "EBRD - European Bank for Reconstruction and Development",
       "location": "London, United Kingdom",
       "region": "Europe",
-      "salary_range": "Not publicly disclosed (senior DFI executive compensation; estimated \u00a3250,000\u2013\u00a3400,000 + benefits package)",
+      "salary_range": "Not publicly disclosed (senior DFI executive compensation; estimated £250,000–£400,000 + benefits package)",
       "application_url": "https://www.impactpool.org/jobs/1190955",
       "application_method": "Apply via ImpactPool or EBRD careers portal; contact Heidrick & Struggles Frankfurt (seisenreich@heidrick.com, subject: 'EBRD MD Corporate Sector')",
       "date_posted": "2026-02-09",
       "contract_type": "Fixed Term, 4 years with potential to renew 4 more",
       "requirements": "Extensive international experience in one of: Manufacturing & Services, Food & Agribusiness, TMT, Natural Resources, Real Estate; first-line banking skills (origination, structuring, complex debt and equity); experience managing 200+ staff; post-graduate degree; strong stakeholder/policy dialogue experience with governments and MDBs",
-      "goldie_fit": "Goldie's 25+ years spanning DFI investment (DFC, IDB Invest), emerging markets, and PE aligns with EBRD's mandate. Her current role managing MDs globally at DFC mirrors the scale of this position. Her Spanish and Hebrew fluency supports EBRD's MEA/SEMED operations. The role is being handled by Heidrick & Struggles \u2014 a firm she can approach directly.",
+      "goldie_fit": "Goldie's 25+ years spanning DFI investment (DFC, IDB Invest), emerging markets, and PE aligns with EBRD's mandate. Her current role managing MDs globally at DFC mirrors the scale of this position. Her Spanish and Hebrew fluency supports EBRD's MEA/SEMED operations. The role is being handled by Heidrick & Struggles — a firm she can approach directly.",
       "suggested_recruiter": "Heidrick & Struggles (confirmed handler); Spencer Stuart for backup DFI searches",
       "source_url": "https://www.impactpool.org/jobs/1190955",
-      "notes": "Application deadline was Feb 9, 2026 \u2014 this may be in late-stage review. Worth contacting Heidrick & Struggles directly given Goldie's profile.",
+      "notes": "Application deadline was Feb 9, 2026 — this may be in late-stage review. Worth contacting Heidrick & Struggles directly given Goldie's profile.",
       "date_added": "2026-03-06",
       "industry": "Development Finance"
     },
@@ -118,36 +118,36 @@ window.APP_DATA = {
       "company": "GCM Grosvenor",
       "location": "Chicago, IL or New York, NY, USA",
       "region": "North America",
-      "salary_range": "MD-level compensation estimated $400,000\u2013$700,000 base + carry + bonus",
+      "salary_range": "MD-level compensation estimated $400,000–$700,000 base + carry + bonus",
       "application_url": "https://gcmgrosvenor.com/careers/",
-      "application_method": "Apply via GCM Grosvenor careers portal at gcmgrosvenor.com/careers. GCM uses executive search firms for senior hires \u2014 contact Korn Ferry, Spencer Stuart, or Russell Reynolds for senior openings.",
+      "application_method": "Apply via GCM Grosvenor careers portal at gcmgrosvenor.com/careers. GCM uses executive search firms for senior hires — contact Korn Ferry, Spencer Stuart, or Russell Reynolds for senior openings.",
       "date_posted": "Ongoing recruitment",
       "contract_type": "Full-time, permanent",
       "requirements": "10+ years in alternative investments (PE, infrastructure, private credit); LP/GP relationship management; fund-of-funds or multi-strategy alternatives management experience; institutional client coverage; MD-level leadership",
       "goldie_fit": "GCM Grosvenor is one of the largest alternatives FOF platforms globally with ~$80B AUM. They actively hire senior investment professionals with EM/impact expertise. Their sustainability and impact division has been growing (Jonathan Hirschtritt, MD of Sustainability & Impact Investing, spoke at 2026 Impact Investor Summit). Goldie's fund-of-funds management, impact investing credentials, and institutional relationships are highly relevant.",
       "suggested_recruiter": "Korn Ferry; Spencer Stuart; GCM also recruits directly",
       "source_url": "https://gcmgrosvenor.com/careers/",
-      "notes": "No specific open role confirmed, but GCM is a strong target given scale and impact capabilities. Goldie should network via GCM's emerging managers program team. | Networking target \u2014 monitor for confirmed openings.",
+      "notes": "No specific open role confirmed, but GCM is a strong target given scale and impact capabilities. Goldie should network via GCM's emerging managers program team. | Networking target — monitor for confirmed openings.",
       "date_added": "2026-03-06",
       "status": "networking_target",
       "industry": "Alternatives / Fund-of-Funds"
     },
     {
       "id": 3,
-      "title": "Managing Director / Partner \u2014 Emerging Markets Fund Investments",
+      "title": "Managing Director / Partner — Emerging Markets Fund Investments",
       "company": "StepStone Group",
       "location": "New York, NY or Washington, DC, USA",
       "region": "Americas / Global",
-      "salary_range": "MD/Partner compensation: estimated $400,000\u2013$900,000 total comp (base + bonus + carry); StepStone is publicly traded (STEP)",
+      "salary_range": "MD/Partner compensation: estimated $400,000–$900,000 total comp (base + bonus + carry); StepStone is publicly traded (STEP)",
       "application_url": "https://www.stepstonegroup.com/careers/",
       "application_method": "Apply via stepstonegroup.com/careers/ or through executive search. StepStone uses Options Group and Korn Ferry for senior investment hires.",
       "date_posted": "Ongoing",
       "contract_type": "Full-time, permanent",
       "requirements": "10+ years in private markets fund-of-funds, advisory, or institutional investment; EM focus preferred; track record in fund due diligence and manager selection; LP client management experience; strong writing and analytical skills for investor reporting",
-      "goldie_fit": "StepStone is a top-5 global FoF platform ($160B+ AUM) with deep EM coverage. Their fund advisory and customized solutions business is exactly where Goldie's expertise plays \u2014 fund selection, portfolio construction, EM allocation strategy. StepStone was NYSTRS's PE consultant (strong institutional relationship), highlighting their institutional investor focus. Goldie's government and DFI background could open institutional client relationships.",
+      "goldie_fit": "StepStone is a top-5 global FoF platform ($160B+ AUM) with deep EM coverage. Their fund advisory and customized solutions business is exactly where Goldie's expertise plays — fund selection, portfolio construction, EM allocation strategy. StepStone was NYSTRS's PE consultant (strong institutional relationship), highlighting their institutional investor focus. Goldie's government and DFI background could open institutional client relationships.",
       "suggested_recruiter": "Options Group (StepStone relationship); Korn Ferry",
       "source_url": "https://www.linkedin.com/company/stepstone-group",
-      "notes": "Strong target. StepStone has been hiring senior EM professionals to serve growing sovereign and institutional client base. | Networking target \u2014 monitor for confirmed openings.",
+      "notes": "Strong target. StepStone has been hiring senior EM professionals to serve growing sovereign and institutional client base. | Networking target — monitor for confirmed openings.",
       "date_added": "2026-03-06",
       "status": "networking_target",
       "industry": "Private Equity / Fund-of-Funds"
@@ -158,7 +158,7 @@ window.APP_DATA = {
       "company": "Adams Street Partners",
       "location": "Chicago, IL or Washington, DC",
       "region": "Americas / Global",
-      "salary_range": "MD-level: estimated $400,000\u2013$800,000 total comp",
+      "salary_range": "MD-level: estimated $400,000–$800,000 total comp",
       "application_url": "https://www.adamsstreetpartners.com/careers/",
       "application_method": "Apply via adamsstreetpartners.com/careers/ or through executive search. Adams Street uses Korn Ferry and Spencer Stuart.",
       "date_posted": "Ongoing",
@@ -175,37 +175,37 @@ window.APP_DATA = {
     {
       "id": 5,
       "title": "Head of Funds / Managing Director, Fund-of-Funds",
-      "company": "British International Investment (BII) \u2014 UK's DFI",
+      "company": "British International Investment (BII) — UK's DFI",
       "location": "London, United Kingdom",
       "region": "Europe",
-      "salary_range": "MD-level at BII: estimated \u00a3180,000\u2013\u00a3250,000 + bonus",
+      "salary_range": "MD-level at BII: estimated £180,000–£250,000 + bonus",
       "application_url": "https://www.bii.co.uk/en/about/careers/",
       "application_method": "Monitor BII careers at bii.co.uk/en/about/careers/. BII occasionally uses Heidrick & Struggles for senior investment roles.",
       "date_posted": "Ongoing",
       "contract_type": "Full-time, permanent",
       "requirements": "10+ years in PE/infrastructure fund investment management in emerging markets; fund-of-funds experience; ESG/impact measurement framework expertise; development finance mandate understanding; strong GP/LP networks in Africa, South/Southeast Asia; MBA required",
-      "goldie_fit": "BII (formerly CDC Group) is the UK's bilateral DFI and runs a large fund-of-funds portfolio investing in PE and infrastructure funds across Africa and South/Southeast Asia \u2014 directly analogous to Goldie's DFC program. Her development finance, ESG, and emerging markets expertise make her an exceptional candidate for a senior funds leadership role. UK work authorization would be needed (she holds Israeli citizenship which enables some pathways via UK Global Talent Visa).",
+      "goldie_fit": "BII (formerly CDC Group) is the UK's bilateral DFI and runs a large fund-of-funds portfolio investing in PE and infrastructure funds across Africa and South/Southeast Asia — directly analogous to Goldie's DFC program. Her development finance, ESG, and emerging markets expertise make her an exceptional candidate for a senior funds leadership role. UK work authorization would be needed (she holds Israeli citizenship which enables some pathways via UK Global Talent Visa).",
       "suggested_recruiter": "Heidrick & Struggles London; Egon Zehnder London for DFI roles",
       "source_url": "https://www.linkedin.com/company/harbourvest-partners",
-      "notes": "BII's fund investments team is one of the most active in DFI-backed PE. Strong institutional fit. Work authorization is the key consideration. | Networking target \u2014 monitor for confirmed openings.",
+      "notes": "BII's fund investments team is one of the most active in DFI-backed PE. Strong institutional fit. Work authorization is the key consideration. | Networking target — monitor for confirmed openings.",
       "date_added": "2026-03-06",
       "status": "networking_target",
       "industry": "Development Finance / Fund-of-Funds"
     },
     {
       "id": 6,
-      "title": "IFC Regional Industry Director, Infrastructure & Natural Resources \u2014 Africa (N/W/C)",
-      "company": "IFC (International Finance Corporation) \u2014 World Bank Group",
-      "location": "Lagos, Nigeria (or to be confirmed \u2014 N/W/C Africa region)",
+      "title": "IFC Regional Industry Director, Infrastructure & Natural Resources — Africa (N/W/C)",
+      "company": "IFC (International Finance Corporation) — World Bank Group",
+      "location": "Lagos, Nigeria (or to be confirmed — N/W/C Africa region)",
       "region": "Africa",
-      "salary_range": "IFC Director grade \u2014 estimated $250,000\u2013$330,000 + WBG benefits",
+      "salary_range": "IFC Director grade — estimated $250,000–$330,000 + WBG benefits",
       "application_url": "https://worldbankgroup.csod.com/ux/ats/careersite/1/home/requisition/35459?c=worldbankgroup",
       "application_method": "Apply via World Bank Group career portal (req35459). Deadline was February 11, 2026. Contact Korn Ferry or IFC directly to confirm status.",
       "date_posted": "2026-01-22",
       "deadline": "2026-02-11",
       "contract_type": "Fixed Term, 4 years",
       "requirements": "Master's or PhD in economics, finance, or business; 15+ years relevant experience in infrastructure/natural resources finance in EM; significant leadership and management skills; client and stakeholder engagement experience; English required (French/Arabic a plus for N/W/C Africa)",
-      "goldie_fit": "IFC Regional Industry Director is a Director-equivalent role within IFC's investment hierarchy. While Goldie's background is more fund-of-funds than direct infrastructure project finance, her DFC role includes infrastructure fund investments and climate finance. French language would be a partial gap for N/W/C Africa. Deadline passed Feb 11 \u2014 contact Korn Ferry/IFC directly to assess status.",
+      "goldie_fit": "IFC Regional Industry Director is a Director-equivalent role within IFC's investment hierarchy. While Goldie's background is more fund-of-funds than direct infrastructure project finance, her DFC role includes infrastructure fund investments and climate finance. French language would be a partial gap for N/W/C Africa. Deadline passed Feb 11 — contact Korn Ferry/IFC directly to assess status.",
       "suggested_recruiter": "Korn Ferry (IFC senior searches); direct WBG application",
       "source_url": "https://www.myjobmag.com/job/regional-industry-director-infrastructure-natural-resources-africa-international-finance-corporation-ifc",
       "notes": "Deadline passed February 11, 2026. May be in review stage. Contact Korn Ferry or IFC HR directly. A second similar role for East/Southern Africa also posted on ImpactPool (https://www.impactpool.org/jobs/1192812).",
@@ -218,106 +218,106 @@ window.APP_DATA = {
       "company": "Crux Climate",
       "location": "Remote, USA (optional offices: Washington DC, New York)",
       "region": "North America",
-      "salary_range": "$500,000 \u2013 $700,000+ total cash compensation (base + bonus) + stock options in $77M-funded company",
+      "salary_range": "$500,000 – $700,000+ total cash compensation (base + bonus) + stock options in $77M-funded company",
       "application_url": "https://www.linkedin.com/jobs/view/managing-director-industry-coverage-at-crux-4375098185",
       "application_method": "Apply via LinkedIn (job ID 4375098185) or at https://jobs.ashbyhq.com/cruxclimate. Rolling applications. Also posted on ZipRecruiter.",
       "date_posted": "2026-02-25",
       "contract_type": "Full-time, permanent",
       "requirements": "10+ years in clean energy finance, renewable energy project finance, or energy investment banking; proven track record building/managing relationships with clean energy developers and manufacturers; expertise in capital markets supporting energy transition; comfortable in high-growth tech+finance environment; willing to travel 25%",
-      "goldie_fit": "Crux is a rapidly growing ($77M raised) capital markets platform facilitating financing for clean energy and critical minerals \u2014 two of DFC's core focus areas. Goldie's DFC role includes clean energy fund investments, critical minerals, and infrastructure finance. Her network of clean energy developers and institutional investors (DFIs, pension funds, SWFs) is commercially valuable to Crux. The MD, Industry Coverage involves client relationships with energy developers. Compensation is exceptional ($500K\u2013$700K+). Remote-first with DC office is a significant advantage. Note: NOT the Tax Investor Coverage MD role (requires tax accounting expertise).",
+      "goldie_fit": "Crux is a rapidly growing ($77M raised) capital markets platform facilitating financing for clean energy and critical minerals — two of DFC's core focus areas. Goldie's DFC role includes clean energy fund investments, critical minerals, and infrastructure finance. Her network of clean energy developers and institutional investors (DFIs, pension funds, SWFs) is commercially valuable to Crux. The MD, Industry Coverage involves client relationships with energy developers. Compensation is exceptional ($500K–$700K+). Remote-first with DC office is a significant advantage. Note: NOT the Tax Investor Coverage MD role (requires tax accounting expertise).",
       "suggested_recruiter": "Crux recruits directly; Selby Jennings for clean energy finance MD roles",
       "source_url": "https://www.ziprecruiter.com/c/Crux-Climate/Job/Managing-Director,-Industry-Coverage/-in-Remote,US?jid=ad3624eb97a0bb99",
-      "notes": "Crux is backed by a16z, Lowercarbon, Pattern Energy, OMERS. Also has a MD, Tax Investor Coverage role open at same compensation \u2014 NOT a fit for Goldie (tax accounting background required).",
+      "notes": "Crux is backed by a16z, Lowercarbon, Pattern Energy, OMERS. Also has a MD, Tax Investor Coverage role open at same compensation — NOT a fit for Goldie (tax accounting background required).",
       "date_added": "2026-03-06",
       "industry": "Climate Finance / Clean Energy"
     },
     {
       "id": 8,
-      "title": "Managing Director / Senior Investment Professional \u2013 Critical Minerals Consortium",
+      "title": "Managing Director / Senior Investment Professional – Critical Minerals Consortium",
       "company": "Orion Resource Partners",
       "location": "New York, NY (with Abu Dhabi and London offices)",
       "region": "North America",
-      "salary_range": "Not posted; MD-level at Orion estimated $400,000\u2013$1M+ (base + carry)",
+      "salary_range": "Not posted; MD-level at Orion estimated $400,000–$1M+ (base + carry)",
       "application_url": "https://www.orionrp.com",
       "application_method": "Send resume to [email protected] (Abu Dhabi investment team); for New York roles contact through LinkedIn or orionrp.com careers page",
-      "requirements": "2\u20134+ years for analyst roles; for MD/MP level: deep mining finance track record, network in metals/minerals PE, commodities experience; proven deal origination and execution in emerging market mining; familiarity with debt, equity, royalty, and streaming structures",
-      "goldie_fit": "Exceptional strategic alignment. The Orion Critical Mineral Consortium (CMC) was co-founded by DFC (Goldie's employer) with Orion and ADQ \u2014 a $1.8B platform targeting $5B. DFC is Orion's LP and strategic partner in this consortium. Goldie manages DFC's investment funds including this exact vehicle from the inside. Her deep knowledge of the CMC's deal pipeline, governance, and investment criteria is unmatched externally. Orion's Managing Partner & Deputy CEO Michael Barton manages global investment strategy; the firm is scaling rapidly with Abu Dhabi (Managing Partner Philip Clegg) and London offices. The 'Orion Commodities Management' MD role filled in 2024 suggests ongoing senior expansion. Goldie's Glencore commodities experience and fund-of-funds background directly maps to Orion's cross-instrument (equity/debt/royalty) approach.",
+      "requirements": "2–4+ years for analyst roles; for MD/MP level: deep mining finance track record, network in metals/minerals PE, commodities experience; proven deal origination and execution in emerging market mining; familiarity with debt, equity, royalty, and streaming structures",
+      "goldie_fit": "Exceptional strategic alignment. The Orion Critical Mineral Consortium (CMC) was co-founded by DFC (Goldie's employer) with Orion and ADQ — a $1.8B platform targeting $5B. DFC is Orion's LP and strategic partner in this consortium. Goldie manages DFC's investment funds including this exact vehicle from the inside. Her deep knowledge of the CMC's deal pipeline, governance, and investment criteria is unmatched externally. Orion's Managing Partner & Deputy CEO Michael Barton manages global investment strategy; the firm is scaling rapidly with Abu Dhabi (Managing Partner Philip Clegg) and London offices. The 'Orion Commodities Management' MD role filled in 2024 suggests ongoing senior expansion. Goldie's Glencore commodities experience and fund-of-funds background directly maps to Orion's cross-instrument (equity/debt/royalty) approach.",
       "suggested_recruiter": "Direct to Oskar Lewnowski (CEO, Orion) via LinkedIn; or Matthew Zales (CMO/IR) at New York office; or oadhiring@orionrp.com for Abu Dhabi",
-      "date_posted": "Ongoing \u2013 no specific posting; inferred from rapid team expansion and CMC launch Jan 2026",
+      "date_posted": "Ongoing – no specific posting; inferred from rapid team expansion and CMC launch Jan 2026",
       "source_url": "https://orionrp.com/culture",
       "date_added": "2026-03-06",
-      "notes": "Networking target \u2014 no confirmed open posting. Monitor for openings.",
+      "notes": "Networking target — no confirmed open posting. Monitor for openings.",
       "status": "networking_target",
       "industry": "Critical Minerals / Private Equity"
     },
     {
       "id": 9,
-      "title": "Partner / Managing Director \u2013 Private Equity (Critical Minerals / Metals & Mining)",
+      "title": "Partner / Managing Director – Private Equity (Critical Minerals / Metals & Mining)",
       "company": "Resource Capital Funds (RCF)",
       "location": "Denver, CO; London, UK; Toronto, Canada; Perth, Australia (multiple offices)",
       "region": "North America",
-      "salary_range": "Not posted; Partner/MD level estimated $350,000\u2013$800,000+ base + fund carry",
+      "salary_range": "Not posted; Partner/MD level estimated $350,000–$800,000+ base + fund carry",
       "application_url": "https://resourcecapitalfunds.com",
       "application_method": "Contact via enquiries@rcflp.com; also direct outreach to Martin Valdes (Partner, Head of Private Equity) via LinkedIn",
       "requirements": "Extensive metals and mining PE track record; proven deal origination in critical minerals (battery metals, base metals, precious metals); financial modeling, due diligence, portfolio management; board representation experience; global network; DFI/sovereign co-investor relationships strongly valued",
-      "goldie_fit": "Strong complementary fit. RCF ($25+ years, 235+ portfolio investments, 55+ countries) specifically targets emerging market mining \u2014 precisely Goldie's DFC mandate. Her DFC investment fund management experience means she has been an LP-side co-investor to funds like RCF, understands fund economics, carries, and governance. Her IDB Invest background covers Latin America (Chile, Brazil, Peru, Colombia) which overlaps with RCF's heavy LA exposure. Goldie's fund-of-funds expertise translates to RCF's external LP management. RCF Partner Rich Brereton (Head of IR, ex-Morgan Stanley MD) represents the caliber of senior hire RCF makes. Note RCF is actively hiring across critical minerals given the commodity supercycle \u2014 their LinkedIn shows multiple open roles.",
-      "suggested_recruiter": "Spencer Stuart \u2013 Denver natural resources/PE practice; direct to Rich Brereton (Partner, Global Head of Investor Relations, RCF) via LinkedIn",
+      "goldie_fit": "Strong complementary fit. RCF ($25+ years, 235+ portfolio investments, 55+ countries) specifically targets emerging market mining — precisely Goldie's DFC mandate. Her DFC investment fund management experience means she has been an LP-side co-investor to funds like RCF, understands fund economics, carries, and governance. Her IDB Invest background covers Latin America (Chile, Brazil, Peru, Colombia) which overlaps with RCF's heavy LA exposure. Goldie's fund-of-funds expertise translates to RCF's external LP management. RCF Partner Rich Brereton (Head of IR, ex-Morgan Stanley MD) represents the caliber of senior hire RCF makes. Note RCF is actively hiring across critical minerals given the commodity supercycle — their LinkedIn shows multiple open roles.",
+      "suggested_recruiter": "Spencer Stuart – Denver natural resources/PE practice; direct to Rich Brereton (Partner, Global Head of Investor Relations, RCF) via LinkedIn",
       "date_posted": "Ongoing / rolling senior hiring",
       "source_url": "https://resourcecapitalfunds.com",
       "date_added": "2026-03-06",
-      "notes": "Networking target \u2014 no confirmed open posting. Monitor for openings.",
+      "notes": "Networking target — no confirmed open posting. Monitor for openings.",
       "status": "networking_target",
       "industry": "Critical Minerals / Mining PE"
     },
     {
       "id": 10,
-      "title": "Senior Managing Director / Managing Director \u2013 Critical Minerals Advisory",
-      "company": "FTI Consulting \u2013 Power, Renewables & Energy Transition (PRET) Practice",
+      "title": "Senior Managing Director / Managing Director – Critical Minerals Advisory",
+      "company": "FTI Consulting – Power, Renewables & Energy Transition (PRET) Practice",
       "location": "Washington, DC or New York, NY",
       "region": "North America",
-      "salary_range": "FTI SMD/MD range: $300,000\u2013$700,000+ base + annual bonus",
+      "salary_range": "FTI SMD/MD range: $300,000–$700,000+ base + annual bonus",
       "application_url": "https://www.fticonsulting.com/careers",
       "application_method": "Apply via FTI Consulting careers portal; also direct outreach to PRET Global Practice Leader or current SMD/MD (shown in article byline)",
       "requirements": "Senior-level government advisory and capital markets expertise; deep critical minerals sector knowledge; federal financing program experience (DOE, EXIM, DFC, DoD/OSC); client-facing advisory at C-suite and agency level; ideally with DFI or investment banking background",
-      "goldie_fit": "Excellent advisory fit. FTI's PRET practice is directly advising DFC, EXIM, DOE, and private sector clients on critical minerals financing \u2014 the exact landscape Goldie inhabits at DFC. She has 25+ years of experience on both sides of transactions that FTI advises on. Her DFC position gives her institutional knowledge of federal financing programs (DPA, DOE LPO, EXIM SCRI, DFC CMC) that FTI explicitly markets. FTI recently published a major critical minerals playbook (Feb 2026) demonstrating active practice building. Goldie's emerging markets PE/infrastructure background (IDB Invest, DFC equity investments) adds commercial credibility that distinguishes her from purely government-side advisors. She would likely enter at Managing Director or Senior Managing Director level given seniority.",
+      "goldie_fit": "Excellent advisory fit. FTI's PRET practice is directly advising DFC, EXIM, DOE, and private sector clients on critical minerals financing — the exact landscape Goldie inhabits at DFC. She has 25+ years of experience on both sides of transactions that FTI advises on. Her DFC position gives her institutional knowledge of federal financing programs (DPA, DOE LPO, EXIM SCRI, DFC CMC) that FTI explicitly markets. FTI recently published a major critical minerals playbook (Feb 2026) demonstrating active practice building. Goldie's emerging markets PE/infrastructure background (IDB Invest, DFC equity investments) adds commercial credibility that distinguishes her from purely government-side advisors. She would likely enter at Managing Director or Senior Managing Director level given seniority.",
       "suggested_recruiter": "Direct outreach to FTI PRET Global Practice Leader; also search via Egon Zehnder or Korn Ferry for FTI MD-level advisory hires",
       "date_posted": "Ongoing / rolling senior hires; practice actively expanding per Feb 2026 publication",
       "source_url": "https://www.fticonsulting.com/insights/articles/lender-market-maker-us-critical-minerals-playbook",
       "date_added": "2026-03-06",
-      "notes": "Networking target \u2014 no confirmed open posting. Monitor for openings.",
+      "notes": "Networking target — no confirmed open posting. Monitor for openings.",
       "status": "networking_target",
       "industry": "Critical Minerals / Advisory"
     },
     {
       "id": 11,
-      "title": "Head of Investment / Managing Director \u2013 Critical Minerals",
-      "company": "US Export-Import Bank (EXIM) \u2013 Supply Chain Resiliency Initiative (SCRI)",
+      "title": "Head of Investment / Managing Director – Critical Minerals",
+      "company": "US Export-Import Bank (EXIM) – Supply Chain Resiliency Initiative (SCRI)",
       "location": "Washington, DC",
       "region": "North America",
-      "salary_range": "SES/Senior Executive Service or equivalent: $175,000\u2013$225,000 (government scale); competitive with agency pay flexibility",
+      "salary_range": "SES/Senior Executive Service or equivalent: $175,000–$225,000 (government scale); competitive with agency pay flexibility",
       "application_url": "https://www.usajobs.gov (search EXIM Bank Director)",
       "application_method": "Monitor USAJOBS.gov for EXIM Director/SVP level postings; also direct outreach via EXIM HR or Congressional contacts",
       "requirements": "Senior-level government or financial institution executive; knowledge of export credit, critical minerals financing, and supply chain security; ability to lead interagency coordination; DPA/CHIPS/EXIM program expertise; strong private sector relationships in mining and critical minerals",
-      "goldie_fit": "Very strong government-to-government transition fit. EXIM's SCRI specifically finances upstream critical minerals projects in allied countries where US manufacturers have signed offtake agreements \u2014 directly parallel to DFC's mandate. Goldie has spent 5+ years working with EXIM's interagency partners on critical minerals, participating in joint deal structures. EXIM's SVP on critical minerals (seen speaking at public panels in July 2025) represents the seniority level appropriate for Goldie. Under CEO Jovanovic, EXIM has become the world's largest critical minerals financing vehicle ($200M+ LOIs, Project Vault at $12B). Goldie's development finance, blended finance, and fund management experience fills a gap EXIM has between pure credit officers and strategic leadership.",
+      "goldie_fit": "Very strong government-to-government transition fit. EXIM's SCRI specifically finances upstream critical minerals projects in allied countries where US manufacturers have signed offtake agreements — directly parallel to DFC's mandate. Goldie has spent 5+ years working with EXIM's interagency partners on critical minerals, participating in joint deal structures. EXIM's SVP on critical minerals (seen speaking at public panels in July 2025) represents the seniority level appropriate for Goldie. Under CEO Jovanovic, EXIM has become the world's largest critical minerals financing vehicle ($200M+ LOIs, Project Vault at $12B). Goldie's development finance, blended finance, and fund management experience fills a gap EXIM has between pure credit officers and strategic leadership.",
       "suggested_recruiter": "USAJobs.gov official posting; political appointment process for senior roles; also contact via Export-Import Bank HR at (202) 565-3946",
       "date_posted": "Ongoing / rolling government hiring; specific posting dates vary",
       "source_url": "https://www.linkedin.com/posts/eximbankus_critical-minerals-critical-moment-activity-7351609936960704513-bt0n",
       "date_added": "2026-03-06",
-      "notes": "Networking target \u2014 no confirmed open posting. Monitor for openings.",
+      "notes": "Networking target — no confirmed open posting. Monitor for openings.",
       "status": "networking_target",
       "industry": "Critical Minerals / Development Finance"
     },
     {
       "id": 12,
-      "title": "Managing Director \u2013 Governance Studies (Economics / Finance / Policy)",
+      "title": "Managing Director – Governance Studies (Economics / Finance / Policy)",
       "company": "The Brookings Institution",
       "location": "Washington, DC",
       "region": "North America",
-      "salary_range": "Not disclosed; Brookings MD level: estimated $200,000\u2013$350,000",
+      "salary_range": "Not disclosed; Brookings MD level: estimated $200,000–$350,000",
       "application_url": "https://www.brookings.edu/careers (Job ID: 2026-3812)",
       "application_method": "Apply via Brookings careers portal (Job ID: 2026-3812); also direct outreach to Governance Studies program director",
       "requirements": "Senior research and policy leadership; expertise in governance, development finance, international economic policy; ability to lead research programs and engage policymakers; publication and fundraising track record",
-      "goldie_fit": "Moderate fit \u2013 strong policy angle. While not a pure investment role, Brookings Governance Studies regularly covers development finance, critical minerals policy, and US strategic investment programs (including DFC reform recommendations, per Carnegie Endowment and related think tanks). Goldie's 25+ years at the intersection of DFC policy and private investment gives her deep subject matter expertise. The Carnegie Endowment published major DFC reform work in December 2025 directly relevant to Goldie's experience. A Brookings MD role would position her as a thought leader in the critical minerals investment and development finance space. Best suited if Goldie seeks an influence/policy platform while transitioning to private sector. Noted as secondary/alternative option.",
+      "goldie_fit": "Moderate fit – strong policy angle. While not a pure investment role, Brookings Governance Studies regularly covers development finance, critical minerals policy, and US strategic investment programs (including DFC reform recommendations, per Carnegie Endowment and related think tanks). Goldie's 25+ years at the intersection of DFC policy and private investment gives her deep subject matter expertise. The Carnegie Endowment published major DFC reform work in December 2025 directly relevant to Goldie's experience. A Brookings MD role would position her as a thought leader in the critical minerals investment and development finance space. Best suited if Goldie seeks an influence/policy platform while transitioning to private sector. Noted as secondary/alternative option.",
       "suggested_recruiter": "Direct outreach to Brookings Governance Studies; or via Heidrick & Struggles DC public policy practice",
       "date_posted": "2026 (2 weeks before search date per LinkedIn posting)",
       "source_url": "https://www.linkedin.com/jobs/view/managing-director-governance-studies-job-id-2026-3812-at-the-brookings-institution",
@@ -327,31 +327,31 @@ window.APP_DATA = {
     },
     {
       "id": 13,
-      "title": "Managing Director / Partner \u2014 Emerging Markets PE/Infrastructure",
+      "title": "Managing Director / Partner — Emerging Markets PE/Infrastructure",
       "company": "Warburg Pincus",
       "location": "New York, NY or Washington, DC",
       "region": "Americas / Global",
-      "salary_range": "Partner-level compensation at Warburg: estimated $800,000\u2013$2,000,000+ total comp (base + bonus + carry)",
+      "salary_range": "Partner-level compensation at Warburg: estimated $800,000–$2,000,000+ total comp (base + bonus + carry)",
       "application_url": "https://www.warburgpincus.com/careers/",
       "application_method": "Apply via warburgpincus.com/careers/ or through executive search firms. Warburg uses Korn Ferry and Spencer Stuart for senior hires.",
-      "date_posted": "Ongoing \u2014 firm is actively hiring EM-focused investment professionals",
+      "date_posted": "Ongoing — firm is actively hiring EM-focused investment professionals",
       "contract_type": "Full-time, permanent",
       "requirements": "15+ years in PE, with strong EM track record; deal origination and execution in emerging markets; ability to manage senior relationships with founders, governments, and LPs; MBA from top institution; regional language skills a plus",
-      "goldie_fit": "Warburg Pincus has one of the most active global EM PE programs (India, China, Africa, LatAm). Goldie's EM expertise, investment banking background (Evercore/Protego \u2014 Mexico), IDB Invest experience, DFC network, and Wharton MBA align well with the Partner profile. Her fund-of-funds expertise also positions her for their fund-level work. Less certain fit on the deal execution side vs. fund management.",
+      "goldie_fit": "Warburg Pincus has one of the most active global EM PE programs (India, China, Africa, LatAm). Goldie's EM expertise, investment banking background (Evercore/Protego — Mexico), IDB Invest experience, DFC network, and Wharton MBA align well with the Partner profile. Her fund-of-funds expertise also positions her for their fund-level work. Less certain fit on the deal execution side vs. fund management.",
       "suggested_recruiter": "Korn Ferry (Warburg's primary search partner); Spencer Stuart",
       "source_url": "https://www.warburgpincus.com/careers/",
-      "notes": "High compensation ceiling but highly competitive process. Warburg would value Goldie's government-sector DFI network (DFCs, MDBs) as a deal sourcing advantage. | Networking target \u2014 monitor for confirmed openings.",
+      "notes": "High compensation ceiling but highly competitive process. Warburg would value Goldie's government-sector DFI network (DFCs, MDBs) as a deal sourcing advantage. | Networking target — monitor for confirmed openings.",
       "date_added": "2026-03-06",
       "status": "networking_target",
       "industry": "Private Equity / Infrastructure"
     },
     {
       "id": 14,
-      "title": "Managing Director \u2013 Private Investments",
+      "title": "Managing Director – Private Investments",
       "company": "Allocate",
       "location": "Palo Alto, CA, USA",
       "region": "North America",
-      "salary_range": "Estimated $250,000 \u2013 $400,000 total comp for an MD at a fintech-enabled alternative investments platform",
+      "salary_range": "Estimated $250,000 – $400,000 total comp for an MD at a fintech-enabled alternative investments platform",
       "application_url": "https://www.linkedin.com/jobs/director-private-equity-jobs",
       "application_method": "Apply via LinkedIn or Allocate website at allocate.co",
       "requirements": "Private markets investment; alternative fund investing; institutional LP and GP relationships; product development for democratizing alternatives access.",
@@ -719,7 +719,7 @@ window.APP_DATA = {
       "salary_range": "$275,000 - $300,000 base + bonus"
     },
     {
-      "title": "Managing Director \u2013 Infrastructure Investments",
+      "title": "Managing Director – Infrastructure Investments",
       "company": "Confidential (via Selby Jennings)",
       "region": "Europe",
       "industry": "Infrastructure",
@@ -852,7 +852,7 @@ window.APP_DATA = {
       "date_posted": "April 2026",
       "salary": "",
       "salary_range": "IDB Invest Director grade; estimated $230,000-$320,000 + IDB benefits",
-      "notes": "PROTECTED: Director at IDB Invest = MD equivalent. Posting deadline was 4/10/2026 \u2014 may still be open. Washington DC.",
+      "notes": "PROTECTED: Director at IDB Invest = MD equivalent. Posting deadline was 4/10/2026 — may still be open. Washington DC.",
       "id": 45,
       "date_added": "2026-04-15",
       "date_posted_normalized": "2026-04-01"
@@ -863,13 +863,13 @@ window.APP_DATA = {
       "company": "EBRD (European Bank for Reconstruction and Development)",
       "region": "Europe",
       "industry": "Development Finance / Blended Finance / Multilateral Bank",
-      "goldie_fit": "HIGH \u2014 Directly maps to Goldie's DFI background and fund-of-funds expertise. Role leads donor strategy, blended finance policy, and fundraising for EBRD's Donor Strategy 2026\u20132030 across the MDB/DFI ecosystem. Her Acting VP/Head of Global Investment Funds role at DFC, emerging markets expertise, and experience working with multilateral partners are a near-perfect match for this Principal I position.",
+      "goldie_fit": "HIGH — Directly maps to Goldie's DFI background and fund-of-funds expertise. Role leads donor strategy, blended finance policy, and fundraising for EBRD's Donor Strategy 2026–2030 across the MDB/DFI ecosystem. Her Acting VP/Head of Global Investment Funds role at DFC, emerging markets expertise, and experience working with multilateral partners are a near-perfect match for this Principal I position.",
       "suggested_recruiter": "Direct application via EBRD jobs portal (Req ID 36646)",
       "source_url": "https://jobs.ebrd.com/job/London-Principal-I,-Blended-Finance/1383594433/",
       "date_posted": "2026-04-14",
       "date_added": "2026-04-15",
       "salary": "Not listed",
-      "notes": "Fixed Term 2 years. Deadline: April 28, 2026. Division: Policy and Partnerships. Also listed at https://www.eurobrussels.com/job_display/289765. EBRD Principal I is MD-equivalent at DFIs. PROTECTED \u2014 DFI/multilateral organization."
+      "notes": "Fixed Term 2 years. Deadline: April 28, 2026. Division: Policy and Partnerships. Also listed at https://www.eurobrussels.com/job_display/289765. EBRD Principal I is MD-equivalent at DFIs. PROTECTED — DFI/multilateral organization."
     },
     {
       "id": 47,
@@ -877,13 +877,13 @@ window.APP_DATA = {
       "company": "World Bank Group",
       "region": "North America",
       "industry": "Development Finance / Infrastructure / Multilateral Bank",
-      "goldie_fit": "VERY HIGH \u2014 Goldie's Head of Global Investment Funds role at DFC maps directly. GIF head oversees EMDE infrastructure investment project preparation, raises sovereign donor funding, and manages an advisory council of private investors with $18T in AUM. Her senior DFI management, private capital mobilization, donor fundraising, and G7/G20 engagement experience are exactly what this role demands.",
+      "goldie_fit": "VERY HIGH — Goldie's Head of Global Investment Funds role at DFC maps directly. GIF head oversees EMDE infrastructure investment project preparation, raises sovereign donor funding, and manages an advisory council of private investors with $18T in AUM. Her senior DFI management, private capital mobilization, donor fundraising, and G7/G20 engagement experience are exactly what this role demands.",
       "suggested_recruiter": "Direct application via World Bank Careers (Job #req36316)",
       "source_url": "https://worldbankgroup.csod.com/ux/ats/careersite/1/home/requisition/36316?c=worldbankgroup",
       "date_posted": "2026-04-01",
       "date_added": "2026-04-15",
-      "salary": "Not listed (Grade GH \u2014 senior executive band)",
-      "notes": "Term: 3 years, renewable. Deadline: April 16, 2026 \u2014 URGENT. Also listed on ImpactPool: https://www.impactpool.org/jobs/1206897. Grade GH is the highest executive tier at the World Bank. PROTECTED \u2014 DFI/multilateral organization."
+      "salary": "Not listed (Grade GH — senior executive band)",
+      "notes": "Term: 3 years, renewable. Deadline: April 16, 2026 — URGENT. Also listed on ImpactPool: https://www.impactpool.org/jobs/1206897. Grade GH is the highest executive tier at the World Bank. PROTECTED — DFI/multilateral organization."
     },
     {
       "id": 48,
@@ -891,12 +891,12 @@ window.APP_DATA = {
       "company": "CalPERS (California Public Employees' Retirement System)",
       "region": "North America",
       "industry": "Pension Fund / Institutional Asset Management",
-      "goldie_fit": "MODERATE \u2014 Fixed income focus is not Goldie's core expertise, but this role leads a senior investment team within the $611B CalPERS fund, with ESG implementation, Board reporting, and global portfolio oversight. Pension-fund C-suite leadership, global investment management, and ESG integration are relevant. Stronger if Goldie has any rates/credit exposure to highlight.",
+      "goldie_fit": "MODERATE — Fixed income focus is not Goldie's core expertise, but this role leads a senior investment team within the $611B CalPERS fund, with ESG implementation, Board reporting, and global portfolio oversight. Pension-fund C-suite leadership, global investment management, and ESG integration are relevant. Stronger if Goldie has any rates/credit exposure to highlight.",
       "suggested_recruiter": "Direct application via CalCareers (Job Code JC-505471)",
       "source_url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=505471",
       "date_posted": "2026-03-15",
       "date_added": "2026-04-15",
-      "salary": "$25,750\u2013$42,916/month base + annual incentive 0\u2013165% + long-term incentive 0\u2013165% after 5 years",
+      "salary": "$25,750–$42,916/month base + annual incentive 0–165% + long-term incentive 0–165% after 5 years",
       "notes": "Open until filled. Also on LinkedIn: https://www.linkedin.com/jobs/view/global-fixed-income-managing-investment-director-at-calpers-4372129649. CalPERS is NOT in the exclusion list."
     },
     {
@@ -905,13 +905,13 @@ window.APP_DATA = {
       "company": "Confidential infrastructure investment firm (search via Tenfold Search & Advisory)",
       "region": "North America",
       "industry": "Infrastructure Private Equity / Energy Transition",
-      "goldie_fit": "HIGH \u2014 Role leads origination and execution of infrastructure transactions with full IC accountability across energy transition, digital infrastructure, transportation, and social assets. Goldie's PE deal experience (Evercore/Protego), DFC investment mandate in infrastructure/climate, and Glencore commodities background are strong fits. Carry included.",
-      "suggested_recruiter": "Tenfold Search & Advisory \u2014 contact Ladi Branco-Rhodes",
+      "goldie_fit": "HIGH — Role leads origination and execution of infrastructure transactions with full IC accountability across energy transition, digital infrastructure, transportation, and social assets. Goldie's PE deal experience (Evercore/Protego), DFC investment mandate in infrastructure/climate, and Glencore commodities background are strong fits. Carry included.",
+      "suggested_recruiter": "Tenfold Search & Advisory — contact Ladi Branco-Rhodes",
       "source_url": "https://www.linkedin.com/jobs/view/managing-director-infrastructure-at-tenfold-search-advisory-4399382056",
       "date_posted": "2026-04-12",
       "date_added": "2026-04-15",
       "salary": "Not listed (carry included)",
-      "notes": "Posted via executive search firm on LinkedIn April 12, 2026. Confidential firm \u2014 recruiter is Tenfold Search & Advisory."
+      "notes": "Posted via executive search firm on LinkedIn April 12, 2026. Confidential firm — recruiter is Tenfold Search & Advisory."
     },
     {
       "id": 50,
@@ -919,13 +919,13 @@ window.APP_DATA = {
       "company": "EBRD (European Bank for Reconstruction and Development)",
       "region": "Europe",
       "industry": "Development Finance / Climate Investment / Industrial Decarbonization",
-      "goldie_fit": "HIGH \u2014 Goldie's DFI background, climate investment mandate at DFC, and Spanish/Hebrew language skills (plus proximity to EBRD's emerging Europe mandate) make this a strong fit. Role is EBRD focal point for a major climate platform, requiring investment origination and multi-stakeholder coordination skills she has demonstrated at senior level.",
+      "goldie_fit": "HIGH — Goldie's DFI background, climate investment mandate at DFC, and Spanish/Hebrew language skills (plus proximity to EBRD's emerging Europe mandate) make this a strong fit. Role is EBRD focal point for a major climate platform, requiring investment origination and multi-stakeholder coordination skills she has demonstrated at senior level.",
       "suggested_recruiter": "Direct application via EBRD jobs portal (Req ID 36603)",
       "source_url": "https://jobs.ebrd.com/job/Istanbul-Principal,-Project-Manager,-TIDIP/1380509133/",
       "date_posted": "2026-04-02",
       "date_added": "2026-04-15",
       "salary": "Not listed",
-      "notes": "Deadline: April 16, 2026 \u2014 URGENT. Fixed Term 2 years. Division: Policy and Partnerships. Note: Istanbul location may be a constraint \u2014 flag for Goldie. PROTECTED \u2014 DFI/multilateral organization."
+      "notes": "Deadline: April 16, 2026 — URGENT. Fixed Term 2 years. Division: Policy and Partnerships. Note: Istanbul location may be a constraint — flag for Goldie. PROTECTED — DFI/multilateral organization."
     },
     {
       "id": 51,
@@ -933,13 +933,13 @@ window.APP_DATA = {
       "company": "Asian Infrastructure Investment Bank (AIIB)",
       "region": "Asia-Pacific",
       "industry": "Multilateral Bank / Infrastructure / Development Finance",
-      "goldie_fit": "MODERATE-HIGH \u2014 AIIB's public sector infrastructure mandate in Region 2 (South/Southeast Asia, Central Asia) involves climate-resilient infrastructure and low-carbon pathways. Goldie's DFI background and 25+ years of emerging markets investing map well. Beijing location is a potential constraint.",
+      "goldie_fit": "MODERATE-HIGH — AIIB's public sector infrastructure mandate in Region 2 (South/Southeast Asia, Central Asia) involves climate-resilient infrastructure and low-carbon pathways. Goldie's DFI background and 25+ years of emerging markets investing map well. Beijing location is a potential constraint.",
       "suggested_recruiter": "Direct application via AIIB careers portal",
       "source_url": "https://www.aiib.org/en/opportunities/career/job-vacancies/staff/job-details/senior-investment-officer-multi-sector-infrastructure93.html",
       "date_posted": "2026-03-17",
       "date_added": "2026-04-15",
       "salary": "Not listed",
-      "notes": "Closing date unclear \u2014 verify on AIIB site before applying. Listed as open as of early April 2026. Requires 8\u201310+ years relevant experience. Beijing location may be a constraint for Goldie. PROTECTED \u2014 DFI/multilateral organization."
+      "notes": "Closing date unclear — verify on AIIB site before applying. Listed as open as of early April 2026. Requires 8–10+ years relevant experience. Beijing location may be a constraint for Goldie. PROTECTED — DFI/multilateral organization."
     },
     {
       "id": 52,
@@ -947,13 +947,13 @@ window.APP_DATA = {
       "company": "UNOPS (United Nations Office for Project Services)",
       "region": "Europe",
       "industry": "International Development / Infrastructure / Multilateral",
-      "goldie_fit": "HIGH \u2014 ICS-14 / D-2 is the top executive grade in the UN system. Role leads UNOPS' entire global infrastructure and project management function: strategy, standards, partnerships, and representation at G7/G20-equivalent forums. Goldie's Acting VP-level DFC leadership, emerging markets infrastructure expertise, fund management mandate, and multilateral stakeholder engagement are strong credentials for this role. Spanish language desirable (she is fluent).",
+      "goldie_fit": "HIGH — ICS-14 / D-2 is the top executive grade in the UN system. Role leads UNOPS' entire global infrastructure and project management function: strategy, standards, partnerships, and representation at G7/G20-equivalent forums. Goldie's Acting VP-level DFC leadership, emerging markets infrastructure expertise, fund management mandate, and multilateral stakeholder engagement are strong credentials for this role. Spanish language desirable (she is fluent).",
       "suggested_recruiter": "Direct application via UNOPS Careers Marketplace",
       "source_url": "https://careers.unops.org/careersmarketplace/JobDetail/Director-Infrastructure-and-Project-Management-Group/2473",
       "date_posted": "2026-03-27",
       "date_added": "2026-04-15",
-      "salary": "Not listed (UN D-2 band \u2014 approximately $130,000\u2013$170,000 USD net of tax equivalent, plus UN benefits)",
-      "notes": "Deadline: April 26, 2026. Contract: 2 years initially, renewable. This is an executive-level (D-2) UN position \u2014 equivalent to MD at a DFI. Application must be received before midnight Copenhagen time on April 26. PROTECTED \u2014 DFI/multilateral organization."
+      "salary": "Not listed (UN D-2 band — approximately $130,000–$170,000 USD net of tax equivalent, plus UN benefits)",
+      "notes": "Deadline: April 26, 2026. Contract: 2 years initially, renewable. This is an executive-level (D-2) UN position — equivalent to MD at a DFI. Application must be received before midnight Copenhagen time on April 26. PROTECTED — DFI/multilateral organization."
     },
     {
       "id": 53,
@@ -961,13 +961,13 @@ window.APP_DATA = {
       "company": "Confidential Global Renewable Energy Infrastructure Fund (search via InforCapital / Infra-Be Jobs)",
       "region": "North America",
       "industry": "Infrastructure Private Equity / Renewable Energy / Energy Transition",
-      "goldie_fit": "MODERATE-HIGH \u2014 Role leads US operations for a global renewable energy infrastructure fund: solar, storage, wind development and delivery, investment committee presentations, project finance support. Goldie's DFC energy mandate, critical minerals and energy transition focus, and PE investment background (Evercore) are relevant. Stronger fit if Goldie has US renewable project development experience to highlight.",
+      "goldie_fit": "MODERATE-HIGH — Role leads US operations for a global renewable energy infrastructure fund: solar, storage, wind development and delivery, investment committee presentations, project finance support. Goldie's DFC energy mandate, critical minerals and energy transition focus, and PE investment background (Evercore) are relevant. Stronger fit if Goldie has US renewable project development experience to highlight.",
       "suggested_recruiter": "Apply via InforCapital / Infra-Be Jobs portal",
       "source_url": "https://inforcapital.com/jobs/global-infrastructure-fund-managing-director-head-of-usa/",
       "date_posted": "2026-03-24",
       "date_added": "2026-04-15",
       "salary": "Up to USD 350,000 plus bonus and LTIP",
-      "notes": "No stated deadline \u2014 apply promptly. Confidential firm. Salary up to $350K + bonus + LTIP. Requires minimum 8 years developing solar/storage/renewable energy projects. Original posting redirects to Infra-Be Jobs platform."
+      "notes": "No stated deadline — apply promptly. Confidential firm. Salary up to $350K + bonus + LTIP. Requires minimum 8 years developing solar/storage/renewable energy projects. Original posting redirects to Infra-Be Jobs platform."
     },
     {
       "id": 54,
@@ -975,13 +975,13 @@ window.APP_DATA = {
       "company": "IDB Invest",
       "region": "North America",
       "industry": "Development finance institution (DFI) / ESG risk leadership",
-      "goldie_fit": "Moderate fit: senior DFI director role with significant exposure to mining/corporate sectors and strong need for senior stakeholder management; could be relevant given Goldie\u2019s climate/critical minerals emphasis, but it is primarily ESG safeguards/risk leadership rather than investment/fund management.",
+      "goldie_fit": "Moderate fit: senior DFI director role with significant exposure to mining/corporate sectors and strong need for senior stakeholder management; could be relevant given Goldie’s climate/critical minerals emphasis, but it is primarily ESG safeguards/risk leadership rather than investment/fund management.",
       "suggested_recruiter": "IDB Invest internal talent acquisition.",
       "source_url": "https://jobs.iadb.org/job/IDB-Invest-Environment,-Social-&-Governance-Director/2760-en_US/",
       "date_posted": "Posting end date 2026-04-06 (actual posting date not shown)",
       "date_added": "2026-04-05",
       "salary": "Competitive compensation; net-of-tax base salary (no range listed)",
-      "notes": "International staff contract (36 months, renewable). Leads ESG division clusters; covers sectors including mining, forestry, agribusiness, telecom. Requires English + one official bank language (Spanish/French/Portuguese). PROTECTED \u2014 DFI/multilateral organization."
+      "notes": "International staff contract (36 months, renewable). Leads ESG division clusters; covers sectors including mining, forestry, agribusiness, telecom. Requires English + one official bank language (Spanish/French/Portuguese). PROTECTED — DFI/multilateral organization."
     },
     {
       "id": 55,
@@ -989,17 +989,17 @@ window.APP_DATA = {
       "company": "IFC (World Bank Group)",
       "region": "Latin America & Caribbean",
       "industry": "Development finance / Infrastructure",
-      "goldie_fit": "Senior infrastructure investment leadership role in emerging markets (LAC) with business development, transaction execution, and portfolio management responsibilities; strong overlap with Goldie\u2019s DFI senior leadership and EM investing background.",
+      "goldie_fit": "Senior infrastructure investment leadership role in emerging markets (LAC) with business development, transaction execution, and portfolio management responsibilities; strong overlap with Goldie’s DFI senior leadership and EM investing background.",
       "suggested_recruiter": "IFC / World Bank Group talent acquisition; World Bank Group senior hiring partners (varies)",
       "source_url": "https://www.impactpool.org/jobs/1206477",
       "date_posted": "Not listed on Impactpool (found April 2026)",
       "date_added": "2026-04-08",
       "salary": "Not disclosed",
-      "notes": "Grade GH; location options Lima (Peru) / Bogota (Colombia) / Santiago (Chile); closing date 4/21/2026. Considered MD+/director-equivalent in many MDB contexts given people leadership and regional mandate. Verify details on WBG requisition req36268 if needed. PROTECTED \u2014 DFI/multilateral organization."
+      "notes": "Grade GH; location options Lima (Peru) / Bogota (Colombia) / Santiago (Chile); closing date 4/21/2026. Considered MD+/director-equivalent in many MDB contexts given people leadership and regional mandate. Verify details on WBG requisition req36268 if needed. PROTECTED — DFI/multilateral organization."
     },
     {
       "id": 56,
-      "title": "Chief/Principal Investment Officer \u2013 Waste Sector (req36119)",
+      "title": "Chief/Principal Investment Officer – Waste Sector (req36119)",
       "company": "IFC (International Finance Corporation, World Bank Group)",
       "region": "North America",
       "industry": "Development finance / infrastructure (waste, circular economy)",
@@ -1009,7 +1009,7 @@ window.APP_DATA = {
       "date_posted": "~1 day ago (as shown on LinkedIn)",
       "date_added": "2026-04-02",
       "salary": "Not listed",
-      "notes": "LinkedIn page indicates Grade GH and location Washington, DC; closing date appears as 4/7/2026 in the job text surfaced via search results. Apply link is behind LinkedIn 'Apply' button. PROTECTED \u2014 DFI/multilateral organization."
+      "notes": "LinkedIn page indicates Grade GH and location Washington, DC; closing date appears as 4/7/2026 in the job text surfaced via search results. Apply link is behind LinkedIn 'Apply' button. PROTECTED — DFI/multilateral organization."
     },
     {
       "id": 57,
@@ -1023,7 +1023,7 @@ window.APP_DATA = {
       "date_posted": "Posting end date 2026-01-07 (Impactpool page)",
       "date_added": "2026-04-02",
       "salary": "Not listed",
-      "notes": "This appears to be an older posting with a January 2026 close date; include for tracking only, but it is not within last 7 days. PROTECTED \u2014 DFI/multilateral organization."
+      "notes": "This appears to be an older posting with a January 2026 close date; include for tracking only, but it is not within last 7 days. PROTECTED — DFI/multilateral organization."
     },
     {
       "id": 58,
@@ -1051,7 +1051,7 @@ window.APP_DATA = {
       "date_posted": "2026-03-23 (as reposted by Applied Econ Jobs)",
       "date_added": "2026-03-26",
       "salary": "Not listed",
-      "notes": "Closing date shown as 3/27/2026 11:59pm UTC; official posting page was intermittently unavailable via automated reader at time of run, but requisition details and link captured from Applied Econ Jobs. Verify on WBG careers portal using req35978. PROTECTED \u2014 DFI/multilateral organization."
+      "notes": "Closing date shown as 3/27/2026 11:59pm UTC; official posting page was intermittently unavailable via automated reader at time of run, but requisition details and link captured from Applied Econ Jobs. Verify on WBG careers portal using req35978. PROTECTED — DFI/multilateral organization."
     },
     {
       "id": 60,
@@ -1065,7 +1065,7 @@ window.APP_DATA = {
       "date_posted": "2025-12-17",
       "date_added": "2026-03-30",
       "salary": "Not listed",
-      "notes": "Not new in last 7 days; included here only as a check against prior dataset. Posting end date shown as 07/01/2026. PROTECTED \u2014 DFI/multilateral organization."
+      "notes": "Not new in last 7 days; included here only as a check against prior dataset. Posting end date shown as 07/01/2026. PROTECTED — DFI/multilateral organization."
     },
     {
       "id": 61,
@@ -1200,7 +1200,7 @@ window.APP_DATA = {
       "network_contact": {
         "name": "Patrice Etlin",
         "title": "Managing Partner, Latin America",
-        "reason": "Leads LatAm strategy from S\u00e3o Paulo; proven ability to work with DFIs as LPs and co-investors, deep fit with candidate's IDB Invest and DFC background."
+        "reason": "Leads LatAm strategy from São Paulo; proven ability to work with DFIs as LPs and co-investors, deep fit with candidate's IDB Invest and DFC background."
       }
     },
     {
@@ -1297,11 +1297,11 @@ window.APP_DATA = {
       "name": "Patria Investments",
       "industry": "Private Equity",
       "sub_sector": "LatAm Alternatives (PE / Infrastructure / Credit / Real Estate)",
-      "headquarters": "Grand Cayman / S\u00e3o Paulo",
+      "headquarters": "Grand Cayman / São Paulo",
       "country": "Brazil (listed NASDAQ)",
       "region": "Americas",
       "website": "https://www.patria.com",
-      "aum_or_revenue": "$40\u201348B AUM (2024-2025)",
+      "aum_or_revenue": "$40–48B AUM (2024-2025)",
       "relevance": "The leading pan-Latin American alternatives platform with 37 years in the region. IDB Invest and DFC are known institutional relationships of the firm. Spanish-language capability and deep IDB/DFC network are directly actionable at Patria. Strong fit for Head of Fund Investments or IR-facing role.",
       "leadership": [
         {
@@ -1353,7 +1353,7 @@ window.APP_DATA = {
       "name": "BTG Pactual",
       "industry": "Private Equity",
       "sub_sector": "LatAm PE / Infrastructure / Impact",
-      "headquarters": "S\u00e3o Paulo",
+      "headquarters": "São Paulo",
       "country": "Brazil",
       "region": "Americas",
       "website": "https://www.btgpactual.com",
@@ -1387,16 +1387,16 @@ window.APP_DATA = {
       "relevance": "Pan-LatAm PE with roots in Argentina, Chile, and Andean markets. Spanish language skills and IDB/DFC network are directly relevant. Strong overlap in infrastructure and financial services in less-covered LatAm markets.",
       "leadership": [
         {
-          "name": "Sebasti\u00e1n Popik",
+          "name": "Sebastián Popik",
           "title": "Co-Managing Partner"
         },
         {
-          "name": "Gonzalo Fern\u00e1ndez",
+          "name": "Gonzalo Fernández",
           "title": "Co-Managing Partner"
         }
       ],
       "network_contact": {
-        "name": "Sebasti\u00e1n Popik",
+        "name": "Sebastián Popik",
         "title": "Co-Managing Partner",
         "reason": "Leads a Spanish-language LatAm PE platform; candidate's IDB Invest relationships and Spanish fluency are rare senior competencies."
       }
@@ -1405,7 +1405,7 @@ window.APP_DATA = {
       "name": "Victoria Capital Partners",
       "industry": "Private Equity",
       "sub_sector": "LatAm Mid-Market PE",
-      "headquarters": "S\u00e3o Paulo / New York",
+      "headquarters": "São Paulo / New York",
       "country": "Brazil/USA",
       "region": "Americas",
       "website": "https://www.victoriacp.com",
@@ -1443,7 +1443,7 @@ window.APP_DATA = {
           "title": "COO"
         },
         {
-          "name": "Selin K\u00f6ksal",
+          "name": "Selin Köksal",
           "title": "VP, Finance & Accounting"
         }
       ],
@@ -1488,7 +1488,7 @@ window.APP_DATA = {
       "region": "Americas",
       "website": "https://www.iadb.org",
       "aum_or_revenue": "$10B+ annual lending; IDB Invest ~$5B AUM",
-      "relevance": "The candidate's former employer. Returning in a senior capacity\u2014VP of Finance, Head of Fund Investments, or Chief Investment Officer at IDB Invest\u2014would leverage unparalleled institutional network. IDB Invest is actively expanding into climate finance, infrastructure, and fund-of-funds strategies.",
+      "relevance": "The candidate's former employer. Returning in a senior capacity—VP of Finance, Head of Fund Investments, or Chief Investment Officer at IDB Invest—would leverage unparalleled institutional network. IDB Invest is actively expanding into climate finance, infrastructure, and fund-of-funds strategies.",
       "leadership": [
         {
           "name": "Ilan Goldfajn",
@@ -1513,7 +1513,7 @@ window.APP_DATA = {
       "name": "Development Bank of Latin America and Caribbean (CAF)",
       "industry": "Development Finance Institution",
       "sub_sector": "Multilateral Development Bank - Latin America",
-      "headquarters": "Caracas / Bogot\u00e1",
+      "headquarters": "Caracas / Bogotá",
       "country": "Venezuela / Colombia",
       "region": "Americas",
       "website": "https://www.caf.com",
@@ -1521,7 +1521,7 @@ window.APP_DATA = {
       "relevance": "CAF is rapidly expanding its private sector and climate investment operations. Spanish-language fluency and deep IDB/DFC relationships are directly relevant. CAF's growing fund investment and infrastructure platform is a senior hire target for executives with multilateral and EM PE experience.",
       "leadership": [
         {
-          "name": "Sergio D\u00edaz-Granados",
+          "name": "Sergio Díaz-Granados",
           "title": "Executive President"
         },
         {
@@ -1530,7 +1530,7 @@ window.APP_DATA = {
         }
       ],
       "network_contact": {
-        "name": "Sergio D\u00edaz-Granados",
+        "name": "Sergio Díaz-Granados",
         "title": "Executive President",
         "reason": "Leads CAF's expansion into private sector finance; candidate's dual DFI track record and EM private equity experience are strategic hires."
       }
@@ -1659,7 +1659,7 @@ window.APP_DATA = {
       "country": "Australia/USA",
       "region": "Americas",
       "website": "https://www.macquarie.com/mam",
-      "aum_or_revenue": "~$543B AUM (infra + total, 2025) \u2014 #1 global infra manager",
+      "aum_or_revenue": "~$543B AUM (infra + total, 2025) — #1 global infra manager",
       "relevance": "The world's largest infrastructure asset manager, with active EM and climate programs across LatAm, Africa, and Asia-Pacific. Macquarie's Green Investment Group is a major climate finance vehicle. Senior infrastructure executives with EM and DFI experience are actively recruited.",
       "leadership": [
         {
@@ -1686,7 +1686,7 @@ window.APP_DATA = {
       "region": "Americas",
       "website": "https://www.stonepeak.com",
       "aum_or_revenue": "~$70B AUM (2025)",
-      "relevance": "Large dedicated infrastructure manager with a growing energy transition platform. Stonepeak's EM and Americas exposure\u2014energy, transport, digital\u2014aligns well. The firm seeks senior talent who can navigate complex cross-border infrastructure deals with multilateral co-investors.",
+      "relevance": "Large dedicated infrastructure manager with a growing energy transition platform. Stonepeak's EM and Americas exposure—energy, transport, digital—aligns well. The firm seeks senior talent who can navigate complex cross-border infrastructure deals with multilateral co-investors.",
       "leadership": [
         {
           "name": "Michael Dorrell",
@@ -1767,7 +1767,7 @@ window.APP_DATA = {
       "relevance": "Meridiam is a major infrastructure investor with an explicit sustainability and development mandate, active in Africa, LatAm, and Eastern Europe. Its blended finance approach and DFI partnerships mirror the candidate's DFC and IDB Invest experience. French government backing adds DFI credibility.",
       "leadership": [
         {
-          "name": "Thierry D\u00e9au",
+          "name": "Thierry Déau",
           "title": "CEO & Founder"
         },
         {
@@ -1776,7 +1776,7 @@ window.APP_DATA = {
         }
       ],
       "network_contact": {
-        "name": "Thierry D\u00e9au",
+        "name": "Thierry Déau",
         "title": "CEO & Founder",
         "reason": "Built Meridiam on a blended finance and DFI co-investment model; the candidate's multilateral background is an ideal fit."
       }
@@ -1931,7 +1931,7 @@ window.APP_DATA = {
       "country": "UK",
       "region": "Europe",
       "website": "https://www.ebrd.com",
-      "aum_or_revenue": "~\u20ac65B outstanding portfolio",
+      "aum_or_revenue": "~€65B outstanding portfolio",
       "relevance": "EBRD operates in 38 countries from Central Europe to the Middle East. Its Equity and Funds team manages a large fund-of-funds portfolio investing in EM PE and infrastructure funds. Hebrew language skills are valuable for EBRD's active Israel and Near East programs. Strong fit for Head of Equity Funds or Senior Banker.",
       "leadership": [
         {
@@ -1939,7 +1939,7 @@ window.APP_DATA = {
           "title": "President"
         },
         {
-          "name": "J\u00fcrgen Rigterink",
+          "name": "Jürgen Rigterink",
           "title": "First Vice President & CRO"
         }
       ],
@@ -1957,20 +1957,20 @@ window.APP_DATA = {
       "country": "Luxembourg",
       "region": "Europe",
       "website": "https://www.eib.org",
-      "aum_or_revenue": "~\u20ac700B total lending portfolio",
+      "aum_or_revenue": "~€700B total lending portfolio",
       "relevance": "The EIB is the world's largest multilateral lender. EIB Global (formerly EIB's external lending mandate) invests in infrastructure, climate, and funds across Africa, Latin America, and Asia. Deep overlap with candidate's profile in fund-of-funds, infrastructure, and DFI co-investment.",
       "leadership": [
         {
-          "name": "Nadia Calvi\u00f1o",
+          "name": "Nadia Calviño",
           "title": "President"
         },
         {
-          "name": "Thomas \u00d6stros",
+          "name": "Thomas Östros",
           "title": "Vice President"
         }
       ],
       "network_contact": {
-        "name": "Nadia Calvi\u00f1o",
+        "name": "Nadia Calviño",
         "title": "President",
         "reason": "Spanish politician turned EIB President; Spanish-speaking candidate with IDB Invest and DFC background has natural diplomatic and investment overlap."
       }
@@ -1983,7 +1983,7 @@ window.APP_DATA = {
       "country": "UK",
       "region": "Europe",
       "website": "https://www.bii.co.uk",
-      "aum_or_revenue": "~\u00a38B portfolio",
+      "aum_or_revenue": "~£8B portfolio",
       "relevance": "The UK's bilateral DFI (formerly CDC Group), BII is a top-ranked global DFI with major fund-of-funds, PE, and infrastructure investments across Africa and Asia. BII frequently co-invests with IFC, DFC, and IDB Invest. Candidate's DFI fund evaluation and impact track record is directly relevant.",
       "leadership": [
         {
@@ -1991,7 +1991,7 @@ window.APP_DATA = {
           "title": "CEO"
         },
         {
-          "name": "Charlotte S\u00f6derberg",
+          "name": "Charlotte Söderberg",
           "title": "Director, Fund Investments"
         }
       ],
@@ -2002,18 +2002,18 @@ window.APP_DATA = {
       }
     },
     {
-      "name": "Proparco (Agence Fran\u00e7aise de D\u00e9veloppement Group)",
+      "name": "Proparco (Agence Française de Développement Group)",
       "industry": "Development Finance Institution",
       "sub_sector": "French Bilateral DFI - Africa / Emerging Markets",
       "headquarters": "Paris",
       "country": "France",
       "region": "Europe",
       "website": "https://www.proparco.fr",
-      "aum_or_revenue": "~\u20ac10B portfolio",
+      "aum_or_revenue": "~€10B portfolio",
       "relevance": "France's bilateral DFI with a strong focus on Africa, LatAm, and Asia. Proparco co-invests heavily with IDB Invest, DFC, and IFC. Its fund investment team is actively hiring senior professionals. French-language environment but English/Spanish proficiency is valued for LatAm deal teams.",
       "leadership": [
         {
-          "name": "Fran\u00e7oise Lombard",
+          "name": "Françoise Lombard",
           "title": "CEO"
         },
         {
@@ -2022,7 +2022,7 @@ window.APP_DATA = {
         }
       ],
       "network_contact": {
-        "name": "Fran\u00e7oise Lombard",
+        "name": "Françoise Lombard",
         "title": "CEO",
         "reason": "Leads Proparco's expansion in LatAm and Africa; candidate's IDB Invest and DFC co-investment relationships are directly relevant to Proparco's strategy."
       }
@@ -2035,7 +2035,7 @@ window.APP_DATA = {
       "country": "Germany",
       "region": "Europe",
       "website": "https://www.deginvest.de",
-      "aum_or_revenue": "~\u20ac9B portfolio",
+      "aum_or_revenue": "~€9B portfolio",
       "relevance": "DEG is Germany's bilateral DFI and co-invests extensively with IDB Invest, DFC, IFC, and BII. DEG's fund investment and private equity teams are hiring senior EM professionals. The firm's focus on Latin America, Africa, and Asia aligns directly with the candidate's core geographies.",
       "leadership": [
         {
@@ -2069,7 +2069,7 @@ window.APP_DATA = {
           "title": "CEO"
         },
         {
-          "name": "Per Franz\u00e9n",
+          "name": "Per Franzén",
           "title": "Head of Private Equity"
         },
         {
@@ -2151,7 +2151,7 @@ window.APP_DATA = {
       "relevance": "Europe's largest asset manager with a major ESG and EM platform. Amundi's CPR AM impact division and its EM debt and equities strategies are growing rapidly. The candidate's EM, impact, and multilateral experience align with Amundi's institutional client requirements.",
       "leadership": [
         {
-          "name": "Val\u00e9rie Baudson",
+          "name": "Valérie Baudson",
           "title": "CEO"
         },
         {
@@ -2173,7 +2173,7 @@ window.APP_DATA = {
       "country": "Germany",
       "region": "Europe",
       "website": "https://www.allianzgi.com",
-      "aum_or_revenue": "\u20ac580B AUM; \u20ac54B infrastructure AUM (2025)",
+      "aum_or_revenue": "€580B AUM; €54B infrastructure AUM (2025)",
       "relevance": "AllianzGI is a top-10 global infrastructure investor and major ESG/climate manager. Its infrastructure debt platform (250+ transactions in 50+ countries) and recent Americas expansion make it an excellent fit. Allianz's insurance capital provides long-duration EM infrastructure debt mandates.",
       "leadership": [
         {
@@ -2192,7 +2192,7 @@ window.APP_DATA = {
       "network_contact": {
         "name": "Marta Perez",
         "title": "CIO, Infrastructure",
-        "reason": "Leads AllianzGI's \u20ac50B+ infra platform including EM; candidate's cross-border infrastructure and DFI experience are directly applicable."
+        "reason": "Leads AllianzGI's €50B+ infra platform including EM; candidate's cross-border infrastructure and DFI experience are directly applicable."
       }
     },
     {
@@ -2203,7 +2203,7 @@ window.APP_DATA = {
       "country": "Norway",
       "region": "Europe",
       "website": "https://www.nbim.no",
-      "aum_or_revenue": "$2T+ AUM (2025) \u2014 world's largest SWF",
+      "aum_or_revenue": "$2T+ AUM (2025) — world's largest SWF",
       "relevance": "NBIM is the world's largest sovereign wealth fund with substantial unlisted real estate and renewable infrastructure allocations. It actively builds its sustainability and EM portfolio. A senior executive with EM infrastructure and climate investing experience is a compelling hire for NBIM's private markets expansion.",
       "leadership": [
         {
@@ -2230,7 +2230,7 @@ window.APP_DATA = {
       "region": "Europe",
       "website": "https://www.generationim.com",
       "aum_or_revenue": "$50B+ AUM",
-      "relevance": "Co-founded by Al Gore and David Blood, Generation is the benchmark sustainable investing firm. Its EM and climate finance programs\u2014including Just Climate\u2014are rapidly expanding. The candidate's climate finance, fund-of-funds, and EM investing credentials make her a strong fit for a senior investment or IR role.",
+      "relevance": "Co-founded by Al Gore and David Blood, Generation is the benchmark sustainable investing firm. Its EM and climate finance programs—including Just Climate—are rapidly expanding. The candidate's climate finance, fund-of-funds, and EM investing credentials make her a strong fit for a senior investment or IR role.",
       "leadership": [
         {
           "name": "Al Gore",
@@ -2286,7 +2286,7 @@ window.APP_DATA = {
       "region": "Europe",
       "website": "https://www.responsability.com",
       "aum_or_revenue": "~$5.8B AUM (2025) in 70 countries",
-      "relevance": "Part of M&G plc, responsAbility is a leading EM impact asset manager investing across Africa, Asia, and LatAm. Its focus on SME finance, microfinance, food, and climate in emerging markets directly mirrors candidate's DFI and fund-of-funds experience. Recent \u20ac200M EM mandate highlights growth.",
+      "relevance": "Part of M&G plc, responsAbility is a leading EM impact asset manager investing across Africa, Asia, and LatAm. Its focus on SME finance, microfinance, food, and climate in emerging markets directly mirrors candidate's DFI and fund-of-funds experience. Recent €200M EM mandate highlights growth.",
       "leadership": [
         {
           "name": "Rochus Mommartz",
@@ -2315,7 +2315,7 @@ window.APP_DATA = {
       "relevance": "CIP is the world's largest dedicated renewable energy infrastructure fund manager. Its offshore wind, onshore solar, and green fuels platforms are expanding into EM. CIP's Green Fuels fund and Transition Equity strategy align with candidate's climate finance expertise.",
       "leadership": [
         {
-          "name": "Jakob Baru\u00ebl Poulsen",
+          "name": "Jakob Baruël Poulsen",
           "title": "Managing Partner"
         },
         {
@@ -2324,7 +2324,7 @@ window.APP_DATA = {
         }
       ],
       "network_contact": {
-        "name": "Jakob Baru\u00ebl Poulsen",
+        "name": "Jakob Baruël Poulsen",
         "title": "Managing Partner",
         "reason": "Leads the world's largest renewable energy infrastructure fund manager; the candidate's energy transition and climate finance background is directly applicable."
       }
@@ -2338,7 +2338,7 @@ window.APP_DATA = {
       "region": "Europe",
       "website": "https://www.infravia.com",
       "aum_or_revenue": "~$17.6B AUM (2025)",
-      "relevance": "Fast-growing European infrastructure manager with \u20ac15B+ raised; top fundraiser in 2025 among EU infra funds. InfraVia's digital, energy, and social infrastructure platforms are expanding into EM. Candidate's multilingual capabilities and DFI background are valued for LP origination from multilateral investors.",
+      "relevance": "Fast-growing European infrastructure manager with €15B+ raised; top fundraiser in 2025 among EU infra funds. InfraVia's digital, energy, and social infrastructure platforms are expanding into EM. Candidate's multilingual capabilities and DFI background are valued for LP origination from multilateral investors.",
       "leadership": [
         {
           "name": "Vincent Levita",
@@ -2567,7 +2567,7 @@ window.APP_DATA = {
       "relevance": "Africa50 was founded by the African Development Bank and African states to finance continent-wide infrastructure. Its blended finance and DFI co-investment model is directly analogous to candidate's DFC/IDB experience. Active in transport, energy, and digital infrastructure in Africa.",
       "leadership": [
         {
-          "name": "Alain Ebobiss\u00e9",
+          "name": "Alain Ebobissé",
           "title": "CEO"
         },
         {
@@ -2576,7 +2576,7 @@ window.APP_DATA = {
         }
       ],
       "network_contact": {
-        "name": "Alain Ebobiss\u00e9",
+        "name": "Alain Ebobissé",
         "title": "CEO",
         "reason": "Leads Africa's premier infrastructure investment platform, co-founded with AfDB; candidate's multilateral DFI background is the ideal fit for a senior investment role."
       }
@@ -2946,7 +2946,7 @@ window.APP_DATA = {
       "region": "Middle East/Africa",
       "website": "https://www.act.is",
       "aum_or_revenue": "~$16B infrastructure AUM (within GA's $107B)",
-      "relevance": "Actis is the benchmark sustainable infrastructure investor in EM\u2014Africa, Asia, LatAm. Its Long Life Infrastructure fund ($1.7B, 2025) and energy platform directly align with candidate's climate, infrastructure, and EM credentials. Post-GA acquisition, the firm is scaling aggressively.",
+      "relevance": "Actis is the benchmark sustainable infrastructure investor in EM—Africa, Asia, LatAm. Its Long Life Infrastructure fund ($1.7B, 2025) and energy platform directly align with candidate's climate, infrastructure, and EM credentials. Post-GA acquisition, the firm is scaling aggressively.",
       "leadership": [
         {
           "name": "David Nussbaum",
@@ -2997,12 +2997,12 @@ window.APP_DATA = {
       "relevance": "North Africa and Sub-Saharan Africa PE firm focused on SMEs in high-growth sectors. French-language dominant but English-working; Spanish skills are valued for Moroccan business relationships. DFI LP base includes IFC and Proparco. Candidate's multilingual profile and EM PE experience are rare at this firm.",
       "leadership": [
         {
-          "name": "Alberto C\u00e1novas",
+          "name": "Alberto Cánovas",
           "title": "CEO"
         }
       ],
       "network_contact": {
-        "name": "Alberto C\u00e1novas",
+        "name": "Alberto Cánovas",
         "title": "CEO",
         "reason": "Spanish-background CEO of a North Africa PE firm; candidate's language skills, DFI LP network, and EM PE expertise are differentiated assets."
       }
@@ -3089,7 +3089,7 @@ window.APP_DATA = {
       "name": "IG4 Capital",
       "industry": "Private Equity",
       "sub_sector": "LatAm Special Situations / Infrastructure",
-      "headquarters": "S\u00e3o Paulo",
+      "headquarters": "São Paulo",
       "country": "Brazil",
       "region": "Americas",
       "website": "https://www.ig4.com.br",
@@ -3111,7 +3111,7 @@ window.APP_DATA = {
       "name": "Aqua Capital",
       "industry": "Private Equity",
       "sub_sector": "LatAm Agribusiness / Food PE",
-      "headquarters": "S\u00e3o Paulo",
+      "headquarters": "São Paulo",
       "country": "Brazil",
       "region": "Americas",
       "website": "https://www.aquacapital.com.br",
@@ -3119,12 +3119,12 @@ window.APP_DATA = {
       "relevance": "Latin America's leading agribusiness and food PE investor. IDB Invest participated as LP in Fund III. Candidate's IDB Invest relationship and EM PE track record are directly relevant. Food security and sustainable agriculture are critical minerals-adjacent investment themes.",
       "leadership": [
         {
-          "name": "Jo\u00e3o Ribeiro",
+          "name": "João Ribeiro",
           "title": "Managing Partner"
         }
       ],
       "network_contact": {
-        "name": "Jo\u00e3o Ribeiro",
+        "name": "João Ribeiro",
         "title": "Managing Partner",
         "reason": "Leads LatAm agri-food PE with IDB Invest LP relationship; candidate's multilateral network and EM background are directly actionable."
       }
@@ -3133,7 +3133,7 @@ window.APP_DATA = {
       "name": "Riverwood Capital",
       "industry": "Venture Capital",
       "sub_sector": "LatAm Growth Equity / Technology",
-      "headquarters": "Menlo Park, CA / S\u00e3o Paulo",
+      "headquarters": "Menlo Park, CA / São Paulo",
       "country": "USA/Brazil",
       "region": "Americas",
       "website": "https://www.riverwoodcapital.com",
@@ -3268,7 +3268,7 @@ window.APP_DATA = {
       "region": "Middle East/Africa",
       "website": "https://www.climatefundmanagers.com",
       "aum_or_revenue": "~$1.5B AUM",
-      "relevance": "CFM manages the Climate Investor One and Two funds\u2014among the world's largest climate-focused blended finance vehicles. Major DFI LPs include IFC, DFC, BII, EBRD. Candidate's DFC and IDB Invest co-investment background and climate expertise make CFM a natural fit.",
+      "relevance": "CFM manages the Climate Investor One and Two funds—among the world's largest climate-focused blended finance vehicles. Major DFI LPs include IFC, DFC, BII, EBRD. Candidate's DFC and IDB Invest co-investment background and climate expertise make CFM a natural fit.",
       "leadership": [
         {
           "name": "Dave Uduanu",
@@ -3323,12 +3323,12 @@ window.APP_DATA = {
       "relevance": "Sweden's bilateral DFI investing in Africa and Asia. Swedfund co-invests extensively with IFC, BII, DFC, and IDB Invest. Its fund investment and private equity teams are seeking senior professionals with multilateral DFI backgrounds. Strong climate and impact mandate.",
       "leadership": [
         {
-          "name": "Maria H\u00e5kansson",
+          "name": "Maria Håkansson",
           "title": "CEO"
         }
       ],
       "network_contact": {
-        "name": "Maria H\u00e5kansson",
+        "name": "Maria Håkansson",
         "title": "CEO",
         "reason": "Leads Swedfund's DFI investment expansion; the candidate's co-investment relationships at DFC and IDB Invest are exactly the LP network Swedfund values."
       }
@@ -3341,7 +3341,7 @@ window.APP_DATA = {
       "country": "Netherlands",
       "region": "Europe",
       "website": "https://www.fmo.nl",
-      "aum_or_revenue": "~\u20ac12B portfolio",
+      "aum_or_revenue": "~€12B portfolio",
       "relevance": "Netherlands bilateral DFI with strong fund investment, PE, and climate finance programs in Africa, Asia, and LatAm. FMO actively co-invests with DFC, IDB Invest, and IFC. Candidate's DFI co-investment background is a direct match for FMO's Senior Investment Officer or Fund Investments head role.",
       "leadership": [
         {
@@ -3367,7 +3367,7 @@ window.APP_DATA = {
       "country": "Finland",
       "region": "Europe",
       "website": "https://www.finnfund.fi",
-      "aum_or_revenue": "~\u20ac1B portfolio",
+      "aum_or_revenue": "~€1B portfolio",
       "relevance": "Finland's bilateral DFI focusing on Africa and Asia. Finnfund co-invests with IFC, BII, and DFC. Its fund investment program is growing and seeks experienced professionals with multilateral DFI backgrounds. Candidate's DFI network and EM fund-of-funds expertise are ideal.",
       "leadership": [
         {
@@ -3389,7 +3389,7 @@ window.APP_DATA = {
       "country": "France",
       "region": "Europe",
       "website": "https://www.axa-im.com/en/alternatives",
-      "aum_or_revenue": "~\u20ac185B AUM (2025); ~\u20ac19B infra AUM",
+      "aum_or_revenue": "~€185B AUM (2025); ~€19B infra AUM",
       "relevance": "AXA IM Alts is a leading European alternative asset manager. Its infrastructure equity and debt platforms span EM as well as Europe. The candidate's climate, infrastructure, and DFI experience align with AXA IM's growing EM infrastructure and impact investment programs.",
       "leadership": [
         {
@@ -3415,7 +3415,7 @@ window.APP_DATA = {
       "country": "France",
       "region": "Europe",
       "website": "https://www.tikehaucapital.com",
-      "aum_or_revenue": "~\u20ac47B AUM (2025)",
+      "aum_or_revenue": "~€47B AUM (2025)",
       "relevance": "Fast-growing French alternatives manager with a climate fund (T2 Energy Transition Fund) and EM exposure. Its Climate mandate and collaboration with DFIs aligns with candidate's profile. Tikehau is actively seeking senior climate finance professionals with multilateral experience.",
       "leadership": [
         {
@@ -3655,7 +3655,7 @@ window.APP_DATA = {
       "country": "UK",
       "region": "Europe",
       "website": "https://www.ukib.org.uk",
-      "aum_or_revenue": "\u00a322B allocation mandate",
+      "aum_or_revenue": "£22B allocation mandate",
       "relevance": "The UK Infrastructure Bank (now rebranded as the National Wealth Fund) has a mandate to invest in green infrastructure and co-invest with the private sector. Candidate's DFI, climate, and infrastructure expertise are directly applicable. The NWF's expanding EM co-investment program mirrors DFC's approach.",
       "leadership": [
         {
@@ -3767,11 +3767,11 @@ window.APP_DATA = {
       "country": "Sweden",
       "region": "Europe",
       "website": "https://eqtgroup.com",
-      "aum_or_revenue": "\u20ac267B total AUM (2025), $50B infra",
+      "aum_or_revenue": "€267B total AUM (2025), $50B infra",
       "relevance": "Major European infra/PE with global strategies, energy transition focus",
       "leadership": [
         {
-          "name": "Per Franz\u00e9n",
+          "name": "Per Franzén",
           "title": "CEO"
         },
         {
@@ -3838,7 +3838,7 @@ window.APP_DATA = {
       "region": "Americas",
       "website": "https://icrinc.com/",
       "aum_or_revenue": "~$100M revenue",
-      "relevance": "Leading IR firm for financial services, energy, infrastructure. Works with PE and funds on investor engagement, IPOs, ESG \u2013 aligns with DFC fund, PE, infra, climate experience ICR O'Dwyer.",
+      "relevance": "Leading IR firm for financial services, energy, infrastructure. Works with PE and funds on investor engagement, IPOs, ESG – aligns with DFC fund, PE, infra, climate experience ICR O'Dwyer.",
       "leadership": [
         {
           "name": "Anton Nicholas",
@@ -3854,9 +3854,9 @@ window.APP_DATA = {
         }
       ],
       "network_contact": {
-        "name": "Marc Silverberg, Managing Partner Head Energy Clean Tech & Industrials \u2013 leads IR for infra/climate intersecting candidate expertise LinkedIn.",
+        "name": "Marc Silverberg, Managing Partner Head Energy Clean Tech & Industrials – leads IR for infra/climate intersecting candidate expertise LinkedIn.",
         "title": "",
-        "reason": "Marc Silverberg, Managing Partner Head Energy Clean Tech & Industrials \u2013 leads IR for infra/climate intersecting candidate expertise LinkedIn."
+        "reason": "Marc Silverberg, Managing Partner Head Energy Clean Tech & Industrials – leads IR for infra/climate intersecting candidate expertise LinkedIn."
       }
     },
     {
@@ -3884,9 +3884,9 @@ window.APP_DATA = {
         }
       ],
       "network_contact": {
-        "name": "Josh Drobnyk, Americas Head Financial Services Strategic Comms \u2013 PE/infra focus FTI hires.",
+        "name": "Josh Drobnyk, Americas Head Financial Services Strategic Comms – PE/infra focus FTI hires.",
         "title": "",
-        "reason": "Josh Drobnyk, Americas Head Financial Services Strategic Comms \u2013 PE/infra focus FTI hires."
+        "reason": "Josh Drobnyk, Americas Head Financial Services Strategic Comms – PE/infra focus FTI hires."
       }
     },
     {
@@ -3914,9 +3914,9 @@ window.APP_DATA = {
         }
       ],
       "network_contact": {
-        "name": "Nicole Hakimi, EVP \u2013 PE investor relations advice LinkedIn.",
+        "name": "Nicole Hakimi, EVP – PE investor relations advice LinkedIn.",
         "title": "",
-        "reason": "Nicole Hakimi, EVP \u2013 PE investor relations advice LinkedIn."
+        "reason": "Nicole Hakimi, EVP – PE investor relations advice LinkedIn."
       }
     },
     {
@@ -3940,9 +3940,9 @@ window.APP_DATA = {
         }
       ],
       "network_contact": {
-        "name": "Jennifer Prosek, Founder Managing Partner \u2013 financial IR leadership Prosek.",
+        "name": "Jennifer Prosek, Founder Managing Partner – financial IR leadership Prosek.",
         "title": "",
-        "reason": "Jennifer Prosek, Founder Managing Partner \u2013 financial IR leadership Prosek."
+        "reason": "Jennifer Prosek, Founder Managing Partner – financial IR leadership Prosek."
       }
     },
     {
@@ -3966,9 +3966,9 @@ window.APP_DATA = {
         }
       ],
       "network_contact": {
-        "name": "Robert McConnaughey, EVP Head IR ESG \u2013 ESG/investor strategies for infra/climate Corbin.",
+        "name": "Robert McConnaughey, EVP Head IR ESG – ESG/investor strategies for infra/climate Corbin.",
         "title": "",
-        "reason": "Robert McConnaughey, EVP Head IR ESG \u2013 ESG/investor strategies for infra/climate Corbin."
+        "reason": "Robert McConnaughey, EVP Head IR ESG – ESG/investor strategies for infra/climate Corbin."
       }
     },
     {
@@ -3992,9 +3992,9 @@ window.APP_DATA = {
         }
       ],
       "network_contact": {
-        "name": "Financial Communications Partner \u2013 private markets IR Brunswick.",
+        "name": "Financial Communications Partner – private markets IR Brunswick.",
         "title": "",
-        "reason": "Financial Communications Partner \u2013 private markets IR Brunswick."
+        "reason": "Financial Communications Partner – private markets IR Brunswick."
       }
     },
     {
@@ -4058,7 +4058,7 @@ window.APP_DATA = {
       }
     },
     {
-      "name": "EY (Ernst & Young) \u2013 Strategy & Transactions / EY-Parthenon",
+      "name": "EY (Ernst & Young) – Strategy & Transactions / EY-Parthenon",
       "industry": "Due Diligence",
       "sub_sector": "",
       "headquarters": "London",
@@ -4066,7 +4066,7 @@ window.APP_DATA = {
       "region": "Europe",
       "website": "https://www.ey.com",
       "aum_or_revenue": "US$53.2B FY25 global revenue (EY press release)",
-      "relevance": "Global due diligence leader across transactions, infrastructure, energy transition, ESG, and emerging markets\u2014large enough for Partner/MD/Global sector lead roles.",
+      "relevance": "Global due diligence leader across transactions, infrastructure, energy transition, ESG, and emerging markets—large enough for Partner/MD/Global sector lead roles.",
       "leadership": [
         {
           "name": "Janet Truncale",
@@ -4110,16 +4110,16 @@ window.APP_DATA = {
       "region": "Americas",
       "website": "https://www.k2integrity.com",
       "aum_or_revenue": "US$74M revenue estimate (ZoomInfo); alternative estimate US$103.1M (Growjo)",
-      "relevance": "Financial crimes risk, sanctions/AML, integrity and investigative due diligence\u2014high relevance to DFC-style emerging market investing, sovereign counterparties, and critical minerals supply-chain risk.",
+      "relevance": "Financial crimes risk, sanctions/AML, integrity and investigative due diligence—high relevance to DFC-style emerging market investing, sovereign counterparties, and critical minerals supply-chain risk.",
       "leadership": [
         {
           "name": "Jeremy Kroll",
-          "title": "President, CEO, and Co-Founder (quoted) (K2 Integrity \u2013 Our Story)"
+          "title": "President, CEO, and Co-Founder (quoted) (K2 Integrity – Our Story)"
         }
       ],
       "network_contact": {
         "name": "Aaron Karczmer",
-        "title": "Chief Executive Officer (appointed Oct 2025) (K2 Integrity \u2013 Our Story)",
+        "title": "Chief Executive Officer (appointed Oct 2025) (K2 Integrity – Our Story)",
         "reason": "Top decision-maker; relevant for senior executive entry points and practice leadership opportunities."
       }
     },
@@ -4154,16 +4154,16 @@ window.APP_DATA = {
       "region": "Europe",
       "website": "https://www.controlrisks.com",
       "aum_or_revenue": "Revenue estimate US$634M (2024) (RocketReach)",
-      "relevance": "Political risk, integrity due diligence, and investment-support intelligence with deep footprint in Africa/Asia\u2014high fit for emerging markets, development finance, and critical minerals/infrastructure risk.",
+      "relevance": "Political risk, integrity due diligence, and investment-support intelligence with deep footprint in Africa/Asia—high fit for emerging markets, development finance, and critical minerals/infrastructure risk.",
       "leadership": [
         {
           "name": "Robert Boyd",
-          "title": "CEO \u2013 Global Businesses & Partnerships (Control Risks bio)"
+          "title": "CEO – Global Businesses & Partnerships (Control Risks bio)"
         }
       ],
       "network_contact": {
         "name": "Robert Boyd",
-        "title": "CEO \u2013 Global Businesses & Partnerships (Control Risks bio)",
+        "title": "CEO – Global Businesses & Partnerships (Control Risks bio)",
         "reason": "Exec Committee member with direct remit over globally structured businesses incl. third-party risk & compliance solutions; strong connector for senior roles."
       }
     },
@@ -4176,7 +4176,7 @@ window.APP_DATA = {
       "region": "Europe",
       "website": "https://www.s-rm.com",
       "aum_or_revenue": "Estimated US$86.3M annual revenue (Growjo)",
-      "relevance": "Investigative due diligence for PE and international financial institutions with specific strength in Asia and Sub-Saharan Africa\u2014direct match to emerging markets/development finance background.",
+      "relevance": "Investigative due diligence for PE and international financial institutions with specific strength in Asia and Sub-Saharan Africa—direct match to emerging markets/development finance background.",
       "leadership": [
         {
           "name": "(Firm profile)",
@@ -4360,7 +4360,7 @@ window.APP_DATA = {
       }
     },
     {
-      "name": "State Street (State Street Corporation \u2013 Fund Administration/Alpha)",
+      "name": "State Street (State Street Corporation – Fund Administration/Alpha)",
       "industry": "Fund Solutions",
       "sub_sector": "",
       "headquarters": "Boston, Massachusetts",
@@ -4428,7 +4428,7 @@ window.APP_DATA = {
       }
     },
     {
-      "name": "BNY (Bank of New York Mellon) \u2013 Fund & Investor Solutions",
+      "name": "BNY (Bank of New York Mellon) – Fund & Investor Solutions",
       "industry": "Fund Solutions",
       "sub_sector": "",
       "headquarters": "New York, New York",
@@ -4445,7 +4445,7 @@ window.APP_DATA = {
       }
     },
     {
-      "name": "HSBC \u2013 Fund Services (Markets & Securities Services)",
+      "name": "HSBC – Fund Services (Markets & Securities Services)",
       "industry": "Fund Solutions",
       "sub_sector": "",
       "headquarters": "London",
@@ -4487,7 +4487,7 @@ window.APP_DATA = {
       "region": "Europe",
       "website": "https://www.nbim.no/en/",
       "aum_or_revenue": "~US$1.77T total assets (Top 20 global pension funds table, 2024/2025 data)",
-      "relevance": "World\u2019s largest pension-anchored sovereign fund with meaningful renewable infrastructure and energy-transition ambitions (unlisted renewable infrastructure) plus strong governance/ESG footprint; relevant for senior leadership roles spanning real assets, climate/energy transition and global portfolio management.",
+      "relevance": "World’s largest pension-anchored sovereign fund with meaningful renewable infrastructure and energy-transition ambitions (unlisted renewable infrastructure) plus strong governance/ESG footprint; relevant for senior leadership roles spanning real assets, climate/energy transition and global portfolio management.",
       "leadership": [
         {
           "name": "Nicolai Tangen",
@@ -4505,7 +4505,7 @@ window.APP_DATA = {
       "network_contact": {
         "name": "Daniel Balthasar",
         "title": "Co-CIO Equities / Active Strategies leader",
-        "reason": "Sits at the intersection of active strategies and real assets/energy investing after organisational integration\u2014high-leverage relationship for MD-level roles spanning global active management and renewables."
+        "reason": "Sits at the intersection of active strategies and real assets/energy investing after organisational integration—high-leverage relationship for MD-level roles spanning global active management and renewables."
       }
     },
     {
@@ -4517,7 +4517,7 @@ window.APP_DATA = {
       "region": "Asia-Pacific",
       "website": "https://www.gpif.go.jp/en/",
       "aum_or_revenue": "~US$1.65T (Top 20 global pension funds, 2024/2025 data)",
-      "relevance": "Largest pension fund in Japan with global allocations and expanding stewardship/ESG posture\u2014relevant for leadership in global alternatives, sustainable investment policy, and manager selection across public/private markets.",
+      "relevance": "Largest pension fund in Japan with global allocations and expanding stewardship/ESG posture—relevant for leadership in global alternatives, sustainable investment policy, and manager selection across public/private markets.",
       "leadership": [
         {
           "name": "Kazuto Uchida",
@@ -4535,7 +4535,7 @@ window.APP_DATA = {
       "network_contact": {
         "name": "Yasuhiro Yamamoto",
         "title": "Chief Investment Officer",
-        "reason": "Primary decision-maker for asset allocation and manager strategy; direct fit for candidate\u2019s fund-of-funds, EM, and alternatives background."
+        "reason": "Primary decision-maker for asset allocation and manager strategy; direct fit for candidate’s fund-of-funds, EM, and alternatives background."
       }
     },
     {
@@ -4565,7 +4565,7 @@ window.APP_DATA = {
       "network_contact": {
         "name": "Head of Overseas Alternative Investment",
         "title": "(NPS division head)",
-        "reason": "Direct counterpart for infrastructure/PE deployment and partnerships in emerging markets and energy transition; most relevant functional leader for candidate\u2019s profile."
+        "reason": "Direct counterpart for infrastructure/PE deployment and partnerships in emerging markets and energy transition; most relevant functional leader for candidate’s profile."
       }
     },
     {
@@ -4595,11 +4595,11 @@ window.APP_DATA = {
       "network_contact": {
         "name": "Caitlin Gubbels",
         "title": "SMD & Global Head of Private Equity",
-        "reason": "Runs PE globally including funds/secondaries and Asia; highly aligned with candidate\u2019s fund investing + EM/PE background and senior role level."
+        "reason": "Runs PE globally including funds/secondaries and Asia; highly aligned with candidate’s fund investing + EM/PE background and senior role level."
       }
     },
     {
-      "name": "Caisse de d\u00e9p\u00f4t et placement du Qu\u00e9bec (La Caisse / CDPQ)",
+      "name": "Caisse de dépôt et placement du Québec (La Caisse / CDPQ)",
       "industry": "Pension Fund",
       "sub_sector": "",
       "headquarters": "Montreal, Quebec",
@@ -4615,7 +4615,7 @@ window.APP_DATA = {
         },
         {
           "name": "Kim Thomassin",
-          "title": "Executive VP & Head of Qu\u00e9bec (and prior investment leadership roles)"
+          "title": "Executive VP & Head of Québec (and prior investment leadership roles)"
         },
         {
           "name": "Emanuel Jaclot",
@@ -4629,14 +4629,14 @@ window.APP_DATA = {
       }
     },
     {
-      "name": "Ontario Teachers\u2019 Pension Plan (OTPP)",
+      "name": "Ontario Teachers’ Pension Plan (OTPP)",
       "industry": "Pension Fund",
       "sub_sector": "",
       "headquarters": "Toronto, Ontario",
       "country": "Canada",
       "region": "Americas",
       "website": "https://www.otpp.com",
-      "aum_or_revenue": "~C$250B\u2013270B net assets (recent reporting; exact varies by date)",
+      "aum_or_revenue": "~C$250B–270B net assets (recent reporting; exact varies by date)",
       "relevance": "Major global investor across private equity, infrastructure, natural resources and venture; strong fit for MD roles in infra/natural resources (incl. critical minerals exposure) and private markets partnerships.",
       "leadership": [
         {
@@ -4655,7 +4655,7 @@ window.APP_DATA = {
       "network_contact": {
         "name": "Christopher Metrakos",
         "title": "Executive Managing Director, Infrastructure & Natural Resources",
-        "reason": "Leads global infrastructure and natural resources\u2014including energy/metals\u2014making him the closest match to candidate\u2019s infrastructure + critical minerals + climate finance experience."
+        "reason": "Leads global infrastructure and natural resources—including energy/metals—making him the closest match to candidate’s infrastructure + critical minerals + climate finance experience."
       }
     },
     {
@@ -4666,8 +4666,8 @@ window.APP_DATA = {
       "country": "Netherlands",
       "region": "Europe",
       "website": "https://www.abp.nl",
-      "aum_or_revenue": "~\u20ac520B (as of Apr 2025 per institutional reporting)",
-      "relevance": "One of Europe\u2019s largest pension funds with strong climate/impact agenda (e.g., EM sustainable lending initiatives) and large PE/real assets exposure via APG; fits sustainable/EM development finance expertise.",
+      "aum_or_revenue": "~€520B (as of Apr 2025 per institutional reporting)",
+      "relevance": "One of Europe’s largest pension funds with strong climate/impact agenda (e.g., EM sustainable lending initiatives) and large PE/real assets exposure via APG; fits sustainable/EM development finance expertise.",
       "leadership": [
         {
           "name": "Herman Bril",
@@ -4685,11 +4685,11 @@ window.APP_DATA = {
       "network_contact": {
         "name": "Herman Bril",
         "title": "CIO / Executive Director of Investments",
-        "reason": "Owns investment strategy and portfolio direction with explicit sustainability/climate innovation credentials; excellent fit for candidate\u2019s DFI + climate finance + EM profile."
+        "reason": "Owns investment strategy and portfolio direction with explicit sustainability/climate innovation credentials; excellent fit for candidate’s DFI + climate finance + EM profile."
       }
     },
     {
-      "name": "CalPERS (California Public Employees\u2019 Retirement System)",
+      "name": "CalPERS (California Public Employees’ Retirement System)",
       "industry": "Pension Fund",
       "sub_sector": "",
       "headquarters": "Sacramento, California",
@@ -4798,16 +4798,16 @@ window.APP_DATA = {
       "relevance": "PE in emerging/frontier markets Eurasia; perfect EM, PE, development finance alignment. Tethys",
       "leadership": [],
       "network_contact": {
-        "name": "Teo Kr\u00fcger, Head of Digital Assets (EM networks)",
+        "name": "Teo Krüger, Head of Digital Assets (EM networks)",
         "title": "",
-        "reason": "Teo Kr\u00fcger, Head of Digital Assets (EM networks)"
+        "reason": "Teo Krüger, Head of Digital Assets (EM networks)"
       }
     },
     {
       "name": "Pontegadea Inversiones",
       "industry": "Family Office",
       "sub_sector": "",
-      "headquarters": "La Coru\u00f1a",
+      "headquarters": "La Coruña",
       "country": "Spain",
       "region": "Europe",
       "website": "N/A",
@@ -4845,13 +4845,13 @@ window.APP_DATA = {
       "country": "Germany",
       "region": "Europe",
       "website": "https://www.wirtgen-invest.de",
-      "aum_or_revenue": "~\u20ac1.5B",
+      "aum_or_revenue": "~€1.5B",
       "relevance": "Renewable energy (wind/solar parks), real estate, VC; climate finance, infra. Familyofficehub Wirtgen",
       "leadership": [],
       "network_contact": {
-        "name": "Marcel M\u00fcller, CIO (investments oversight)",
+        "name": "Marcel Müller, CIO (investments oversight)",
         "title": "",
-        "reason": "Marcel M\u00fcller, CIO (investments oversight)"
+        "reason": "Marcel Müller, CIO (investments oversight)"
       }
     },
     {
@@ -4913,7 +4913,7 @@ window.APP_DATA = {
       "country": "Denmark",
       "region": "Europe",
       "website": "https://novoholdings.dk/",
-      "aum_or_revenue": "\u20ac142B (2024) Novo",
+      "aum_or_revenue": "€142B (2024) Novo",
       "relevance": "Infra/green transition/PE/VC funds/Asia Investments. Direct match infra/climate/EM funds Novo.",
       "leadership": [],
       "network_contact": {
@@ -5017,7 +5017,7 @@ window.APP_DATA = {
       "network_contact": {
         "name": "Chun Lai",
         "title": "Chief Investment Officer",
-        "reason": "Direct peer to candidate\u2019s fund-investing background; leads endowment and could value DFC emerging markets/private capital mobilization experience."
+        "reason": "Direct peer to candidate’s fund-investing background; leads endowment and could value DFC emerging markets/private capital mobilization experience."
       }
     },
     {
@@ -5028,11 +5028,11 @@ window.APP_DATA = {
       "country": "United Kingdom",
       "region": "Europe",
       "website": "https://wellcome.org/",
-      "aum_or_revenue": "\u00a336.8B portfolio (Sep 2023) / ~\u00a338B often cited",
-      "relevance": "One of world\u2019s largest mission-driven investment pools with sophisticated multi-asset investing, long-duration capital, and responsible investment/net-zero work\u2014strong match for senior allocator with EM + alternatives expertise.",
+      "aum_or_revenue": "£36.8B portfolio (Sep 2023) / ~£38B often cited",
+      "relevance": "One of world’s largest mission-driven investment pools with sophisticated multi-asset investing, long-duration capital, and responsible investment/net-zero work—strong match for senior allocator with EM + alternatives expertise.",
       "leadership": [
         {
-          "name": "John-Arne R\u00f8ttingen",
+          "name": "John-Arne Røttingen",
           "title": "Chief Executive Officer"
         },
         {
@@ -5089,7 +5089,7 @@ window.APP_DATA = {
       "region": "Europe",
       "website": "https://ciff.org/",
       "aum_or_revenue": "~$5.9B endowment (commonly cited)",
-      "relevance": "Major climate + development philanthropy with strong focus on climate finance, emerging markets programs, and sophisticated governance with investment committee\u2014fits candidate\u2019s blended finance and EM track record.",
+      "relevance": "Major climate + development philanthropy with strong focus on climate finance, emerging markets programs, and sophisticated governance with investment committee—fits candidate’s blended finance and EM track record.",
       "leadership": [
         {
           "name": "Kate Hampton",
@@ -5413,7 +5413,7 @@ window.APP_DATA = {
       "geographic_focus": "Global (33+ countries, headquartered Chicago, IL)",
       "website": "https://www.spencerstuart.com",
       "reputation": "One of the 'SHREK' five dominant global search firms. Considered preeminent for board and C-suite search in private equity and large institutional investors. Spencer Stuart's impact-investing and ESG practice was founded by Lauren Callaghan; the firm placed five PE impact-investing leaders in a single year during the pandemic and regularly advises Fortune 500 and government institutions. Particularly strong for portfolio company CEO/CFO and board director searches. Named among top PE executive search firms for industrial and business services portfolios.",
-      "engagement_process": "Exclusively retained search. Engage via firm website (spencerstuart.com/contact) or direct outreach to practice leaders. Discovery meeting \u2192 position specification \u2192 market mapping \u2192 candidate presentation \u2192 interview coordination \u2192 offer support. Typical timeline 90\u2013120 days for senior placements.",
+      "engagement_process": "Exclusively retained search. Engage via firm website (spencerstuart.com/contact) or direct outreach to practice leaders. Discovery meeting → position specification → market mapping → candidate presentation → interview coordination → offer support. Typical timeline 90–120 days for senior placements.",
       "search_type": "retained"
     },
     {
@@ -5537,7 +5537,7 @@ window.APP_DATA = {
       "geographic_focus": "Global (130 countries, headquartered Los Angeles, CA)",
       "website": "https://www.kornferry.com",
       "reputation": "Largest of the 'SHREK' five by revenue. Financial services practice covers: corporate/investment banking, investment management, private equity, real estate, sovereign wealth funds, family offices, pensions/endowments, and insurance. Kate Shattuck co-leads the impact investing practice and serves as Korn Ferry's liaison to the World Bank. Expanded digital talent search capabilities globally. Strong for broad C-suite and board mandates with integrated leadership advisory (compensation benchmarking, succession planning). Average search time ~5 months; praised for consistent communication.",
-      "engagement_process": "Retained search (primary); also offers broader talent management consulting. Engage via kornferry.com/connect. Discovery call \u2192 Success Profile development \u2192 global candidate search \u2192 structured blind-screen assessment \u2192 offer management. Fee typically 30\u201335% of first-year cash compensation.",
+      "engagement_process": "Retained search (primary); also offers broader talent management consulting. Engage via kornferry.com/connect. Discovery call → Success Profile development → global candidate search → structured blind-screen assessment → offer management. Fee typically 30–35% of first-year cash compensation.",
       "search_type": "retained"
     },
     {
@@ -5649,7 +5649,7 @@ window.APP_DATA = {
         {
           "name": "Christian Ehl",
           "title": "Partner; Global Functional Leader, Sustainability and ESG",
-          "specialization": "ESG and sustainability executive search globally (based D\u00fcsseldorf)"
+          "specialization": "ESG and sustainability executive search globally (based Düsseldorf)"
         },
         {
           "name": "Heidi Tieslau",
@@ -5720,7 +5720,7 @@ window.APP_DATA = {
         {
           "name": "Long Ridge Partners Team",
           "title": "Partners and Senior Recruiters",
-          "specialization": "Alternative investment management \u2014 PE, hedge funds, real estate, credit, secondaries"
+          "specialization": "Alternative investment management — PE, hedge funds, real estate, credit, secondaries"
         }
       ],
       "industries": [
@@ -6261,7 +6261,7 @@ window.APP_DATA = {
       ],
       "geographic_focus": "United States primarily (headquartered Chicago, IL; serves PE sponsors nationally and internationally)",
       "website": "https://www.ghsmart.com",
-      "reputation": "Founded 1995. Widely considered the gold standard for CEO and senior leadership evaluation and assessment in PE-backed environments. Uses structured behavioral analysis methodology. Often combined with other search firms by PE sponsors \u2014 GH Smart conducts deep assessment while a search firm handles sourcing. Ranked #4 in top PE executive search rankings. Particularly valuable for CEO succession and board advisory engagements. Strong in C-suite assessment for portfolio companies pre and post acquisition.",
+      "reputation": "Founded 1995. Widely considered the gold standard for CEO and senior leadership evaluation and assessment in PE-backed environments. Uses structured behavioral analysis methodology. Often combined with other search firms by PE sponsors — GH Smart conducts deep assessment while a search firm handles sourcing. Ranked #4 in top PE executive search rankings. Particularly valuable for CEO succession and board advisory engagements. Strong in C-suite assessment for portfolio companies pre and post acquisition.",
       "engagement_process": "Retained engagement. Contact via ghsmart.com. Primarily advisory and assessment, combined with select CEO searches. Fees structured for advisory + assessment component. Clients often engage GH Smart alongside a traditional search firm for independent evaluation.",
       "search_type": "retained"
     },
@@ -6281,8 +6281,8 @@ window.APP_DATA = {
       ],
       "geographic_focus": "United States (headquartered Chicago, IL; national coverage)",
       "website": "https://www.eca-partners.com",
-      "reputation": "Named fastest-growing boutique in PE recruiting (38% growth). Ranked #1 in speed/efficiency for CFO searches by industry analyses \u2014 average 10-week search time vs. industry average of 5 months for larger firms, with 99% success rate. Team is composed of ex-management consultants from McKinsey, LEK, and Oliver Wyman plus PhDs on research team. Grew rapidly because MDs personally interview every CFO candidate presented. Hunt Scanlon Top 25 executive search firm. Specializes in finance executives and C-suite for PE-backed companies.",
-      "engagement_process": "Retained search. Contact via eca-partners.com. MDs are involved in every stage including personal candidate interviews. No handoff to junior staff. Can also place interim executives in 1\u20132 weeks for urgent needs.",
+      "reputation": "Named fastest-growing boutique in PE recruiting (38% growth). Ranked #1 in speed/efficiency for CFO searches by industry analyses — average 10-week search time vs. industry average of 5 months for larger firms, with 99% success rate. Team is composed of ex-management consultants from McKinsey, LEK, and Oliver Wyman plus PhDs on research team. Grew rapidly because MDs personally interview every CFO candidate presented. Hunt Scanlon Top 25 executive search firm. Specializes in finance executives and C-suite for PE-backed companies.",
+      "engagement_process": "Retained search. Contact via eca-partners.com. MDs are involved in every stage including personal candidate interviews. No handoff to junior staff. Can also place interim executives in 1–2 weeks for urgent needs.",
       "search_type": "retained"
     },
     {
@@ -6363,7 +6363,7 @@ window.APP_DATA = {
       "geographic_focus": "United States (headquartered nationally; hubs in NYC, Boston, Chicago, San Francisco, Dallas, Austin, Miami, LA)",
       "website": "https://www.jrgpartners.com",
       "reputation": "50+ years collective experience; 92% of placed executives remain in roles 3+ years. Placed hundreds of transformational leaders across PE firms and portfolio companies managing $15B+ AUM. Exclusively focused on PE ecosystem (not a generalist firm). Has placed CIO, MD, VP, Principal, and Associate levels at growth equity, LBO, real assets, PE credit, and VC firms, as well as portfolio company C-suite. Named Hunt Scanlon PE Recruiting Power 75.",
-      "engagement_process": "Retained search exclusively. Contact via jrgpartners.com (hirenow@jrgpartners.com). Retainer-based with defined milestones. 5-step process: discovery \u2192 position spec/market mapping \u2192 candidate identification \u2192 vetting/assessment \u2192 offer.",
+      "engagement_process": "Retained search exclusively. Contact via jrgpartners.com (hirenow@jrgpartners.com). Retainer-based with defined milestones. 5-step process: discovery → position spec/market mapping → candidate identification → vetting/assessment → offer.",
       "search_type": "retained"
     },
     {
@@ -6383,8 +6383,8 @@ window.APP_DATA = {
       ],
       "geographic_focus": "Global (international reach through NPAworldwide network; operates across multiple geographies)",
       "website": "https://www.kellerexecutivesearch.com",
-      "reputation": "Global executive search firm with dedicated fund management practice. Partners with institutional money managers, hedge funds, PE firms, real estate platforms, and family offices. Success-fee model (18%) with no upfront fees and up to 365-day replacement coverage. Known for first-candidate delivery in 2\u20133 weeks. Strong for COO, CFO/Fund Controllers, and portfolio management leadership within asset management firms.",
-      "engagement_process": "Contingency/success-fee model (18%; no upfront fees). Contact via kellerexecutivesearch.com. 365-day replacement guarantee. First candidates typically presented within 2\u20133 weeks. Uses AI/ATS tools alongside relationship-based outreach.",
+      "reputation": "Global executive search firm with dedicated fund management practice. Partners with institutional money managers, hedge funds, PE firms, real estate platforms, and family offices. Success-fee model (18%) with no upfront fees and up to 365-day replacement coverage. Known for first-candidate delivery in 2–3 weeks. Strong for COO, CFO/Fund Controllers, and portfolio management leadership within asset management firms.",
+      "engagement_process": "Contingency/success-fee model (18%; no upfront fees). Contact via kellerexecutivesearch.com. 365-day replacement guarantee. First candidates typically presented within 2–3 weeks. Uses AI/ATS tools alongside relationship-based outreach.",
       "search_type": "contingency"
     },
     {
@@ -6493,7 +6493,7 @@ window.APP_DATA = {
       "geographic_coverage": "Global (190+ countries)",
       "industries_covered": "All industries; strong in Tech, Finance, Consulting, Healthcare, Energy",
       "executive_level_focus": "All levels; C-suite and board roles present but volume includes all seniority",
-      "target_compensation": "$100K\u2013$1M+",
+      "target_compensation": "$100K–$1M+",
       "pros": [
         "Largest professional network globally (1B+ members)",
         "Recruiter inbound volume for senior profiles",
@@ -6512,7 +6512,7 @@ window.APP_DATA = {
       "name": "TheLadders",
       "url": "https://www.theladders.com",
       "type": "Executive / High-Salary Job Board",
-      "pricing_model": "Subscription; ~$24.97\u2013$49.97/month (multi-month discounts available)",
+      "pricing_model": "Subscription; ~$24.97–$49.97/month (multi-month discounts available)",
       "key_features": [
         "250,000+ curated job listings with salaries of $100K+",
         "Apply4Me automated application service",
@@ -6524,7 +6524,7 @@ window.APP_DATA = {
       "geographic_coverage": "Primarily US and Canada",
       "industries_covered": "Tech, Finance, Healthcare, Marketing, Engineering, Management",
       "executive_level_focus": "$100K+ roles; mid-to-senior professionals; VPs and Directors",
-      "target_compensation": "$100K\u2013$300K+",
+      "target_compensation": "$100K–$300K+",
       "pros": [
         "Filters out sub-$100K roles by design",
         "Apply4Me feature reduces application effort",
@@ -6555,7 +6555,7 @@ window.APP_DATA = {
       "geographic_coverage": "Primarily North America (US-centric); some international listings",
       "industries_covered": "Finance, Technology, Healthcare, General Management, Consulting",
       "executive_level_focus": "Director, VP, C-Suite ($150K+ minimum); members average SVP or C-suite level",
-      "target_compensation": "$150K\u2013$500K+",
+      "target_compensation": "$150K–$500K+",
       "pros": [
         "30+ year track record; 100,000+ executives placed",
         "High-touch coaching and personalized support",
@@ -6587,7 +6587,7 @@ window.APP_DATA = {
       "geographic_coverage": "Global (70+ countries through AESC network)",
       "industries_covered": "All sectors; AESC network spans every major industry globally",
       "executive_level_focus": "Director level and above; $150K+ minimum; 15+ years leadership experience preferred",
-      "target_compensation": "$150K\u2013$1M+",
+      "target_compensation": "$150K–$1M+",
       "pros": [
         "Only platform directly tied to AESC global search network",
         "Passive 'be found' model suited for discreet senior executive searches",
@@ -6595,7 +6595,7 @@ window.APP_DATA = {
         "Cost-effective at $289/year for recruiter exposure"
       ],
       "cons": [
-        "Passive platform\u2014depends on recruiters finding you (slow for urgent searches)",
+        "Passive platform—depends on recruiters finding you (slow for urgent searches)",
         "No automated application tools",
         "Not suitable for mid-level professionals"
       ],
@@ -6606,7 +6606,7 @@ window.APP_DATA = {
       "name": "Ivy Exec",
       "url": "https://www.ivyexec.com",
       "type": "Executive Job Board & Professional Development Community",
-      "pricing_model": "Freemium; All Access membership ~$39\u2013$40/month",
+      "pricing_model": "Freemium; All Access membership ~$39–$40/month",
       "key_features": [
         "4,000+ new curated job listings per week ($100K+ roles)",
         "Peer-to-peer mentorship program for senior executives",
@@ -6618,7 +6618,7 @@ window.APP_DATA = {
       "geographic_coverage": "Global; strong in US, Europe, Asia-Pacific",
       "industries_covered": "Finance, Consulting, Technology, Marketing; strong cross-sector coverage",
       "executive_level_focus": "$100K+ roles; Directors, VPs, and C-Suite; also strong for niche executive career development",
-      "target_compensation": "$100K\u2013$500K+",
+      "target_compensation": "$100K–$500K+",
       "pros": [
         "Community-driven with mentorship and development resources beyond job listings",
         "Good for global executive networking",
@@ -6636,7 +6636,7 @@ window.APP_DATA = {
       "name": "Heidrick & Struggles",
       "url": "https://www.heidrick.com",
       "type": "Global Executive Search Firm (Retained)",
-      "pricing_model": "Employer-paid retained search (typically 30\u201333% of placed executive's first-year total compensation); not a job board\u2014candidates cannot apply directly",
+      "pricing_model": "Employer-paid retained search (typically 30–33% of placed executive's first-year total compensation); not a job board—candidates cannot apply directly",
       "key_features": [
         "C-suite and board-level executive search globally",
         "On-Demand Talent solutions",
@@ -6648,7 +6648,7 @@ window.APP_DATA = {
       "geographic_coverage": "Global; 51 offices across 6 continents",
       "industries_covered": "Financial Services, Technology, Healthcare, Consumer, Industrial, Private Equity, Life Sciences",
       "executive_level_focus": "C-suite (CEO, CFO, CIO, COO, CHRO), Board, SVP/EVP",
-      "target_compensation": "$500K\u2013$10M+",
+      "target_compensation": "$500K–$10M+",
       "pros": [
         "One of the 'SHREK' Big Five global search firms",
         "Serves 70%+ of Fortune 1000 clients",
@@ -6678,7 +6678,7 @@ window.APP_DATA = {
       "geographic_coverage": "Global; 50+ offices in 33+ countries",
       "industries_covered": "All sectors; notable strength in Financial Services, Technology, Healthcare, Private Equity, Consumer",
       "executive_level_focus": "CEO, C-Suite, Board Directors; top-of-house searches",
-      "target_compensation": "$500K\u2013$20M+",
+      "target_compensation": "$500K–$20M+",
       "pros": [
         "Benchmark-setting board and CEO succession reputation",
         "Partnership model ensures senior partner involvement",
@@ -6707,7 +6707,7 @@ window.APP_DATA = {
       "geographic_coverage": "Global; 60+ offices across Europe, Americas, Asia-Pacific, Middle East",
       "industries_covered": "All sectors; deep expertise in Financial Services, Healthcare, Industrial, Technology, Private Equity",
       "executive_level_focus": "C-suite, Board, EVP/SVP-level enterprise leadership",
-      "target_compensation": "$500K\u2013$15M+",
+      "target_compensation": "$500K–$15M+",
       "pros": [
         "Unique one-firm model eliminates internal conflict-of-interest",
         "Strongest European presence among SHREK firms",
@@ -6737,7 +6737,7 @@ window.APP_DATA = {
       "geographic_coverage": "Global; primary markets in North America, Europe",
       "industries_covered": "Technology, Financial Services, Healthcare, Private Equity, Manufacturing",
       "executive_level_focus": "C-Suite (CEO, CFO, CIO, CHRO, COO) and Board Director searches",
-      "target_compensation": "$300K\u2013$5M+",
+      "target_compensation": "$300K–$5M+",
       "pros": [
         "Senior partner involvement throughout; no hand-off to junior staff",
         "Speed and agility advantage vs. Big Five firms",
@@ -6758,7 +6758,7 @@ window.APP_DATA = {
       "type": "Global Executive Search Firm (Retained)",
       "pricing_model": "Retained search; fees as % of executive's first-year guaranteed cash compensation",
       "key_features": [
-        "Founded 1946\u2014one of the world's oldest executive search firms",
+        "Founded 1946—one of the world's oldest executive search firms",
         "75+ offices across 45+ countries",
         "Strong emerging markets and cross-border search expertise",
         "Boutique-style personalized service at global scale",
@@ -6767,7 +6767,7 @@ window.APP_DATA = {
       "geographic_coverage": "Global; 75+ offices in 45+ countries; exceptional emerging markets depth",
       "industries_covered": "Financial Services, Private Equity, Technology, Healthcare, Industrial, Energy, Consumer",
       "executive_level_focus": "C-Suite, Senior VP, Board; strong in cross-border and international searches",
-      "target_compensation": "$300K\u2013$5M+",
+      "target_compensation": "$300K–$5M+",
       "pros": [
         "Oldest firm in executive search; deep trust-based client relationships",
         "Strong in emerging markets (Africa, Latin America, Southeast Asia) where SHREK firms are weaker",
@@ -6783,43 +6783,43 @@ window.APP_DATA = {
   ],
   "compensation": [
     {
-      "category": "Private Equity \u2013 Large/Mega Funds",
+      "category": "Private Equity – Large/Mega Funds",
       "description": "Buyout, growth equity, and credit funds with $3B+ AUM (e.g., Blackstone, KKR, Apollo, Carlyle, Warburg Pincus, Advent, CVC)",
       "roles": [
         {
           "title": "VP / Vice President",
-          "base_salary_range_usd": "$220,000\u2013$260,000",
-          "bonus_range": "100\u2013170% of base ($220K\u2013$440K)",
-          "total_cash_range": "$450,000\u2013$700,000",
-          "carried_interest_equity": "0.1\u20130.5% of carry pool; ~$800K\u2013$2M+ over fund life on $1B+ fund at 3x; vest 4\u20136 years",
-          "total_comp_range": "$550,000\u2013$1,200,000+ (including realized carry)",
-          "notes": "First meaningful carry begins at VP; cash comp varies heavily by fund vintage performance. NYC/SF premium adds 15\u201325%."
+          "base_salary_range_usd": "$220,000–$260,000",
+          "bonus_range": "100–170% of base ($220K–$440K)",
+          "total_cash_range": "$450,000–$700,000",
+          "carried_interest_equity": "0.1–0.5% of carry pool; ~$800K–$2M+ over fund life on $1B+ fund at 3x; vest 4–6 years",
+          "total_comp_range": "$550,000–$1,200,000+ (including realized carry)",
+          "notes": "First meaningful carry begins at VP; cash comp varies heavily by fund vintage performance. NYC/SF premium adds 15–25%."
         },
         {
           "title": "Principal / Director",
-          "base_salary_range_usd": "$300,000\u2013$375,000",
-          "bonus_range": "120\u2013220% of base ($360K\u2013$825K)",
-          "total_cash_range": "$700,000\u2013$1,200,000",
-          "carried_interest_equity": "0.5\u20131.5% of carry pool; significant step-up from VP",
-          "total_comp_range": "$1,000,000\u2013$3,000,000+ (including realized carry)",
+          "base_salary_range_usd": "$300,000–$375,000",
+          "bonus_range": "120–220% of base ($360K–$825K)",
+          "total_cash_range": "$700,000–$1,200,000",
+          "carried_interest_equity": "0.5–1.5% of carry pool; significant step-up from VP",
+          "total_comp_range": "$1,000,000–$3,000,000+ (including realized carry)",
           "notes": "Carry dominates at this level. IC leadership and origination responsibilities emerge."
         },
         {
           "title": "Managing Director / Partner",
-          "base_salary_range_usd": "$400,000\u2013$600,000",
-          "bonus_range": "150%+ of base ($600K\u2013$1.2M)",
-          "total_cash_range": "$1,200,000\u2013$3,000,000+",
-          "carried_interest_equity": "Multi-% carry pool share; strong exit years can yield $5M\u2013$20M+ per year; founding partners can realize $100M+",
-          "total_comp_range": "$2,000,000\u2013$20,000,000+ (including realized carry)",
+          "base_salary_range_usd": "$400,000–$600,000",
+          "bonus_range": "150%+ of base ($600K–$1.2M)",
+          "total_cash_range": "$1,200,000–$3,000,000+",
+          "carried_interest_equity": "Multi-% carry pool share; strong exit years can yield $5M–$20M+ per year; founding partners can realize $100M+",
+          "total_comp_range": "$2,000,000–$20,000,000+ (including realized carry)",
           "notes": "Pay is highly variable by fund performance, vintage, and LP fundraising success. Cash comp is a small fraction of total carry potential."
         },
         {
           "title": "CIO / Head of Investments",
-          "base_salary_range_usd": "$500,000\u2013$800,000",
-          "bonus_range": "100\u2013200% of base",
-          "total_cash_range": "$1,000,000\u2013$2,400,000",
+          "base_salary_range_usd": "$500,000–$800,000",
+          "bonus_range": "100–200% of base",
+          "total_cash_range": "$1,000,000–$2,400,000",
           "carried_interest_equity": "Significant carry allocation equivalent to senior MD/Partner tier",
-          "total_comp_range": "$2,000,000\u2013$15,000,000+",
+          "total_comp_range": "$2,000,000–$15,000,000+",
           "notes": "At mega-fund CIO level, economics approach Managing Partner. Extremely rare role."
         }
       ],
@@ -6830,34 +6830,34 @@ window.APP_DATA = {
       ]
     },
     {
-      "category": "Private Equity \u2013 Mid-Market Funds",
-      "description": "Buyout and growth equity funds with $500M\u2013$3B AUM",
+      "category": "Private Equity – Mid-Market Funds",
+      "description": "Buyout and growth equity funds with $500M–$3B AUM",
       "roles": [
         {
           "title": "VP / Vice President",
-          "base_salary_range_usd": "$200,000\u2013$240,000",
-          "bonus_range": "100\u2013160% of base ($200K\u2013$385K)",
-          "total_cash_range": "$400,000\u2013$620,000",
-          "carried_interest_equity": "0.1\u20130.4% of carry pool; smaller absolute $ than mega-fund but faster vesting in some cases",
-          "total_comp_range": "$500,000\u2013$1,000,000+",
+          "base_salary_range_usd": "$200,000–$240,000",
+          "bonus_range": "100–160% of base ($200K–$385K)",
+          "total_cash_range": "$400,000–$620,000",
+          "carried_interest_equity": "0.1–0.4% of carry pool; smaller absolute $ than mega-fund but faster vesting in some cases",
+          "total_comp_range": "$500,000–$1,000,000+",
           "notes": "Mid-market VPs often have broader deal exposure than mega-fund peers. Carry timing may be faster."
         },
         {
           "title": "Principal / Director",
-          "base_salary_range_usd": "$275,000\u2013$325,000",
-          "bonus_range": "100\u2013200% of base ($275K\u2013$650K)",
-          "total_cash_range": "$575,000\u2013$950,000",
-          "carried_interest_equity": "0.3\u20131.0% of carry pool",
-          "total_comp_range": "$800,000\u2013$2,500,000+",
+          "base_salary_range_usd": "$275,000–$325,000",
+          "bonus_range": "100–200% of base ($275K–$650K)",
+          "total_cash_range": "$575,000–$950,000",
+          "carried_interest_equity": "0.3–1.0% of carry pool",
+          "total_comp_range": "$800,000–$2,500,000+",
           "notes": "Origination and IC leadership central to promotion and compensation differentiation."
         },
         {
           "title": "Managing Director / Partner",
-          "base_salary_range_usd": "$350,000\u2013$500,000",
+          "base_salary_range_usd": "$350,000–$500,000",
           "bonus_range": "150%+ of base",
-          "total_cash_range": "$900,000\u2013$2,000,000+",
-          "carried_interest_equity": "1\u20133% of carry pool; material but lower absolute than mega-fund",
-          "total_comp_range": "$1,500,000\u2013$8,000,000+",
+          "total_cash_range": "$900,000–$2,000,000+",
+          "carried_interest_equity": "1–3% of carry pool; material but lower absolute than mega-fund",
+          "total_comp_range": "$1,500,000–$8,000,000+",
           "notes": "Fundraising, LP relations, and deal leadership are key compensation drivers."
         }
       ],
@@ -6867,25 +6867,25 @@ window.APP_DATA = {
       ]
     },
     {
-      "category": "Private Equity \u2013 Small/Lower-Middle-Market Funds",
+      "category": "Private Equity – Small/Lower-Middle-Market Funds",
       "description": "Buyout and growth equity funds with under $500M AUM",
       "roles": [
         {
           "title": "VP / Vice President",
-          "base_salary_range_usd": "$150,000\u2013$200,000",
-          "bonus_range": "75\u2013125% of base ($115K\u2013$250K)",
-          "total_cash_range": "$300,000\u2013$450,000",
-          "carried_interest_equity": "0.1\u20130.3% of carry pool; smaller fund size means less absolute carry value",
-          "total_comp_range": "$350,000\u2013$700,000",
+          "base_salary_range_usd": "$150,000–$200,000",
+          "bonus_range": "75–125% of base ($115K–$250K)",
+          "total_cash_range": "$300,000–$450,000",
+          "carried_interest_equity": "0.1–0.3% of carry pool; smaller fund size means less absolute carry value",
+          "total_comp_range": "$350,000–$700,000",
           "notes": "Broader role responsibilities; more generalist deal exposure."
         },
         {
           "title": "Managing Director / Partner",
-          "base_salary_range_usd": "$200,000\u2013$350,000",
-          "bonus_range": "100\u2013150% of base",
-          "total_cash_range": "$500,000\u2013$800,000",
-          "carried_interest_equity": "1\u20134% of carry pool; smaller absolute value due to fund size",
-          "total_comp_range": "$700,000\u2013$3,000,000+",
+          "base_salary_range_usd": "$200,000–$350,000",
+          "bonus_range": "100–150% of base",
+          "total_cash_range": "$500,000–$800,000",
+          "carried_interest_equity": "1–4% of carry pool; smaller absolute value due to fund size",
+          "total_comp_range": "$700,000–$3,000,000+",
           "notes": "Small fund MDs often wear multiple hats (deal sourcing, portfolio ops, fundraising)."
         }
       ],
@@ -6895,80 +6895,80 @@ window.APP_DATA = {
       ]
     },
     {
-      "category": "Development Finance Institutions (DFIs) \u2013 IFC (World Bank Group)",
+      "category": "Development Finance Institutions (DFIs) – IFC (World Bank Group)",
       "description": "International Finance Corporation, private sector arm of the World Bank Group, headquartered in Washington DC",
       "roles": [
         {
           "title": "Senior Investment Officer / Lead Investment Officer (GG Grade)",
-          "base_salary_range_usd": "$137,300\u2013$255,000 (net of tax)",
-          "bonus_range": "Limited performance awards (typically 10\u201320% of salary for eligible staff)",
-          "total_cash_range": "$140,000\u2013$290,000",
+          "base_salary_range_usd": "$137,300–$255,000 (net of tax)",
+          "bonus_range": "Limited performance awards (typically 10–20% of salary for eligible staff)",
+          "total_cash_range": "$140,000–$290,000",
           "carried_interest_equity": "None; multilateral institution",
-          "total_comp_range": "$215,000\u2013$392,000 (including average benefits of ~$102K at GG level)",
+          "total_comp_range": "$215,000–$392,000 (including average benefits of ~$102K at GG level)",
           "notes": "WBG salaries are net-of-tax (non-US staff exempt from income tax on WBG compensation). GG grade covers Senior Professionals. Average salary $190,915; avg benefits $101,665 as of June 2025."
         },
         {
           "title": "Manager / Lead Professional (GH Grade)",
-          "base_salary_range_usd": "$184,900\u2013$343,600 (net of tax)",
+          "base_salary_range_usd": "$184,900–$343,600 (net of tax)",
           "bonus_range": "Limited performance awards",
-          "total_cash_range": "$200,000\u2013$370,000",
+          "total_cash_range": "$200,000–$370,000",
           "carried_interest_equity": "None",
-          "total_comp_range": "$342,000\u2013$512,000 (including average benefits of ~$142K at GH level)",
+          "total_comp_range": "$342,000–$512,000 (including average benefits of ~$142K at GH level)",
           "notes": "GH covers department managers, sector/division managers, and lead professionals. Average salary $266,216; avg benefits $141,765."
         },
         {
           "title": "Director / Senior Advisor (GI Grade)",
-          "base_salary_range_usd": "$279,700\u2013$419,600 (net of tax)",
+          "base_salary_range_usd": "$279,700–$419,600 (net of tax)",
           "bonus_range": "Not eligible (Directors and above excluded from performance awards)",
-          "total_cash_range": "$280,000\u2013$420,000",
+          "total_cash_range": "$280,000–$420,000",
           "carried_interest_equity": "None",
-          "total_comp_range": "$465,000\u2013$606,000 (including average benefits of ~$185K)",
+          "total_comp_range": "$465,000–$606,000 (including average benefits of ~$185K)",
           "notes": "GI covers Directors and Senior Advisors. Average salary $348,049; average benefits $185,342 as of June 2025."
         },
         {
           "title": "Vice President (GJ Grade)",
-          "base_salary_range_usd": "$340,100\u2013$460,200 (net of tax)",
+          "base_salary_range_usd": "$340,100–$460,200 (net of tax)",
           "bonus_range": "Not eligible",
-          "total_cash_range": "$340,000\u2013$460,000",
+          "total_cash_range": "$340,000–$460,000",
           "carried_interest_equity": "None",
-          "total_comp_range": "$553,000\u2013$673,000 (including avg benefits of ~$213K)",
+          "total_comp_range": "$553,000–$673,000 (including avg benefits of ~$213K)",
           "notes": "GJ covers all Vice Presidents. Average salary $399,712; average benefits $212,853."
         },
         {
           "title": "Managing Director / Executive VP / Senior VP (GK Grade)",
-          "base_salary_range_usd": "$378,200\u2013$511,700 (net of tax)",
+          "base_salary_range_usd": "$378,200–$511,700 (net of tax)",
           "bonus_range": "Not eligible",
-          "total_cash_range": "$378,000\u2013$512,000",
+          "total_cash_range": "$378,000–$512,000",
           "carried_interest_equity": "None",
-          "total_comp_range": "$595,000\u2013$729,000 (including avg benefits of ~$217K)",
+          "total_comp_range": "$595,000–$729,000 (including avg benefits of ~$217K)",
           "notes": "IFC MD Makhtar Diop received $466,150 annual salary net of tax as of June 2025. Strong non-cash benefits package (pension, medical, education allowance for children)."
         }
       ],
       "data_sources": [
-        "IFC Annual Report 2025 \u2013 Investing in Our People (Staff Salary Structure)",
+        "IFC Annual Report 2025 – Investing in Our People (Staff Salary Structure)",
         "IFC Annual Report 2024"
       ]
     },
     {
-      "category": "Development Finance Institutions (DFIs) \u2013 IDB Invest",
+      "category": "Development Finance Institutions (DFIs) – IDB Invest",
       "description": "IDB Invest (Inter-American Investment Corporation), private sector arm of the Inter-American Development Bank Group, Washington DC",
       "roles": [
         {
-          "title": "Investment Officer / Senior Investment Officer (Grades B\u2013A)",
-          "base_salary_range_usd": "$161,100\u2013$333,300",
+          "title": "Investment Officer / Senior Investment Officer (Grades B–A)",
+          "base_salary_range_usd": "$161,100–$333,300",
           "bonus_range": "Performance-based; limited vs. private sector",
-          "total_cash_range": "$175,000\u2013$360,000",
+          "total_cash_range": "$175,000–$360,000",
           "carried_interest_equity": "None",
-          "total_comp_range": "$200,000\u2013$400,000",
+          "total_comp_range": "$200,000–$400,000",
           "notes": "IDB Invest 2024 salary scale: Grade A min $185,400 / mid $259,350 / max $333,300; Grade B min $161,100 / mid $225,300 / max $289,500. Salary.com data shows VP-equivalent roles at ~$175K average."
         },
         {
           "title": "Head of Division / Managing Director-equivalent (Grade EA/EB)",
-          "base_salary_range_usd": "$229,500\u2013$463,300",
+          "base_salary_range_usd": "$229,500–$463,300",
           "bonus_range": "Limited performance awards",
-          "total_cash_range": "$250,000\u2013$500,000",
+          "total_cash_range": "$250,000–$500,000",
           "carried_interest_equity": "None",
-          "total_comp_range": "$280,000\u2013$560,000",
+          "total_comp_range": "$280,000–$560,000",
           "notes": "EA Grade (executive): min $327,300 / mid $395,300 / max $463,300. EB Grade: min $229,500 / mid $331,900 / max $434,300. CEO-equivalent at IDB Invest earns ~$815,936 per Salary.com data."
         }
       ],
@@ -6978,26 +6978,26 @@ window.APP_DATA = {
       ]
     },
     {
-      "category": "Development Finance Institutions (DFIs) \u2013 ADB (Asian Development Bank)",
+      "category": "Development Finance Institutions (DFIs) – ADB (Asian Development Bank)",
       "description": "Asian Development Bank, Manila headquarters; strong private sector operations department",
       "roles": [
         {
-          "title": "Investment Officer / Senior Investment Officer (TI1\u2013TI4 Grades)",
-          "base_salary_range_usd": "$114,500\u2013$300,700",
+          "title": "Investment Officer / Senior Investment Officer (TI1–TI4 Grades)",
+          "base_salary_range_usd": "$114,500–$300,700",
           "bonus_range": "Annual performance increments within grade; no bonus in private sector sense",
-          "total_cash_range": "$120,000\u2013$310,000",
+          "total_cash_range": "$120,000–$310,000",
           "carried_interest_equity": "None",
-          "total_comp_range": "$150,000\u2013$380,000 (including retirement, medical, education benefits)",
-          "notes": "ADB 2026 salary structure: TI1 $114,500\u2013$200,400; TI2 $163,700\u2013$229,200; TI3 $195,400\u2013$273,600; TI4 $214,800\u2013$300,700 (midpoints $157,500 / $196,400 / $234,500 / $257,700). Strong non-cash benefits."
+          "total_comp_range": "$150,000–$380,000 (including retirement, medical, education benefits)",
+          "notes": "ADB 2026 salary structure: TI1 $114,500–$200,400; TI2 $163,700–$229,200; TI3 $195,400–$273,600; TI4 $214,800–$300,700 (midpoints $157,500 / $196,400 / $234,500 / $257,700). Strong non-cash benefits."
         },
         {
-          "title": "Director / VP / Senior Director (M1\u2013M3 Managerial Grades)",
-          "base_salary_range_usd": "$220,000\u2013$460,500",
+          "title": "Director / VP / Senior Director (M1–M3 Managerial Grades)",
+          "base_salary_range_usd": "$220,000–$460,500",
           "bonus_range": "No performance bonus at managerial grades",
-          "total_cash_range": "$220,000\u2013$460,000",
+          "total_cash_range": "$220,000–$460,000",
           "carried_interest_equity": "None",
-          "total_comp_range": "$280,000\u2013$560,000",
-          "notes": "ADB 2026: M1 $220,000\u2013$355,700 (mid $281,300); M2 $286,400\u2013$401,000 (mid $343,700); M3 $328,900\u2013$460,500 (mid $394,700). Manila location adjustment applies."
+          "total_comp_range": "$280,000–$560,000",
+          "notes": "ADB 2026: M1 $220,000–$355,700 (mid $281,300); M2 $286,400–$401,000 (mid $343,700); M3 $328,900–$460,500 (mid $394,700). Manila location adjustment applies."
         }
       ],
       "data_sources": [
@@ -7006,35 +7006,35 @@ window.APP_DATA = {
       ]
     },
     {
-      "category": "Development Finance Institutions (DFIs) \u2013 AfDB (African Development Bank)",
+      "category": "Development Finance Institutions (DFIs) – AfDB (African Development Bank)",
       "description": "African Development Bank Group, Abidjan headquarters; private sector operations",
       "roles": [
         {
-          "title": "Principal Investment Officer / Chief Investment Officer (PL3\u2013PL4 Grade)",
-          "base_salary_range_usd": "$85,832\u2013$128,748 (Chief, PL3); $76,624\u2013$114,935 (Principal, PL4)",
+          "title": "Principal Investment Officer / Chief Investment Officer (PL3–PL4 Grade)",
+          "base_salary_range_usd": "$85,832–$128,748 (Chief, PL3); $76,624–$114,935 (Principal, PL4)",
           "bonus_range": "Limited performance increments",
-          "total_cash_range": "$90,000\u2013$140,000",
+          "total_cash_range": "$90,000–$140,000",
           "carried_interest_equity": "None",
-          "total_comp_range": "$120,000\u2013$180,000 (including generous relocation and housing allowances for Abidjan posting)",
-          "notes": "Allowances can significantly supplement base: housing, cost-of-living, dependency, education allowances often add 30\u201360% to effective package for international staff. 2016-era figures (latest publicly available; adjusted upward for inflation)."
+          "total_comp_range": "$120,000–$180,000 (including generous relocation and housing allowances for Abidjan posting)",
+          "notes": "Allowances can significantly supplement base: housing, cost-of-living, dependency, education allowances often add 30–60% to effective package for international staff. 2016-era figures (latest publicly available; adjusted upward for inflation)."
         },
         {
-          "title": "Director (EL4\u2013EL5 Grade)",
-          "base_salary_range_usd": "$143,601\u2013$207,531",
+          "title": "Director (EL4–EL5 Grade)",
+          "base_salary_range_usd": "$143,601–$207,531",
           "bonus_range": "No performance bonus at EL grade",
-          "total_cash_range": "$145,000\u2013$210,000",
+          "total_cash_range": "$145,000–$210,000",
           "carried_interest_equity": "None",
-          "total_comp_range": "$200,000\u2013$300,000 (base plus benefits/allowances)",
-          "notes": "EL5 Director $143,601\u2013$194,284; EL4 Director $153,393\u2013$207,531."
+          "total_comp_range": "$200,000–$300,000 (base plus benefits/allowances)",
+          "notes": "EL5 Director $143,601–$194,284; EL4 Director $153,393–$207,531."
         },
         {
-          "title": "Vice President (EL2\u2013EL3 Grade)",
-          "base_salary_range_usd": "$173,463\u2013$261,558",
+          "title": "Vice President (EL2–EL3 Grade)",
+          "base_salary_range_usd": "$173,463–$261,558",
           "bonus_range": "None at VP grade",
-          "total_cash_range": "$175,000\u2013$265,000",
+          "total_cash_range": "$175,000–$265,000",
           "carried_interest_equity": "None",
-          "total_comp_range": "$230,000\u2013$360,000 (base plus allowances)",
-          "notes": "EL3 VP: $173,463\u2013$234,686; EL2 VP: $193,326\u2013$261,558."
+          "total_comp_range": "$230,000–$360,000 (base plus allowances)",
+          "notes": "EL3 VP: $173,463–$234,686; EL2 VP: $193,326–$261,558."
         }
       ],
       "data_sources": [
@@ -7043,53 +7043,53 @@ window.APP_DATA = {
       ]
     },
     {
-      "category": "Development Finance Institutions (DFIs) \u2013 EBRD (European Bank for Reconstruction and Development)",
+      "category": "Development Finance Institutions (DFIs) – EBRD (European Bank for Reconstruction and Development)",
       "description": "European Bank for Reconstruction and Development, London headquarters; private sector investment mandate",
       "roles": [
         {
           "title": "Senior Banker / Principal Banker (investment roles)",
-          "base_salary_range_usd": "$140,000\u2013$220,000 (London-based GBP equivalent)",
+          "base_salary_range_usd": "$140,000–$220,000 (London-based GBP equivalent)",
           "bonus_range": "Performance-based awards (average ~20% of annual gross salary for eligible key management)",
-          "total_cash_range": "$160,000\u2013$260,000",
+          "total_cash_range": "$160,000–$260,000",
           "carried_interest_equity": "None; EBRD is a multilateral institution",
-          "total_comp_range": "$200,000\u2013$320,000 (including benefits)",
+          "total_comp_range": "$200,000–$320,000 (including benefits)",
           "notes": "EBRD compensation in GBP; London cost of living premium. Performance awards average ~20% for eligible senior management."
         },
         {
           "title": "Managing Director (key management personnel)",
-          "base_salary_range_usd": "$200,000\u2013$400,000 (GBP equivalent)",
+          "base_salary_range_usd": "$200,000–$400,000 (GBP equivalent)",
           "bonus_range": "~20% average for eligible key management (President and VPs excluded)",
-          "total_cash_range": "$240,000\u2013$480,000",
+          "total_cash_range": "$240,000–$480,000",
           "carried_interest_equity": "None",
-          "total_comp_range": "$280,000\u2013$540,000",
-          "notes": "EBRD key management consists of Executive Committee members and Managing Directors (36 individuals per 2023 report). 2023 Director gross salary: \u00a3174K (~$218K); Alternate Director: \u00a3144K (~$181K). VP gross salaries approved by Board."
+          "total_comp_range": "$280,000–$540,000",
+          "notes": "EBRD key management consists of Executive Committee members and Managing Directors (36 individuals per 2023 report). 2023 Director gross salary: £174K (~$218K); Alternate Director: £144K (~$181K). VP gross salaries approved by Board."
         },
         {
           "title": "Vice President (EBRD)",
-          "base_salary_range_usd": "$300,000\u2013$450,000 equivalent (GBP-denominated)",
+          "base_salary_range_usd": "$300,000–$450,000 equivalent (GBP-denominated)",
           "bonus_range": "VPs not eligible for performance-based compensation awards",
-          "total_cash_range": "$300,000\u2013$450,000",
+          "total_cash_range": "$300,000–$450,000",
           "carried_interest_equity": "None",
-          "total_comp_range": "$380,000\u2013$550,000 (including benefits)",
+          "total_comp_range": "$380,000–$550,000 (including benefits)",
           "notes": "EBRD VP salaries approved by Board of Directors; not publicly disclosed at individual level."
         }
       ],
       "data_sources": [
-        "EBRD Financial Report 2023 \u2013 Additional Reporting and Disclosures",
+        "EBRD Financial Report 2023 – Additional Reporting and Disclosures",
         "EBRD Resolution No. 270 (Remuneration of Directors 2024)"
       ]
     },
     {
-      "category": "Development Finance Institutions (DFIs) \u2013 DFC (U.S. International Development Finance Corporation)",
+      "category": "Development Finance Institutions (DFIs) – DFC (U.S. International Development Finance Corporation)",
       "description": "U.S. DFC, Washington DC; government-linked development finance institution",
       "roles": [
         {
           "title": "VP / Managing Director / Senior Investment Officer",
-          "base_salary_range_usd": "$170,000\u2013$185,000",
+          "base_salary_range_usd": "$170,000–$185,000",
           "bonus_range": "Limited; government pay structure",
-          "total_cash_range": "$170,000\u2013$185,000",
+          "total_cash_range": "$170,000–$185,000",
           "carried_interest_equity": "None",
-          "total_comp_range": "$190,000\u2013$210,000 (including government benefits)",
+          "total_comp_range": "$190,000–$210,000 (including government benefits)",
           "notes": "Indeed data: DFC Vice President ~$174,673/year; Senior VP ~$181,154/year; Managing Director ~$177,386/year. Government SES pay bands apply. Benefits (pension, health) are strong."
         }
       ],
@@ -7103,38 +7103,38 @@ window.APP_DATA = {
       "roles": [
         {
           "title": "VP / Senior Associate (Investment)",
-          "base_salary_range_usd": "$150,000\u2013$220,000",
-          "bonus_range": "60\u2013100% of base",
-          "total_cash_range": "$240,000\u2013$440,000",
+          "base_salary_range_usd": "$150,000–$220,000",
+          "bonus_range": "60–100% of base",
+          "total_cash_range": "$240,000–$440,000",
           "carried_interest_equity": "Modest carried interest or co-investment rights; often structured as synthetic carry vs. traditional GP carry",
-          "total_comp_range": "$280,000\u2013$550,000",
+          "total_comp_range": "$280,000–$550,000",
           "notes": "FoF compensation is below direct PE investing but above IFI/public sector. Bonus tied to fund performance and fundraising. GP economics exist but at lower multiples than direct PE."
         },
         {
           "title": "Director / Principal",
-          "base_salary_range_usd": "$220,000\u2013$320,000",
-          "bonus_range": "75\u2013125% of base",
-          "total_cash_range": "$385,000\u2013$720,000",
+          "base_salary_range_usd": "$220,000–$320,000",
+          "bonus_range": "75–125% of base",
+          "total_cash_range": "$385,000–$720,000",
           "carried_interest_equity": "Carried interest or fund-level performance compensation begins to materialize; meaningful at larger FoF platforms",
-          "total_comp_range": "$450,000\u2013$900,000",
+          "total_comp_range": "$450,000–$900,000",
           "notes": "Fund sourcing, LP relations, and due diligence responsibilities at this level."
         },
         {
           "title": "Managing Director / Partner / Head of Funds",
-          "base_salary_range_usd": "$300,000\u2013$500,000",
-          "bonus_range": "100\u2013150% of base",
-          "total_cash_range": "$600,000\u2013$1,250,000",
+          "base_salary_range_usd": "$300,000–$500,000",
+          "bonus_range": "100–150% of base",
+          "total_cash_range": "$600,000–$1,250,000",
           "carried_interest_equity": "GP economics/carry in platform; meaningful but lower than direct PE; performance fee structures vary widely",
-          "total_comp_range": "$800,000\u2013$2,500,000+",
+          "total_comp_range": "$800,000–$2,500,000+",
           "notes": "At large FoF platforms (>$10B AUM), MD-level comp can approach direct PE. Smaller FoFs pay materially less."
         },
         {
           "title": "CIO / Head of Investments (FoF)",
-          "base_salary_range_usd": "$400,000\u2013$700,000",
-          "bonus_range": "100\u2013200% of base",
-          "total_cash_range": "$800,000\u2013$2,100,000",
+          "base_salary_range_usd": "$400,000–$700,000",
+          "bonus_range": "100–200% of base",
+          "total_cash_range": "$800,000–$2,100,000",
           "carried_interest_equity": "GP carry participation; co-investment rights",
-          "total_comp_range": "$1,000,000\u2013$3,500,000+",
+          "total_comp_range": "$1,000,000–$3,500,000+",
           "notes": "Endowment CIO benchmark: median $800K total comp (top quintile $2M+ at mega-endowments per Mizzou/Skorina research). FoF CIOs comparable."
         }
       ],
@@ -7145,43 +7145,43 @@ window.APP_DATA = {
       ]
     },
     {
-      "category": "Insurance Companies \u2013 Investment Divisions",
+      "category": "Insurance Companies – Investment Divisions",
       "description": "Investment divisions of large insurance groups (e.g., PIMCO-owned Allianz, Prudential, MetLife, AIG Investments, Lincoln Financial, Zurich Investments)",
       "roles": [
         {
           "title": "VP / Investment Manager",
-          "base_salary_range_usd": "$155,000\u2013$210,000",
-          "bonus_range": "30\u201360% of base",
-          "total_cash_range": "$200,000\u2013$335,000",
+          "base_salary_range_usd": "$155,000–$210,000",
+          "bonus_range": "30–60% of base",
+          "total_cash_range": "$200,000–$335,000",
           "carried_interest_equity": "Equity/stock grants common at larger carriers; limited carry vs. PE",
-          "total_comp_range": "$220,000\u2013$380,000",
+          "total_comp_range": "$220,000–$380,000",
           "notes": "Insurance investment VPs typically earn less than PE counterparts but offer stability. Salary.com: insurance VP average ~$213K (2025). 6figr data: avg $202K base."
         },
         {
           "title": "Director / Senior Portfolio Manager",
-          "base_salary_range_usd": "$220,000\u2013$350,000",
-          "bonus_range": "40\u201380% of base",
-          "total_cash_range": "$310,000\u2013$630,000",
+          "base_salary_range_usd": "$220,000–$350,000",
+          "bonus_range": "40–80% of base",
+          "total_cash_range": "$310,000–$630,000",
           "carried_interest_equity": "LTI (RSU/stock grants) common; no traditional carry",
-          "total_comp_range": "$350,000\u2013$720,000",
+          "total_comp_range": "$350,000–$720,000",
           "notes": "Strong actuarial and fixed-income expertise commands premium. AUM management and yield responsibility."
         },
         {
           "title": "Head of Investments / SVP",
-          "base_salary_range_usd": "$300,000\u2013$500,000",
-          "bonus_range": "50\u2013100% of base",
-          "total_cash_range": "$450,000\u2013$1,000,000",
+          "base_salary_range_usd": "$300,000–$500,000",
+          "bonus_range": "50–100% of base",
+          "total_cash_range": "$450,000–$1,000,000",
           "carried_interest_equity": "Equity grants; profit-sharing in investment subsidiary structures possible",
-          "total_comp_range": "$550,000\u2013$1,200,000",
+          "total_comp_range": "$550,000–$1,200,000",
           "notes": "Role scope varies widely: investment-only carriers (e.g., PGIM, SLC Management) pay at the high end."
         },
         {
           "title": "CIO (Insurance Investment Division)",
-          "base_salary_range_usd": "$400,000\u2013$700,000",
-          "bonus_range": "75\u2013150% of base",
-          "total_cash_range": "$700,000\u2013$1,750,000",
+          "base_salary_range_usd": "$400,000–$700,000",
+          "bonus_range": "75–150% of base",
+          "total_cash_range": "$700,000–$1,750,000",
           "carried_interest_equity": "Deferred compensation, LTI programs; rare traditional carry",
-          "total_comp_range": "$900,000\u2013$2,500,000",
+          "total_comp_range": "$900,000–$2,500,000",
           "notes": "CIO of large carrier investment arm (>$50B AUM) approaches private asset manager pay. CalPERS peer data: Insurance Co. Investment Division median AUM $114.5B; compensation benchmarks accordingly premium."
         }
       ],
@@ -7196,45 +7196,45 @@ window.APP_DATA = {
       "roles": [
         {
           "title": "VP / Investment Officer (US-based offices)",
-          "base_salary_range_usd": "$160,000\u2013$250,000",
-          "bonus_range": "50\u2013100% of base",
-          "total_cash_range": "$240,000\u2013$500,000",
+          "base_salary_range_usd": "$160,000–$250,000",
+          "bonus_range": "50–100% of base",
+          "total_cash_range": "$240,000–$500,000",
           "carried_interest_equity": "Shadow carry / performance-linked deferred compensation; no traditional GP carry at most SWFs",
-          "total_comp_range": "$280,000\u2013$600,000",
-          "notes": "Temasek H1B data: VP Investment Americas $234,000 base (2025); VP Investments Financial Services $299,000 base (2023). GIC H1B data: VP Portfolio Manager base $140,000\u2013$280,000 range. SWF cash comp ~25% below mega-fund PE at junior levels."
+          "total_comp_range": "$280,000–$600,000",
+          "notes": "Temasek H1B data: VP Investment Americas $234,000 base (2025); VP Investments Financial Services $299,000 base (2023). GIC H1B data: VP Portfolio Manager base $140,000–$280,000 range. SWF cash comp ~25% below mega-fund PE at junior levels."
         },
         {
           "title": "Director / Senior VP",
-          "base_salary_range_usd": "$250,000\u2013$450,000",
-          "bonus_range": "75\u2013150% of base",
-          "total_cash_range": "$440,000\u2013$1,125,000",
+          "base_salary_range_usd": "$250,000–$450,000",
+          "bonus_range": "75–150% of base",
+          "total_cash_range": "$440,000–$1,125,000",
           "carried_interest_equity": "Performance-linked deferred compensation; some Middle East SWFs offer shadow carry",
-          "total_comp_range": "$500,000\u2013$1,300,000",
-          "notes": "GIC: SVP Portfolio Manager H1B base $260,000\u2013$330,000 (2024). Effective total comp differential vs. PE grows at Director level (~40\u201350% below direct PE). Middle East SWF Directors noted earning $1M+ with low work intensity in some reports."
+          "total_comp_range": "$500,000–$1,300,000",
+          "notes": "GIC: SVP Portfolio Manager H1B base $260,000–$330,000 (2024). Effective total comp differential vs. PE grows at Director level (~40–50% below direct PE). Middle East SWF Directors noted earning $1M+ with low work intensity in some reports."
         },
         {
           "title": "Managing Director / Head of [Asset Class]",
-          "base_salary_range_usd": "$400,000\u2013$700,000",
-          "bonus_range": "100\u2013200% of base",
-          "total_cash_range": "$800,000\u2013$2,100,000",
+          "base_salary_range_usd": "$400,000–$700,000",
+          "bonus_range": "100–200% of base",
+          "total_cash_range": "$800,000–$2,100,000",
           "carried_interest_equity": "Shadow carry / performance-linked awards; no traditional LP/GP carry structure",
-          "total_comp_range": "$1,000,000\u2013$2,500,000",
+          "total_comp_range": "$1,000,000–$2,500,000",
           "notes": "Senior SWF investment roles can earn $1M+ total. Tax advantage significant: Singapore 22% rate vs. 37%+ US federal+state. Middle East SWF (0% tax) effectively grosses up comp substantially."
         },
         {
           "title": "CIO / Chief Investment Officer",
-          "base_salary_range_usd": "$600,000\u2013$1,200,000",
-          "bonus_range": "100\u2013250% of base",
-          "total_cash_range": "$1,200,000\u2013$4,200,000",
+          "base_salary_range_usd": "$600,000–$1,200,000",
+          "bonus_range": "100–250% of base",
+          "total_cash_range": "$1,200,000–$4,200,000",
           "carried_interest_equity": "Performance-linked deferred compensation at executive level",
-          "total_comp_range": "$1,500,000\u2013$5,000,000+",
+          "total_comp_range": "$1,500,000–$5,000,000+",
           "notes": "GIC ($940B AUM) and ADIA/PIF-level CIOs among the highest paid investment leaders globally when accounting for tax structure and benefits."
         }
       ],
       "data_sources": [
         "Mergers & Inquisitions Sovereign Wealth Fund Guide",
-        "H1B disclosure data \u2013 Temasek International USA LLC",
-        "H1B disclosure data \u2013 GIC Asset Management Pte Ltd",
+        "H1B disclosure data – Temasek International USA LLC",
+        "H1B disclosure data – GIC Asset Management Pte Ltd",
         "Caproasia SWF leadership data"
       ]
     },
@@ -7244,38 +7244,38 @@ window.APP_DATA = {
       "roles": [
         {
           "title": "VP / Investment Manager",
-          "base_salary_range_usd": "$200,000\u2013$260,000",
-          "bonus_range": "100\u2013150% of base",
-          "total_cash_range": "$400,000\u2013$650,000",
-          "carried_interest_equity": "0.1\u20130.4% carry pool; similar to PE VP structure",
-          "total_comp_range": "$500,000\u2013$900,000",
-          "notes": "Infrastructure VP comp broadly tracks PE VP (same asset class investor dynamics). Macquarie NYC VP base avg ~$216,600 (Indeed); SVP roles $234K\u2013$360K base range. Longer hold periods affect carry realization timing."
+          "base_salary_range_usd": "$200,000–$260,000",
+          "bonus_range": "100–150% of base",
+          "total_cash_range": "$400,000–$650,000",
+          "carried_interest_equity": "0.1–0.4% carry pool; similar to PE VP structure",
+          "total_comp_range": "$500,000–$900,000",
+          "notes": "Infrastructure VP comp broadly tracks PE VP (same asset class investor dynamics). Macquarie NYC VP base avg ~$216,600 (Indeed); SVP roles $234K–$360K base range. Longer hold periods affect carry realization timing."
         },
         {
           "title": "Director / Principal",
-          "base_salary_range_usd": "$275,000\u2013$375,000",
-          "bonus_range": "100\u2013200% of base",
-          "total_cash_range": "$550,000\u2013$1,125,000",
-          "carried_interest_equity": "0.3\u20131.0% carry pool; meaningful step-up",
-          "total_comp_range": "$800,000\u2013$2,000,000+",
+          "base_salary_range_usd": "$275,000–$375,000",
+          "bonus_range": "100–200% of base",
+          "total_cash_range": "$550,000–$1,125,000",
+          "carried_interest_equity": "0.3–1.0% carry pool; meaningful step-up",
+          "total_comp_range": "$800,000–$2,000,000+",
           "notes": "Infrastructure Directors often lead asset management and value creation in addition to deal origination."
         },
         {
           "title": "Managing Director / Partner",
-          "base_salary_range_usd": "$400,000\u2013$700,000",
+          "base_salary_range_usd": "$400,000–$700,000",
           "bonus_range": "150%+ of base",
-          "total_cash_range": "$1,000,000\u2013$2,450,000",
+          "total_cash_range": "$1,000,000–$2,450,000",
           "carried_interest_equity": "Multi-% carry pool; infrastructure fund carry often lower % than buyout but funds are larger in AUM",
-          "total_comp_range": "$1,500,000\u2013$8,000,000+",
+          "total_comp_range": "$1,500,000–$8,000,000+",
           "notes": "Large infrastructure platforms (Macquarie, Brookfield, GIP) offer carry structures comparable to mega-fund PE. Profit-share at Macquarie Group is a core component (94.8% of CEO total comp is variable)."
         },
         {
           "title": "Head of Infrastructure / CIO",
-          "base_salary_range_usd": "$600,000\u2013$1,000,000",
-          "bonus_range": "150\u2013300% of base",
-          "total_cash_range": "$1,500,000\u2013$4,000,000",
+          "base_salary_range_usd": "$600,000–$1,000,000",
+          "bonus_range": "150–300% of base",
+          "total_cash_range": "$1,500,000–$4,000,000",
           "carried_interest_equity": "Major carry participation equivalent to senior partner tier",
-          "total_comp_range": "$2,500,000\u2013$15,000,000+",
+          "total_comp_range": "$2,500,000–$15,000,000+",
           "notes": "Infrastructure CIOs at platforms like Macquarie, Blackstone, KKR sit at the top of the investment compensation hierarchy. Macquarie CEO total comp AU$29.3M (FY2024)."
         }
       ],
@@ -7292,38 +7292,38 @@ window.APP_DATA = {
       "roles": [
         {
           "title": "Investment Director/Sr Officer",
-          "base_salary_range_usd": "$175,000\u2013$250,000",
-          "bonus_range": "20-40% ($35,000\u2013$100,000)",
-          "total_cash_range": "$210,000\u2013$350,000",
+          "base_salary_range_usd": "$175,000–$250,000",
+          "bonus_range": "20-40% ($35,000–$100,000)",
+          "total_cash_range": "$210,000–$350,000",
           "carried_interest_equity": "Minimal/none",
-          "total_comp_range": "$225,000\u2013$375,000",
+          "total_comp_range": "$225,000–$375,000",
           "notes": "Mid-senior level; higher in corporate pensions; variance by AUM, location (NY/CA +20%)"
         },
         {
           "title": "Managing Director/Portfolio Manager",
-          "base_salary_range_usd": "$250,000\u2013$350,000",
-          "bonus_range": "40-80% ($100,000\u2013$280,000)",
-          "total_cash_range": "$350,000\u2013$630,000",
-          "carried_interest_equity": "$50,000\u2013$200,000 LTI/deferred",
-          "total_comp_range": "$400,000\u2013$850,000",
+          "base_salary_range_usd": "$250,000–$350,000",
+          "bonus_range": "40-80% ($100,000–$280,000)",
+          "total_cash_range": "$350,000–$630,000",
+          "carried_interest_equity": "$50,000–$200,000 LTI/deferred",
+          "total_comp_range": "$400,000–$850,000",
           "notes": "Equivalent to candidate's MD management; performance-driven bonus; public caps lower"
         },
         {
           "title": "Deputy CIO/Head of Investments",
-          "base_salary_range_usd": "$300,000\u2013$425,000",
-          "bonus_range": "50-100% ($150,000\u2013$425,000)",
-          "total_cash_range": "$450,000\u2013$850,000",
-          "carried_interest_equity": "$100,000\u2013$300,000",
-          "total_comp_range": "$550,000\u2013$1,200,000",
+          "base_salary_range_usd": "$300,000–$425,000",
+          "bonus_range": "50-100% ($150,000–$425,000)",
+          "total_cash_range": "$450,000–$850,000",
+          "carried_interest_equity": "$100,000–$300,000",
+          "total_comp_range": "$550,000–$1,200,000",
           "notes": "Direct CIO report; corporate > public (e.g. $400k public total)"
         },
         {
           "title": "Chief Investment Officer (CIO)",
-          "base_salary_range_usd": "$350,000\u2013$500,000",
-          "bonus_range": "50-100% ($175,000\u2013$500,000)",
-          "total_cash_range": "$525,000\u2013$1,000,000",
-          "carried_interest_equity": "$100,000\u2013$500,000 (LTI/carried alts)",
-          "total_comp_range": "$650,000\u2013$1,750,000",
+          "base_salary_range_usd": "$350,000–$500,000",
+          "bonus_range": "50-100% ($175,000–$500,000)",
+          "total_cash_range": "$525,000–$1,000,000",
+          "carried_interest_equity": "$100,000–$500,000 (LTI/carried alts)",
+          "total_comp_range": "$650,000–$1,750,000",
           "notes": "For $10B+ AUM; public avg $400k total cash, corporate/endow adj higher; e.g. ERS $375k base Salary.com"
         }
       ],
@@ -7339,29 +7339,29 @@ window.APP_DATA = {
       "roles": [
         {
           "title": "Managing Director Investments",
-          "base_salary_range_usd": "$300,000\u2013$450,000",
+          "base_salary_range_usd": "$300,000–$450,000",
           "bonus_range": "50-100% ($150,000-$450,000)",
-          "total_cash_range": "$450,000\u2013$900,000",
+          "total_cash_range": "$450,000–$900,000",
           "carried_interest_equity": "Limited LTI (0-20%)",
-          "total_comp_range": "$500,000\u2013$1,200,000",
+          "total_comp_range": "$500,000–$1,200,000",
           "notes": "For smaller foundations (AUM <$5B); variance by portfolio responsibility, location (NY/SF premium). [Skorina MDs $800K-$1.8M total]"
         },
         {
           "title": "Head / Deputy Head of Investments",
-          "base_salary_range_usd": "$450,000\u2013$700,000",
+          "base_salary_range_usd": "$450,000–$700,000",
           "bonus_range": "60-120% ($270,000-$840,000)",
-          "total_cash_range": "$750,000\u2013$1,500,000",
+          "total_cash_range": "$750,000–$1,500,000",
           "carried_interest_equity": "LTI/Carried 20-50% ($200K-$750K)",
-          "total_comp_range": "$1,000,000\u2013$2,500,000",
+          "total_comp_range": "$1,000,000–$2,500,000",
           "notes": "Mid-large AUM $5-15B; performance oversight. [Skorina Dep CIOs $1.4M-$2.8M total]"
         },
         {
           "title": "CIO / Head of Investments",
-          "base_salary_range_usd": "$600,000\u2013$1,000,000",
+          "base_salary_range_usd": "$600,000–$1,000,000",
           "bonus_range": "75-150% ($450,000-$1,500,000)",
-          "total_cash_range": "$1,200,000\u2013$2,500,000",
+          "total_cash_range": "$1,200,000–$2,500,000",
           "carried_interest_equity": ">40% incentives ($500K-$2M+ carried/LTI)",
-          "total_comp_range": "$1,800,000\u2013$5,000,000+",
+          "total_comp_range": "$1,800,000–$5,000,000+",
           "notes": "Large AUM >$10B (e.g. Hewlett $5.6M, Ford $4.7M 2024); drivers: AUM (corr 0.69), returns, financial hubs. [SullivanCotter; Skorina; UVA study avg $800K]"
         }
       ],
@@ -7377,29 +7377,29 @@ window.APP_DATA = {
       "roles": [
         {
           "title": "Managing Director / Director",
-          "base_salary_range_usd": "$175,000\u2013$300,000",
+          "base_salary_range_usd": "$175,000–$300,000",
           "bonus_range": "15-30% ($25,000 - $90,000)",
-          "total_cash_range": "$200,000\u2013$400,000",
+          "total_cash_range": "$200,000–$400,000",
           "carried_interest_equity": "Variable vesting corporate equity",
-          "total_comp_range": "$300,000\u2013$600,000",
+          "total_comp_range": "$300,000–$600,000",
           "notes": "Median from CVC surveys; lower for smaller funds, SF/NY +20-30% premium VC Platform"
         },
         {
           "title": "Senior MD / Partner",
-          "base_salary_range_usd": "$250,000\u2013$400,000",
+          "base_salary_range_usd": "$250,000–$400,000",
           "bonus_range": "20-40% ($50,000 - $160,000)",
-          "total_cash_range": "$300,000\u2013$600,000",
+          "total_cash_range": "$300,000–$600,000",
           "carried_interest_equity": "1-5% fund profits or RSUs $500k+",
-          "total_comp_range": "$500,000\u2013$1,000,000",
+          "total_comp_range": "$500,000–$1,000,000",
           "notes": "Deal origination drives upside; tech sector higher Levels.fyi"
         },
         {
           "title": "Head of CVC / CIO",
-          "base_salary_range_usd": "$300,000\u2013$450,000",
+          "base_salary_range_usd": "$300,000–$450,000",
           "bonus_range": "30-50%+ ($100,000 - $225,000)",
-          "total_cash_range": "$400,000\u2013$700,000+",
+          "total_cash_range": "$400,000–$700,000+",
           "carried_interest_equity": "Vesting equity/carry $500k - $2M+",
-          "total_comp_range": "$1,000,000\u2013$3,000,000+",
+          "total_comp_range": "$1,000,000–$3,000,000+",
           "notes": "75th percentile base $450k; bonuses/equity add $1M+ in top cases, performance/sector driven Global Venturing"
         }
       ],
@@ -7411,33 +7411,33 @@ window.APP_DATA = {
     },
     {
       "category": "Emerging Markets PE / Infrastructure",
-      "description": "Emerging markets-focused private equity and infrastructure funds target Asia, LatAm, and Africa. MD+ compensation reflects a 10\u201320% EM discount versus U.S. peers, often offset by expat packages and meaningful carried interest on successful exits.",
+      "description": "Emerging markets-focused private equity and infrastructure funds target Asia, LatAm, and Africa. MD+ compensation reflects a 10–20% EM discount versus U.S. peers, often offset by expat packages and meaningful carried interest on successful exits.",
       "roles": [
         {
           "title": "Principal/Director",
-          "base_salary_range_usd": "$275,000\u2013$375,000",
+          "base_salary_range_usd": "$275,000–$375,000",
           "bonus_range": "100-220% ($275,000-$825,000)",
-          "total_cash_range": "$575,000\u2013$1,200,000",
+          "total_cash_range": "$575,000–$1,200,000",
           "carried_interest_equity": "0.5-1.5% carry points",
-          "total_comp_range": "$1,000,000\u2013$3,000,000+",
+          "total_comp_range": "$1,000,000–$3,000,000+",
           "notes": "Origination and IC leadership; EM 10-20% below US levels; variance by fund size, geography (e.g., Singapore premium)"
         },
         {
           "title": "Managing Director/Partner",
-          "base_salary_range_usd": "$350,000\u2013$600,000",
+          "base_salary_range_usd": "$350,000–$600,000",
           "bonus_range": "150%+ ($525,000+)",
-          "total_cash_range": "$900,000\u2013$3,000,000+",
+          "total_cash_range": "$900,000–$3,000,000+",
           "carried_interest_equity": "2-8% carry pool share",
-          "total_comp_range": "$2,000,000\u2013$10,000,000 annualized",
+          "total_comp_range": "$2,000,000–$10,000,000 annualized",
           "notes": "Fundraising, LP relations; infrastructure longer holds delay carry; location premiums in LatAm/Asia hubs, expat packages"
         },
         {
           "title": "Head of Infrastructure/Managing Partner",
-          "base_salary_range_usd": "$400,000\u2013$700,000",
+          "base_salary_range_usd": "$400,000–$700,000",
           "bonus_range": "150-250% ($600,000+)",
-          "total_cash_range": "$1,000,000\u2013$5,000,000+",
+          "total_cash_range": "$1,000,000–$5,000,000+",
           "carried_interest_equity": "5-10%+ carry + co-invest",
-          "total_comp_range": "$3,000,000\u2013$15,000,000+",
+          "total_comp_range": "$3,000,000–$15,000,000+",
           "notes": "Firm strategy, global EM portfolio; highest variance by AUM/realizations; data extrapolated from large fund NA surveys"
         }
       ],
@@ -7449,42 +7449,42 @@ window.APP_DATA = {
     },
     {
       "category": "Family Offices",
-      "description": "Single- and multi-family offices managing high-net-worth or ultra-high-net-worth portfolios ($500M\u2013$5B+ AUM). Compensation has professionalized significantly; CIO and Head of Investments roles at $1B+ offices command institutional-grade packages with substantial long-term incentives tied to portfolio performance.",
+      "description": "Single- and multi-family offices managing high-net-worth or ultra-high-net-worth portfolios ($500M–$5B+ AUM). Compensation has professionalized significantly; CIO and Head of Investments roles at $1B+ offices command institutional-grade packages with substantial long-term incentives tied to portfolio performance.",
       "roles": [
         {
           "title": "Managing Director / Director of Investments",
-          "base_salary_range_usd": "$260,000\u2013$400,000",
+          "base_salary_range_usd": "$260,000–$400,000",
           "bonus_range": "80-100% ($108,000-$375,000)",
-          "total_cash_range": "$500,000\u2013$800,000",
+          "total_cash_range": "$500,000–$800,000",
           "carried_interest_equity": "$200k-$1M+ (avg $708k; carried interest 49%, shares 28%, co-invest 15%)",
-          "total_comp_range": "$1,000,000\u2013$2,500,000",
+          "total_comp_range": "$1,000,000–$2,500,000",
           "notes": "Entry MD+ level; scales strongly with AUM ($1-5B: base ~$810k avg); lower than CIO due to less direct P&L."
         },
         {
           "title": "Chief Investment Officer (CIO)",
-          "base_salary_range_usd": "$450,000\u2013$850,000",
+          "base_salary_range_usd": "$450,000–$850,000",
           "bonus_range": "100-150% ($210,000-$1,600,000)",
-          "total_cash_range": "$1,200,000\u2013$2,500,000",
+          "total_cash_range": "$1,200,000–$2,500,000",
           "carried_interest_equity": "$1M-$2M+ (avg $1.53M LTIs/carried interest common)",
-          "total_comp_range": "$2,500,000\u2013$5,000,000+",
+          "total_comp_range": "$2,500,000–$5,000,000+",
           "notes": "Top investment role; 18% total comp >$1M; highest in large AUM ($5B+: bonus ~$650k+), NE region ($1.7M add'l), tech wealth."
         },
         {
           "title": "Head of Investments / Partner",
-          "base_salary_range_usd": "$500,000\u2013$900,000",
+          "base_salary_range_usd": "$500,000–$900,000",
           "bonus_range": "100-150% ($300,000-$1,500,000)",
-          "total_cash_range": "$1,200,000\u2013$2,500,000",
+          "total_cash_range": "$1,200,000–$2,500,000",
           "carried_interest_equity": "$1M-$3M (carried interest, co-invest, LTIPs)",
-          "total_comp_range": "$3,000,000\u2013$6,000,000+",
+          "total_comp_range": "$3,000,000–$6,000,000+",
           "notes": "Equiv to CIO in larger offices; partner-level includes profit share/equity; highest upside in direct investing/hybrid strategies."
         },
         {
           "title": "CIO / CEO (Dual Role)",
-          "base_salary_range_usd": "$355,000\u2013$975,000",
+          "base_salary_range_usd": "$355,000–$975,000",
           "bonus_range": "140-200% ($200,000-$1,500,000)",
-          "total_cash_range": "$1,200,000\u2013$2,500,000",
+          "total_cash_range": "$1,200,000–$2,500,000",
           "carried_interest_equity": "$1M-$2.5M (avg $1.53M)",
-          "total_comp_range": "$2,500,000\u2013$5,000,000",
+          "total_comp_range": "$2,500,000–$5,000,000",
           "notes": "Common in smaller/complex offices; broader remit lowers pure investment pay vs dedicated CIO."
         }
       ],
@@ -7499,38 +7499,38 @@ window.APP_DATA = {
       "roles": [
         {
           "title": "Director/Principal",
-          "base_salary_range_usd": "$140,000\u2013$280,000",
+          "base_salary_range_usd": "$140,000–$280,000",
           "bonus_range": "15-40% ($25,000 - $100,000)",
-          "total_cash_range": "$175,000\u2013$400,000",
+          "total_cash_range": "$175,000–$400,000",
           "carried_interest_equity": "None or minimal long-term incentives",
-          "total_comp_range": "$175,000\u2013$450,000",
+          "total_comp_range": "$175,000–$450,000",
           "notes": "Variance driven by client revenue generation and performance; higher in NYC/Boston; Mercer job postings show $140k-$281k for investment directors Indeed."
         },
         {
           "title": "Managing Director",
-          "base_salary_range_usd": "$250,000\u2013$400,000",
+          "base_salary_range_usd": "$250,000–$400,000",
           "bonus_range": "50-150% ($150,000 - $500,000)",
-          "total_cash_range": "$400,000\u2013$900,000",
+          "total_cash_range": "$400,000–$900,000",
           "carried_interest_equity": "Performance-based profit sharing or equity",
-          "total_comp_range": "$500,000\u2013$1,500,000",
+          "total_comp_range": "$500,000–$1,500,000",
           "notes": "Tied to business development and AUM growth; Cambridge Associates Director avg $144k base but MD higher per reviews Indeed; general MD avg $486k TC 6Figr."
         },
         {
           "title": "Partner",
-          "base_salary_range_usd": "$350,000\u2013$600,000",
+          "base_salary_range_usd": "$350,000–$600,000",
           "bonus_range": "100-200% ($400,000+)",
-          "total_cash_range": "$800,000\u2013$2,000,000+",
+          "total_cash_range": "$800,000–$2,000,000+",
           "carried_interest_equity": "Significant carried interest or profit share (1-5% pool)",
-          "total_comp_range": "$1,000,000\u2013$5,000,000+",
+          "total_comp_range": "$1,000,000–$5,000,000+",
           "notes": "Equity-like incentives common; top 10% exceed $1.5M TC; variance by firm AUM and personal client book 6Figr, strategy consulting partner ~$1M Charles Aris."
         },
         {
           "title": "Head of Investments/Practice",
-          "base_salary_range_usd": "$400,000\u2013$700,000",
+          "base_salary_range_usd": "$400,000–$700,000",
           "bonus_range": "100-200% ($500,000+)",
-          "total_cash_range": "$1,000,000\u2013$2,500,000",
+          "total_cash_range": "$1,000,000–$2,500,000",
           "carried_interest_equity": "Substantial long-term incentives and profit participation",
-          "total_comp_range": "$1,500,000\u2013$5,000,000+",
+          "total_comp_range": "$1,500,000–$5,000,000+",
           "notes": "Leadership roles with firm-wide P&L responsibility; premiums for global experience; aligned with senior consulting partners Comparably."
         }
       ],
@@ -7547,38 +7547,38 @@ window.APP_DATA = {
       "roles": [
         {
           "title": "Managing Director/Partner",
-          "base_salary_range_usd": "$300,000\u2013$600,000",
+          "base_salary_range_usd": "$300,000–$600,000",
           "bonus_range": "100-300% ($400,000-$1,500,000)",
-          "total_cash_range": "$700,000\u2013$2,000,000",
+          "total_cash_range": "$700,000–$2,000,000",
           "carried_interest_equity": "Carry $1m-$20m+ (5yr vesting)",
-          "total_comp_range": "$2,000,000\u2013$20,000,000+",
+          "total_comp_range": "$2,000,000–$20,000,000+",
           "notes": "Upper end for $1-10bn AUM funds, NY premium, discretionary bonuses; scales with performance Heidrick PE Survey"
         },
         {
           "title": "Principal/Senior Director",
-          "base_salary_range_usd": "$250,000\u2013$500,000",
+          "base_salary_range_usd": "$250,000–$500,000",
           "bonus_range": "80-200% ($300,000-$800,000)",
-          "total_cash_range": "$550,000\u2013$1,300,000",
+          "total_cash_range": "$550,000–$1,300,000",
           "carried_interest_equity": "Carry $500k-$5m NPV",
-          "total_comp_range": "$1,000,000\u2013$6,000,000",
+          "total_comp_range": "$1,000,000–$6,000,000",
           "notes": "Deal execution/origination; variance by AUM/deal flow Heidrick PE Survey Bohill Review"
         },
         {
           "title": "Managing Partner/Head of Investments",
-          "base_salary_range_usd": "$400,000\u2013$800,000",
+          "base_salary_range_usd": "$400,000–$800,000",
           "bonus_range": "200-500%+ ($1,000,000-$4,000,000+)",
-          "total_cash_range": "$1,500,000\u2013$5,000,000",
+          "total_cash_range": "$1,500,000–$5,000,000",
           "carried_interest_equity": "Carry $5m-$50m+, mgmt co ownership",
           "total_comp_range": "$10,000,000+",
           "notes": "Mega-funds ($20bn+ AUM), founding partners higher; volatile with exits Heidrick PE Survey"
         },
         {
           "title": "CIO/Head of Platform",
-          "base_salary_range_usd": "$500,000\u2013$1,000,000",
+          "base_salary_range_usd": "$500,000–$1,000,000",
           "bonus_range": "150-400% ($1,000,000-$3,000,000)",
-          "total_cash_range": "$1,500,000\u2013$4,000,000",
+          "total_cash_range": "$1,500,000–$4,000,000",
           "carried_interest_equity": "Equity/LTI $10m+",
-          "total_comp_range": "$5,000,000\u2013$30,000,000+",
+          "total_comp_range": "$5,000,000–$30,000,000+",
           "notes": "Firm-wide P&L responsibility; premiums for track record, AUM growth; aligns with Salary.com CEO est $669k avg Salary.com"
         }
       ],
@@ -7594,29 +7594,29 @@ window.APP_DATA = {
       "roles": [
         {
           "title": "Managing Director",
-          "base_salary_range_usd": "$500,000\u2013$800,000",
+          "base_salary_range_usd": "$500,000–$800,000",
           "bonus_range": "50-100% ($500,000-$1,000,000)",
-          "total_cash_range": "$1,000,000\u2013$2,000,000",
+          "total_cash_range": "$1,000,000–$2,000,000",
           "carried_interest_equity": "Deferred incentives/LTI vesting",
-          "total_comp_range": "$2,500,000\u2013$4,500,000",
+          "total_comp_range": "$2,500,000–$4,500,000",
           "notes": "Entry MD level for large endowments ($5B+ AUM); e.g., HMC MD $4.3M (2023)"
         },
         {
           "title": "Senior Managing Director / Head of Team",
-          "base_salary_range_usd": "$600,000\u2013$900,000",
+          "base_salary_range_usd": "$600,000–$900,000",
           "bonus_range": "100-150% ($1,000,000-$1,500,000)",
-          "total_cash_range": "$2,000,000\u2013$3,000,000",
+          "total_cash_range": "$2,000,000–$3,000,000",
           "carried_interest_equity": "Performance deferred comp",
-          "total_comp_range": "$4,000,000\u2013$7,000,000",
+          "total_comp_range": "$4,000,000–$7,000,000",
           "notes": "Generalist team leads at mega-endowments ($20B+); e.g., HMC $5-6M (2023)"
         },
         {
           "title": "CIO / Head of Investments",
-          "base_salary_range_usd": "$800,000\u2013$1,200,000",
+          "base_salary_range_usd": "$800,000–$1,200,000",
           "bonus_range": "150-300% ($2,000,000-$4,000,000)",
-          "total_cash_range": "$3,000,000\u2013$6,000,000",
+          "total_cash_range": "$3,000,000–$6,000,000",
           "carried_interest_equity": "Long-term incentives/deferred",
-          "total_comp_range": "$4,000,000\u2013$8,000,000+",
+          "total_comp_range": "$4,000,000–$8,000,000+",
           "notes": "AUM size primary driver (avg $800k all, $5M+ mega); 40%+ incentives; coastal premium"
         }
       ],
@@ -7628,42 +7628,42 @@ window.APP_DATA = {
     },
     {
       "category": "Due Diligence Firms",
-      "description": "Due diligence and financial advisory firms (Kroll, FTI Consulting, Alvarez & Marsal) provide investigative, transactional, and expert advisory services. MD+ compensation is driven by client revenue generation, billable hours, and business development success; NYC premiums of 20\u201330% are common.",
+      "description": "Due diligence and financial advisory firms (Kroll, FTI Consulting, Alvarez & Marsal) provide investigative, transactional, and expert advisory services. MD+ compensation is driven by client revenue generation, billable hours, and business development success; NYC premiums of 20–30% are common.",
       "roles": [
         {
           "title": "Director",
-          "base_salary_range_usd": "$160,000\u2013$200,000",
+          "base_salary_range_usd": "$160,000–$200,000",
           "bonus_range": "$20,000-$60,000 (15-30%)",
-          "total_cash_range": "$180,000\u2013$260,000",
+          "total_cash_range": "$180,000–$260,000",
           "carried_interest_equity": "None",
-          "total_comp_range": "$180,000\u2013$300,000",
+          "total_comp_range": "$180,000–$300,000",
           "notes": "Entry to senior leadership; FTI-specific $181k total."
         },
         {
           "title": "Managing Director",
-          "base_salary_range_usd": "$280,000\u2013$400,000",
+          "base_salary_range_usd": "$280,000–$400,000",
           "bonus_range": "$50,000-$150,000 (20-40%)",
-          "total_cash_range": "$350,000\u2013$550,000",
+          "total_cash_range": "$350,000–$550,000",
           "carried_interest_equity": "$0-$150k stock/LTI",
-          "total_comp_range": "$350,000\u2013$1,000,000",
+          "total_comp_range": "$350,000–$1,000,000",
           "notes": "Core MD level; Kroll avg ~$1.1M total, FTI MD equiv $370k; variance by billables."
         },
         {
           "title": "Partner",
           "base_salary_range_usd": "$250,000+ draw",
           "bonus_range": "$100,000-$500,000+ (profit share)",
-          "total_cash_range": "$500,000\u2013$1,000,000",
+          "total_cash_range": "$500,000–$1,000,000",
           "carried_interest_equity": "Equity units/profit share",
-          "total_comp_range": "$500,000\u2013$2,000,000",
+          "total_comp_range": "$500,000–$2,000,000",
           "notes": "New partners ~$500k (Big 4); driven by client book, firm profits."
         },
         {
           "title": "Senior Partner",
           "base_salary_range_usd": "$350,000+ draw",
           "bonus_range": "$200,000-$500,000+",
-          "total_cash_range": "$1,000,000\u2013$2,000,000",
+          "total_cash_range": "$1,000,000–$2,000,000",
           "carried_interest_equity": "Significant equity/profit share",
-          "total_comp_range": "$1,500,000\u2013$4,000,000",
+          "total_comp_range": "$1,500,000–$4,000,000",
           "notes": "Star performers/management; location premiums in NY/SF, business sourcing key."
         }
       ],
@@ -7681,29 +7681,29 @@ window.APP_DATA = {
       "roles": [
         {
           "title": "Director of IR",
-          "base_salary_range_usd": "$200,000\u2013$300,000",
+          "base_salary_range_usd": "$200,000–$300,000",
           "bonus_range": "20-30% ($25,000-$90,000)",
-          "total_cash_range": "$225,000\u2013$390,000",
+          "total_cash_range": "$225,000–$390,000",
           "carried_interest_equity": "RSUs/stock options 20-30% of base; carry in PE",
-          "total_comp_range": "$300,000\u2013$500,000",
+          "total_comp_range": "$300,000–$500,000",
           "notes": "NY premium to $265k base; firm size/AUM variance."
         },
         {
           "title": "Managing Director / Head of IR",
-          "base_salary_range_usd": "$250,000\u2013$360,000",
+          "base_salary_range_usd": "$250,000–$360,000",
           "bonus_range": "20-40% ($60,000-$140,000)",
-          "total_cash_range": "$325,000\u2013$500,000",
+          "total_cash_range": "$325,000–$500,000",
           "carried_interest_equity": "Carry 0.1-0.5%; LTI $50k+",
-          "total_comp_range": "$400,000\u2013$700,000",
+          "total_comp_range": "$400,000–$700,000",
           "notes": "Higher in PE/VC; fundraising success drives upside."
         },
         {
           "title": "Partner / Global Head of IR",
-          "base_salary_range_usd": "$350,000\u2013$500,000",
+          "base_salary_range_usd": "$350,000–$500,000",
           "bonus_range": "50-100%+ ($200,000+)",
-          "total_cash_range": "$600,000\u2013$1,000,000+",
+          "total_cash_range": "$600,000–$1,000,000+",
           "carried_interest_equity": "Carry 0.5-2%; significant LTI",
-          "total_comp_range": "$1,000,000\u2013$3,000,000+",
+          "total_comp_range": "$1,000,000–$3,000,000+",
           "notes": "For global leaders; AUM, LP relations key; adapted from PE MD."
         }
       ],
@@ -7719,29 +7719,29 @@ window.APP_DATA = {
       "roles": [
         {
           "title": "Director of Fund Administration",
-          "base_salary_range_usd": "$150,000\u2013$220,000",
+          "base_salary_range_usd": "$150,000–$220,000",
           "bonus_range": "50-100% ($75,000-$220,000)",
-          "total_cash_range": "$225,000\u2013$440,000",
+          "total_cash_range": "$225,000–$440,000",
           "carried_interest_equity": "Limited; occasional LTIPs",
-          "total_comp_range": "$250,000\u2013$500,000",
+          "total_comp_range": "$250,000–$500,000",
           "notes": "Job postings e.g. Gen II $135k-190k base; variance by AUM managed, firm size."
         },
         {
           "title": "Managing Director, Fund Services",
-          "base_salary_range_usd": "$300,000\u2013$500,000",
+          "base_salary_range_usd": "$300,000–$500,000",
           "bonus_range": "75-150% ($225,000-$750,000)",
-          "total_cash_range": "$525,000\u2013$1,250,000",
+          "total_cash_range": "$525,000–$1,250,000",
           "carried_interest_equity": "LTIPs or phantom equity in some firms",
-          "total_comp_range": "$600,000\u2013$1,500,000",
+          "total_comp_range": "$600,000–$1,500,000",
           "notes": "Proxies from alt investments $669k avg total, hedge MD $241k; revenue generation key driver."
         },
         {
           "title": "Head of Fund Administration",
-          "base_salary_range_usd": "$400,000\u2013$600,000",
+          "base_salary_range_usd": "$400,000–$600,000",
           "bonus_range": "80-120% ($320,000-$720,000)",
-          "total_cash_range": "$720,000\u2013$1,320,000",
+          "total_cash_range": "$720,000–$1,320,000",
           "carried_interest_equity": "Equity/LTI 20-50% base",
-          "total_comp_range": "$900,000\u2013$2,000,000",
+          "total_comp_range": "$900,000–$2,000,000",
           "notes": "Financial svcs CFO proxy med $585k base +65% bonus +85% LTI = $1.4M TDC; global team oversight."
         }
       ],
@@ -7753,93 +7753,93 @@ window.APP_DATA = {
       ]
     },
     {
-      "category": "Summary Compensation Table \u2013 Cross-Sector Comparison",
-      "description": "Total compensation comparison for Head of Funds / VP of Investments / CIO / MD / Partner-equivalent roles across institution types (2025\u20132026 data)",
+      "category": "Summary Compensation Table – Cross-Sector Comparison",
+      "description": "Total compensation comparison for Head of Funds / VP of Investments / CIO / MD / Partner-equivalent roles across institution types (2025–2026 data)",
       "comparison_table": [
         {
           "institution_type": "Large PE Firm (Mega-Fund, $3B+ AUM)",
-          "vp_total_comp": "$550K\u2013$1.2M",
-          "director_total_comp": "$1M\u2013$3M",
-          "md_partner_total_comp": "$2M\u2013$20M+",
-          "cio_total_comp": "$5M\u2013$20M+",
-          "carry_availability": "Yes \u2013 significant"
+          "vp_total_comp": "$550K–$1.2M",
+          "director_total_comp": "$1M–$3M",
+          "md_partner_total_comp": "$2M–$20M+",
+          "cio_total_comp": "$5M–$20M+",
+          "carry_availability": "Yes – significant"
         },
         {
-          "institution_type": "Mid-Market PE Firm ($500M\u2013$3B AUM)",
-          "vp_total_comp": "$500K\u2013$1M",
-          "director_total_comp": "$800K\u2013$2.5M",
-          "md_partner_total_comp": "$1.5M\u2013$8M",
-          "cio_total_comp": "$2M\u2013$10M+",
-          "carry_availability": "Yes \u2013 meaningful"
+          "institution_type": "Mid-Market PE Firm ($500M–$3B AUM)",
+          "vp_total_comp": "$500K–$1M",
+          "director_total_comp": "$800K–$2.5M",
+          "md_partner_total_comp": "$1.5M–$8M",
+          "cio_total_comp": "$2M–$10M+",
+          "carry_availability": "Yes – meaningful"
         },
         {
           "institution_type": "Small PE / LMM Fund (<$500M AUM)",
-          "vp_total_comp": "$350K\u2013$700K",
-          "director_total_comp": "$500K\u2013$1.2M",
-          "md_partner_total_comp": "$700K\u2013$3M",
-          "cio_total_comp": "$1M\u2013$5M",
-          "carry_availability": "Yes \u2013 limited absolute value"
+          "vp_total_comp": "$350K–$700K",
+          "director_total_comp": "$500K–$1.2M",
+          "md_partner_total_comp": "$700K–$3M",
+          "cio_total_comp": "$1M–$5M",
+          "carry_availability": "Yes – limited absolute value"
         },
         {
           "institution_type": "Infrastructure Investment Fund (Large)",
-          "vp_total_comp": "$500K\u2013$900K",
-          "director_total_comp": "$800K\u2013$2M",
-          "md_partner_total_comp": "$1.5M\u2013$8M+",
-          "cio_total_comp": "$2.5M\u2013$15M+",
-          "carry_availability": "Yes \u2013 meaningful"
+          "vp_total_comp": "$500K–$900K",
+          "director_total_comp": "$800K–$2M",
+          "md_partner_total_comp": "$1.5M–$8M+",
+          "cio_total_comp": "$2.5M–$15M+",
+          "carry_availability": "Yes – meaningful"
         },
         {
           "institution_type": "Fund-of-Funds Manager (Large Platform)",
-          "vp_total_comp": "$280K\u2013$550K",
-          "director_total_comp": "$450K\u2013$900K",
-          "md_partner_total_comp": "$800K\u2013$2.5M",
-          "cio_total_comp": "$1M\u2013$3.5M+",
+          "vp_total_comp": "$280K–$550K",
+          "director_total_comp": "$450K–$900K",
+          "md_partner_total_comp": "$800K–$2.5M",
+          "cio_total_comp": "$1M–$3.5M+",
           "carry_availability": "Limited/Synthetic"
         },
         {
           "institution_type": "Sovereign Wealth Fund (Large, e.g. GIC/Temasek)",
-          "vp_total_comp": "$280K\u2013$600K",
-          "director_total_comp": "$500K\u2013$1.3M",
-          "md_partner_total_comp": "$1M\u2013$2.5M",
-          "cio_total_comp": "$1.5M\u2013$5M+",
+          "vp_total_comp": "$280K–$600K",
+          "director_total_comp": "$500K–$1.3M",
+          "md_partner_total_comp": "$1M–$2.5M",
+          "cio_total_comp": "$1.5M–$5M+",
           "carry_availability": "Shadow carry / deferred performance pay only"
         },
         {
           "institution_type": "Insurance Company Investment Division (Large)",
-          "vp_total_comp": "$220K\u2013$380K",
-          "director_total_comp": "$350K\u2013$720K",
-          "md_partner_total_comp": "$550K\u2013$1.2M",
-          "cio_total_comp": "$900K\u2013$2.5M",
+          "vp_total_comp": "$220K–$380K",
+          "director_total_comp": "$350K–$720K",
+          "md_partner_total_comp": "$550K–$1.2M",
+          "cio_total_comp": "$900K–$2.5M",
           "carry_availability": "LTI/RSU grants; no traditional carry"
         },
         {
-          "institution_type": "IFC (World Bank Group) \u2013 Washington DC",
-          "vp_total_comp": "$553K\u2013$673K (incl. benefits, net of tax)",
-          "director_total_comp": "$465K\u2013$606K (incl. benefits)",
-          "md_partner_total_comp": "$595K\u2013$729K (incl. benefits)",
-          "cio_total_comp": "N/A \u2013 structure differs",
+          "institution_type": "IFC (World Bank Group) – Washington DC",
+          "vp_total_comp": "$553K–$673K (incl. benefits, net of tax)",
+          "director_total_comp": "$465K–$606K (incl. benefits)",
+          "md_partner_total_comp": "$595K–$729K (incl. benefits)",
+          "cio_total_comp": "N/A – structure differs",
           "carry_availability": "None; strong non-cash benefits"
         },
         {
           "institution_type": "DFI / MDB (ADB, AfDB, EBRD, IDB Invest)",
-          "vp_total_comp": "$200K\u2013$420K (net of tax + benefits)",
-          "director_total_comp": "$250K\u2013$560K (net of tax + benefits)",
-          "md_partner_total_comp": "$300K\u2013$600K",
-          "cio_total_comp": "N/A or $400K\u2013$800K",
+          "vp_total_comp": "$200K–$420K (net of tax + benefits)",
+          "director_total_comp": "$250K–$560K (net of tax + benefits)",
+          "md_partner_total_comp": "$300K–$600K",
+          "cio_total_comp": "N/A or $400K–$800K",
           "carry_availability": "None; tax exemption (non-US nationals) and generous benefits offset"
         },
         {
           "institution_type": "U.S. DFC (Government Agency)",
-          "vp_total_comp": "$170K\u2013$185K",
-          "director_total_comp": "$175K\u2013$190K",
-          "md_partner_total_comp": "$180K\u2013$200K",
-          "cio_total_comp": "$200K\u2013$250K",
+          "vp_total_comp": "$170K–$185K",
+          "director_total_comp": "$175K–$190K",
+          "md_partner_total_comp": "$180K–$200K",
+          "cio_total_comp": "$200K–$250K",
           "carry_availability": "None; government pay bands"
         }
       ]
     }
   ],
-  "last_updated": "2026-04-15T18:21:49-04:00",
+  "last_updated": "2026-04-16T07:06:56-04:00",
   "updates": [
     {
       "id": "auto-update-2026-03-30",
@@ -7866,7 +7866,7 @@ window.APP_DATA = {
       "id": "auto-update-2026-04-02",
       "type": "jobs",
       "title": "Daily Search: 2 New Job(s) Added",
-      "message": "Automatically added 2 new MD+ openings: Chief/Principal Investment Officer \u2013 Waste Sector (req36119), Managing Director, Central Europe & Baltic States",
+      "message": "Automatically added 2 new MD+ openings: Chief/Principal Investment Officer – Waste Sector (req36119), Managing Director, Central Europe & Baltic States",
       "date": "2026-04-15T18:21:22-04:00"
     },
     {
@@ -7900,7 +7900,7 @@ window.APP_DATA = {
     {
       "id": "update-12",
       "type": "platform",
-      "title": "Platform Reliability Update \u2014 Expired Jobs Purge",
+      "title": "Platform Reliability Update — Expired Jobs Purge",
       "message": "Removed 20 expired, closed, or speculative job listings. Retained 45 active positions. Fresh job search in progress to add new MD+ opportunities.",
       "date": "2026-04-15T17:55:00-04:00"
     },
@@ -7943,7 +7943,7 @@ window.APP_DATA = {
       "id": "u-20260313-001",
       "type": "refresh",
       "title": "Daily refresh: UNJSPF Director Total Fund Strategies",
-      "body": "Found and added: Director, Total Fund Strategies at UNJSPF (UN Joint Staff Pension Fund) \u2014 $100B+ portfolio CIO-office role in New York.",
+      "body": "Found and added: Director, Total Fund Strategies at UNJSPF (UN Joint Staff Pension Fund) — $100B+ portfolio CIO-office role in New York.",
       "date": "2026-03-13T11:00:00Z"
     },
     {

@@ -1080,6 +1080,20 @@ window.APP_DATA = {
       "date_added": "2026-03-30",
       "salary": "$500,000-$700,000 total cash (excludes equity)",
       "notes": "MD title, but function is senior legal authority for tax equity/hybrid transactions. Excluded as non-relevant."
+    },
+    {
+      "id": 62,
+      "title": "Deputy Chief Investment Officer, Private Markets",
+      "company": "CalPERS (California Public Employees’ Retirement System)",
+      "region": "North America",
+      "industry": "PENSION FUNDS",
+      "goldie_fit": "Senior private markets leadership role overseeing/partnering with the CIO across private asset strategies; strong fit with her fund-of-funds, emerging markets, infrastructure/climate investing background and experience leading global investment teams.",
+      "suggested_recruiter": null,
+      "source_url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPostingPrint.aspx?jcid=503404",
+      "date_posted": "2026-04-08",
+      "date_added": "2026-04-19",
+      "salary": "$28,325.00 - $47,208.33 per month (plus incentive eligibility per posting)",
+      "notes": "Final filing date: Until filled (weekly cutoffs). PROTECTED — DFI/multilateral organization."
     }
   ],
   "companies": [
@@ -7839,8 +7853,15 @@ window.APP_DATA = {
       ]
     }
   ],
-  "last_updated": "2026-04-18T08:21:08-04:00",
+  "last_updated": "2026-04-19T07:06:24-04:00",
   "updates": [
+    {
+      "id": "auto-update-2026-04-19",
+      "type": "jobs",
+      "title": "Daily Search: 1 New Job(s) Added",
+      "message": "Automatically added 1 new MD+ openings: Deputy Chief Investment Officer, Private Markets",
+      "date": "2026-04-19T07:06:22-04:00"
+    },
     {
       "id": "auto-update-2026-03-30",
       "type": "jobs",

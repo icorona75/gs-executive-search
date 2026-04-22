@@ -137,7 +137,7 @@ window.APP_DATA = {
       "title": "Managing Director / Partner — Emerging Markets Fund Investments",
       "company": "StepStone Group",
       "location": "New York, NY or Washington, DC, USA",
-      "region": "Americas / Global",
+      "region": "Global",
       "salary_range": "MD/Partner compensation: estimated $400,000–$900,000 total comp (base + bonus + carry); StepStone is publicly traded (STEP)",
       "application_url": "https://www.stepstonegroup.com/careers/",
       "application_method": "Apply via stepstonegroup.com/careers/ or through executive search. StepStone uses Options Group and Korn Ferry for senior investment hires.",
@@ -157,7 +157,7 @@ window.APP_DATA = {
       "title": "Managing Director / Senior Director, Emerging Markets or Development Finance",
       "company": "Adams Street Partners",
       "location": "Chicago, IL or Washington, DC",
-      "region": "Americas / Global",
+      "region": "Global",
       "salary_range": "MD-level: estimated $400,000–$800,000 total comp",
       "application_url": "https://www.adamsstreetpartners.com/careers/",
       "application_method": "Apply via adamsstreetpartners.com/careers/ or through executive search. Adams Street uses Korn Ferry and Spencer Stuart.",
@@ -194,26 +194,6 @@ window.APP_DATA = {
     },
     {
       "id": 6,
-      "title": "IFC Regional Industry Director, Infrastructure & Natural Resources — Africa (N/W/C)",
-      "company": "IFC (International Finance Corporation) — World Bank Group",
-      "location": "Lagos, Nigeria (or to be confirmed — N/W/C Africa region)",
-      "region": "Africa",
-      "salary_range": "IFC Director grade — estimated $250,000–$330,000 + WBG benefits",
-      "application_url": "https://worldbankgroup.csod.com/ux/ats/careersite/1/home/requisition/35459?c=worldbankgroup",
-      "application_method": "Apply via World Bank Group career portal (req35459). Deadline was February 11, 2026. Contact Korn Ferry or IFC directly to confirm status.",
-      "date_posted": "2026-01-22",
-      "deadline": "2026-02-11",
-      "contract_type": "Fixed Term, 4 years",
-      "requirements": "Master's or PhD in economics, finance, or business; 15+ years relevant experience in infrastructure/natural resources finance in EM; significant leadership and management skills; client and stakeholder engagement experience; English required (French/Arabic a plus for N/W/C Africa)",
-      "goldie_fit": "IFC Regional Industry Director is a Director-equivalent role within IFC's investment hierarchy. While Goldie's background is more fund-of-funds than direct infrastructure project finance, her DFC role includes infrastructure fund investments and climate finance. French language would be a partial gap for N/W/C Africa. Deadline passed Feb 11 — contact Korn Ferry/IFC directly to assess status.",
-      "suggested_recruiter": "Korn Ferry (IFC senior searches); direct WBG application",
-      "source_url": "https://www.myjobmag.com/job/regional-industry-director-infrastructure-natural-resources-africa-international-finance-corporation-ifc",
-      "notes": "Deadline passed February 11, 2026. May be in review stage. Contact Korn Ferry or IFC HR directly. A second similar role for East/Southern Africa also posted on ImpactPool (https://www.impactpool.org/jobs/1192812).",
-      "date_added": "2026-03-06",
-      "industry": "Development Finance / Infrastructure"
-    },
-    {
-      "id": 7,
       "title": "Managing Director, Industry Coverage (Clean Energy Finance)",
       "company": "Crux Climate",
       "location": "Remote, USA (optional offices: Washington DC, New York)",
@@ -232,7 +212,7 @@ window.APP_DATA = {
       "industry": "Climate Finance / Clean Energy"
     },
     {
-      "id": 8,
+      "id": 7,
       "title": "Managing Director / Senior Investment Professional – Critical Minerals Consortium",
       "company": "Orion Resource Partners",
       "location": "New York, NY (with Abu Dhabi and London offices)",
@@ -251,7 +231,7 @@ window.APP_DATA = {
       "industry": "Critical Minerals / Private Equity"
     },
     {
-      "id": 9,
+      "id": 8,
       "title": "Partner / Managing Director – Private Equity (Critical Minerals / Metals & Mining)",
       "company": "Resource Capital Funds (RCF)",
       "location": "Denver, CO; London, UK; Toronto, Canada; Perth, Australia (multiple offices)",
@@ -270,7 +250,7 @@ window.APP_DATA = {
       "industry": "Critical Minerals / Mining PE"
     },
     {
-      "id": 10,
+      "id": 9,
       "title": "Senior Managing Director / Managing Director – Critical Minerals Advisory",
       "company": "FTI Consulting – Power, Renewables & Energy Transition (PRET) Practice",
       "location": "Washington, DC or New York, NY",
@@ -289,7 +269,7 @@ window.APP_DATA = {
       "industry": "Critical Minerals / Advisory"
     },
     {
-      "id": 11,
+      "id": 10,
       "title": "Head of Investment / Managing Director – Critical Minerals",
       "company": "US Export-Import Bank (EXIM) – Supply Chain Resiliency Initiative (SCRI)",
       "location": "Washington, DC",
@@ -308,7 +288,7 @@ window.APP_DATA = {
       "industry": "Critical Minerals / Development Finance"
     },
     {
-      "id": 12,
+      "id": 11,
       "title": "Managing Director – Governance Studies (Economics / Finance / Policy)",
       "company": "The Brookings Institution",
       "location": "Washington, DC",
@@ -326,11 +306,11 @@ window.APP_DATA = {
       "industry": "Policy / Development Finance"
     },
     {
-      "id": 13,
+      "id": 12,
       "title": "Managing Director / Partner — Emerging Markets PE/Infrastructure",
       "company": "Warburg Pincus",
       "location": "New York, NY or Washington, DC",
-      "region": "Americas / Global",
+      "region": "Global",
       "salary_range": "Partner-level compensation at Warburg: estimated $800,000–$2,000,000+ total comp (base + bonus + carry)",
       "application_url": "https://www.warburgpincus.com/careers/",
       "application_method": "Apply via warburgpincus.com/careers/ or through executive search firms. Warburg uses Korn Ferry and Spencer Stuart for senior hires.",
@@ -346,7 +326,7 @@ window.APP_DATA = {
       "industry": "Private Equity / Infrastructure"
     },
     {
-      "id": 14,
+      "id": 13,
       "title": "Managing Director – Private Investments",
       "company": "Allocate",
       "location": "Palo Alto, CA, USA",
@@ -364,7 +344,7 @@ window.APP_DATA = {
       "industry": "Private Equity / Alternatives"
     },
     {
-      "id": 15,
+      "id": 14,
       "title": "Head of Investment Advisory & OCIO Solutions",
       "company": "Undisclosed Asset Manager (Warner Scott)",
       "location": "Dubai, UAE",
@@ -382,7 +362,7 @@ window.APP_DATA = {
       "industry": "Investment Consulting / OCIO"
     },
     {
-      "id": 16,
+      "id": 15,
       "title": "North America Head of Infrastructure Investments",
       "company": "Mercer",
       "location": "New York, NY, United States",
@@ -399,7 +379,7 @@ window.APP_DATA = {
       "industry": "Investment Consulting / Infrastructure"
     },
     {
-      "id": 17,
+      "id": 16,
       "title": "Managing Director, Managed Services - Private Equity Fund Services",
       "company": "Baker Tilly US",
       "location": "New York, NY or Chicago, IL (flexible)",
@@ -417,7 +397,7 @@ window.APP_DATA = {
       "industry": "Fund Solutions / Fund Services"
     },
     {
-      "id": 18,
+      "id": 17,
       "title": "Venture Capital Managing Director/Director - Healthcare/Biosciences",
       "company": "Connecticut Innovations",
       "location": "New Haven, CT, USA",
@@ -435,7 +415,7 @@ window.APP_DATA = {
       "industry": "Corporate Venture Capital"
     },
     {
-      "id": 19,
+      "id": 18,
       "title": "Managing Director, Public Investments",
       "company": "The California Endowment",
       "location": "Oakland, CA",
@@ -453,7 +433,7 @@ window.APP_DATA = {
       "industry": "Foundations / Endowments"
     },
     {
-      "id": 20,
+      "id": 19,
       "title": "Managing Director / Investment Director, Public Equities",
       "company": "YMCA Retirement Fund",
       "location": "New York, NY (hybrid)",
@@ -471,7 +451,7 @@ window.APP_DATA = {
       "industry": "Pension Funds / Endowments"
     },
     {
-      "id": 21,
+      "id": 20,
       "title": "Head of Investments - Family Office",
       "company": "Confidential (Financial Services/NBFC)",
       "location": "India",
@@ -489,7 +469,7 @@ window.APP_DATA = {
       "industry": "Family Office"
     },
     {
-      "id": 22,
+      "id": 21,
       "title": "Infrastructure Partners, Managing Director",
       "company": "Blackstone Infrastructure Partners",
       "location": "London, UK",
@@ -507,7 +487,7 @@ window.APP_DATA = {
       "industry": "Infrastructure / Private Equity"
     },
     {
-      "id": 23,
+      "id": 22,
       "title": "Head of Investor Relations",
       "company": "World Fund",
       "location": "Berlin, Germany",
@@ -525,7 +505,7 @@ window.APP_DATA = {
       "industry": "Climate Finance / Investor Relations"
     },
     {
-      "id": 24,
+      "id": 23,
       "title": "Head of Investor Relations",
       "company": "Undisclosed VC Firm",
       "location": "Chicago, IL",
@@ -543,7 +523,7 @@ window.APP_DATA = {
       "industry": "Investor Relations / Venture Capital"
     },
     {
-      "id": 25,
+      "id": 24,
       "title": "Head of Mining - Corporates Division",
       "company": "IDB Invest",
       "region": "North America",
@@ -557,22 +537,7 @@ window.APP_DATA = {
       "date_added": "2026-03-06"
     },
     {
-      "id": 26,
-      "title": "Director of the Caribbean Region - Infrastructure and Energy",
-      "company": "IDB Invest",
-      "region": "Latin America & Caribbean",
-      "industry": "Emerging Markets Investment",
-      "goldie_fit": "Strong DFI fit: Leads infra/energy investments in Caribbean emerging markets (LAC); 10+ yrs structured finance/project finance track record with equity/mezzanine; perfect for IDB/DFI exp, Spanish fluency, regional LAC infra expertise. Director senior at DFI. LinkedIn",
-      "suggested_recruiter": "IDB Group HR / Heidrick & Struggles",
-      "source_url": "https://www.linkedin.com/jobs/view/idb-invest-director-of-the-caribbean-region-infrastructure-and-energy-at-idb-invest-4355310492",
-      "date_posted": "3 weeks ago (Feb 2026)",
-      "salary": "",
-      "notes": "Added via 7-day backfill search on 2026-03-07",
-      "date_added": "2026-03-06",
-      "date_posted_normalized": "2026-02-15"
-    },
-    {
-      "id": 27,
+      "id": 25,
       "title": "Managing Director, Social Impact Fund",
       "company": "American Heart Association",
       "region": "North America",
@@ -588,22 +553,7 @@ window.APP_DATA = {
       "date_posted_normalized": "2026-02-15"
     },
     {
-      "id": 28,
-      "title": "Director, Economic Research and Development Impact",
-      "company": "Asian Development Bank (ADB)",
-      "region": "Asia-Pacific",
-      "industry": "Development Finance Institution",
-      "goldie_fit": "Perfect DFI fit; 25+ years emerging markets PE/infra/climate aligns with ADB's development impact focus in Asia. Wharton MBA ideal for research leadership, multilingual skills aid regional engagement.",
-      "suggested_recruiter": "ADB HR / Egon Zehnder",
-      "source_url": "https://www.adb.org/work-with-us/careers/current-opportunities",
-      "date_posted": "Early 2026",
-      "salary": "",
-      "notes": "Added via 7-day backfill search on 2026-03-07",
-      "date_added": "2026-03-06",
-      "date_posted_normalized": "2026-01-15"
-    },
-    {
-      "id": 29,
+      "id": 26,
       "title": "Global Alternative Investments Solutions, Head of Infrastructure Due Diligence",
       "company": "JPMorganChase",
       "region": "North America",
@@ -617,7 +567,7 @@ window.APP_DATA = {
       "date_added": "2026-03-06"
     },
     {
-      "id": 30,
+      "id": 27,
       "title": "Managing Director - Complaints-resolution, Evaluation and Integrity Unit",
       "company": "Asian Infrastructure Investment Bank (AIIB)",
       "region": "Asia-Pacific",
@@ -631,7 +581,7 @@ window.APP_DATA = {
       "date_added": "2026-03-06"
     },
     {
-      "id": 31,
+      "id": 28,
       "title": "Managing Director",
       "company": "Ultimus LeverPoint Private Fund Solutions",
       "region": "North America",
@@ -645,7 +595,7 @@ window.APP_DATA = {
       "date_added": "2026-03-06"
     },
     {
-      "id": 32,
+      "id": 29,
       "title": "SVP, Head of Investments",
       "company": "Wildflower LTD",
       "region": "North America",
@@ -660,7 +610,7 @@ window.APP_DATA = {
       "date_posted_normalized": "2026-02-15"
     },
     {
-      "id": 33,
+      "id": 30,
       "title": "Head of Investment Management",
       "company": "PIDG (Private Infrastructure Development Group)",
       "region": "Europe",
@@ -675,7 +625,7 @@ window.APP_DATA = {
       "date_posted_normalized": "2026-02-15"
     },
     {
-      "id": 34,
+      "id": 31,
       "title": "Head of Investor Relations",
       "company": "Ariel Alternatives",
       "region": "North America",
@@ -699,7 +649,7 @@ window.APP_DATA = {
       "date_posted": "2026-02-13",
       "salary": "$232,143 - $371,429/year",
       "notes": "Filing deadline 2026-02-27, may be re-posted. Found via daily cron 2026-03-11.",
-      "id": 35,
+      "id": 32,
       "date_added": "2026-03-06",
       "salary_range": "$232,143 - $371,429/year"
     },
@@ -714,7 +664,7 @@ window.APP_DATA = {
       "date_posted": "2026-03-06",
       "salary": "$275,000 - $300,000 base + bonus",
       "notes": "FINRA Series 7/63/SIE/24 required or within 180 days. Found via daily cron 2026-03-11.",
-      "id": 36,
+      "id": 33,
       "date_added": "2026-03-06",
       "salary_range": "$275,000 - $300,000 base + bonus"
     },
@@ -729,7 +679,7 @@ window.APP_DATA = {
       "date_posted": "2026-02-11",
       "salary": "",
       "notes": "Zurich-based. Client undisclosed. Found via daily cron 2026-03-11.",
-      "id": 37,
+      "id": 34,
       "date_added": "2026-03-06"
     },
     {
@@ -743,7 +693,7 @@ window.APP_DATA = {
       "date_posted": "March 2026",
       "salary": "",
       "notes": "New York, NY. Found via daily cron 2026-03-12.",
-      "id": 38,
+      "id": 35,
       "date_added": "2026-03-06",
       "date_posted_normalized": "2026-03-15"
     },
@@ -759,7 +709,7 @@ window.APP_DATA = {
       "salary": "",
       "salary_range": "DFI executive grade M3; estimated $200,000-$300,000 + benefits",
       "notes": "PROTECTED: Director at IsDB = MD equivalent per DFI exception rule. DO NOT REMOVE.",
-      "id": 39,
+      "id": 36,
       "date_added": "2026-03-15",
       "date_posted_normalized": "2026-03-15"
     },
@@ -775,7 +725,7 @@ window.APP_DATA = {
       "salary": "",
       "salary_range": "UN D-1/D-2 grade; estimated $180,000-$250,000 + UN benefits",
       "notes": "PROTECTED: Director at UN/UNJSPF = MD equivalent per DFI exception rule. DO NOT REMOVE.",
-      "id": 40,
+      "id": 37,
       "date_added": "2026-03-15",
       "date_posted_normalized": "2026-03-15"
     },
@@ -791,7 +741,7 @@ window.APP_DATA = {
       "salary": "",
       "salary_range": "IFC Manager grade; estimated $250,000-$350,000 + WBG benefits",
       "notes": "PROTECTED: Manager at IFC = senior grade per DFI exception rule. DO NOT REMOVE. Req35978.",
-      "id": 41,
+      "id": 38,
       "date_added": "2026-03-15"
     },
     {
@@ -806,7 +756,7 @@ window.APP_DATA = {
       "salary": "",
       "salary_range": "IDB Invest Director grade; estimated $230,000-$320,000 + IDB benefits",
       "notes": "PROTECTED: Director at IDB Invest = MD equivalent. Posting closes 4/28/2026. Washington DC.",
-      "id": 42,
+      "id": 39,
       "date_added": "2026-04-15",
       "date_posted_normalized": "2026-04-01"
     },
@@ -822,7 +772,7 @@ window.APP_DATA = {
       "salary": "$295,000 base + annual performance bonus",
       "salary_range": "$295,000 base + performance bonus; estimated total comp $400,000-$600,000",
       "notes": "Boston preferred, New York also possible. Found via daily cron 2026-04-14.",
-      "id": 43,
+      "id": 40,
       "date_added": "2026-04-15",
       "date_posted_normalized": "2026-03-15"
     },
@@ -838,7 +788,7 @@ window.APP_DATA = {
       "salary": "$112,398 - $126,594/year",
       "salary_range": "$112,398 - $126,594 CAD/year (Pay Band 8)",
       "notes": "Fredericton, NB, Canada. Deadline April 24, 2026. Government role. Found via daily cron 2026-04-14.",
-      "id": 44,
+      "id": 41,
       "date_added": "2026-04-15"
     },
     {
@@ -853,12 +803,12 @@ window.APP_DATA = {
       "salary": "",
       "salary_range": "IDB Invest Director grade; estimated $230,000-$320,000 + IDB benefits",
       "notes": "PROTECTED: Director at IDB Invest = MD equivalent. Posting deadline was 4/10/2026 — may still be open. Washington DC.",
-      "id": 45,
+      "id": 42,
       "date_added": "2026-04-15",
       "date_posted_normalized": "2026-04-01"
     },
     {
-      "id": 46,
+      "id": 43,
       "title": "Principal I, Blended Finance",
       "company": "EBRD (European Bank for Reconstruction and Development)",
       "region": "Europe",
@@ -872,7 +822,7 @@ window.APP_DATA = {
       "notes": "Fixed Term 2 years. Deadline: April 28, 2026. Division: Policy and Partnerships. Also listed at https://www.eurobrussels.com/job_display/289765. EBRD Principal I is MD-equivalent at DFIs. PROTECTED — DFI/multilateral organization."
     },
     {
-      "id": 47,
+      "id": 44,
       "title": "Head, Global Infrastructure Facility (GIF)",
       "company": "World Bank Group",
       "region": "North America",
@@ -886,7 +836,7 @@ window.APP_DATA = {
       "notes": "Term: 3 years, renewable. Deadline: April 16, 2026 — URGENT. Also listed on ImpactPool: https://www.impactpool.org/jobs/1206897. Grade GH is the highest executive tier at the World Bank. PROTECTED — DFI/multilateral organization."
     },
     {
-      "id": 48,
+      "id": 45,
       "title": "Managing Investment Director, Global Fixed Income",
       "company": "CalPERS (California Public Employees' Retirement System)",
       "region": "North America",
@@ -900,7 +850,7 @@ window.APP_DATA = {
       "notes": "Open until filled. Also on LinkedIn: https://www.linkedin.com/jobs/view/global-fixed-income-managing-investment-director-at-calpers-4372129649. CalPERS is NOT in the exclusion list."
     },
     {
-      "id": 49,
+      "id": 46,
       "title": "Managing Director, Infrastructure (Confidential Firm)",
       "company": "Confidential infrastructure investment firm (search via Tenfold Search & Advisory)",
       "region": "North America",
@@ -914,7 +864,7 @@ window.APP_DATA = {
       "notes": "Posted via executive search firm on LinkedIn April 12, 2026. Confidential firm — recruiter is Tenfold Search & Advisory."
     },
     {
-      "id": 50,
+      "id": 47,
       "title": "Principal, Project Manager, TIDIP (Turkey Industrial Decarbonization Investment Platform)",
       "company": "EBRD (European Bank for Reconstruction and Development)",
       "region": "Europe",
@@ -928,7 +878,7 @@ window.APP_DATA = {
       "notes": "Deadline: April 16, 2026 — URGENT. Fixed Term 2 years. Division: Policy and Partnerships. Note: Istanbul location may be a constraint — flag for Goldie. PROTECTED — DFI/multilateral organization."
     },
     {
-      "id": 51,
+      "id": 48,
       "title": "Senior Investment Officer, Multi-Sector (Infrastructure)",
       "company": "Asian Infrastructure Investment Bank (AIIB)",
       "region": "Asia-Pacific",
@@ -942,7 +892,7 @@ window.APP_DATA = {
       "notes": "Closing date unclear — verify on AIIB site before applying. Listed as open as of early April 2026. Requires 8–10+ years relevant experience. Beijing location may be a constraint for Goldie. PROTECTED — DFI/multilateral organization."
     },
     {
-      "id": 52,
+      "id": 49,
       "title": "Director, Infrastructure and Project Management Group",
       "company": "UNOPS (United Nations Office for Project Services)",
       "region": "Europe",
@@ -956,7 +906,7 @@ window.APP_DATA = {
       "notes": "Deadline: April 26, 2026. Contract: 2 years initially, renewable. This is an executive-level (D-2) UN position — equivalent to MD at a DFI. Application must be received before midnight Copenhagen time on April 26. PROTECTED — DFI/multilateral organization."
     },
     {
-      "id": 53,
+      "id": 50,
       "title": "Managing Director / Head of USA",
       "company": "Confidential Global Renewable Energy Infrastructure Fund (search via InforCapital / Infra-Be Jobs)",
       "region": "North America",
@@ -970,7 +920,7 @@ window.APP_DATA = {
       "notes": "No stated deadline — apply promptly. Confidential firm. Salary up to $350K + bonus + LTIP. Requires minimum 8 years developing solar/storage/renewable energy projects. Original posting redirects to Infra-Be Jobs platform."
     },
     {
-      "id": 54,
+      "id": 51,
       "title": "Environment, Social & Governance Director",
       "company": "IDB Invest",
       "region": "North America",
@@ -984,7 +934,7 @@ window.APP_DATA = {
       "notes": "International staff contract (36 months, renewable). Leads ESG division clusters; covers sectors including mining, forestry, agribusiness, telecom. Requires English + one official bank language (Spanish/French/Portuguese). PROTECTED — DFI/multilateral organization."
     },
     {
-      "id": 55,
+      "id": 52,
       "title": "Regional Industry Manager, INR, LAC",
       "company": "IFC (World Bank Group)",
       "region": "Latin America & Caribbean",
@@ -998,7 +948,7 @@ window.APP_DATA = {
       "notes": "Grade GH; location options Lima (Peru) / Bogota (Colombia) / Santiago (Chile); closing date 4/21/2026. Considered MD+/director-equivalent in many MDB contexts given people leadership and regional mandate. Verify details on WBG requisition req36268 if needed. PROTECTED — DFI/multilateral organization."
     },
     {
-      "id": 56,
+      "id": 53,
       "title": "Chief/Principal Investment Officer – Waste Sector (req36119)",
       "company": "IFC (International Finance Corporation, World Bank Group)",
       "region": "North America",
@@ -1012,7 +962,7 @@ window.APP_DATA = {
       "notes": "LinkedIn page indicates Grade GH and location Washington, DC; closing date appears as 4/7/2026 in the job text surfaced via search results. Apply link is behind LinkedIn 'Apply' button. PROTECTED — DFI/multilateral organization."
     },
     {
-      "id": 57,
+      "id": 54,
       "title": "Managing Director, Central Europe & Baltic States",
       "company": "EBRD (European Bank for Reconstruction and Development)",
       "region": "Europe",
@@ -1026,7 +976,7 @@ window.APP_DATA = {
       "notes": "This appears to be an older posting with a January 2026 close date; include for tracking only, but it is not within last 7 days. PROTECTED — DFI/multilateral organization."
     },
     {
-      "id": 58,
+      "id": 55,
       "title": "Head of Funding & Investor Relations",
       "company": "Nordic Investment Bank (NIB)",
       "region": "Europe",
@@ -1040,7 +990,7 @@ window.APP_DATA = {
       "notes": "Requires SSA funding/issuance track record; English required; Nordic languages asset."
     },
     {
-      "id": 59,
+      "id": 56,
       "title": "Manager for Metals and Minerals Solutions & Impact",
       "company": "World Bank Group (IFC)",
       "region": "North America",
@@ -1054,7 +1004,7 @@ window.APP_DATA = {
       "notes": "Closing date shown as 3/27/2026 11:59pm UTC; official posting page was intermittently unavailable via automated reader at time of run, but requisition details and link captured from Applied Econ Jobs. Verify on WBG careers portal using req35978. PROTECTED — DFI/multilateral organization."
     },
     {
-      "id": 60,
+      "id": 57,
       "title": "Managing Director, SME Finance & Development",
       "company": "EBRD (European Bank for Reconstruction and Development)",
       "region": "Europe",
@@ -1068,7 +1018,7 @@ window.APP_DATA = {
       "notes": "Not new in last 7 days; included here only as a check against prior dataset. Posting end date shown as 07/01/2026. PROTECTED — DFI/multilateral organization."
     },
     {
-      "id": 61,
+      "id": 58,
       "title": "Managing Director, Investments",
       "company": "Crux Climate",
       "region": "North America",
@@ -1082,7 +1032,7 @@ window.APP_DATA = {
       "notes": "MD title, but function is senior legal authority for tax equity/hybrid transactions. Excluded as non-relevant."
     },
     {
-      "id": 62,
+      "id": 59,
       "title": "Deputy Chief Investment Officer, Private Markets",
       "company": "CalPERS (California Public Employees’ Retirement System)",
       "region": "North America",
@@ -1096,10 +1046,10 @@ window.APP_DATA = {
       "notes": "Final filing date: Until filled (weekly cutoffs). PROTECTED — DFI/multilateral organization."
     },
     {
-      "id": 63,
+      "id": 60,
       "title": "Principal Banker",
       "company": "EBRD",
-      "region": "Lagos, Nigeria",
+      "region": "Africa",
       "industry": "Development finance / infrastructure / climate finance",
       "goldie_fit": "Principal-level leadership role originating and leading sustainable infrastructure investments; aligns with her 25+ years in emerging markets, infrastructure/climate, and DFI investing/fund management experience.",
       "suggested_recruiter": null,
@@ -7867,7 +7817,7 @@ window.APP_DATA = {
       ]
     }
   ],
-  "last_updated": "2026-04-22T08:07:13-04:00",
+  "last_updated": "2026-04-22T12:19:19.831258Z",
   "updates": [
     {
       "id": "auto-update-2026-04-22",

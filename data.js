@@ -1094,6 +1094,20 @@ window.APP_DATA = {
       "date_added": "2026-04-19",
       "salary": "$28,325.00 - $47,208.33 per month (plus incentive eligibility per posting)",
       "notes": "Final filing date: Until filled (weekly cutoffs). PROTECTED — DFI/multilateral organization."
+    },
+    {
+      "id": 63,
+      "title": "Principal Banker",
+      "company": "EBRD",
+      "region": "Lagos, Nigeria",
+      "industry": "Development finance / infrastructure / climate finance",
+      "goldie_fit": "Principal-level leadership role originating and leading sustainable infrastructure investments; aligns with her 25+ years in emerging markets, infrastructure/climate, and DFI investing/fund management experience.",
+      "suggested_recruiter": null,
+      "source_url": "https://jobs.ebrd.com/job/Lagos-Principal-Banker/1384206633/",
+      "date_posted": "2026-04-15",
+      "date_added": "2026-04-22",
+      "salary": null,
+      "notes": "Posting end date listed as 29/04/2026. Focus includes energy and infrastructure projects in Nigeria and potentially other EBRD countries of operation in sub-Saharan Africa. PROTECTED — DFI/multilateral organization."
     }
   ],
   "companies": [
@@ -7853,8 +7867,15 @@ window.APP_DATA = {
       ]
     }
   ],
-  "last_updated": "2026-04-21T08:02:50-04:00",
+  "last_updated": "2026-04-22T07:13:36-04:00",
   "updates": [
+    {
+      "id": "auto-update-2026-04-22",
+      "type": "jobs",
+      "title": "Daily Search: 1 New Job(s) Added",
+      "message": "Automatically added 1 new MD+ openings: Principal Banker",
+      "date": "2026-04-22T07:13:34-04:00"
+    },
     {
       "id": "auto-update-2026-04-19",
       "type": "jobs",

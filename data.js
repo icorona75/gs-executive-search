@@ -95,7 +95,649 @@ window.APP_DATA = {
   },
   "jobs": [
     {
-      "id": 1,
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://blackstone.wd1.myworkdayjobs.com/job/Miami/Global-Head-of-Strategic-Sourcing--SVP---Procurement_40221",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "workday:Blackstone:/job/Miami/Global-Head-of-Strategic-Sourcing--SVP---Procurement_40221",
+      "title": "Global Head of Strategic Sourcing, SVP - Procurement",
+      "company": "Blackstone",
+      "location": "Miami",
+      "application_url": "https://blackstone.wd1.myworkdayjobs.com/job/Miami/Global-Head-of-Strategic-Sourcing--SVP---Procurement_40221",
+      "date_posted": "2026-04-23",
+      "source": "workday:Blackstone",
+      "last_scan_date": "2026-04-23",
+      "id": 1
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://blackstone.wd1.myworkdayjobs.com/job/London/Global-Corporate-Services--Head-of-Facilities-Management--EMEA_42765",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "workday:Blackstone:/job/London/Global-Corporate-Services--Head-of-Facilities-Management--EMEA_42765",
+      "title": "Global Corporate Services, Head of Facilities Management, EMEA",
+      "company": "Blackstone",
+      "location": "London",
+      "application_url": "https://blackstone.wd1.myworkdayjobs.com/job/London/Global-Corporate-Services--Head-of-Facilities-Management--EMEA_42765",
+      "date_posted": "2026-04-23",
+      "source": "workday:Blackstone",
+      "last_scan_date": "2026-04-23",
+      "id": 2
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://blackstone.wd1.myworkdayjobs.com/job/San-Francisco/Human-Resources---HR-Business-Partner--SVP_42424",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "workday:Blackstone:/job/San-Francisco/Human-Resources---HR-Business-Partner--SVP_42424",
+      "title": "Human Resources - HR Business Partner, SVP",
+      "company": "Blackstone",
+      "location": "San Francisco",
+      "application_url": "https://blackstone.wd1.myworkdayjobs.com/job/San-Francisco/Human-Resources---HR-Business-Partner--SVP_42424",
+      "date_posted": "2026-04-23",
+      "source": "workday:Blackstone",
+      "last_scan_date": "2026-04-23",
+      "id": 3
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://blackstone.wd1.myworkdayjobs.com/job/London/Head-of-Global-Corporate-Services---EMEA_41727",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "workday:Blackstone:/job/London/Head-of-Global-Corporate-Services---EMEA_41727",
+      "title": "Head of Global Corporate Services – EMEA",
+      "company": "Blackstone",
+      "location": "London",
+      "application_url": "https://blackstone.wd1.myworkdayjobs.com/job/London/Head-of-Global-Corporate-Services---EMEA_41727",
+      "date_posted": "2026-04-23",
+      "source": "workday:Blackstone",
+      "last_scan_date": "2026-04-23",
+      "id": 4
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://blackstone.wd1.myworkdayjobs.com/job/New-York/Blackstone-Multi-Asset-Investing--BXMA---Credit-Team--Principal_39177",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "workday:Blackstone:/job/New-York/Blackstone-Multi-Asset-Investing--BXMA---Credit-Team--Principal_39177",
+      "title": "Blackstone Multi-Asset Investing (BXMA)- Credit Team, Principal",
+      "company": "Blackstone",
+      "location": "New York",
+      "application_url": "https://blackstone.wd1.myworkdayjobs.com/job/New-York/Blackstone-Multi-Asset-Investing--BXMA---Credit-Team--Principal_39177",
+      "date_posted": "2026-04-23",
+      "source": "workday:Blackstone",
+      "last_scan_date": "2026-04-23",
+      "id": 5
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://blackstone.wd1.myworkdayjobs.com/job/New-York/Blackstone-Multi-Asset-Investing--BXMA----Chief-of-Staff-to-the-Global-Head-of-BXMA_40469",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "workday:Blackstone:/job/New-York/Blackstone-Multi-Asset-Investing--BXMA----Chief-of-Staff-to-the-Global-Head-of-BXMA_40469",
+      "title": "Blackstone Multi-Asset Investing (BXMA) – Chief of Staff to the Global Head of BXMA",
+      "company": "Blackstone",
+      "location": "New York",
+      "application_url": "https://blackstone.wd1.myworkdayjobs.com/job/New-York/Blackstone-Multi-Asset-Investing--BXMA----Chief-of-Staff-to-the-Global-Head-of-BXMA_40469",
+      "date_posted": "2026-04-23",
+      "source": "workday:Blackstone",
+      "last_scan_date": "2026-04-23",
+      "id": 6
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://job-boards.eu.greenhouse.io/eqtpartners/jobs/4752266101",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:eqtpartners:4752266101",
+      "title": "Head of Social Media",
+      "company": "EQT Partners",
+      "location": "Chicago, Illinois, United States",
+      "application_url": "https://job-boards.eu.greenhouse.io/eqtpartners/jobs/4752266101",
+      "date_posted": "2026-04-23",
+      "source": "greenhouse:eqtpartners",
+      "raw_department": "Brand & Marketing (Cost Center)",
+      "last_scan_date": "2026-04-23",
+      "id": 7
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://job-boards.eu.greenhouse.io/eqtpartners/jobs/4709618101",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:eqtpartners:4709618101",
+      "title": "Head of Social Media",
+      "company": "EQT Partners",
+      "location": "London, England, United Kingdom",
+      "application_url": "https://job-boards.eu.greenhouse.io/eqtpartners/jobs/4709618101",
+      "date_posted": "2026-04-23",
+      "source": "greenhouse:eqtpartners",
+      "raw_department": "Brand & Marketing (Cost Center)",
+      "last_scan_date": "2026-04-23",
+      "id": 8
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://www.stepstonegroup.com/current-opportunities/?gh_jid=7789372",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:stepstone:7789372",
+      "title": "Director - Head of Investor Operations ",
+      "company": "StepStone Group",
+      "location": "New York ",
+      "application_url": "https://www.stepstonegroup.com/current-opportunities/?gh_jid=7789372",
+      "date_posted": "2026-04-07",
+      "source": "greenhouse:stepstone",
+      "raw_department": "Investor Servicing",
+      "last_scan_date": "2026-04-23",
+      "id": 9
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://www.stepstonegroup.com/current-opportunities/?gh_jid=7341357",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:stepstone:7341357",
+      "title": "Principal - Real Estate Advisory",
+      "company": "StepStone Group",
+      "location": "New York",
+      "application_url": "https://www.stepstonegroup.com/current-opportunities/?gh_jid=7341357",
+      "date_posted": "2026-04-07",
+      "source": "greenhouse:stepstone",
+      "raw_department": "Real Estate",
+      "last_scan_date": "2026-04-23",
+      "id": 10
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://pantheon.io/about/careers/detail?gh_jid=7749244",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:pantheon:7749244",
+      "title": "Principal Sales Engineer",
+      "company": "Pantheon Ventures",
+      "location": "Remote, USA",
+      "application_url": "https://pantheon.io/about/careers/detail?gh_jid=7749244",
+      "date_posted": "2026-03-31",
+      "source": "greenhouse:pantheon",
+      "raw_department": "Sales",
+      "last_scan_date": "2026-04-23",
+      "id": 11
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://pantheon.io/about/careers/detail?gh_jid=7829497",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:pantheon:7829497",
+      "title": "Principal Software Engineer - Hosting",
+      "company": "Pantheon Ventures",
+      "location": "United States (Remote)",
+      "application_url": "https://pantheon.io/about/careers/detail?gh_jid=7829497",
+      "date_posted": "2026-04-23",
+      "source": "greenhouse:pantheon",
+      "raw_department": "Engineering",
+      "last_scan_date": "2026-04-23",
+      "id": 12
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://a16z.com/about/jobs/?gh_jid=7698498003",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:a16z:7698498003",
+      "title": "Partner 16, Senior Accountant",
+      "company": "Andreessen Horowitz (a16z)",
+      "location": "Menlo Park, California, United States; San Francisco, California, United States",
+      "application_url": "https://a16z.com/about/jobs/?gh_jid=7698498003",
+      "date_posted": "2026-04-16",
+      "source": "greenhouse:a16z",
+      "raw_department": "Finance",
+      "last_scan_date": "2026-04-23",
+      "id": 13
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://a16z.com/about/jobs/?gh_jid=7668647003",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:a16z:7668647003",
+      "title": "Partner 16, Senior Accountant",
+      "company": "Andreessen Horowitz (a16z)",
+      "location": "Menlo Park, California, United States; San Francisco, California, United States",
+      "application_url": "https://a16z.com/about/jobs/?gh_jid=7668647003",
+      "date_posted": "2026-04-16",
+      "source": "greenhouse:a16z",
+      "raw_department": "Finance",
+      "last_scan_date": "2026-04-23",
+      "id": 14
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://a16z.com/about/jobs/?gh_jid=7619570003",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:a16z:7619570003",
+      "title": "Partner 16, Software Engineer, Backend, ASG",
+      "company": "Andreessen Horowitz (a16z)",
+      "location": "San Francisco, California, United States",
+      "application_url": "https://a16z.com/about/jobs/?gh_jid=7619570003",
+      "date_posted": "2026-04-16",
+      "source": "greenhouse:a16z",
+      "raw_department": "a16z Software Group",
+      "last_scan_date": "2026-04-23",
+      "id": 15
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://a16z.com/about/jobs/?gh_jid=7667177003",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:a16z:7667177003",
+      "title": "Partner 18, Fund Accounting Manager, Crypto",
+      "company": "Andreessen Horowitz (a16z)",
+      "location": "Menlo Park, California, United States; San Francisco, California, United States",
+      "application_url": "https://a16z.com/about/jobs/?gh_jid=7667177003",
+      "date_posted": "2026-04-16",
+      "source": "greenhouse:a16z",
+      "raw_department": "Finance",
+      "last_scan_date": "2026-04-23",
+      "id": 16
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://a16z.com/about/jobs/?gh_jid=7668646003",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:a16z:7668646003",
+      "title": "Partner 18, HR Operations Generalist",
+      "company": "Andreessen Horowitz (a16z)",
+      "location": "Menlo Park, California, United States; San Francisco, California, United States",
+      "application_url": "https://a16z.com/about/jobs/?gh_jid=7668646003",
+      "date_posted": "2026-04-16",
+      "source": "greenhouse:a16z",
+      "raw_department": "HR & Recruiting",
+      "last_scan_date": "2026-04-23",
+      "id": 17
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://a16z.com/about/jobs/?gh_jid=7645276003",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:a16z:7645276003",
+      "title": "Partner 18, IT Engineer, San Francisco",
+      "company": "Andreessen Horowitz (a16z)",
+      "location": "San Francisco, California, United States",
+      "application_url": "https://a16z.com/about/jobs/?gh_jid=7645276003",
+      "date_posted": "2026-04-16",
+      "source": "greenhouse:a16z",
+      "raw_department": "IT & Workplace Experience",
+      "last_scan_date": "2026-04-23",
+      "id": 18
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://a16z.com/about/jobs/?gh_jid=7581392003",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:a16z:7581392003",
+      "title": "Partner 20, Applied ML, Engineer, ASG",
+      "company": "Andreessen Horowitz (a16z)",
+      "location": "San Francisco, California, United States",
+      "application_url": "https://a16z.com/about/jobs/?gh_jid=7581392003",
+      "date_posted": "2026-04-16",
+      "source": "greenhouse:a16z",
+      "raw_department": "a16z Software Group",
+      "last_scan_date": "2026-04-23",
+      "id": 19
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://a16z.com/about/jobs/?gh_jid=7646815003",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:a16z:7646815003",
+      "title": "Partner 22, Communications, Crypto",
+      "company": "Andreessen Horowitz (a16z)",
+      "location": "New York, New York, United States; San Francisco, California, United States",
+      "application_url": "https://a16z.com/about/jobs/?gh_jid=7646815003",
+      "date_posted": "2026-04-16",
+      "source": "greenhouse:a16z",
+      "raw_department": "Crypto",
+      "last_scan_date": "2026-04-23",
+      "id": 20
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://a16z.com/about/jobs/?gh_jid=7477293003",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:a16z:7477293003",
+      "title": "Partner 22, Content Marketing, Investor Relations",
+      "company": "Andreessen Horowitz (a16z)",
+      "location": "San Francisco, California, United States",
+      "application_url": "https://a16z.com/about/jobs/?gh_jid=7477293003",
+      "date_posted": "2026-04-16",
+      "source": "greenhouse:a16z",
+      "raw_department": "Global Partnerships",
+      "last_scan_date": "2026-04-23",
+      "id": 21
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://a16z.com/about/jobs/?gh_jid=7698497003",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:a16z:7698497003",
+      "title": "Partner 22, Events, New Media",
+      "company": "Andreessen Horowitz (a16z)",
+      "location": "Menlo Park, California, United States; New York, New York, United States; San Francisco, California, United States",
+      "application_url": "https://a16z.com/about/jobs/?gh_jid=7698497003",
+      "date_posted": "2026-04-22",
+      "source": "greenhouse:a16z",
+      "raw_department": "New Media",
+      "last_scan_date": "2026-04-23",
+      "id": 22
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://a16z.com/about/jobs/?gh_jid=7668649003",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:a16z:7668649003",
+      "title": "Partner 22, Executive Talent Partner",
+      "company": "Andreessen Horowitz (a16z)",
+      "location": "Menlo Park, California, United States; San Francisco, California, United States",
+      "application_url": "https://a16z.com/about/jobs/?gh_jid=7668649003",
+      "date_posted": "2026-04-16",
+      "source": "greenhouse:a16z",
+      "raw_department": "Talent",
+      "last_scan_date": "2026-04-23",
+      "id": 23
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://a16z.com/about/jobs/?gh_jid=7667179003",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:a16z:7667179003",
+      "title": "Partner 30, Tax Manager, Crypto",
+      "company": "Andreessen Horowitz (a16z)",
+      "location": "Menlo Park, California, United States; San Francisco, California, United States",
+      "application_url": "https://a16z.com/about/jobs/?gh_jid=7667179003",
+      "date_posted": "2026-04-16",
+      "source": "greenhouse:a16z",
+      "raw_department": "Finance",
+      "last_scan_date": "2026-04-23",
+      "id": 24
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://a16z.com/about/jobs/?gh_jid=7698586003",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:a16z:7698586003",
+      "title": "Partner 30, Tax Manager, Venture Funds",
+      "company": "Andreessen Horowitz (a16z)",
+      "location": "Menlo Park, California, United States; San Francisco, California, United States",
+      "application_url": "https://a16z.com/about/jobs/?gh_jid=7698586003",
+      "date_posted": "2026-04-16",
+      "source": "greenhouse:a16z",
+      "raw_department": "Finance",
+      "last_scan_date": "2026-04-23",
+      "id": 25
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://a16z.com/about/jobs/?gh_jid=6615928003",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:a16z:6615928003",
+      "title": "Partner 4, GTM Coordinator, Menlo Park",
+      "company": "Andreessen Horowitz (a16z)",
+      "location": "Menlo Park, California, United States",
+      "application_url": "https://a16z.com/about/jobs/?gh_jid=6615928003",
+      "date_posted": "2026-04-16",
+      "source": "greenhouse:a16z",
+      "raw_department": "Venture",
+      "last_scan_date": "2026-04-23",
+      "id": 26
+    },
+    {
+      "region": "Global",
+      "salary_range": "",
+      "application_method": "",
+      "contract_type": "Full-time",
+      "requirements": "",
+      "goldie_fit": "",
+      "suggested_recruiter": "",
+      "source_url": "https://job-boards.greenhouse.io/omidyarnetwork/jobs/7450399",
+      "notes": "",
+      "industry": "",
+      "viewed": false,
+      "pinned": false,
+      "source_id": "greenhouse:omidyarnetwork:7450399",
+      "title": "Head of Communications",
+      "company": "Omidyar Network",
+      "location": "San Francisco, CA",
+      "application_url": "https://job-boards.greenhouse.io/omidyarnetwork/jobs/7450399",
+      "date_posted": "2026-02-06",
+      "source": "greenhouse:omidyarnetwork",
+      "raw_department": "Communications",
+      "last_scan_date": "2026-04-23",
+      "id": 27
+    },
+    {
+      "id": 28,
       "title": "Managing Director, Private Equity Business Development",
       "company": "Partners Group",
       "location": "Broomfield, Colorado, USA (Americas)",
@@ -112,10 +754,14 @@ window.APP_DATA = {
       "notes": "Best-in-class compensation ($450K–$550K base). Role requires significant capital raising experience — Goldie should emphasize LP relationship management and fund deployment work at DFC.",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 2,
+      "id": 29,
       "title": "Managing Director of Capital Formation",
       "company": "Confidential — Leading Alternative Asset Manager (via Selby Jennings, South Florida)",
       "location": "Miami, Florida, USA",
@@ -132,10 +778,14 @@ window.APP_DATA = {
       "notes": "Highly lucrative. Goldie should position herself as bringing a built-in global DFI/institutional LP network.",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 3,
+      "id": 30,
       "title": "Managing Director, Corporate Sector",
       "company": "EBRD - European Bank for Reconstruction and Development",
       "location": "London, United Kingdom",
@@ -152,10 +802,14 @@ window.APP_DATA = {
       "notes": "Application deadline was Feb 9, 2026 — this may be in late-stage review. Worth contacting Heidrick & Struggles directly given Goldie's profile.",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 4,
+      "id": 31,
       "title": "Managing Director, Southeastern Europe",
       "company": "EBRD - European Bank for Reconstruction and Development",
       "location": "Belgrade, Serbia (Regional Hub)",
@@ -172,10 +826,14 @@ window.APP_DATA = {
       "notes": "More geographic fit needed for SEE specifically, but strong institutional fit with EBRD. Deadline was Jan 7, 2026 — check if still open or use for networking.",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 5,
+      "id": 32,
       "title": "Head of Private Markets / Head of Alternatives",
       "company": "GCM Grosvenor",
       "location": "Chicago, IL or New York, NY, USA",
@@ -192,10 +850,14 @@ window.APP_DATA = {
       "notes": "No specific open role confirmed, but GCM is a strong target given scale and impact capabilities. Goldie should network via GCM's emerging managers program team.",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 6,
+      "id": 33,
       "title": "Managing Director / Partner — Emerging Markets Fund Investments",
       "company": "StepStone Group",
       "location": "New York, NY or Washington, DC, USA",
@@ -212,10 +874,14 @@ window.APP_DATA = {
       "notes": "Strong target. StepStone has been hiring senior EM professionals to serve growing sovereign and institutional client base.",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 7,
+      "id": 34,
       "title": "Managing Director / Senior Director, Emerging Markets or Development Finance",
       "company": "Adams Street Partners",
       "location": "Chicago, IL or Washington, DC",
@@ -232,10 +898,14 @@ window.APP_DATA = {
       "notes": "Adams Street is a tier-1 FoF firm and a natural fit. Proactive networking through existing GP/LP relationships is the best approach.",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 8,
+      "id": 35,
       "title": "Head of Funds / Managing Director, Fund-of-Funds",
       "company": "British International Investment (BII) — UK's DFI",
       "location": "London, United Kingdom",
@@ -252,10 +922,14 @@ window.APP_DATA = {
       "notes": "BII's fund investments team is one of the most active in DFI-backed PE. Strong institutional fit. Work authorization is the key consideration.",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 9,
+      "id": 36,
       "title": "Managing Director, Industry Coverage (Clean Energy Finance)",
       "company": "Crux Climate",
       "location": "Remote, USA (optional offices: Washington DC, New York)",
@@ -272,10 +946,14 @@ window.APP_DATA = {
       "notes": "Crux is backed by a16z, Lowercarbon, Pattern Energy, OMERS. Also has a MD, Tax Investor Coverage role open at same compensation — NOT a fit for Goldie (tax accounting background required).",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 10,
+      "id": 37,
       "title": "Investment Banking Managing Director – Minerals & Mining",
       "company": "Mid-Market Investment Bank (confidential, via Selby Jennings)",
       "location": "Chicago, New York, Los Angeles, or Atlanta/Arlington (flexible)",
@@ -290,10 +968,14 @@ window.APP_DATA = {
       "source_url": "https://www.selbyjennings.com/en-us/job/investment-banking-managing-director-minerals-mining-pr569894_1764029555",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 11,
+      "id": 38,
       "title": "Managing Director / Senior Investment Professional – Critical Minerals Consortium",
       "company": "Orion Resource Partners",
       "location": "New York, NY (with Abu Dhabi and London offices)",
@@ -308,10 +990,14 @@ window.APP_DATA = {
       "source_url": "https://orionrp.com/culture",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 12,
+      "id": 39,
       "title": "Partner / Managing Director – Private Equity (Critical Minerals / Metals & Mining)",
       "company": "Resource Capital Funds (RCF)",
       "location": "Denver, CO; London, UK; Toronto, Canada; Perth, Australia (multiple offices)",
@@ -326,10 +1012,14 @@ window.APP_DATA = {
       "source_url": "https://resourcecapitalfunds.com",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 13,
+      "id": 40,
       "title": "Managing Director – Head of Critical Minerals / Natural Resources Group",
       "company": "JPMorgan Chase – Natural Resources Investment Banking",
       "location": "New York, NY or Houston, TX",
@@ -344,10 +1034,14 @@ window.APP_DATA = {
       "source_url": "https://www.reuters.com/business/finance/jpmorgan-hires-two-investment-bankers-bolster-services-energy-companies-2025-08-21/",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 14,
+      "id": 41,
       "title": "Senior Managing Director / Managing Director – Critical Minerals Advisory",
       "company": "FTI Consulting – Power, Renewables & Energy Transition (PRET) Practice",
       "location": "Washington, DC or New York, NY",
@@ -362,10 +1056,14 @@ window.APP_DATA = {
       "source_url": "https://www.fticonsulting.com/insights/articles/lender-market-maker-us-critical-minerals-playbook",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 15,
+      "id": 42,
       "title": "Global Head / Managing Director – Metals & Mining Investment",
       "company": "IFC Asset Management Company (IFC AMC) – Critical Minerals Focus",
       "location": "Washington, DC",
@@ -380,10 +1078,14 @@ window.APP_DATA = {
       "source_url": "https://appiancapitaladvisory.com/appian-and-ifc-partner-in-new-us1-billion-critical-minerals-and-metals-fund-for-emerging-markets/",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 16,
+      "id": 43,
       "title": "Managing Director / Partner – Critical Minerals & Energy Transition Investments",
       "company": "Valor Mining Credit Partners (Vitol & Breakwall Capital JV)",
       "location": "New York, NY (or Houston, TX)",
@@ -398,10 +1100,14 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/posts/kailash-dhoni-21150278_investmentbanking-manda-metalsandmining-activity-7414360756051320832-fcIo",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 17,
+      "id": 44,
       "title": "Head of Investment / Managing Director – Critical Minerals",
       "company": "US Export-Import Bank (EXIM) – Supply Chain Resiliency Initiative (SCRI)",
       "location": "Washington, DC",
@@ -416,10 +1122,14 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/posts/eximbankus_critical-minerals-critical-moment-activity-7351609936960704513-bt0n",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 18,
+      "id": 45,
       "title": "Managing Director – Governance Studies (Economics / Finance / Policy)",
       "company": "The Brookings Institution",
       "location": "Washington, DC",
@@ -434,10 +1144,14 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/view/managing-director-governance-studies-job-id-2026-3812-at-the-brookings-institution",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 19,
+      "id": 46,
       "title": "Head of Americas / Senior Managing Director – Emerging Markets Fund of Funds",
       "company": "Waterton Global Resource Management",
       "location": "Beverly Hills, CA or Denver, CO",
@@ -452,10 +1166,14 @@ window.APP_DATA = {
       "source_url": "https://www.prnewswire.com/news-releases/g-mining-ventures-secures-bank-credit-facility-and-equipment-financing-to-construct-oko-west-302575613.html",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 20,
+      "id": 47,
       "title": "Managing Director – Emerging Markets / Critical Minerals Private Equity",
       "company": "Maryland State Retirement and Pension System – EDGE Program",
       "location": "Baltimore, MD",
@@ -470,10 +1188,14 @@ window.APP_DATA = {
       "source_url": "https://privateequitycareer.com/maryland-pension-hiring-for-emerging-manager-and-esg-leadership-role/",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 21,
+      "id": 48,
       "title": "Managing Director / Partner — Emerging Markets PE/Infrastructure",
       "company": "Warburg Pincus",
       "location": "New York, NY or Washington, DC",
@@ -490,10 +1212,14 @@ window.APP_DATA = {
       "notes": "High compensation ceiling but highly competitive process. Warburg would value Goldie's government-sector DFI network (DFCs, MDBs) as a deal sourcing advantage.",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 22,
+      "id": 49,
       "title": "Managing Director – Private Investments",
       "company": "Allocate",
       "location": "Palo Alto, CA, USA",
@@ -508,10 +1234,14 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/director-private-equity-jobs",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 23,
+      "id": 50,
       "title": "Head of Investment Advisory & OCIO Solutions",
       "company": "Undisclosed Asset Manager (Warner Scott)",
       "location": "Dubai, UAE",
@@ -526,10 +1256,14 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/view/4371838759",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 24,
+      "id": 51,
       "title": "North America Head of Infrastructure Investments",
       "company": "Mercer",
       "location": "New York, NY, United States",
@@ -544,10 +1278,14 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/view/north-america-head-of-infrastructure-investments-at-mercer-4336895196",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 25,
+      "id": 52,
       "title": "Senior Managing Director - CFO Services (Alternative Assets)",
       "company": "IQ-EQ",
       "location": "New York, NY, United States",
@@ -562,10 +1300,14 @@ window.APP_DATA = {
       "source_url": "https://www.builtinnyc.com/job/senior-managing-director-cfo-services-alternative-assets/8101756",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 26,
+      "id": 53,
       "title": "Managing Director, Managed Services - Private Equity Fund Services",
       "company": "Baker Tilly US",
       "location": "New York, NY or Chicago, IL (flexible)",
@@ -580,10 +1322,14 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/view/managing-director-managed-services-private-equity-fund-services-at-baker-tilly-us-4357811155",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 27,
+      "id": 54,
       "title": "Managing Director, Head of Trust Services",
       "company": "CCM Administrative Services LLC",
       "location": "Reston, VA",
@@ -598,10 +1344,14 @@ window.APP_DATA = {
       "source_url": "https://www.indeed.com/q-managing-director-fund-administration-jobs.html",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 28,
+      "id": 55,
       "title": "Managing Director, Corporate Venture Capital",
       "company": "Western Digital",
       "location": "San Jose, CA, USA",
@@ -616,10 +1366,14 @@ window.APP_DATA = {
       "source_url": "https://builtin.com/job/managing-director-corporate-venture-capital/4762519",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 29,
+      "id": 56,
       "title": "Venture Capital Managing Director/Director - Healthcare/Biosciences",
       "company": "Connecticut Innovations",
       "location": "New Haven, CT, USA",
@@ -634,10 +1388,14 @@ window.APP_DATA = {
       "source_url": "https://www.indeed.com/q-venture-capital-managing-director-jobs.html",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 30,
+      "id": 57,
       "title": "Managing Director, Public Investments",
       "company": "The California Endowment",
       "location": "Oakland, CA",
@@ -652,10 +1410,14 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/view/managing-director-public-investments-at-the-california-endowment-4351982535",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 31,
+      "id": 58,
       "title": "Managing Director / Investment Director, Public Equities",
       "company": "YMCA Retirement Fund",
       "location": "New York, NY (hybrid)",
@@ -670,10 +1432,14 @@ window.APP_DATA = {
       "source_url": "https://www.indeed.com/q-managing-director-investment-endowment-jobs.html",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 32,
+      "id": 59,
       "title": "Head of Investments - Family Office",
       "company": "Confidential (Financial Services/NBFC)",
       "location": "India",
@@ -688,10 +1454,14 @@ window.APP_DATA = {
       "source_url": "https://www.iimjobs.com/j/head-investments-family-office-1668750",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 33,
+      "id": 60,
       "title": "Infrastructure Partners, Managing Director",
       "company": "Blackstone Infrastructure Partners",
       "location": "London, UK",
@@ -706,10 +1476,14 @@ window.APP_DATA = {
       "source_url": "https://blackstone.wd1.myworkdayjobs.com/en-US/BX_External_Site/job/Infrastructure-Partners--Managing-Director_35556",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 34,
+      "id": 61,
       "title": "Head of Investor Relations",
       "company": "World Fund",
       "location": "Berlin, Germany",
@@ -724,10 +1498,14 @@ window.APP_DATA = {
       "source_url": "https://www.worldfund.vc/jobs/head-of-investor-relations",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 35,
+      "id": 62,
       "title": "Head of Investor Relations",
       "company": "Undisclosed VC Firm",
       "location": "Chicago, IL",
@@ -742,10 +1520,14 @@ window.APP_DATA = {
       "source_url": "https://www.selbyjennings.com/en-us/job/head-of-investor-relations-pr534510_1740091251",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 36,
+      "id": 63,
       "title": "Head of Mining - Corporates Division",
       "company": "IDB Invest",
       "region": "North America",
@@ -759,10 +1541,14 @@ window.APP_DATA = {
       "application_url": "https://www.impactpool.org/jobs/1171116",
       "location": "See posting",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 37,
+      "id": 64,
       "title": "Managing Director - Infrastructure Private Equity/Climate/Energy Transition",
       "company": "US Insurance Investment Arm (Madison Hunt)",
       "region": "North America",
@@ -776,10 +1562,14 @@ window.APP_DATA = {
       "application_url": "https://www.terra.do/climate-jobs/job-board/Managing-Director---Infrastructure-Private-Equity--Climate--Energy-Transition---Primaries---Co-Investments-Madison-Hunt-8350138/",
       "location": "See posting",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 38,
+      "id": 65,
       "title": "Managing Director, Social Impact Fund",
       "company": "American Heart Association",
       "region": "North America",
@@ -793,10 +1583,14 @@ window.APP_DATA = {
       "application_url": "https://careers-heart.icims.com/jobs/17177/managing-director,-social-impact-fund/job",
       "location": "Dallas, TX, USA (or hybrid)",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 39,
+      "id": 66,
       "title": "Global Alternative Investments Solutions, Head of Infrastructure Due Diligence",
       "company": "JPMorganChase",
       "region": "North America",
@@ -810,10 +1604,14 @@ window.APP_DATA = {
       "application_url": "https://www.linkedin.com/jobs/view/global-alternative-investments-solutions-head-of-infrastructure-due-diligence-at-jpmorganchase-4336652699",
       "location": "See LinkedIn posting",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 40,
+      "id": 67,
       "title": "Managing Director - Complaints-resolution, Evaluation and Integrity Unit",
       "company": "Asian Infrastructure Investment Bank (AIIB)",
       "region": "Asia-Pacific",
@@ -827,10 +1625,14 @@ window.APP_DATA = {
       "application_url": "https://www.aiib.org/en/opportunities/career/job-vacancies/staff/job-details/Managing-Director-Complaints-resolution-Evaluation-and-Integrity-Unit.html",
       "location": "Beijing, China",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 41,
+      "id": 68,
       "title": "Head of Fund Solutions Group, APAC",
       "company": "Crédit Agricole CIB",
       "region": "Asia-Pacific",
@@ -844,10 +1646,14 @@ window.APP_DATA = {
       "application_url": "https://groupecreditagricole.jobs/en/our-jobs-offer/577-170466-4-head-of-fund-solutions-group-apac-reference--2025-106776--/",
       "location": "Hong Kong / Singapore (APAC)",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 42,
+      "id": 69,
       "title": "Managing Director",
       "company": "Ultimus LeverPoint Private Fund Solutions",
       "region": "North America",
@@ -861,10 +1667,14 @@ window.APP_DATA = {
       "application_url": "https://www.linkedin.com/jobs/view/managing-director-at-ultimus-leverpoint-private-fund-solutions-4352152545",
       "location": "See LinkedIn posting",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 43,
+      "id": 70,
       "title": "SVP, Head of Investments",
       "company": "Wildflower LTD",
       "region": "North America",
@@ -878,10 +1688,14 @@ window.APP_DATA = {
       "application_url": "https://www.linkedin.com/jobs/view/svp-head-of-investments-at-wildflower-ltd-4361012224",
       "location": "See LinkedIn posting",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 44,
+      "id": 71,
       "title": "Investment Principal (Client CIO)",
       "company": "Partners Capital",
       "region": "North America",
@@ -895,10 +1709,14 @@ window.APP_DATA = {
       "application_url": "https://partners-cap.com/careers/investment-principal-senior-principal-new-york/",
       "location": "New York, NY, USA",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 45,
+      "id": 72,
       "title": "Head of Investment Management",
       "company": "PIDG (Private Infrastructure Development Group)",
       "region": "Europe",
@@ -912,10 +1730,14 @@ window.APP_DATA = {
       "application_url": "https://pidg.org/job/head-of-investment-management/",
       "location": "London, UK (or hybrid)",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 46,
+      "id": 73,
       "title": "Head of Investor Relations",
       "company": "Ariel Alternatives",
       "region": "North America",
@@ -929,7 +1751,11 @@ window.APP_DATA = {
       "application_url": "https://job-boards.greenhouse.io/arielalternatives/jobs/6673897003",
       "location": "See posting",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
       "title": "Managing Director, Emerging Managers, Durable Capital & Governance Excellence (EDGE)",
@@ -942,11 +1768,15 @@ window.APP_DATA = {
       "date_posted": "2026-02-13",
       "salary": "$232,143 - $371,429/year",
       "notes": "Filing deadline 2026-02-27, may be re-posted. Found via daily cron 2026-03-11.",
-      "id": 47,
+      "id": 74,
       "application_url": "https://www.jobapscloud.com/MD/sup/bulpreview.asp?b=&R1=26&R2=005013&R3=0001",
       "location": "See posting",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
       "title": "Managing Director, Global Product Management & Investor Relations (Digital Infrastructure)",
@@ -959,11 +1789,15 @@ window.APP_DATA = {
       "date_posted": "2026-03-06",
       "salary": "$275,000 - $300,000 base + bonus",
       "notes": "FINRA Series 7/63/SIE/24 required or within 180 days. Found via daily cron 2026-03-11.",
-      "id": 48,
+      "id": 75,
       "application_url": "https://jobs.niri.org/job/2825/managing-director-global-product-management-and-investor-relations-digital-infrastructure/",
       "location": "See posting",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
       "title": "Managing Director – Infrastructure Investments",
@@ -976,11 +1810,15 @@ window.APP_DATA = {
       "date_posted": "2026-02-11",
       "salary": "",
       "notes": "Zurich-based. Client undisclosed. Found via daily cron 2026-03-11.",
-      "id": 49,
+      "id": 76,
       "application_url": "https://www.selbyjennings.com/en-us/job/managing-director-infrastructure-investments-pr565705_1770832905",
       "location": "Multiple / see posting",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
       "title": "Global Head of Financial Institutions, Corporate Banking Subsidiaries (Managing Director)",
@@ -993,14 +1831,18 @@ window.APP_DATA = {
       "date_posted": "March 2026",
       "salary": "",
       "notes": "New York, NY. Found via daily cron 2026-03-12.",
-      "id": 50,
+      "id": 77,
       "application_url": "https://careers.bankofamerica.com/en-us/job-detail/26003409/global-head-of-financial-institutions-corporate-banking-subsidiaries-new-york-new-york-united-states",
       "location": "See posting",
       "viewed": true,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 51,
+      "id": 78,
       "title": "Managing Director, ESG Division",
       "company": "IDB Invest",
       "location": "Washington, DC, USA",
@@ -1018,10 +1860,14 @@ window.APP_DATA = {
       "industry": "DFI",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 52,
+      "id": 79,
       "title": "Environment, Social & Governance Director",
       "company": "IDB Invest",
       "location": "Washington, DC, USA",
@@ -1039,10 +1885,14 @@ window.APP_DATA = {
       "industry": "DFI",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 53,
+      "id": 80,
       "title": "Director of the Caribbean Region (Infrastructure & Energy)",
       "company": "IDB Invest",
       "location": "Washington DC / Nassau / Bridgetown / Georgetown / Kingston / Paramaribo / Port of Spain",
@@ -1060,10 +1910,14 @@ window.APP_DATA = {
       "industry": "DFI",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 54,
+      "id": 81,
       "title": "Director (Total Fund Strategies)",
       "company": "United Nations Joint Staff Pension Fund (UNJSPF)",
       "location": "New York, NY, USA",
@@ -1081,10 +1935,14 @@ window.APP_DATA = {
       "industry": "Pension Funds",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 55,
+      "id": 82,
       "title": "Director, Investments Department",
       "company": "Islamic Development Bank (IsDB)",
       "location": "Jeddah, Saudi Arabia",
@@ -1102,10 +1960,14 @@ window.APP_DATA = {
       "industry": "DFI",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 56,
+      "id": 83,
       "title": "Managing Director, Infrastructure Asset Management",
       "company": "OMERS Infrastructure",
       "location": "London, United Kingdom",
@@ -1123,10 +1985,14 @@ window.APP_DATA = {
       "industry": "Infrastructure",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 57,
+      "id": 84,
       "title": "Managing Director, Secondaries",
       "company": "Hamilton Lane",
       "location": "Conshohocken, PA, USA (Hybrid)",
@@ -1144,10 +2010,14 @@ window.APP_DATA = {
       "industry": "Fund-of-Funds",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 58,
+      "id": 85,
       "title": "Managing Director of Capital Formation",
       "company": "Confidential Alternative Asset Manager",
       "location": "Miami, FL, USA",
@@ -1165,10 +2035,14 @@ window.APP_DATA = {
       "industry": "Alternatives",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 59,
+      "id": 86,
       "title": "Head of Private Equity Secondaries",
       "company": "Confidential Private Equity Firm",
       "location": "Hong Kong, SAR",
@@ -1186,10 +2060,14 @@ window.APP_DATA = {
       "industry": "Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 60,
+      "id": 87,
       "title": "Managing Director, Private Investments",
       "company": "Cambridge Associates",
       "location": "Boston, MA (preferred) or New York, NY, USA",
@@ -1207,10 +2085,14 @@ window.APP_DATA = {
       "industry": "Investment Consulting",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 61,
+      "id": 88,
       "title": "Managing Director, Head of Private Equity (Fund of Funds)",
       "company": "Confidential Institutional Investor",
       "location": "Greenwich, CT, USA",
@@ -1228,10 +2110,14 @@ window.APP_DATA = {
       "industry": "Fund-of-Funds",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 62,
+      "id": 89,
       "title": "Head of Private Equity (Institutional Fund)",
       "company": "Confidential Institutional Fund",
       "location": "Greenwich, CT, USA",
@@ -1249,10 +2135,14 @@ window.APP_DATA = {
       "industry": "Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 63,
+      "id": 90,
       "title": "Managing Director — Sustainable Finance",
       "company": "Environmental Defense Fund (EDF+Business)",
       "location": "New York, NY, USA (or remote)",
@@ -1270,10 +2160,14 @@ window.APP_DATA = {
       "industry": "Impact/ESG",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 64,
+      "id": 91,
       "title": "Chief Investment Officer (Fixed Income & Investment Portfolios)",
       "company": "African Development Bank Group (AfDB)",
       "location": "Abidjan, Côte d'Ivoire",
@@ -1291,10 +2185,14 @@ window.APP_DATA = {
       "industry": "DFI",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 65,
+      "id": 92,
       "title": "Managing Director — Investor Relations / Business Development",
       "company": "Marathon Asset Management",
       "location": "New York, NY, USA",
@@ -1312,10 +2210,14 @@ window.APP_DATA = {
       "industry": "Alternatives",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 66,
+      "id": 93,
       "title": "Ejecutivo(a) Principal — Gestión de Operaciones, Financiamiento Estructurado y Corporativo, Sector Privado",
       "company": "CAF – Banco de Desarrollo de América Latina y el Caribe",
       "location": "Bogotá, Colombia / Santiago, Chile (hybrid)",
@@ -1333,10 +2235,14 @@ window.APP_DATA = {
       "industry": "DFI",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 67,
+      "id": 94,
       "title": "Head of Funds — Singapore (Fund Administration / Private Markets)",
       "company": "Suntera Global",
       "location": "Singapore",
@@ -1354,10 +2260,14 @@ window.APP_DATA = {
       "industry": "Fund Solutions",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 68,
+      "id": 95,
       "title": "Managing Director, Infrastructure Investments (IB Advisory)",
       "company": "Agentis Capital Advisors",
       "location": "Seattle, WA (Remote)",
@@ -1375,10 +2285,14 @@ window.APP_DATA = {
       "industry": "Infrastructure",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 69,
+      "id": 96,
       "title": "Managing Director — Head of Real Assets and Infrastructure",
       "company": "Wafra",
       "location": "New York, NY, USA",
@@ -1396,10 +2310,14 @@ window.APP_DATA = {
       "industry": "Alternatives",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 70,
+      "id": 97,
       "title": "Managing Director — Renewable Energy Investment Fund",
       "company": "Confidential UK Renewable Energy Fund",
       "location": "United Kingdom",
@@ -1417,10 +2335,14 @@ window.APP_DATA = {
       "industry": "Climate/Clean Energy",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 71,
+      "id": 98,
       "title": "Managing Director, Investor Relations (Biotech/Healthcare)",
       "company": "Precision AQ",
       "location": "New York, NY, USA (hybrid)",
@@ -1438,10 +2360,14 @@ window.APP_DATA = {
       "industry": "Investor Relations",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 72,
+      "id": 99,
       "title": "Managing Director — Head of Investments (Private Equity / FoF)",
       "company": "Generali Asset & Wealth Management",
       "location": "Milan, Italy (remote/hybrid possible)",
@@ -1459,10 +2385,14 @@ window.APP_DATA = {
       "industry": "Insurance",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 73,
+      "id": 100,
       "title": "Senior Managing Director — Infrastructure",
       "company": "Stonepeak",
       "location": "New York, NY, USA (primary)",
@@ -1480,10 +2410,14 @@ window.APP_DATA = {
       "industry": "Infrastructure",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 74,
+      "id": 101,
       "title": "Director / Managing Director — Private Equity Fund Investments (LatAm)",
       "company": "Confidential Latin American Private Equity Firm",
       "location": "Miami, FL / Mexico City / Bogotá, Colombia",
@@ -1501,10 +2435,14 @@ window.APP_DATA = {
       "industry": "Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 75,
+      "id": 102,
       "title": "Managing Director — Investment Consulting / Alternatives Advisory",
       "company": "bfinance",
       "location": "London, UK",
@@ -1522,10 +2460,14 @@ window.APP_DATA = {
       "industry": "Investment Consulting",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 76,
+      "id": 103,
       "title": "Head of Real Assets — Alternatives Investments",
       "company": "New Jersey Division of Investment",
       "location": "Trenton, NJ, USA",
@@ -1543,10 +2485,14 @@ window.APP_DATA = {
       "industry": "Pension Funds",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 77,
+      "id": 104,
       "title": "Managing Director / Head of Private Equity & Infrastructure (Insurance Portfolio)",
       "company": "Allstate Investments",
       "location": "Chicago, IL / London, UK",
@@ -1564,10 +2510,14 @@ window.APP_DATA = {
       "industry": "Insurance",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 78,
+      "id": 105,
       "title": "Managing Director, Private Investments",
       "company": "Robert Wood Johnson Foundation",
       "location": "Princeton, NJ, USA",
@@ -1585,10 +2535,14 @@ window.APP_DATA = {
       "industry": "Foundations",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 79,
+      "id": 106,
       "title": "Managing Director, Private Equity / COO Private Investments",
       "company": "Northwestern Mutual",
       "location": "Milwaukee, WI / Chicago, IL, USA",
@@ -1606,10 +2560,14 @@ window.APP_DATA = {
       "industry": "Insurance",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 80,
+      "id": 107,
       "title": "Director / Managing Director — Infrastructure Private Equity (Africa Focus)",
       "company": "African Infrastructure Investment Managers (AIIM)",
       "location": "Cape Town / Johannesburg / Nairobi / Lagos, South Africa/Kenya/Nigeria",
@@ -1627,10 +2585,14 @@ window.APP_DATA = {
       "industry": "Infrastructure",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 81,
+      "id": 108,
       "title": "Managing Director, Head of Private Equity — MCP Asset Management",
       "company": "MCP Asset Management",
       "location": "Tokyo, Japan",
@@ -1648,10 +2610,14 @@ window.APP_DATA = {
       "industry": "Fund-of-Funds",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 82,
+      "id": 109,
       "title": "Head of Investor Relations — Private Equity Secondaries",
       "company": "Aqualis Partners",
       "location": "Darien, CT, USA",
@@ -1669,10 +2635,14 @@ window.APP_DATA = {
       "industry": "Fund-of-Funds",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 83,
+      "id": 110,
       "title": "Chief Investment Officer / SVP Investments — Pension Fund / Large Institutional",
       "company": "State of Wyoming Investment Board",
       "location": "Cheyenne, WY, USA",
@@ -1690,10 +2660,14 @@ window.APP_DATA = {
       "industry": "Pension Funds",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 84,
+      "id": 111,
       "title": "Managing Director, Head of Investment Solutions",
       "company": "iCapital",
       "location": "London, UK (EMEA)",
@@ -1711,10 +2685,14 @@ window.APP_DATA = {
       "industry": "Alternatives",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 85,
+      "id": 112,
       "title": "Managing Director / Global Head of Private Markets",
       "company": "Skandia Mutual Life Insurance",
       "location": "Stockholm, Sweden",
@@ -1732,10 +2710,14 @@ window.APP_DATA = {
       "industry": "Insurance",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 86,
+      "id": 113,
       "title": "Managing Director, Infrastructure (Digital Infrastructure & Energy Transition)",
       "company": "Legal & General (L&G)",
       "location": "London, UK",
@@ -1753,10 +2735,14 @@ window.APP_DATA = {
       "industry": "Infrastructure",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 87,
+      "id": 114,
       "title": "Managing Director, Real Assets / Infrastructure Platform Specialist",
       "company": "Hamilton Lane",
       "location": "Philadelphia metro / Hybrid (est.)",
@@ -1774,10 +2760,14 @@ window.APP_DATA = {
       "industry": "Private Markets / Real Assets / Infrastructure",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 88,
+      "id": 115,
       "title": "BXG, Managing Director (Blackstone Growth)",
       "company": "Blackstone",
       "location": "San Francisco, CA or New York, NY",
@@ -1795,10 +2785,14 @@ window.APP_DATA = {
       "industry": "Private Equity / Growth Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 89,
+      "id": 116,
       "title": "Managing Director — Leveraged Finance: Private Equity Coverage (Business & Relationship Management)",
       "company": "Fitch Ratings",
       "location": "New York, NY (Hybrid)",
@@ -1816,10 +2810,14 @@ window.APP_DATA = {
       "industry": "Financial Services / Leveraged Finance / Private Equity Coverage",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 90,
+      "id": 117,
       "title": "Senior Vice President / Managing Director — Sourcing and Origination (Credit Strategies)",
       "company": "Oaktree Capital Management",
       "location": "Los Angeles, CA or New York, NY",
@@ -1837,10 +2835,14 @@ window.APP_DATA = {
       "industry": "Alternative Investments / Private Credit",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 91,
+      "id": 118,
       "title": "Asset Management — Investment Specialist, Private Markets — Managing Director",
       "company": "JPMorganChase (J.P. Morgan Asset Management)",
       "location": "New York, NY",
@@ -1858,10 +2860,14 @@ window.APP_DATA = {
       "industry": "Asset Management / Private Markets",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 92,
+      "id": 119,
       "title": "Managing Director, Equity Product Specialist (Institutional, EMEA)",
       "company": "Apollo Global Management",
       "location": "London, United Kingdom",
@@ -1879,10 +2885,14 @@ window.APP_DATA = {
       "industry": "Alternative Investments / Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 93,
+      "id": 120,
       "title": "Sr. Managing Director — Wealth Management, Greenwich Office",
       "company": "Northern Trust",
       "location": "Greenwich, CT",
@@ -1900,10 +2910,14 @@ window.APP_DATA = {
       "industry": "Wealth Management / Alternative Investments / Family Office",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 94,
+      "id": 121,
       "title": "Principal or Managing Director — Leveraged Buyout Deal Leader",
       "company": "Salt Creek Capital",
       "location": "Remote / U.S.-based (Flexible)",
@@ -1921,10 +2935,14 @@ window.APP_DATA = {
       "industry": "Private Equity / Lower Mid-Market Buyout",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 95,
+      "id": 122,
       "title": "Managing Director — Private Equity (Confidential Alt Asset Manager)",
       "company": "Confidential Alternative Asset Manager (via Selby Jennings)",
       "location": "Miami, FL",
@@ -1942,10 +2960,14 @@ window.APP_DATA = {
       "industry": "Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 96,
+      "id": 123,
       "title": "Managing Director — Middle-Market Private Equity Firm (Confidential)",
       "company": "Confidential Middle-Market PE Firm (via JRG Partners)",
       "location": "New York, NY",
@@ -1963,10 +2985,14 @@ window.APP_DATA = {
       "industry": "Private Equity / Middle-Market Buyout",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 97,
+      "id": 124,
       "title": "Managing Director, Private Clients (French Language) — Investment Manager Selection",
       "company": "Undisclosed Multi-Asset Investment Manager",
       "location": "London, United Kingdom",
@@ -1984,10 +3010,14 @@ window.APP_DATA = {
       "industry": "Asset Management / Alternative Investments / Multi-Asset",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 98,
+      "id": 125,
       "title": "Director / Managing Director, Investments (VC / PE)",
       "company": "Undisclosed Singapore VC/PE Fund",
       "location": "Singapore",
@@ -2005,10 +3035,14 @@ window.APP_DATA = {
       "industry": "Venture Capital / Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 99,
+      "id": 126,
       "title": "SVP / Managing Director — Real Estate Debt Origination",
       "company": "Oaktree Capital Management",
       "location": "New York, NY (primary) or Los Angeles, CA",
@@ -2026,10 +3060,14 @@ window.APP_DATA = {
       "industry": "Alternative Investments / Real Assets / Real Estate Debt",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 100,
+      "id": 127,
       "title": "U.S. Private Bank — Head of Investments and Advice — Managing Director",
       "company": "JPMorganChase (J.P. Morgan Private Bank)",
       "location": "Multiple U.S. Markets (varies by opening)",
@@ -2047,10 +3085,14 @@ window.APP_DATA = {
       "industry": "Private Banking / Alternative Investments / Wealth Management",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 101,
+      "id": 128,
       "title": "Head of Alternative Investment Strategy and Market Intelligence — Managing Director",
       "company": "JPMorganChase (Alternative Investments Group, Wealth Management)",
       "location": "New York, NY",
@@ -2068,10 +3110,14 @@ window.APP_DATA = {
       "industry": "Alternative Investments / Wealth Management / Research",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 102,
+      "id": 129,
       "title": "Managing Director — Capital Raising & Investor Relations (Real Estate PE)",
       "company": "Undisclosed Real Estate Private Equity Fund (via Gresham Hunt)",
       "location": "New York, NY Area",
@@ -2089,10 +3135,14 @@ window.APP_DATA = {
       "industry": "Real Estate Private Equity / Capital Formation",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 103,
+      "id": 130,
       "title": "Managing Director — Insurance / Investment Banking (Aon Securities)",
       "company": "Aon",
       "location": "New York, NY (Hybrid, 3 days/week in office)",
@@ -2110,10 +3160,14 @@ window.APP_DATA = {
       "industry": "Insurance / Structured Finance / Alternative Capital / Investment Banking",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 104,
+      "id": 131,
       "title": "Head of Alternatives & Private Markets Technology — Senior Vice President",
       "company": "State Street Corporation",
       "location": "Princeton, NJ (Onsite Required — NJ/MA)",
@@ -2131,10 +3185,14 @@ window.APP_DATA = {
       "industry": "Financial Services / Alternative Investment Services Technology",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 105,
+      "id": 132,
       "title": "Chief Investment Officer — University Endowment",
       "company": "Confidential Prestigious University Endowment (via JRG Partners)",
       "location": "Philadelphia, PA",
@@ -2152,10 +3210,14 @@ window.APP_DATA = {
       "industry": "Endowment / Institutional Investing / Private Markets",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 106,
+      "id": 133,
       "title": "Head of Private Equity Investments — Institutional Fund",
       "company": "Confidential Institutional Fund (via Goldsmith & Co)",
       "location": "United States (est.)",
@@ -2173,10 +3235,14 @@ window.APP_DATA = {
       "industry": "Private Equity / Institutional Investing",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 107,
+      "id": 134,
       "title": "Managing Director / CIO - Infrastructure (USA)",
       "company": "Confidential Infrastructure Fund (via Infra-Be / InforCapital)",
       "location": "United States (National)",
@@ -2194,10 +3260,14 @@ window.APP_DATA = {
       "industry": "Infrastructure Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 108,
+      "id": 135,
       "title": "CEO - Infrastructure Investment",
       "company": "Confidential Infrastructure Fund (via Infra-Be / InforCapital)",
       "location": "New York, USA",
@@ -2215,10 +3285,14 @@ window.APP_DATA = {
       "industry": "Infrastructure Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 109,
+      "id": 136,
       "title": "Head of Infrastructure Investments (North America)",
       "company": "Mercer (Marsh McLennan)",
       "location": "Philadelphia, PA (hybrid, Central or Eastern time zone)",
@@ -2236,10 +3310,14 @@ window.APP_DATA = {
       "industry": "Infrastructure Investment / OCIO / Advisory",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 110,
+      "id": 137,
       "title": "Managing Director, Community Development Investment Group",
       "company": "NY Green Bank (a division of NYSERDA)",
       "location": "New York City, NY (10–20% travel)",
@@ -2257,10 +3335,14 @@ window.APP_DATA = {
       "industry": "Green / Climate Finance / Community Development Finance",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 111,
+      "id": 138,
       "title": "Vice President, Catalytic Finance",
       "company": "The Rockefeller Foundation",
       "location": "New York, NY (hybrid, 4 days/week in office)",
@@ -2278,10 +3360,14 @@ window.APP_DATA = {
       "industry": "Blended Finance / Catalytic Capital / Development Finance (Philanthropy)",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 112,
+      "id": 139,
       "title": "Managing Director, Energy & Infrastructure",
       "company": "Pioneer Management Consulting",
       "location": "Minneapolis, MN (hybrid)",
@@ -2299,10 +3385,14 @@ window.APP_DATA = {
       "industry": "Energy & Infrastructure Consulting / Advisory",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 113,
+      "id": 140,
       "title": "Head of Climate Mitigation Project Finance Advisory",
       "company": "SPONSOR (confidential climate-focused organization — remote/global)",
       "location": "Remote / Global (Luxembourg-based listing)",
@@ -2320,10 +3410,14 @@ window.APP_DATA = {
       "industry": "Climate Finance / Project Finance Advisory",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 114,
+      "id": 141,
       "title": "Managing Director – Digital & Energy Infrastructure Capital Formation",
       "company": "Tradesk Securities, Inc.",
       "location": "Short Hills, NJ (SEC-registered broker-dealer)",
@@ -2341,10 +3435,14 @@ window.APP_DATA = {
       "industry": "Infrastructure / Energy Transition / Capital Markets (Mid-Market)",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 115,
+      "id": 142,
       "title": "Director of Corporate Strategy (IFC)",
       "company": "International Finance Corporation (IFC) / World Bank Group",
       "location": "Washington, DC, USA",
@@ -2362,10 +3460,14 @@ window.APP_DATA = {
       "industry": "DFI / Multilateral Strategy",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 116,
+      "id": 143,
       "title": "Managing Director, Sustainability Partnerships & Projects",
       "company": "CBRE Group",
       "location": "Global (CBRE HQ / multiple locations)",
@@ -2383,10 +3485,14 @@ window.APP_DATA = {
       "industry": "Real Estate / Sustainability / Infrastructure Services",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 117,
+      "id": 144,
       "title": "Managing Director, Renewable Energy Investments",
       "company": "Confidential PE-backed Renewable Energy Power Company (via Joe Amara Executive Search)",
       "location": "United States (specific city not disclosed)",
@@ -2404,10 +3510,14 @@ window.APP_DATA = {
       "industry": "Renewable Energy / Infrastructure / Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 118,
+      "id": 145,
       "title": "Co-Founding General Partner – Impact Fund (Emerging Markets / Blended Finance)",
       "company": "Climate Action Partners",
       "location": "Remote / Global (emerging markets focus)",
@@ -2425,10 +3535,14 @@ window.APP_DATA = {
       "industry": "Impact / Climate / DFI-Adjacent (Blended Finance)",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 119,
+      "id": 146,
       "title": "Chief Investment Officer (CIO) — Sovereign Wealth Fund",
       "company": "Confidential Sovereign Wealth Fund, Abu Dhabi (via JRG Partners)",
       "location": "Abu Dhabi, UAE",
@@ -2446,10 +3560,14 @@ window.APP_DATA = {
       "industry": "Sovereign Wealth Fund",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 120,
+      "id": 147,
       "title": "Managing Director, Dynamic Asset Allocation",
       "company": "Maryland State Retirement and Pension System (MSRPS)",
       "location": "Baltimore, Maryland, USA",
@@ -2467,10 +3585,14 @@ window.APP_DATA = {
       "industry": "Pension Fund",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 121,
+      "id": 148,
       "title": "Chief Investment Officer (CIO) — Pension Fund",
       "company": "Confidential Leading Pension Fund, Sacramento, CA (via JRG Partners)",
       "location": "Sacramento, California, USA",
@@ -2488,10 +3610,14 @@ window.APP_DATA = {
       "industry": "Pension Fund",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 122,
+      "id": 149,
       "title": "Head of OCIO Insurance — Global Investment Office, Executive Director",
       "company": "Morgan Stanley",
       "location": "New York, NY, USA",
@@ -2509,10 +3635,14 @@ window.APP_DATA = {
       "industry": "Insurance Asset Management / Investment Consulting (OCIO)",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 123,
+      "id": 150,
       "title": "Managing Director, Head of Investment Strategy",
       "company": "New York Life Insurance Company",
       "location": "New York, NY, USA",
@@ -2530,10 +3660,14 @@ window.APP_DATA = {
       "industry": "Insurance Investment Arm",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 124,
+      "id": 151,
       "title": "US Chief Investment Officer",
       "company": "Mercer (Marsh McLennan)",
       "location": "Boston, MA, USA (major Mercer US office)",
@@ -2551,10 +3685,14 @@ window.APP_DATA = {
       "industry": "Investment Consulting / OCIO",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 125,
+      "id": 152,
       "title": "Chief Investment Officer (CIO) — Single Family Office",
       "company": "Confidential Prominent Single-Family Office, Greenwich, CT (via JRG Partners)",
       "location": "Greenwich, Connecticut, USA",
@@ -2572,10 +3710,14 @@ window.APP_DATA = {
       "industry": "Family Office",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 126,
+      "id": 153,
       "title": "Managing Director, Investment Strategy — Family Office (Pitcairn)",
       "company": "Pitcairn",
       "location": "USA (Primary: Pennsylvania/Mid-Atlantic)",
@@ -2593,10 +3735,14 @@ window.APP_DATA = {
       "industry": "Family Office / Investment Consulting",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 127,
+      "id": 154,
       "title": "Managing Director, Private Client — Investment Manager Selection",
       "company": "Cambridge Associates LLC",
       "location": "Boston, MA, USA (Boston preferred; New York considered)",
@@ -2614,10 +3760,14 @@ window.APP_DATA = {
       "industry": "Investment Consulting / Family Office Advisory",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 128,
+      "id": 155,
       "title": "Director, Americas OCIO Client Business — Sales & Relationship Management",
       "company": "BlackRock",
       "location": "New York, NY, USA",
@@ -2635,10 +3785,14 @@ window.APP_DATA = {
       "industry": "Investment Consulting / OCIO",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 129,
+      "id": 156,
       "title": "Head of Investment Operations — Consolidated Endowment Fund",
       "company": "University of Pittsburgh — Investment Office",
       "location": "Pittsburgh, Pennsylvania, USA (Hybrid)",
@@ -2656,10 +3810,14 @@ window.APP_DATA = {
       "industry": "Endowment",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 130,
+      "id": 157,
       "title": "Managing Director, Investor Relations",
       "company": "National Real Estate Advisors",
       "location": "Washington, DC, USA (Hybrid)",
@@ -2677,10 +3835,14 @@ window.APP_DATA = {
       "industry": "Investor Relations",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 131,
+      "id": 158,
       "title": "Director/Managing Director — Fund Administration (Private Equity)",
       "company": "Confidential Fund Administration Firm (via The FEAT)",
       "location": "Dallas Area, USA (Hybrid/Remote with occasional in-person)",
@@ -2698,10 +3860,14 @@ window.APP_DATA = {
       "industry": "Fund Solutions / Fund Administration",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 132,
+      "id": 159,
       "title": "Managing Director — Fund Administration",
       "company": "Gen II Fund Services (leading tech-enabled PE fund administrator)",
       "location": "New York, NY, USA (or major office; hybrid)",
@@ -2719,10 +3885,14 @@ window.APP_DATA = {
       "industry": "Fund Solutions / Fund Administration",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 133,
+      "id": 160,
       "title": "Institutional Product Manager — OCIO Investment Team, Executive Director",
       "company": "Morgan Stanley",
       "location": "New York, NY, USA (and Westchester County, NY)",
@@ -2740,10 +3910,14 @@ window.APP_DATA = {
       "industry": "Investment Consulting / Due Diligence",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 134,
+      "id": 161,
       "title": "Chief Investment Officer — Pension Fund",
       "company": "City of San José Retirement Systems (Office of Retirement Services)",
       "location": "San José, California, USA",
@@ -2761,10 +3935,14 @@ window.APP_DATA = {
       "industry": "Pension Fund",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 135,
+      "id": 162,
       "title": "Head of Structured Finance Investor Relations",
       "company": "KBRA (Kroll Bond Rating Agency)",
       "location": "New York, NY, USA",
@@ -2782,10 +3960,14 @@ window.APP_DATA = {
       "industry": "Investor Relations",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 136,
+      "id": 163,
       "title": "Managing Director, Head of Investment Strategy — Insurance OCIO",
       "company": "Confidential Insurance Asset Manager / OCIO (via indeed search)",
       "location": "New York, NY, USA",
@@ -2803,10 +3985,14 @@ window.APP_DATA = {
       "industry": "Insurance Asset Management",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 137,
+      "id": 164,
       "title": "Managing Director, Investment Director — Public Equities",
       "company": "Confidential Institutional Endowment/Foundation (via JRG Partners or similar)",
       "location": "USA (specific location TBD)",
@@ -2824,10 +4010,14 @@ window.APP_DATA = {
       "industry": "Endowment / Pension",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 138,
+      "id": 165,
       "title": "Managing Director, Investor Relations — Infrastructure Fund",
       "company": "Confidential Infrastructure Investment Fund (via LinkedIn, active listing)",
       "location": "USA (New York or DC region likely)",
@@ -2845,10 +4035,14 @@ window.APP_DATA = {
       "industry": "Investor Relations",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 139,
+      "id": 166,
       "title": "Market Risk Management Director",
       "company": "IDB Invest (Inter-American Development Bank Group)",
       "location": "Washington, DC, USA",
@@ -2866,10 +4060,14 @@ window.APP_DATA = {
       "industry": "Multilateral Development Finance / Risk Management",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 140,
+      "id": 167,
       "title": "Head of Shareholders Relations – Latin America",
       "company": "Patria Investments",
       "location": "São Paulo, Brazil",
@@ -2887,10 +4085,14 @@ window.APP_DATA = {
       "industry": "Alternative Asset Management / Investor Relations",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 141,
+      "id": 168,
       "title": "Managing Director / Head of Leumi Partners (Investment Banking)",
       "company": "Leumi Partners (Bank Leumi Group)",
       "location": "Tel Aviv, Israel",
@@ -2908,10 +4110,14 @@ window.APP_DATA = {
       "industry": "Investment Banking / Merchant Banking / Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 142,
+      "id": 169,
       "title": "Head of International Institutional Investors / Managing Director – Global LP Relations",
       "company": "Viola Credit / Viola Group",
       "location": "Tel Aviv, Israel (with international travel)",
@@ -2929,10 +4135,14 @@ window.APP_DATA = {
       "industry": "Venture Capital / Private Credit / Technology Investments",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 143,
+      "id": 170,
       "title": "Chief Investment Officer / Head of Investment Division",
       "company": "Phoenix Financial (Phoenix Insurance)",
       "location": "Tel Aviv, Israel",
@@ -2950,10 +4160,14 @@ window.APP_DATA = {
       "industry": "Insurance / Asset Management",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 144,
+      "id": 171,
       "title": "Head of International Investments / Managing Director – Global Private Markets",
       "company": "Migdal Insurance Company",
       "location": "Tel Aviv, Israel",
@@ -2971,10 +4185,14 @@ window.APP_DATA = {
       "industry": "Insurance / Institutional Asset Management",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 145,
+      "id": 172,
       "title": "Partner / Managing Director – Private Equity (Israel Mid-Market)",
       "company": "FIMI Opportunity Funds",
       "location": "Tel Aviv, Israel",
@@ -2992,10 +4210,14 @@ window.APP_DATA = {
       "industry": "Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 146,
+      "id": 173,
       "title": "Head of Investor Relations / Managing Director – Capital Partnerships",
       "company": "Pitango Venture Capital",
       "location": "Tel Aviv / Herzliya, Israel",
@@ -3013,10 +4235,14 @@ window.APP_DATA = {
       "industry": "Venture Capital / Technology",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 147,
+      "id": 174,
       "title": "Director / Head of Investment Program – Latin America & Caribbean",
       "company": "Mesoamerica Investments",
       "location": "San José, Costa Rica or Bogotá, Colombia",
@@ -3034,10 +4260,14 @@ window.APP_DATA = {
       "industry": "Private Equity / M&A Advisory / Central America & Andes",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 148,
+      "id": 175,
       "title": "Managing Director / Head of LatAm Investments",
       "company": "Advent International – Latin America",
       "location": "São Paulo, Brazil or Bogotá, Colombia or Mexico City, Mexico",
@@ -3055,10 +4285,14 @@ window.APP_DATA = {
       "industry": "Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 149,
+      "id": 176,
       "title": "Managing Director – Energy Infrastructure (Latin America)",
       "company": "Actis",
       "location": "São Paulo, Brazil or Bogotá, Colombia",
@@ -3076,10 +4310,14 @@ window.APP_DATA = {
       "industry": "Infrastructure Private Equity / Energy",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 150,
+      "id": 177,
       "title": "Head of International Alternatives / Managing Director – Global Allocation",
       "company": "Menora Mivtachim Group",
       "location": "Tel Aviv, Israel",
@@ -3097,10 +4335,14 @@ window.APP_DATA = {
       "industry": "Insurance / Pension / Institutional Asset Management",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 151,
+      "id": 178,
       "title": "Head of International Institutional Sales / Managing Director – Investor Relations",
       "company": "Altshuler Shaham Investment House",
       "location": "Tel Aviv, Israel",
@@ -3118,10 +4360,14 @@ window.APP_DATA = {
       "industry": "Investment Management / Pension / Mutual Funds",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 152,
+      "id": 179,
       "title": "Managing Director / Head of LatAm – Infrastructure & Real Assets",
       "company": "Vinci Compass (formerly Vinci Partners)",
       "location": "São Paulo, Brazil or New York, USA",
@@ -3139,10 +4385,14 @@ window.APP_DATA = {
       "industry": "Alternative Asset Management / Infrastructure / Real Assets",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 153,
+      "id": 180,
       "title": "Head of Development Finance Partnerships / Director – International LP Relations",
       "company": "JVP (Jerusalem Venture Partners)",
       "location": "Jerusalem or Tel Aviv, Israel (with NY office)",
@@ -3160,10 +4410,14 @@ window.APP_DATA = {
       "industry": "Venture Capital / Technology / Cybersecurity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 154,
+      "id": 181,
       "title": "Managing Director / Senior Partner – LatAm Credit and Structured Finance",
       "company": "BTG Pactual",
       "location": "São Paulo, Brazil or New York, USA",
@@ -3181,10 +4435,14 @@ window.APP_DATA = {
       "industry": "Investment Banking / Asset Management / Private Credit",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 155,
+      "id": 182,
       "title": "Senior Director / Managing Director – Investment Strategy & Capital Markets",
       "company": "Meitav Investment House",
       "location": "Tel Aviv, Israel",
@@ -3202,10 +4460,14 @@ window.APP_DATA = {
       "industry": "Investment Management / Capital Markets / Pension",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 156,
+      "id": 183,
       "title": "Director / Managing Director – Sustainable Finance & Green Investment",
       "company": "NAFIN (Nacional Financiera)",
       "location": "Mexico City, Mexico",
@@ -3223,10 +4485,14 @@ window.APP_DATA = {
       "industry": "Development Banking / Green Finance",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 157,
+      "id": 184,
       "title": "Director / Head of Investor Relations – Latin America Alternatives",
       "company": "ACON Investments",
       "location": "Washington, DC or Miami, FL (LatAm focus)",
@@ -3244,10 +4510,14 @@ window.APP_DATA = {
       "industry": "Private Equity / Latin America Mid-Market",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 158,
+      "id": 185,
       "title": "Director / Head of ESG & Impact Investments",
       "company": "Clal Insurance & Finance",
       "location": "Tel Aviv, Israel",
@@ -3265,10 +4535,14 @@ window.APP_DATA = {
       "industry": "Insurance / Institutional Asset Management / ESG",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 159,
+      "id": 186,
       "title": "Head of Private Markets Investments / Managing Director",
       "company": "Credicorp Capital",
       "location": "Lima, Peru or Santiago, Chile or Bogotá, Colombia",
@@ -3286,10 +4560,14 @@ window.APP_DATA = {
       "industry": "Investment Banking / Asset Management / Wealth Management",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 160,
+      "id": 187,
       "title": "Managing Director / Senior Partner – Latin America Private Equity",
       "company": "Linzor Capital Partners",
       "location": "Santiago, Chile or São Paulo, Brazil",
@@ -3307,10 +4585,14 @@ window.APP_DATA = {
       "industry": "Private Equity / Latin America Mid-Market",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-23"
+      "last_scan_date": "2026-04-23",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 161,
+      "id": 188,
       "title": "Chief Information Officer (CIO) / Director, Information and Communications Technology (ICT) (D)",
       "company": "International Organization for Migration (IOM)",
       "location": "Geneva, Switzerland",
@@ -3325,10 +4607,14 @@ window.APP_DATA = {
       "viewed": false,
       "last_scan_date": "2026-04-23",
       "source_url": "IOM e-Recruitment (Oracle)",
-      "region": "Europe"
+      "region": "Europe",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 162,
+      "id": 189,
       "title": "IFC Regional Industry Director, Infrastructure & Natural Resources — Africa (N/W/C)",
       "company": "IFC (International Finance Corporation) — World Bank Group",
       "location": "Lagos, Nigeria (or to be confirmed — N/W/C Africa region)",
@@ -3346,10 +4632,14 @@ window.APP_DATA = {
       "notes": "Deadline passed February 11, 2026. May be in review stage. Contact Korn Ferry or IFC HR directly. A second similar role for East/Southern Africa also posted on ImpactPool (https://www.impactpool.org/jobs/1192812).",
       "date_added": "2026-03-06",
       "industry": "Development Finance / Infrastructure",
-      "viewed": false
+      "viewed": false,
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 163,
+      "id": 190,
       "title": "Director, Economic Research and Development Impact",
       "company": "Asian Development Bank (ADB)",
       "region": "Asia-Pacific",
@@ -3363,7 +4653,11 @@ window.APP_DATA = {
       "date_added": "2026-03-06",
       "date_posted_normalized": "2026-01-15",
       "viewed": false,
-      "location": "TBD"
+      "location": "TBD",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
       "title": "Director, Development Impact Intelligence",
@@ -3377,11 +4671,15 @@ window.APP_DATA = {
       "salary": "",
       "salary_range": "IDB Invest Director grade; estimated $230,000-$320,000 + IDB benefits",
       "notes": "PROTECTED: Director at IDB Invest = MD equivalent. Posting closes 4/28/2026. Washington DC.",
-      "id": 164,
+      "id": 191,
       "date_added": "2026-04-15",
       "date_posted_normalized": "2026-04-01",
       "viewed": false,
-      "location": "TBD"
+      "location": "TBD",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
       "title": "Director of Strategic Mineral Investments",
@@ -3395,10 +4693,14 @@ window.APP_DATA = {
       "salary": "$112,398 - $126,594/year",
       "salary_range": "$112,398 - $126,594 CAD/year (Pay Band 8)",
       "notes": "Fredericton, NB, Canada. Deadline April 24, 2026. Government role. Found via daily cron 2026-04-14.",
-      "id": 165,
+      "id": 192,
       "date_added": "2026-04-15",
       "viewed": false,
-      "location": "TBD"
+      "location": "TBD",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
       "title": "Director, Capital Markets & Structured Finance",
@@ -3412,14 +4714,18 @@ window.APP_DATA = {
       "salary": "",
       "salary_range": "IDB Invest Director grade; estimated $230,000-$320,000 + IDB benefits",
       "notes": "PROTECTED: Director at IDB Invest = MD equivalent. Posting deadline was 4/10/2026 — may still be open. Washington DC.",
-      "id": 166,
+      "id": 193,
       "date_added": "2026-04-15",
       "date_posted_normalized": "2026-04-01",
       "viewed": false,
-      "location": "TBD"
+      "location": "TBD",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 167,
+      "id": 194,
       "title": "Principal I, Blended Finance",
       "company": "EBRD (European Bank for Reconstruction and Development)",
       "region": "Europe",
@@ -3432,10 +4738,14 @@ window.APP_DATA = {
       "salary": "Not listed",
       "notes": "Fixed Term 2 years. Deadline: April 28, 2026. Division: Policy and Partnerships. Also listed at https://www.eurobrussels.com/job_display/289765. EBRD Principal I is MD-equivalent at DFIs. PROTECTED — DFI/multilateral organization.",
       "viewed": false,
-      "location": "TBD"
+      "location": "TBD",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 168,
+      "id": 195,
       "title": "Head, Global Infrastructure Facility (GIF)",
       "company": "World Bank Group",
       "region": "North America",
@@ -3448,10 +4758,14 @@ window.APP_DATA = {
       "salary": "Not listed (Grade GH — senior executive band)",
       "notes": "Term: 3 years, renewable. Deadline: April 16, 2026 — URGENT. Also listed on ImpactPool: https://www.impactpool.org/jobs/1206897. Grade GH is the highest executive tier at the World Bank. PROTECTED — DFI/multilateral organization.",
       "viewed": false,
-      "location": "TBD"
+      "location": "TBD",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 169,
+      "id": 196,
       "title": "Managing Investment Director, Global Fixed Income",
       "company": "CalPERS (California Public Employees' Retirement System)",
       "region": "North America",
@@ -3464,10 +4778,14 @@ window.APP_DATA = {
       "salary": "$25,750–$42,916/month base + annual incentive 0–165% + long-term incentive 0–165% after 5 years",
       "notes": "Open until filled. Also on LinkedIn: https://www.linkedin.com/jobs/view/global-fixed-income-managing-investment-director-at-calpers-4372129649. CalPERS is NOT in the exclusion list.",
       "viewed": false,
-      "location": "TBD"
+      "location": "TBD",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 170,
+      "id": 197,
       "title": "Senior Investment Officer, Multi-Sector (Infrastructure)",
       "company": "Asian Infrastructure Investment Bank (AIIB)",
       "region": "Asia-Pacific",
@@ -3480,10 +4798,14 @@ window.APP_DATA = {
       "salary": "Not listed",
       "notes": "Closing date unclear — verify on AIIB site before applying. Listed as open as of early April 2026. Requires 8–10+ years relevant experience. Beijing location may be a constraint for Goldie. PROTECTED — DFI/multilateral organization.",
       "viewed": false,
-      "location": "TBD"
+      "location": "TBD",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 171,
+      "id": 198,
       "title": "Director, Infrastructure and Project Management Group",
       "company": "UNOPS (United Nations Office for Project Services)",
       "region": "Europe",
@@ -3496,10 +4818,14 @@ window.APP_DATA = {
       "salary": "Not listed (UN D-2 band — approximately $130,000–$170,000 USD net of tax equivalent, plus UN benefits)",
       "notes": "Deadline: April 26, 2026. Contract: 2 years initially, renewable. This is an executive-level (D-2) UN position — equivalent to MD at a DFI. Application must be received before midnight Copenhagen time on April 26. PROTECTED — DFI/multilateral organization.",
       "viewed": false,
-      "location": "TBD"
+      "location": "TBD",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 172,
+      "id": 199,
       "title": "Managing Director / Head of USA",
       "company": "Confidential Global Renewable Energy Infrastructure Fund (search via InforCapital / Infra-Be Jobs)",
       "region": "North America",
@@ -3512,10 +4838,14 @@ window.APP_DATA = {
       "salary": "Up to USD 350,000 plus bonus and LTIP",
       "notes": "No stated deadline — apply promptly. Confidential firm. Salary up to $350K + bonus + LTIP. Requires minimum 8 years developing solar/storage/renewable energy projects. Original posting redirects to Infra-Be Jobs platform.",
       "viewed": false,
-      "location": "TBD"
+      "location": "TBD",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 173,
+      "id": 200,
       "title": "Regional Industry Manager, INR, LAC",
       "company": "IFC (World Bank Group)",
       "region": "Latin America & Caribbean",
@@ -3528,10 +4858,14 @@ window.APP_DATA = {
       "salary": "Not disclosed",
       "notes": "Grade GH; location options Lima (Peru) / Bogota (Colombia) / Santiago (Chile); closing date 4/21/2026. Considered MD+/director-equivalent in many MDB contexts given people leadership and regional mandate. Verify details on WBG requisition req36268 if needed. PROTECTED — DFI/multilateral organization.",
       "viewed": false,
-      "location": "TBD"
+      "location": "TBD",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 174,
+      "id": 201,
       "title": "Chief/Principal Investment Officer – Waste Sector (req36119)",
       "company": "IFC (International Finance Corporation, World Bank Group)",
       "region": "North America",
@@ -3544,10 +4878,14 @@ window.APP_DATA = {
       "salary": "Not listed",
       "notes": "LinkedIn page indicates Grade GH and location Washington, DC; closing date appears as 4/7/2026 in the job text surfaced via search results. Apply link is behind LinkedIn 'Apply' button. PROTECTED — DFI/multilateral organization.",
       "viewed": false,
-      "location": "TBD"
+      "location": "TBD",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 175,
+      "id": 202,
       "title": "Managing Director, Central Europe & Baltic States",
       "company": "EBRD (European Bank for Reconstruction and Development)",
       "region": "Europe",
@@ -3560,10 +4898,14 @@ window.APP_DATA = {
       "salary": "Not listed",
       "notes": "This appears to be an older posting with a January 2026 close date; include for tracking only, but it is not within last 7 days. PROTECTED — DFI/multilateral organization.",
       "viewed": false,
-      "location": "TBD"
+      "location": "TBD",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 176,
+      "id": 203,
       "title": "Head of Funding & Investor Relations",
       "company": "Nordic Investment Bank (NIB)",
       "region": "Europe",
@@ -3576,10 +4918,14 @@ window.APP_DATA = {
       "salary": null,
       "notes": "Requires SSA funding/issuance track record; English required; Nordic languages asset.",
       "viewed": false,
-      "location": "TBD"
+      "location": "TBD",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 177,
+      "id": 204,
       "title": "Manager for Metals and Minerals Solutions & Impact",
       "company": "World Bank Group (IFC)",
       "region": "North America",
@@ -3592,10 +4938,14 @@ window.APP_DATA = {
       "salary": "Not listed",
       "notes": "Closing date shown as 3/27/2026 11:59pm UTC; official posting page was intermittently unavailable via automated reader at time of run, but requisition details and link captured from Applied Econ Jobs. Verify on WBG careers portal using req35978. PROTECTED — DFI/multilateral organization.",
       "viewed": false,
-      "location": "TBD"
+      "location": "TBD",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 178,
+      "id": 205,
       "title": "Managing Director, SME Finance & Development",
       "company": "EBRD (European Bank for Reconstruction and Development)",
       "region": "Europe",
@@ -3608,10 +4958,14 @@ window.APP_DATA = {
       "salary": "Not listed",
       "notes": "Not new in last 7 days; included here only as a check against prior dataset. Posting end date shown as 07/01/2026. PROTECTED — DFI/multilateral organization.",
       "viewed": false,
-      "location": "TBD"
+      "location": "TBD",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 179,
+      "id": 206,
       "title": "Deputy Chief Investment Officer, Private Markets",
       "company": "CalPERS (California Public Employees’ Retirement System)",
       "region": "North America",
@@ -3624,10 +4978,14 @@ window.APP_DATA = {
       "salary": "$28,325.00 - $47,208.33 per month (plus incentive eligibility per posting)",
       "notes": "Final filing date: Until filled (weekly cutoffs). PROTECTED — DFI/multilateral organization.",
       "viewed": false,
-      "location": "TBD"
+      "location": "TBD",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 180,
+      "id": 207,
       "title": "Principal Banker",
       "company": "EBRD",
       "region": "Africa",
@@ -3640,10 +4998,14 @@ window.APP_DATA = {
       "salary": null,
       "notes": "Posting end date listed as 29/04/2026. Focus includes energy and infrastructure projects in Nigeria and potentially other EBRD countries of operation in sub-Saharan Africa. PROTECTED — DFI/multilateral organization.",
       "viewed": false,
-      "location": "TBD"
+      "location": "TBD",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     },
     {
-      "id": 181,
+      "id": 208,
       "title": "Development Impact Director - Real Sector Operations",
       "company": "IDB Invest",
       "region": "Latin America & Caribbean",
@@ -3656,7 +5018,11 @@ window.APP_DATA = {
       "salary": null,
       "notes": "ImpactPool lists Posting End Date / application deadline as 4/28/2026 11:59 PM EST; duty station is flexible across IDB Invest country offices. PROTECTED — DFI/multilateral organization.",
       "viewed": false,
-      "location": "TBD"
+      "location": "TBD",
+      "pinned": true,
+      "source": "seeded_manual",
+      "_seeded_on": "2026-04-23",
+      "_manual_only": true
     }
   ],
   "companies": [
@@ -11870,5 +13236,5 @@ window.APP_DATA = {
       "last_scan_date": "2026-04-23"
     }
   ],
-  "last_updated": "2026-04-23T12:14:11Z"
+  "last_updated": "2026-04-23T20:45:59.642Z"
 };

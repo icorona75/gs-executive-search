@@ -17,7 +17,14 @@
     { "name": "Pantheon Ventures", "platform": "greenhouse", "slug": "pantheon", "category": "fund_of_funds" },
     { "name": "Andreessen Horowitz (a16z)", "platform": "greenhouse", "slug": "a16z", "category": "venture" },
     { "name": "Acumen (Impact)", "platform": "greenhouse", "slug": "acumen", "category": "impact" },
-    { "name": "Omidyar Network", "platform": "greenhouse", "slug": "omidyarnetwork", "category": "impact" }
+    { "name": "Omidyar Network", "platform": "greenhouse", "slug": "omidyarnetwork", "category": "impact" },
+
+    { "_comment": "Phase 2 — custom adapters for private-portal firms" },
+    { "name": "EBRD", "platform": "successfactors_rmk", "endpoint": "https://jobs.ebrd.com/search/?q=", "category": "dfi" },
+    { "name": "GIC", "platform": "successfactors_rmk", "endpoint": "https://careers.gic.com.sg/search/", "category": "sovereign_wealth" },
+    { "name": "CDPQ", "platform": "workday", "endpoint": "https://cdpq.wd10.myworkdayjobs.com/wday/cxs/cdpq/CDPQ/jobs", "origin": "https://cdpq.wd10.myworkdayjobs.com", "category": "pension" },
+    { "name": "TPG", "platform": "greenhouse", "slug": "tpgcareers", "category": "private_equity" },
+    { "name": "DFC", "platform": "usajobs", "endpoint": "https://data.usajobs.gov/api/search?Keyword=International+Development+Finance+Corporation&ResultsPerPage=100", "category": "dfi" }
   ],
   "_notes": {
     "not_publicly_queryable": [

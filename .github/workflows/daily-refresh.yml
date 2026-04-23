@@ -32,6 +32,9 @@ jobs:
         run: node scripts/seed-manual-from-existing.js
 
       - name: Fetch from public job APIs
+        env:
+          USAJOBS_API_KEY: ${{ secrets.USAJOBS_API_KEY }}
+          USAJOBS_USER_AGENT: isaac.corona@gmail.com
         run: node scripts/refresh.js
 
       - name: Merge auto + manual into data.js

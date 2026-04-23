@@ -51,9 +51,20 @@ const MD_PLUS_PATTERNS = [
 const MD_NEGATIVE_PATTERNS = [
   /\bassistant\b/i,
   /\bassociate\b/i,
-  /\banalyst\b/i,
+  /\banalyst[e]?\b/i,              // English + French
+  /\badjoint\b/i,                  // French "assistant"
+  /\bconseiller\b/i,               // French "advisor"
+  /\bd[ée]veloppeur\b/i,           // French "developer" (often "développeur principal" = senior dev)
+  /\bconcepteur\b/i,               // French "designer"
+  /\bingénieur\b/i,                // French "engineer"
+  /\bchef de projet\b/i,           // French "project manager"
+  /\bdeveloper\b/i,
+  /\bengineer\b/i,
+  /\barchitect\b/i,
+  /\bscientist\b/i,
   /\bintern\b/i,
   /\bjunior\b/i,
+  /\bstagiaire\b/i,                // French "intern"
   /\bvice president\b(?!.*executive)/i, // VP excluded unless Executive VP
   /\bvp\b(?!.*executive)/i,
 ];
@@ -177,10 +188,71 @@ const adapters = {
     return all;
   },
 
+  async custom(_firm) {
+    // Placeholder. Use specific platforms below.
+    return [];
+  },
+
+  // --- Phase 2 adapters ---
+
+  async successfactors_rmk(firm) {
+    const decodeEntities = (s) => s
+      .replace(/&amp;/g, "&")
+      .replace(/&#39;/g, "'")
+      .replace(/&quot;/g, '"')
+      .replace(/&lt;/g, "<")
+      .replace(/&gt;/g, ">")
+      .replace(/&nbsp;/g, " ");
+    // SuccessFactors Recruiting Marketing (jobs2web / career sites like EBRD, GIC).
+    // Strategy: fetch /search/ HTML page with high result count, parse anchor tags.
+    const listURL = firm.endpoint; // e.g. https://jobs.ebrd.com/search/?q=
+    const base = new URL(listURL).origin;
+    const items = [];
+    const seen = new Set();
+    // Paginate by startrow
+    for (let startrow = 0; startrow < 500; startrow += 25) {
+      const pageURL = listURL + (listURL.includes("?") ? "&" : "?") + `startrow=${startrow}`;
+      const res = await fetch(pageURL, { headers: { "User-Agent": UA, Accept: "text/html" } });
+      if (!res.ok) break;
+      const html = await res.text();
+      const re = /<a[^>]+href="([^"]*\/job\/[^"]+)"[^>]*(?:class="[^"]*jobTitle[^"]*")?[^>]*>([^<]+)<\/a>/gi;
+      let m, pageCount = 0;
+      while ((m = re.exec(html)) !== null) {
+        const href = m[1];
+        const title = m[2].trim();
+        if (!href.includes("/job/")) continue;
+        if (seen.has(href)) continue;
+        seen.add(href);
+        pageCount++;
+        // Location often embedded in href: /job/London-Analyst%2C-QE... → first hyphen group
+        const decoded = decodeURIComponent(href);
+        const locMatch = decoded.match(/\/job\/([^-]+)-/);
+        items.push({
+          source_id: `sfrmk:${firm.name}:${href}`,
+          title: decodeEntities(title),
+          company: firm.name,
+          location: locMatch ? decodeEntities(locMatch[1]) : "",
+          application_url: href.startsWith("http") ? href : base + href,
+          date_posted: TODAY,
+          source: `successfactors:${firm.name}`,
+        });
+      }
+      if (pageCount === 0) break;
+    }
+    return items;
+  },
+
   async usajobs(firm) {
-    const data = await httpJSON(firm.endpoint);
-    const items = data.SearchResult?.SearchResultItems || [];
-    return items.map((it) => {
+    // Federal jobs (DFC, other US agencies). Optional USAJOBS_API_KEY in env for higher limits.
+    const key = process.env.USAJOBS_API_KEY || "";
+    const hdrs = { "User-Agent": process.env.USAJOBS_USER_AGENT || "isaac.corona@gmail.com", Host: "data.usajobs.gov" };
+    if (key) hdrs["Authorization-Key"] = key;
+    // Build endpoint: prefer explicit URL, fall back to keyword+org search
+    const url = firm.endpoint.includes("?") ? firm.endpoint : firm.endpoint + "&ResultsPerPage=100";
+    const res = await fetch(url, { headers: hdrs });
+    if (!res.ok) throw new Error(`USAJOBS ${res.status}`);
+    const data = await res.json();
+    const items = (data.SearchResult?.SearchResultItems || []).map((it) => {
       const j = it.MatchedObjectDescriptor;
       return {
         source_id: `usajobs:${j.PositionID}`,
@@ -189,14 +261,11 @@ const adapters = {
         location: (j.PositionLocation || []).map((l) => l.LocationName).join("; "),
         application_url: j.PositionURI,
         date_posted: j.PublicationStartDate?.slice(0, 10) || TODAY,
-        source: "usajobs",
+        source: `usajobs:${firm.name}`,
+        salary_range: j.PositionRemuneration?.[0]?.Description || "",
       };
     });
-  },
-
-  async custom(_firm) {
-    // Placeholder. Phase 2 will add per-firm HTML parsers.
-    return [];
+    return items;
   },
 };
 
@@ -252,7 +321,7 @@ function assignIds(autoItems, manualJobs) {
 
 async function main() {
   const firmsCfg = JSON.parse(await fs.readFile(path.join(__dirname, "firms.json"), "utf8"));
-  const firms = firmsCfg.firms;
+  const firms = (firmsCfg.firms || []).filter((f) => f && f.name && f.platform);
   console.log(`[refresh] Starting daily refresh for ${firms.length} firms`);
 
   await ensureDir(AUTO_DIR);

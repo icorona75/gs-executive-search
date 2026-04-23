@@ -112,7 +112,7 @@ window.APP_DATA = {
       "notes": "Best-in-class compensation ($450K–$550K base). Role requires significant capital raising experience — Goldie should emphasize LP relationship management and fund deployment work at DFC.",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 2,
@@ -132,7 +132,7 @@ window.APP_DATA = {
       "notes": "Highly lucrative. Goldie should position herself as bringing a built-in global DFI/institutional LP network.",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 3,
@@ -152,7 +152,7 @@ window.APP_DATA = {
       "notes": "Application deadline was Feb 9, 2026 — this may be in late-stage review. Worth contacting Heidrick & Struggles directly given Goldie's profile.",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 4,
@@ -172,7 +172,7 @@ window.APP_DATA = {
       "notes": "More geographic fit needed for SEE specifically, but strong institutional fit with EBRD. Deadline was Jan 7, 2026 — check if still open or use for networking.",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 5,
@@ -192,7 +192,7 @@ window.APP_DATA = {
       "notes": "No specific open role confirmed, but GCM is a strong target given scale and impact capabilities. Goldie should network via GCM's emerging managers program team.",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 6,
@@ -212,7 +212,7 @@ window.APP_DATA = {
       "notes": "Strong target. StepStone has been hiring senior EM professionals to serve growing sovereign and institutional client base.",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 7,
@@ -232,7 +232,7 @@ window.APP_DATA = {
       "notes": "Adams Street is a tier-1 FoF firm and a natural fit. Proactive networking through existing GP/LP relationships is the best approach.",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 8,
@@ -252,7 +252,7 @@ window.APP_DATA = {
       "notes": "BII's fund investments team is one of the most active in DFI-backed PE. Strong institutional fit. Work authorization is the key consideration.",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 9,
@@ -272,7 +272,7 @@ window.APP_DATA = {
       "notes": "Crux is backed by a16z, Lowercarbon, Pattern Energy, OMERS. Also has a MD, Tax Investor Coverage role open at same compensation — NOT a fit for Goldie (tax accounting background required).",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 10,
@@ -290,7 +290,7 @@ window.APP_DATA = {
       "source_url": "https://www.selbyjennings.com/en-us/job/investment-banking-managing-director-minerals-mining-pr569894_1764029555",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 11,
@@ -308,7 +308,7 @@ window.APP_DATA = {
       "source_url": "https://orionrp.com/culture",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 12,
@@ -326,7 +326,7 @@ window.APP_DATA = {
       "source_url": "https://resourcecapitalfunds.com",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 13,
@@ -344,7 +344,7 @@ window.APP_DATA = {
       "source_url": "https://www.reuters.com/business/finance/jpmorgan-hires-two-investment-bankers-bolster-services-energy-companies-2025-08-21/",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 14,
@@ -362,7 +362,7 @@ window.APP_DATA = {
       "source_url": "https://www.fticonsulting.com/insights/articles/lender-market-maker-us-critical-minerals-playbook",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 15,
@@ -380,7 +380,7 @@ window.APP_DATA = {
       "source_url": "https://appiancapitaladvisory.com/appian-and-ifc-partner-in-new-us1-billion-critical-minerals-and-metals-fund-for-emerging-markets/",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 16,
@@ -398,7 +398,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/posts/kailash-dhoni-21150278_investmentbanking-manda-metalsandmining-activity-7414360756051320832-fcIo",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 17,
@@ -416,7 +416,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/posts/eximbankus_critical-minerals-critical-moment-activity-7351609936960704513-bt0n",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 18,
@@ -434,7 +434,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/view/managing-director-governance-studies-job-id-2026-3812-at-the-brookings-institution",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 19,
@@ -452,7 +452,7 @@ window.APP_DATA = {
       "source_url": "https://www.prnewswire.com/news-releases/g-mining-ventures-secures-bank-credit-facility-and-equipment-financing-to-construct-oko-west-302575613.html",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 20,
@@ -470,7 +470,7 @@ window.APP_DATA = {
       "source_url": "https://privateequitycareer.com/maryland-pension-hiring-for-emerging-manager-and-esg-leadership-role/",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 21,
@@ -490,7 +490,7 @@ window.APP_DATA = {
       "notes": "High compensation ceiling but highly competitive process. Warburg would value Goldie's government-sector DFI network (DFCs, MDBs) as a deal sourcing advantage.",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 22,
@@ -508,7 +508,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/director-private-equity-jobs",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 23,
@@ -526,7 +526,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/view/4371838759",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 24,
@@ -544,7 +544,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/view/north-america-head-of-infrastructure-investments-at-mercer-4336895196",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 25,
@@ -562,7 +562,7 @@ window.APP_DATA = {
       "source_url": "https://www.builtinnyc.com/job/senior-managing-director-cfo-services-alternative-assets/8101756",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 26,
@@ -580,7 +580,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/view/managing-director-managed-services-private-equity-fund-services-at-baker-tilly-us-4357811155",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 27,
@@ -598,7 +598,7 @@ window.APP_DATA = {
       "source_url": "https://www.indeed.com/q-managing-director-fund-administration-jobs.html",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 28,
@@ -616,7 +616,7 @@ window.APP_DATA = {
       "source_url": "https://builtin.com/job/managing-director-corporate-venture-capital/4762519",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 29,
@@ -634,7 +634,7 @@ window.APP_DATA = {
       "source_url": "https://www.indeed.com/q-venture-capital-managing-director-jobs.html",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 30,
@@ -652,7 +652,7 @@ window.APP_DATA = {
       "source_url": "https://www.linkedin.com/jobs/view/managing-director-public-investments-at-the-california-endowment-4351982535",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 31,
@@ -670,7 +670,7 @@ window.APP_DATA = {
       "source_url": "https://www.indeed.com/q-managing-director-investment-endowment-jobs.html",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 32,
@@ -688,7 +688,7 @@ window.APP_DATA = {
       "source_url": "https://www.iimjobs.com/j/head-investments-family-office-1668750",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 33,
@@ -706,7 +706,7 @@ window.APP_DATA = {
       "source_url": "https://blackstone.wd1.myworkdayjobs.com/en-US/BX_External_Site/job/Infrastructure-Partners--Managing-Director_35556",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 34,
@@ -724,7 +724,7 @@ window.APP_DATA = {
       "source_url": "https://www.worldfund.vc/jobs/head-of-investor-relations",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 35,
@@ -742,7 +742,7 @@ window.APP_DATA = {
       "source_url": "https://www.selbyjennings.com/en-us/job/head-of-investor-relations-pr534510_1740091251",
       "industry": "TBD",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 36,
@@ -759,7 +759,7 @@ window.APP_DATA = {
       "application_url": "https://www.impactpool.org/jobs/1171116",
       "location": "See posting",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 37,
@@ -776,7 +776,7 @@ window.APP_DATA = {
       "application_url": "https://www.terra.do/climate-jobs/job-board/Managing-Director---Infrastructure-Private-Equity--Climate--Energy-Transition---Primaries---Co-Investments-Madison-Hunt-8350138/",
       "location": "See posting",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 38,
@@ -793,7 +793,7 @@ window.APP_DATA = {
       "application_url": "https://careers-heart.icims.com/jobs/17177/managing-director,-social-impact-fund/job",
       "location": "Dallas, TX, USA (or hybrid)",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 39,
@@ -810,7 +810,7 @@ window.APP_DATA = {
       "application_url": "https://www.linkedin.com/jobs/view/global-alternative-investments-solutions-head-of-infrastructure-due-diligence-at-jpmorganchase-4336652699",
       "location": "See LinkedIn posting",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 40,
@@ -827,7 +827,7 @@ window.APP_DATA = {
       "application_url": "https://www.aiib.org/en/opportunities/career/job-vacancies/staff/job-details/Managing-Director-Complaints-resolution-Evaluation-and-Integrity-Unit.html",
       "location": "Beijing, China",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 41,
@@ -844,7 +844,7 @@ window.APP_DATA = {
       "application_url": "https://groupecreditagricole.jobs/en/our-jobs-offer/577-170466-4-head-of-fund-solutions-group-apac-reference--2025-106776--/",
       "location": "Hong Kong / Singapore (APAC)",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 42,
@@ -861,7 +861,7 @@ window.APP_DATA = {
       "application_url": "https://www.linkedin.com/jobs/view/managing-director-at-ultimus-leverpoint-private-fund-solutions-4352152545",
       "location": "See LinkedIn posting",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 43,
@@ -878,7 +878,7 @@ window.APP_DATA = {
       "application_url": "https://www.linkedin.com/jobs/view/svp-head-of-investments-at-wildflower-ltd-4361012224",
       "location": "See LinkedIn posting",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 44,
@@ -895,7 +895,7 @@ window.APP_DATA = {
       "application_url": "https://partners-cap.com/careers/investment-principal-senior-principal-new-york/",
       "location": "New York, NY, USA",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 45,
@@ -912,7 +912,7 @@ window.APP_DATA = {
       "application_url": "https://pidg.org/job/head-of-investment-management/",
       "location": "London, UK (or hybrid)",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 46,
@@ -929,7 +929,7 @@ window.APP_DATA = {
       "application_url": "https://job-boards.greenhouse.io/arielalternatives/jobs/6673897003",
       "location": "See posting",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "title": "Managing Director, Emerging Managers, Durable Capital & Governance Excellence (EDGE)",
@@ -946,7 +946,7 @@ window.APP_DATA = {
       "application_url": "https://www.jobapscloud.com/MD/sup/bulpreview.asp?b=&R1=26&R2=005013&R3=0001",
       "location": "See posting",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "title": "Managing Director, Global Product Management & Investor Relations (Digital Infrastructure)",
@@ -963,7 +963,7 @@ window.APP_DATA = {
       "application_url": "https://jobs.niri.org/job/2825/managing-director-global-product-management-and-investor-relations-digital-infrastructure/",
       "location": "See posting",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "title": "Managing Director – Infrastructure Investments",
@@ -980,7 +980,7 @@ window.APP_DATA = {
       "application_url": "https://www.selbyjennings.com/en-us/job/managing-director-infrastructure-investments-pr565705_1770832905",
       "location": "Multiple / see posting",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "title": "Global Head of Financial Institutions, Corporate Banking Subsidiaries (Managing Director)",
@@ -997,7 +997,7 @@ window.APP_DATA = {
       "application_url": "https://careers.bankofamerica.com/en-us/job-detail/26003409/global-head-of-financial-institutions-corporate-banking-subsidiaries-new-york-new-york-united-states",
       "location": "See posting",
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 51,
@@ -1018,7 +1018,7 @@ window.APP_DATA = {
       "industry": "DFI",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 52,
@@ -1039,7 +1039,7 @@ window.APP_DATA = {
       "industry": "DFI",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 53,
@@ -1060,7 +1060,7 @@ window.APP_DATA = {
       "industry": "DFI",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 54,
@@ -1081,7 +1081,7 @@ window.APP_DATA = {
       "industry": "Pension Funds",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 55,
@@ -1102,7 +1102,7 @@ window.APP_DATA = {
       "industry": "DFI",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 56,
@@ -1123,7 +1123,7 @@ window.APP_DATA = {
       "industry": "Infrastructure",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 57,
@@ -1144,7 +1144,7 @@ window.APP_DATA = {
       "industry": "Fund-of-Funds",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 58,
@@ -1165,7 +1165,7 @@ window.APP_DATA = {
       "industry": "Alternatives",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 59,
@@ -1186,7 +1186,7 @@ window.APP_DATA = {
       "industry": "Climate/Clean Energy",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 60,
@@ -1207,7 +1207,7 @@ window.APP_DATA = {
       "industry": "Infrastructure",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 61,
@@ -1228,7 +1228,7 @@ window.APP_DATA = {
       "industry": "Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 62,
@@ -1249,7 +1249,7 @@ window.APP_DATA = {
       "industry": "Investment Consulting",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 63,
@@ -1270,7 +1270,7 @@ window.APP_DATA = {
       "industry": "Pension Funds",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 64,
@@ -1291,7 +1291,7 @@ window.APP_DATA = {
       "industry": "Fund-of-Funds",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 65,
@@ -1312,7 +1312,7 @@ window.APP_DATA = {
       "industry": "Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 66,
@@ -1333,7 +1333,7 @@ window.APP_DATA = {
       "industry": "Impact/ESG",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 67,
@@ -1354,7 +1354,7 @@ window.APP_DATA = {
       "industry": "Investor Relations",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 68,
@@ -1375,7 +1375,7 @@ window.APP_DATA = {
       "industry": "DFI",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 69,
@@ -1396,7 +1396,7 @@ window.APP_DATA = {
       "industry": "DFI",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 70,
@@ -1417,7 +1417,7 @@ window.APP_DATA = {
       "industry": "Alternatives",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 71,
@@ -1438,7 +1438,7 @@ window.APP_DATA = {
       "industry": "DFI",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 72,
@@ -1459,7 +1459,7 @@ window.APP_DATA = {
       "industry": "Fund Solutions",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 73,
@@ -1480,7 +1480,7 @@ window.APP_DATA = {
       "industry": "Infrastructure",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 74,
@@ -1501,7 +1501,7 @@ window.APP_DATA = {
       "industry": "Alternatives",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 75,
@@ -1522,7 +1522,7 @@ window.APP_DATA = {
       "industry": "Infrastructure",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 76,
@@ -1543,7 +1543,7 @@ window.APP_DATA = {
       "industry": "Climate/Clean Energy",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 77,
@@ -1564,7 +1564,7 @@ window.APP_DATA = {
       "industry": "Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 78,
@@ -1585,7 +1585,7 @@ window.APP_DATA = {
       "industry": "Infrastructure",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 79,
@@ -1606,7 +1606,7 @@ window.APP_DATA = {
       "industry": "Investor Relations",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 80,
@@ -1627,7 +1627,7 @@ window.APP_DATA = {
       "industry": "Insurance",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 81,
@@ -1648,7 +1648,7 @@ window.APP_DATA = {
       "industry": "Infrastructure",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 82,
@@ -1669,7 +1669,7 @@ window.APP_DATA = {
       "industry": "DFI",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 83,
@@ -1690,7 +1690,7 @@ window.APP_DATA = {
       "industry": "Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 84,
@@ -1711,7 +1711,7 @@ window.APP_DATA = {
       "industry": "Investment Consulting",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 85,
@@ -1732,7 +1732,7 @@ window.APP_DATA = {
       "industry": "Pension Funds",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 86,
@@ -1753,7 +1753,7 @@ window.APP_DATA = {
       "industry": "Insurance",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 87,
@@ -1774,7 +1774,7 @@ window.APP_DATA = {
       "industry": "Foundations",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 88,
@@ -1795,7 +1795,7 @@ window.APP_DATA = {
       "industry": "Insurance",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 89,
@@ -1816,7 +1816,7 @@ window.APP_DATA = {
       "industry": "Infrastructure",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 90,
@@ -1837,7 +1837,7 @@ window.APP_DATA = {
       "industry": "Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 91,
@@ -1858,7 +1858,7 @@ window.APP_DATA = {
       "industry": "Fund-of-Funds",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 92,
@@ -1879,7 +1879,7 @@ window.APP_DATA = {
       "industry": "Fund-of-Funds",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 93,
@@ -1900,7 +1900,7 @@ window.APP_DATA = {
       "industry": "Pension Funds",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 94,
@@ -1921,7 +1921,7 @@ window.APP_DATA = {
       "industry": "Alternatives",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 95,
@@ -1942,7 +1942,7 @@ window.APP_DATA = {
       "industry": "Insurance",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 96,
@@ -1963,7 +1963,7 @@ window.APP_DATA = {
       "industry": "Infrastructure",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 97,
@@ -1984,7 +1984,7 @@ window.APP_DATA = {
       "industry": "Private Markets / Real Assets / Infrastructure",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 98,
@@ -2005,7 +2005,7 @@ window.APP_DATA = {
       "industry": "Private Equity / Growth Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 99,
@@ -2026,7 +2026,7 @@ window.APP_DATA = {
       "industry": "Financial Services / Leveraged Finance / Private Equity Coverage",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 100,
@@ -2047,7 +2047,7 @@ window.APP_DATA = {
       "industry": "Alternative Investments / Private Credit",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 101,
@@ -2068,7 +2068,7 @@ window.APP_DATA = {
       "industry": "Asset Management / Private Markets",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 102,
@@ -2089,7 +2089,7 @@ window.APP_DATA = {
       "industry": "Alternative Investments / Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 103,
@@ -2110,7 +2110,7 @@ window.APP_DATA = {
       "industry": "Wealth Management / Alternative Investments / Family Office",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 104,
@@ -2131,7 +2131,7 @@ window.APP_DATA = {
       "industry": "Private Equity / Lower Mid-Market Buyout",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 105,
@@ -2152,7 +2152,7 @@ window.APP_DATA = {
       "industry": "Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 106,
@@ -2173,7 +2173,7 @@ window.APP_DATA = {
       "industry": "Institutional Investing / Private Equity / Fund of Funds / Direct Investments",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 107,
@@ -2194,7 +2194,7 @@ window.APP_DATA = {
       "industry": "Private Equity / Fund of Funds",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 108,
@@ -2215,7 +2215,7 @@ window.APP_DATA = {
       "industry": "Private Equity / Middle-Market Buyout",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 109,
@@ -2236,7 +2236,7 @@ window.APP_DATA = {
       "industry": "Asset Management / Alternative Investments / Multi-Asset",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 110,
@@ -2257,7 +2257,7 @@ window.APP_DATA = {
       "industry": "Venture Capital / Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 111,
@@ -2278,7 +2278,7 @@ window.APP_DATA = {
       "industry": "Alternative Investments / Real Assets / Real Estate Debt",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 112,
@@ -2299,7 +2299,7 @@ window.APP_DATA = {
       "industry": "Private Banking / Alternative Investments / Wealth Management",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 113,
@@ -2320,7 +2320,7 @@ window.APP_DATA = {
       "industry": "Alternative Investments / Wealth Management / Research",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 114,
@@ -2341,7 +2341,7 @@ window.APP_DATA = {
       "industry": "Real Estate Private Equity / Capital Formation",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 115,
@@ -2362,7 +2362,7 @@ window.APP_DATA = {
       "industry": "Private Equity Advisory / Forensic Consulting",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 116,
@@ -2383,7 +2383,7 @@ window.APP_DATA = {
       "industry": "Insurance / Structured Finance / Alternative Capital / Investment Banking",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 117,
@@ -2404,7 +2404,7 @@ window.APP_DATA = {
       "industry": "Financial Services / Alternative Investment Services Technology",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 118,
@@ -2425,7 +2425,7 @@ window.APP_DATA = {
       "industry": "Private Equity / Fund Investments / Co-investments",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 119,
@@ -2446,7 +2446,7 @@ window.APP_DATA = {
       "industry": "Endowment / Institutional Investing / Private Markets",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 120,
@@ -2467,7 +2467,7 @@ window.APP_DATA = {
       "industry": "Private Equity / Institutional Investing",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 121,
@@ -2488,7 +2488,7 @@ window.APP_DATA = {
       "industry": "Infrastructure Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 122,
@@ -2509,7 +2509,7 @@ window.APP_DATA = {
       "industry": "Infrastructure Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 123,
@@ -2530,7 +2530,7 @@ window.APP_DATA = {
       "industry": "Infrastructure Investment / OCIO / Advisory",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 124,
@@ -2551,7 +2551,7 @@ window.APP_DATA = {
       "industry": "Green / Climate Finance / Community Development Finance",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 125,
@@ -2572,7 +2572,7 @@ window.APP_DATA = {
       "industry": "Sustainable / Climate Finance (NGO-embedded)",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 126,
@@ -2593,7 +2593,7 @@ window.APP_DATA = {
       "industry": "Blended Finance / Catalytic Capital / Development Finance (Philanthropy)",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 127,
@@ -2614,7 +2614,7 @@ window.APP_DATA = {
       "industry": "Infrastructure Investment / DFI (Pan-African)",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 128,
@@ -2635,7 +2635,7 @@ window.APP_DATA = {
       "industry": "Energy & Infrastructure Consulting / Advisory",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 129,
@@ -2656,7 +2656,7 @@ window.APP_DATA = {
       "industry": "Clean Energy Finance / Sustainable Infrastructure (Nonprofit)",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 130,
@@ -2677,7 +2677,7 @@ window.APP_DATA = {
       "industry": "Climate Finance / Project Finance Advisory",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 131,
@@ -2698,7 +2698,7 @@ window.APP_DATA = {
       "industry": "Sustainable Infrastructure / Impact Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 132,
@@ -2719,7 +2719,7 @@ window.APP_DATA = {
       "industry": "Infrastructure / Energy Transition / Capital Markets (Mid-Market)",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 133,
@@ -2740,7 +2740,7 @@ window.APP_DATA = {
       "industry": "DFI / Multilateral Strategy",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 134,
@@ -2761,7 +2761,7 @@ window.APP_DATA = {
       "industry": "Real Estate / Sustainability / Infrastructure Services",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 135,
@@ -2782,7 +2782,7 @@ window.APP_DATA = {
       "industry": "DFI / Multilateral / Private Sector Finance",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 136,
@@ -2803,7 +2803,7 @@ window.APP_DATA = {
       "industry": "Renewable Energy / Infrastructure / Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 137,
@@ -2824,7 +2824,7 @@ window.APP_DATA = {
       "industry": "Impact / Climate / DFI-Adjacent (Blended Finance)",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 138,
@@ -2845,7 +2845,7 @@ window.APP_DATA = {
       "industry": "Sovereign Wealth Fund",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 139,
@@ -2866,7 +2866,7 @@ window.APP_DATA = {
       "industry": "Pension Fund",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 140,
@@ -2887,7 +2887,7 @@ window.APP_DATA = {
       "industry": "Pension Fund",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 141,
@@ -2908,7 +2908,7 @@ window.APP_DATA = {
       "industry": "Endowment",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 142,
@@ -2929,7 +2929,7 @@ window.APP_DATA = {
       "industry": "Insurance Asset Management / Investment Consulting (OCIO)",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 143,
@@ -2950,7 +2950,7 @@ window.APP_DATA = {
       "industry": "Insurance Investment Arm",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 144,
@@ -2971,7 +2971,7 @@ window.APP_DATA = {
       "industry": "Investment Consulting / OCIO",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 145,
@@ -2992,7 +2992,7 @@ window.APP_DATA = {
       "industry": "Endowment",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 146,
@@ -3013,7 +3013,7 @@ window.APP_DATA = {
       "industry": "Family Office",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 147,
@@ -3034,7 +3034,7 @@ window.APP_DATA = {
       "industry": "Family Office / Investment Consulting",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 148,
@@ -3055,7 +3055,7 @@ window.APP_DATA = {
       "industry": "Investment Consulting / Family Office Advisory",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 149,
@@ -3076,7 +3076,7 @@ window.APP_DATA = {
       "industry": "Corporate Venture Capital (CVC)",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 150,
@@ -3097,7 +3097,7 @@ window.APP_DATA = {
       "industry": "Corporate Venture Capital (CVC)",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 151,
@@ -3118,7 +3118,7 @@ window.APP_DATA = {
       "industry": "Corporate Venture Capital / Public CVC",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 152,
@@ -3139,7 +3139,7 @@ window.APP_DATA = {
       "industry": "Pension Fund",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 153,
@@ -3160,7 +3160,7 @@ window.APP_DATA = {
       "industry": "Investment Consulting / OCIO",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 154,
@@ -3181,7 +3181,7 @@ window.APP_DATA = {
       "industry": "Endowment",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 155,
@@ -3202,7 +3202,7 @@ window.APP_DATA = {
       "industry": "Investor Relations",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 156,
@@ -3223,7 +3223,7 @@ window.APP_DATA = {
       "industry": "Investor Relations",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 157,
@@ -3244,7 +3244,7 @@ window.APP_DATA = {
       "industry": "Fund Solutions / Fund Administration",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 158,
@@ -3265,7 +3265,7 @@ window.APP_DATA = {
       "industry": "Fund Solutions / Fund Administration",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 159,
@@ -3286,7 +3286,7 @@ window.APP_DATA = {
       "industry": "Investment Consulting / Due Diligence",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 160,
@@ -3307,7 +3307,7 @@ window.APP_DATA = {
       "industry": "Due Diligence",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 161,
@@ -3328,7 +3328,7 @@ window.APP_DATA = {
       "industry": "Pension Fund",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 162,
@@ -3349,7 +3349,7 @@ window.APP_DATA = {
       "industry": "Pension Fund (Public)",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 163,
@@ -3370,7 +3370,7 @@ window.APP_DATA = {
       "industry": "Pension Fund",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 164,
@@ -3391,7 +3391,7 @@ window.APP_DATA = {
       "industry": "Family Office / Institutional Wealth Management",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 165,
@@ -3412,7 +3412,7 @@ window.APP_DATA = {
       "industry": "Investor Relations",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 166,
@@ -3433,7 +3433,7 @@ window.APP_DATA = {
       "industry": "Insurance Asset Management",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 167,
@@ -3454,7 +3454,7 @@ window.APP_DATA = {
       "industry": "Fund Solutions / Fund Administration (Nonprofit / Foundation)",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 168,
@@ -3475,7 +3475,7 @@ window.APP_DATA = {
       "industry": "Family Office / Investment Management",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 169,
@@ -3496,7 +3496,7 @@ window.APP_DATA = {
       "industry": "Endowment",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 170,
@@ -3517,7 +3517,7 @@ window.APP_DATA = {
       "industry": "Endowment / Pension",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 171,
@@ -3538,7 +3538,7 @@ window.APP_DATA = {
       "industry": "Investor Relations",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 172,
@@ -3559,7 +3559,7 @@ window.APP_DATA = {
       "industry": "Family Office / Venture Investment (Israel)",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 173,
@@ -3580,7 +3580,7 @@ window.APP_DATA = {
       "industry": "Multilateral Development Finance / Risk Management",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 174,
@@ -3601,7 +3601,7 @@ window.APP_DATA = {
       "industry": "Alternative Asset Management / Investor Relations",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 175,
@@ -3622,7 +3622,7 @@ window.APP_DATA = {
       "industry": "Alternative Asset Management / Fund Operations",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 176,
@@ -3643,7 +3643,7 @@ window.APP_DATA = {
       "industry": "Multilateral Development Finance / Sustainable Mobility",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 177,
@@ -3664,7 +3664,7 @@ window.APP_DATA = {
       "industry": "Alternative Asset Management / Investor Relations",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 178,
@@ -3685,7 +3685,7 @@ window.APP_DATA = {
       "industry": "Alternative Asset Management / Public Equities Research",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 179,
@@ -3706,7 +3706,7 @@ window.APP_DATA = {
       "industry": "Investment Banking / Merchant Banking / Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 180,
@@ -3727,7 +3727,7 @@ window.APP_DATA = {
       "industry": "Venture Capital / Private Credit / Technology Investments",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 181,
@@ -3748,7 +3748,7 @@ window.APP_DATA = {
       "industry": "Insurance / Asset Management",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 182,
@@ -3769,7 +3769,7 @@ window.APP_DATA = {
       "industry": "Insurance / Institutional Asset Management",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 183,
@@ -3790,7 +3790,7 @@ window.APP_DATA = {
       "industry": "Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 184,
@@ -3811,7 +3811,7 @@ window.APP_DATA = {
       "industry": "Private Equity / Technology & Industrial",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 185,
@@ -3832,7 +3832,7 @@ window.APP_DATA = {
       "industry": "Venture Capital / Technology",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 186,
@@ -3853,7 +3853,7 @@ window.APP_DATA = {
       "industry": "Private Equity / M&A Advisory / Central America & Andes",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 187,
@@ -3874,7 +3874,7 @@ window.APP_DATA = {
       "industry": "Private Equity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 188,
@@ -3895,7 +3895,7 @@ window.APP_DATA = {
       "industry": "Infrastructure Private Equity / Energy",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 189,
@@ -3916,7 +3916,7 @@ window.APP_DATA = {
       "industry": "Multilateral Development Finance",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 190,
@@ -3937,7 +3937,7 @@ window.APP_DATA = {
       "industry": "Investment Banking / Brokerage / Institutional Investments",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 191,
@@ -3958,7 +3958,7 @@ window.APP_DATA = {
       "industry": "Insurance / Pension / Institutional Asset Management",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 192,
@@ -3979,7 +3979,7 @@ window.APP_DATA = {
       "industry": "Investment Management / Pension / Mutual Funds",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 193,
@@ -4000,7 +4000,7 @@ window.APP_DATA = {
       "industry": "Alternative Asset Management / Infrastructure / Real Assets",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 194,
@@ -4021,7 +4021,7 @@ window.APP_DATA = {
       "industry": "Venture Capital / Technology / Cybersecurity",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 195,
@@ -4042,7 +4042,7 @@ window.APP_DATA = {
       "industry": "Insurance / Alternative Investments / Private Credit",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 196,
@@ -4063,7 +4063,7 @@ window.APP_DATA = {
       "industry": "Investment Banking / Asset Management / Private Credit",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 197,
@@ -4084,7 +4084,7 @@ window.APP_DATA = {
       "industry": "Alternative Asset Management / Investor Relations",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 198,
@@ -4105,7 +4105,7 @@ window.APP_DATA = {
       "industry": "Investment Management / Capital Markets / Pension",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 199,
@@ -4126,7 +4126,7 @@ window.APP_DATA = {
       "industry": "Development Banking / Green Finance",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 200,
@@ -4147,7 +4147,7 @@ window.APP_DATA = {
       "industry": "Development Banking / Export Finance",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 201,
@@ -4168,7 +4168,7 @@ window.APP_DATA = {
       "industry": "Private Equity / Latin America Mid-Market",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 202,
@@ -4189,7 +4189,7 @@ window.APP_DATA = {
       "industry": "Insurance / Institutional Asset Management / ESG",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 203,
@@ -4210,7 +4210,7 @@ window.APP_DATA = {
       "industry": "Investment Banking / Asset Management / Wealth Management",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 204,
@@ -4231,7 +4231,7 @@ window.APP_DATA = {
       "industry": "Private Equity / Latin America Mid-Market",
       "add_date": "2026-03-24",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "id": 205,
@@ -4248,7 +4248,7 @@ window.APP_DATA = {
       "description": "Senior ICT leadership role (Director level) leading IOM global information technology systems and governance.",
       "add_date": "2026-03-27",
       "viewed": false,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     },
     {
       "title": "Vice President, Healthcare Staffing (Travel Nursing & Allied)",
@@ -4268,7 +4268,7 @@ window.APP_DATA = {
       "notes": "Role leads a healthcare staffing division across two established brands; oversees team of five senior leaders; full P&L responsibility.",
       "id": 206,
       "viewed": true,
-      "last_scan_date": "2026-04-15"
+      "last_scan_date": "2026-04-23"
     }
   ],
   "companies": [
@@ -12438,7 +12438,50 @@ window.APP_DATA = {
           "carry_availability": "None; government pay bands"
         }
       ]
+    },
+    {
+          "id": 207,
+          "title": "Development Impact Intelligence Director",
+          "company": "IDB Invest",
+          "location": "Washington, DC, USA",
+          "region": "Americas",
+          "salary_range": "Not disclosed",
+          "application_url": "https://www.impactpool.org/jobs/1207286",
+          "application_method": "Apply via Impactpool listing",
+          "date_posted": "2026-04-20",
+          "contract_type": "International staff contract, 36 months initially, renewable",
+          "requirements": "Master’s (PhD a plus); 10+ years in impact management/development effectiveness; strong evaluation + analytics/data science/AI; extensive team leadership; deep LAC experience; English proficiency.",
+          "goldie_fit": "Strong DFI leadership fit given Goldie’s fund investing and development-finance background. The role is impact-management focused (evaluation/analytics) rather than fund commitments, but it is senior and LAC-relevant.",
+          "suggested_recruiter": "IDB Invest recruiting team; also consider executive search firms with DFI coverage (Heidrick & Struggles / Spencer Stuart) for warm introductions.",
+          "source_url": "https://www.impactpool.org/jobs/1207286",
+          "notes": "Closing date listed as 2026-04-28 (EST).",
+          "industry": "DFI/MDB / Impact investing",
+          "add_date": "2026-04-23",
+          "viewed": false,
+          "last_scan_date": "2026-04-23"
     }
+    {
+          "id": 208,
+          "title": "Director General, Independent Evaluation Department",
+          "company": "Asian Development Bank (ADB)",
+          "location": "Manila, Philippines",
+          "region": "Asia-Pacific",
+          "salary_range": "Not disclosed",
+          "application_url": "https://www.impactpool.org/jobs/1208690",
+          "application_method": "Apply via Impactpool listing",
+          "date_posted": "2026-04-20",
+          "contract_type": "Not disclosed",
+          "requirements": "Master’s (or equivalent); 20+ years relevant experience; strong leadership, integrity, and independence; deep international development exposure; excellent English communication.",
+          "goldie_fit": "C-suite public-sector leadership role at an MDB; closest alignment is strategic oversight and results/impact governance. Requires evaluation-function leadership; relocation to Manila likely.",
+          "suggested_recruiter": "ADB recruitment team; also consider executive search firms supporting MDB leadership hiring.",
+          "source_url": "https://www.impactpool.org/jobs/1208690",
+          "notes": "Closing date: 2026-05-15 (Manila time).",
+          "industry": "DFI/MDB / Development evaluation",
+          "add_date": "2026-04-23",
+          "viewed": false,
+          "last_scan_date": "2026-04-23"
+    }
+
   ],
-  "last_updated": "2026-04-22T12:24:01Z"
+  "last_updated" : "2026-04-23T11:00:00Z"
 }

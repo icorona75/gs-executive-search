@@ -2,7 +2,7 @@
   "date": "2026-04-23",
   "total": 37,
   "funnel": {
-    "raw": 606,
+    "raw": 609,
     "md_plus": 37,
     "post_exclude": 37,
     "deduped": 37
@@ -5834,9 +5834,40 @@
     },
     {
       "firm": "DFC",
-      "ok": false,
-      "count": 0,
-      "error": "USAJOBS 401"
+      "ok": true,
+      "count": 3,
+      "items": [
+        {
+          "source_id": "usajobs:26-OGC-DE-12917082-BN",
+          "title": "Assistant General Counsel (Finance)",
+          "company": "DFC",
+          "location": "Washington, District of Columbia; New York, New York",
+          "application_url": "https://www.usajobs.gov:443/job/862341300",
+          "date_posted": "2026-03-24",
+          "source": "usajobs:DFC",
+          "salary_range": "Per Year"
+        },
+        {
+          "source_id": "usajobs:26-OGC-DE-12917085-BN",
+          "title": "Assistant General Counsel (Special Assets)",
+          "company": "DFC",
+          "location": "Washington, District of Columbia; New York, New York",
+          "application_url": "https://www.usajobs.gov:443/job/862342000",
+          "date_posted": "2026-03-24",
+          "source": "usajobs:DFC",
+          "salary_range": "Per Year"
+        },
+        {
+          "source_id": "usajobs:26-OGC-DE-12917056-BN",
+          "title": "Assistant General Counsel (Equity and Funds)",
+          "company": "DFC",
+          "location": "Washington, District of Columbia; New York, New York",
+          "application_url": "https://www.usajobs.gov:443/job/862341800",
+          "date_posted": "2026-03-24",
+          "source": "usajobs:DFC",
+          "salary_range": "Per Year"
+        }
+      ]
     }
   ]
 }

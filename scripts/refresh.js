@@ -138,15 +138,22 @@ const adapters = {
   },
 
   async workday(firm) {
-    // Workday CXS public JSON — paginated
+    // Workday CXS public JSON — paginated. Needs Origin/Referer on some tenants.
     const all = [];
     let offset = 0;
     const LIMIT = 20;
+    const origin = firm.origin || new URL(firm.endpoint).origin;
     for (let page = 0; page < 10; page++) {
       const body = { appliedFacets: {}, limit: LIMIT, offset, searchText: "" };
       const res = await fetch(firm.endpoint, {
         method: "POST",
-        headers: { "User-Agent": UA, "Content-Type": "application/json", Accept: "application/json" },
+        headers: {
+          "User-Agent": UA,
+          "Content-Type": "application/json",
+          Accept: "application/json",
+          "Origin": origin,
+          "Referer": origin + "/",
+        },
         body: JSON.stringify(body),
       });
       if (!res.ok) throw new Error(`Workday ${firm.name}: ${res.status}`);
@@ -316,9 +323,9 @@ async function main() {
     last_scan_date: TODAY,
   }));
 
-  // --- Sanity guard ---
+  // --- Sanity guard (requires >=10 previous items to engage, so first runs never trip) ---
   const prev = await readJSON(path.join(AUTO_DIR, "jobs.json"), []);
-  if (prev.length > 0 && allItems.length < prev.length * 0.7) {
+  if (prev.length >= 10 && allItems.length < prev.length * 0.7) {
     const msg = `SANITY GUARD TRIPPED: auto jobs count dropped from ${prev.length} -> ${allItems.length} (>30% drop). Aborting commit.`;
     console.error(`[refresh] ${msg}`);
     // Write diagnostics and exit non-zero so Action fails & alerts.

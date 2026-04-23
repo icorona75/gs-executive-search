@@ -1,11 +1,11 @@
 {
   "date": "2026-04-23",
-  "total": 27,
+  "total": 37,
   "funnel": {
-    "raw": 416,
-    "md_plus": 27,
-    "post_exclude": 27,
-    "deduped": 27
+    "raw": 606,
+    "md_plus": 37,
+    "post_exclude": 37,
+    "deduped": 37
   },
   "summary": [
     {
@@ -4091,6 +4091,1752 @@
           "raw_department": "Communications"
         }
       ]
+    },
+    {
+      "firm": "EBRD",
+      "ok": true,
+      "count": 44,
+      "items": [
+        {
+          "source_id": "sfrmk:EBRD:/job/London-Analyst%2C-QE%2C-Software-Engineering/1377299833/",
+          "title": "Analyst, QE, Software Engineering",
+          "company": "EBRD",
+          "location": "London",
+          "application_url": "https://jobs.ebrd.com/job/London-Analyst%2C-QE%2C-Software-Engineering/1377299833/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Dushanbe-Analyst%2C-Manufacturing-and-Services/1386816033/",
+          "title": "Analyst, Manufacturing and Services",
+          "company": "EBRD",
+          "location": "Dushanbe",
+          "application_url": "https://jobs.ebrd.com/job/Dushanbe-Analyst%2C-Manufacturing-and-Services/1386816033/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/London-Analyst%2C-Treasury-Credit-Risk-Management/1387011433/",
+          "title": "Analyst, Treasury Credit Risk Management",
+          "company": "EBRD",
+          "location": "London",
+          "application_url": "https://jobs.ebrd.com/job/London-Analyst%2C-Treasury-Credit-Risk-Management/1387011433/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Tashkent-Analyst-Food-and-Agribusiness/1386298933/",
+          "title": "Analyst - Food and Agribusiness",
+          "company": "EBRD",
+          "location": "Tashkent",
+          "application_url": "https://jobs.ebrd.com/job/Tashkent-Analyst-Food-and-Agribusiness/1386298933/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/London-Analyst%2C-EU-Banks-and-Structured-Finance/1385993033/",
+          "title": "Analyst, EU Banks and Structured Finance",
+          "company": "EBRD",
+          "location": "London",
+          "application_url": "https://jobs.ebrd.com/job/London-Analyst%2C-EU-Banks-and-Structured-Finance/1385993033/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/London-Principal%2C-Digital-Hub/1386105633/",
+          "title": "Principal, Digital Hub",
+          "company": "EBRD",
+          "location": "London",
+          "application_url": "https://jobs.ebrd.com/job/London-Principal%2C-Digital-Hub/1386105633/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Sofia-Lead-Data-Quality-Engineer-%28Azure-Fabric%29/1258731101/",
+          "title": "Lead Data Quality Engineer (Azure Fabric)",
+          "company": "EBRD",
+          "location": "Sofia",
+          "application_url": "https://jobs.ebrd.com/job/Sofia-Lead-Data-Quality-Engineer-%28Azure-Fabric%29/1258731101/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/London-Principal-Manager%2C-Security-Logistics-and-Development/1385635133/",
+          "title": "Principal Manager, Security Logistics and Development",
+          "company": "EBRD",
+          "location": "London",
+          "application_url": "https://jobs.ebrd.com/job/London-Principal-Manager%2C-Security-Logistics-and-Development/1385635133/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/London-Analyst%2C-ESD-%28Corporate-Sector%29/1385660333/",
+          "title": "Analyst, ESD (Corporate Sector)",
+          "company": "EBRD",
+          "location": "London",
+          "application_url": "https://jobs.ebrd.com/job/London-Analyst%2C-ESD-%28Corporate-Sector%29/1385660333/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Belgrade-Associate%2C-OGC/1385512333/",
+          "title": "Associate, OGC",
+          "company": "EBRD",
+          "location": "Belgrade",
+          "application_url": "https://jobs.ebrd.com/job/Belgrade-Associate%2C-OGC/1385512333/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/London-Principal%2C-Social-and-Environmental-Expert/1385654533/",
+          "title": "Principal, Social and Environmental Expert",
+          "company": "EBRD",
+          "location": "London",
+          "application_url": "https://jobs.ebrd.com/job/London-Principal%2C-Social-and-Environmental-Expert/1385654533/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Kyiv-Principal%2C-Counsel/1385569233/",
+          "title": "Principal, Counsel",
+          "company": "EBRD",
+          "location": "Kyiv",
+          "application_url": "https://jobs.ebrd.com/job/Kyiv-Principal%2C-Counsel/1385569233/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Sofia-Analyst%2C-Product-Eng-Serv_-Now/1222661301/",
+          "title": "Analyst, Product Eng Serv. Now",
+          "company": "EBRD",
+          "location": "Sofia",
+          "application_url": "https://jobs.ebrd.com/job/Sofia-Analyst%2C-Product-Eng-Serv_-Now/1222661301/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Sofia-Principal-Developer-Full-Stack/1205556101/",
+          "title": "Principal Developer Full Stack",
+          "company": "EBRD",
+          "location": "Sofia",
+          "application_url": "https://jobs.ebrd.com/job/Sofia-Principal-Developer-Full-Stack/1205556101/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Sofia-Associate-Developer-%28Java-Backend%29/1205566201/",
+          "title": "Associate Developer (Java-Backend)",
+          "company": "EBRD",
+          "location": "Sofia",
+          "application_url": "https://jobs.ebrd.com/job/Sofia-Associate-Developer-%28Java-Backend%29/1205566201/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Sofia-ServiceNow-Engineer-ITSM-&amp;-ITOM/1222695001/",
+          "title": "ServiceNow Engineer - ITSM & ITOM",
+          "company": "EBRD",
+          "location": "Sofia",
+          "application_url": "https://jobs.ebrd.com/job/Sofia-ServiceNow-Engineer-ITSM-&amp;-ITOM/1222695001/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Sofia-Analyst%2C-QA-Eng_-Serv_-Now/1244189301/",
+          "title": "Analyst, QA Eng. Serv. Now",
+          "company": "EBRD",
+          "location": "Sofia",
+          "application_url": "https://jobs.ebrd.com/job/Sofia-Analyst%2C-QA-Eng_-Serv_-Now/1244189301/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Sofia-Associate%2C-AI-Engineer/1266065901/",
+          "title": "Associate, AI Engineer",
+          "company": "EBRD",
+          "location": "Sofia",
+          "application_url": "https://jobs.ebrd.com/job/Sofia-Associate%2C-AI-Engineer/1266065901/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Sofia-Analyst%2C-Product-Eng-Serv_-Now/1222742001/",
+          "title": "Analyst, Product Eng Serv. Now",
+          "company": "EBRD",
+          "location": "Sofia",
+          "application_url": "https://jobs.ebrd.com/job/Sofia-Analyst%2C-Product-Eng-Serv_-Now/1222742001/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Lagos-Principal-I%2C-Policy/1235832501/",
+          "title": "Principal I, Policy",
+          "company": "EBRD",
+          "location": "Lagos",
+          "application_url": "https://jobs.ebrd.com/job/Lagos-Principal-I%2C-Policy/1235832501/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/London-Associate%2C-Assurance-Testing-%28Project-Integrity%29/1384448233/",
+          "title": "Associate, Assurance Testing (Project Integrity)",
+          "company": "EBRD",
+          "location": "London",
+          "application_url": "https://jobs.ebrd.com/job/London-Associate%2C-Assurance-Testing-%28Project-Integrity%29/1384448233/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/London-Analyst%2C-Internal-Audit-Analytics/1384606733/",
+          "title": "Analyst, Internal Audit Analytics",
+          "company": "EBRD",
+          "location": "London",
+          "application_url": "https://jobs.ebrd.com/job/London-Analyst%2C-Internal-Audit-Analytics/1384606733/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/London-Principal-Risk-Officer%2C-Treasury-Credit-Risk-Management/1366192333/",
+          "title": "Principal Risk Officer, Treasury Credit Risk Management",
+          "company": "EBRD",
+          "location": "London",
+          "application_url": "https://jobs.ebrd.com/job/London-Principal-Risk-Officer%2C-Treasury-Credit-Risk-Management/1366192333/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Lagos-Principal-Banker/1384206633/",
+          "title": "Principal Banker",
+          "company": "EBRD",
+          "location": "Lagos",
+          "application_url": "https://jobs.ebrd.com/job/Lagos-Principal-Banker/1384206633/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Sofia-Analyst%2C-AI-Engineer/1384049733/",
+          "title": "Analyst, AI Engineer",
+          "company": "EBRD",
+          "location": "Sofia",
+          "application_url": "https://jobs.ebrd.com/job/Sofia-Analyst%2C-AI-Engineer/1384049733/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/London-Principal-I%2C-Blended-Finance/1383594433/",
+          "title": "Principal I, Blended Finance",
+          "company": "EBRD",
+          "location": "London",
+          "application_url": "https://jobs.ebrd.com/job/London-Principal-I%2C-Blended-Finance/1383594433/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/London-Analyst%2C-Banking/1383584533/",
+          "title": "Analyst, Banking",
+          "company": "EBRD",
+          "location": "London",
+          "application_url": "https://jobs.ebrd.com/job/London-Analyst%2C-Banking/1383584533/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Belgrade-Analyst%2C-Banking-%28FI%29/1383578433/",
+          "title": "Analyst, Banking (FI)",
+          "company": "EBRD",
+          "location": "Belgrade",
+          "application_url": "https://jobs.ebrd.com/job/Belgrade-Analyst%2C-Banking-%28FI%29/1383578433/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Warsaw-Analyst%2C-Banking-%28M&amp;S%29/1383597733/",
+          "title": "Analyst, Banking (M&S)",
+          "company": "EBRD",
+          "location": "Warsaw",
+          "application_url": "https://jobs.ebrd.com/job/Warsaw-Analyst%2C-Banking-%28M&amp;S%29/1383597733/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Istanbul-Associate-Banker-Infrastructure-Sector/1383531833/",
+          "title": "Associate Banker - Infrastructure Sector",
+          "company": "EBRD",
+          "location": "Istanbul",
+          "application_url": "https://jobs.ebrd.com/job/Istanbul-Associate-Banker-Infrastructure-Sector/1383531833/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Sofia-Principal%2C-Security-Operations/1373508333/",
+          "title": "Principal, Security Operations",
+          "company": "EBRD",
+          "location": "Sofia",
+          "application_url": "https://jobs.ebrd.com/job/Sofia-Principal%2C-Security-Operations/1373508333/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Sofia-Principal-QE-Test-Environment-Management/1293360001/",
+          "title": "Principal QE - Test Environment Management",
+          "company": "EBRD",
+          "location": "Sofia",
+          "application_url": "https://jobs.ebrd.com/job/Sofia-Principal-QE-Test-Environment-Management/1293360001/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Cairo-Assistant/1382745233/",
+          "title": "Assistant",
+          "company": "EBRD",
+          "location": "Cairo",
+          "application_url": "https://jobs.ebrd.com/job/Cairo-Assistant/1382745233/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/London-Assistant-Analyst-Procurement/1382341033/",
+          "title": "Assistant Analyst- Procurement",
+          "company": "EBRD",
+          "location": "London",
+          "application_url": "https://jobs.ebrd.com/job/London-Assistant-Analyst-Procurement/1382341033/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Sofia-Associate-Azure-Infrastructure-Quality-Engineer/1250666401/",
+          "title": "Associate- Azure Infrastructure Quality Engineer",
+          "company": "EBRD",
+          "location": "Sofia",
+          "application_url": "https://jobs.ebrd.com/job/Sofia-Associate-Azure-Infrastructure-Quality-Engineer/1250666401/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Sofia-Associate%2C-Platform-Eng_-DevOps/1285249601/",
+          "title": "Associate, Platform Eng. DevOps",
+          "company": "EBRD",
+          "location": "Sofia",
+          "application_url": "https://jobs.ebrd.com/job/Sofia-Associate%2C-Platform-Eng_-DevOps/1285249601/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Sofia-Associate-Database-Engineer-Oracle-DBA/1229896901/",
+          "title": "Associate- Database Engineer- Oracle DBA",
+          "company": "EBRD",
+          "location": "Sofia",
+          "application_url": "https://jobs.ebrd.com/job/Sofia-Associate-Database-Engineer-Oracle-DBA/1229896901/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Sofia-Intern%2C-AI-engineer/1380953433/",
+          "title": "Intern, AI engineer",
+          "company": "EBRD",
+          "location": "Sofia",
+          "application_url": "https://jobs.ebrd.com/job/Sofia-Intern%2C-AI-engineer/1380953433/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/London-Principal%2C-Agile-Delivery-Manager-Digital-Workplace/1243808001/",
+          "title": "Principal, Agile Delivery Manager- Digital Workplace",
+          "company": "EBRD",
+          "location": "London",
+          "application_url": "https://jobs.ebrd.com/job/London-Principal%2C-Agile-Delivery-Manager-Digital-Workplace/1243808001/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Sofia-Lead-Full-Stack-Engineer/1286334301/",
+          "title": "Lead Full Stack Engineer",
+          "company": "EBRD",
+          "location": "Sofia",
+          "application_url": "https://jobs.ebrd.com/job/Sofia-Lead-Full-Stack-Engineer/1286334301/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/London-Associate%2C-OGC/1380045933/",
+          "title": "Associate, OGC",
+          "company": "EBRD",
+          "location": "London",
+          "application_url": "https://jobs.ebrd.com/job/London-Associate%2C-OGC/1380045933/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Sofia-Assoc%2C-Platform-Eng%2C-DevOps/1277114301/",
+          "title": "Assoc, Platform Eng, DevOps",
+          "company": "EBRD",
+          "location": "Sofia",
+          "application_url": "https://jobs.ebrd.com/job/Sofia-Assoc%2C-Platform-Eng%2C-DevOps/1277114301/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Sofia-Associate-Quality-Engineer/1262147901/",
+          "title": "Associate Quality Engineer",
+          "company": "EBRD",
+          "location": "Sofia",
+          "application_url": "https://jobs.ebrd.com/job/Sofia-Associate-Quality-Engineer/1262147901/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        },
+        {
+          "source_id": "sfrmk:EBRD:/job/Sofia-Associate-Cloud-Network-Engineer/1203357301/",
+          "title": "Associate- Cloud Network Engineer",
+          "company": "EBRD",
+          "location": "Sofia",
+          "application_url": "https://jobs.ebrd.com/job/Sofia-Associate-Cloud-Network-Engineer/1203357301/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:EBRD"
+        }
+      ]
+    },
+    {
+      "firm": "GIC",
+      "ok": true,
+      "count": 115,
+      "items": [
+        {
+          "source_id": "sfrmk:GIC:/job/London-Vice-President%2C-ESG%2C-Real-Estate/1214718266/",
+          "title": "Vice President, ESG, Real Estate",
+          "company": "GIC",
+          "location": "London",
+          "application_url": "https://careers.gic.com.sg/job/London-Vice-President%2C-ESG%2C-Real-Estate/1214718266/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-Investment-Risk-%28Credit%29/1356241966/",
+          "title": "AVP, Investment Risk (Credit)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-Investment-Risk-%28Credit%29/1356241966/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVPVP%2C-Investment-Risk/1357645966/",
+          "title": "AVP/VP, Investment Risk",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVPVP%2C-Investment-Risk/1357645966/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVPVP%2C-Total-Rewards/1360348566/",
+          "title": "AVP/VP, Total Rewards",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVPVP%2C-Total-Rewards/1360348566/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/New-York-Associate%2C-Private-Equity%2C-Special-Opportunities-Group-%28Summer-2027-Start%29/1360360266/",
+          "title": "Associate, Private Equity, Special Opportunities Group (Summer 2027 Start)",
+          "company": "GIC",
+          "location": "New",
+          "application_url": "https://careers.gic.com.sg/job/New-York-Associate%2C-Private-Equity%2C-Special-Opportunities-Group-%28Summer-2027-Start%29/1360360266/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/London-AVPVP%2C-Trader%2C-Global-Trading-Unit%2C-Portfolio-Execution-&amp;-Solutions-Group-Equities/1330832266/",
+          "title": "AVP/VP, Trader, Global Trading Unit, Portfolio Execution & Solutions Group - Equities",
+          "company": "GIC",
+          "location": "London",
+          "application_url": "https://careers.gic.com.sg/job/London-AVPVP%2C-Trader%2C-Global-Trading-Unit%2C-Portfolio-Execution-&amp;-Solutions-Group-Equities/1330832266/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/New-York-Executive-Assistant%2C-Global-Investment-Services/1359010366/",
+          "title": "Executive Assistant, Global Investment Services",
+          "company": "GIC",
+          "location": "New",
+          "application_url": "https://careers.gic.com.sg/job/New-York-Executive-Assistant%2C-Global-Investment-Services/1359010366/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-Application-Support-Engineer%2C-Technology-Group/1359010166/",
+          "title": "AVP, Application Support Engineer, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-Application-Support-Engineer%2C-Technology-Group/1359010166/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-Associate%2C-Real-Estate%2C-Executive-Assistant/1360259966/",
+          "title": "Associate, Real Estate, Executive Assistant",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-Associate%2C-Real-Estate%2C-Executive-Assistant/1360259966/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-Investment-Compliance-&amp;-Regulatory-Solutions/1360287466/",
+          "title": "AVP, Investment Compliance & Regulatory Solutions",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-Investment-Compliance-&amp;-Regulatory-Solutions/1360287466/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-SVP%2C-Data-Platform-Services-Engineering-Lead%2C-Technology-Group/1329449866/",
+          "title": "SVP, Data Platform Services Engineering Lead, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-SVP%2C-Data-Platform-Services-Engineering-Lead%2C-Technology-Group/1329449866/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVPVP%2C-Quantitative-Analyst%2C-AI-Alpha-Group/1356216466/",
+          "title": "AVP/VP, Quantitative Analyst, AI Alpha Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVPVP%2C-Quantitative-Analyst%2C-AI-Alpha-Group/1356216466/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-SVP%2C-Human-Resource-Business-Partner/1356218466/",
+          "title": "SVP, Human Resource Business Partner",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-SVP%2C-Human-Resource-Business-Partner/1356218466/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/New-York-AVP%2C-Deal-&amp;-Asset-Finance-Private-Markets/1328030766/",
+          "title": "AVP, Deal & Asset Finance - Private Markets",
+          "company": "GIC",
+          "location": "New",
+          "application_url": "https://careers.gic.com.sg/job/New-York-AVP%2C-Deal-&amp;-Asset-Finance-Private-Markets/1328030766/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-Associate%2C-Business-Support-Analyst-%28Contract%29/1356221666/",
+          "title": "Associate, Business Support Analyst (Contract)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-Associate%2C-Business-Support-Analyst-%28Contract%29/1356221666/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AssociateAVP%2C-Group-Controllers/1360191666/",
+          "title": "Associate/AVP, Group Controllers",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AssociateAVP%2C-Group-Controllers/1360191666/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VP%2C-Total-Portfolio-Risk-Manager-%28Liquidity-&amp;-Leverage-Oversight%29/1360190866/",
+          "title": "VP, Total Portfolio Risk Manager (Liquidity & Leverage Oversight)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VP%2C-Total-Portfolio-Risk-Manager-%28Liquidity-&amp;-Leverage-Oversight%29/1360190866/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VP%2C-Applied-AI-Engineer%2C-AI-Alpha-Group/1360181366/",
+          "title": "VP, Applied AI Engineer, AI Alpha Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VP%2C-Applied-AI-Engineer%2C-AI-Alpha-Group/1360181366/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AssociateAVP%2C-Risk-Analyst%2C-Analysis-&amp;-Reporting/1356151266/",
+          "title": "Associate/AVP, Risk Analyst, Analysis & Reporting",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AssociateAVP%2C-Risk-Analyst%2C-Analysis-&amp;-Reporting/1356151266/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VP%2C-Data-Scientist%2C-Investment-Insights-Group/1329381466/",
+          "title": "VP, Data Scientist, Investment Insights Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VP%2C-Data-Scientist%2C-Investment-Insights-Group/1329381466/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Sao-Paulo-AVP%2C-Deal-&amp;-Asset-Finance-Private-Markets/1356096066/",
+          "title": "AVP, Deal & Asset Finance - Private Markets",
+          "company": "GIC",
+          "location": "Sao",
+          "application_url": "https://careers.gic.com.sg/job/Sao-Paulo-AVP%2C-Deal-&amp;-Asset-Finance-Private-Markets/1356096066/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AssociateAVP%2C-Financial-Planning-&amp;-Analysis%2C-Finance-Department/1357500866/",
+          "title": "Associate/AVP, Financial Planning & Analysis, Finance Department",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AssociateAVP%2C-Financial-Planning-&amp;-Analysis%2C-Finance-Department/1357500866/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-SVP%2C-Portfolio-Manager-%28Portfolio-Strategy-&amp;-Construction%29/1356102166/",
+          "title": "SVP, Portfolio Manager (Portfolio Strategy & Construction)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-SVP%2C-Portfolio-Manager-%28Portfolio-Strategy-&amp;-Construction%29/1356102166/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-SVP%2C-Business-Manager%2C-Technology-Group/1356089866/",
+          "title": "SVP, Business Manager, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-SVP%2C-Business-Manager%2C-Technology-Group/1356089866/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VP%2C-Data-Business-Analyst%2C-Technology-Group/1214473766/",
+          "title": "VP, Data Business Analyst, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VP%2C-Data-Business-Analyst%2C-Technology-Group/1214473766/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/New-York-VP%2C-Threat-Intelligence-Cyber-Security-Assurance-&amp;-Defense/1357440366/",
+          "title": "VP, Threat Intelligence - Cyber Security Assurance & Defense",
+          "company": "GIC",
+          "location": "New",
+          "application_url": "https://careers.gic.com.sg/job/New-York-VP%2C-Threat-Intelligence-Cyber-Security-Assurance-&amp;-Defense/1357440366/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/New-York-SVP%2C-Threat-Operations-Cyber-Security-Assurance-&amp;-Defense/1357439266/",
+          "title": "SVP, Threat Operations - Cyber Security Assurance & Defense",
+          "company": "GIC",
+          "location": "New",
+          "application_url": "https://careers.gic.com.sg/job/New-York-SVP%2C-Threat-Operations-Cyber-Security-Assurance-&amp;-Defense/1357439266/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VP%2C-Information-&amp;-Technology-Risk-Manager/1358850866/",
+          "title": "VP, Information & Technology Risk Manager",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VP%2C-Information-&amp;-Technology-Risk-Manager/1358850866/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-Network-Reliability-Engineer-%28NetworksNetworks-Automation%29%2C-Technology-Group/1358864766/",
+          "title": "AVP, Network Reliability Engineer (Networks/Networks Automation), Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-Network-Reliability-Engineer-%28NetworksNetworks-Automation%29%2C-Technology-Group/1358864766/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/New-York-AVP%2C-Threat-Prevention-Cyber-Security-Assurance-&amp;-Defense/1357440266/",
+          "title": "AVP, Threat Prevention - Cyber Security Assurance & Defense",
+          "company": "GIC",
+          "location": "New",
+          "application_url": "https://careers.gic.com.sg/job/New-York-AVP%2C-Threat-Prevention-Cyber-Security-Assurance-&amp;-Defense/1357440266/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AssociateAVP%2C-Data-Business-Analyst%2C-Technology-Group/1157856201/",
+          "title": "Associate/AVP, Data Business Analyst, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AssociateAVP%2C-Data-Business-Analyst%2C-Technology-Group/1157856201/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AnalystAssociate%2C-Talent-Acquisition-Sourcing-Specialist-%2812-months-contract%29/1358870466/",
+          "title": "Analyst/Associate, Talent Acquisition Sourcing Specialist (12 months contract)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AnalystAssociate%2C-Talent-Acquisition-Sourcing-Specialist-%2812-months-contract%29/1358870466/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VP%2C-Data-Management/1356010066/",
+          "title": "VP, Data Management",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VP%2C-Data-Management/1356010066/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVPVP%2C-Software-Engineer-%28Java%29%2C-Technology-Group/1327898266/",
+          "title": "AVP/VP, Software Engineer (Java), Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVPVP%2C-Software-Engineer-%28Java%29%2C-Technology-Group/1327898266/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVPVP%2C-Software-Engineer-%28Python%29%2C-Technology-Group/1327898466/",
+          "title": "AVP/VP, Software Engineer (Python), Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVPVP%2C-Software-Engineer-%28Python%29%2C-Technology-Group/1327898466/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-SVP%2C-Operational-Service-Delivery-&amp;-Command-Centre-Operations%2C-Technology-Group/1358809566/",
+          "title": "SVP, Operational Service Delivery & Command Centre Operations, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-SVP%2C-Operational-Service-Delivery-&amp;-Command-Centre-Operations%2C-Technology-Group/1358809566/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/London-AVPVP%2C-Quantitative-Strategist%2C-Equities/1161078301/",
+          "title": "AVP/VP, Quantitative Strategist, Equities",
+          "company": "GIC",
+          "location": "London",
+          "application_url": "https://careers.gic.com.sg/job/London-AVPVP%2C-Quantitative-Strategist%2C-Equities/1161078301/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/New-York-AVP%2C-Transaction-Management%2C-Real-Estate/1358813266/",
+          "title": "AVP, Transaction Management, Real Estate",
+          "company": "GIC",
+          "location": "New",
+          "application_url": "https://careers.gic.com.sg/job/New-York-AVP%2C-Transaction-Management%2C-Real-Estate/1358813266/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVPVP%2C-Platform-Engineer%2C-Technology-Group/1360083166/",
+          "title": "AVP/VP, Platform Engineer, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVPVP%2C-Platform-Engineer%2C-Technology-Group/1360083166/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AssociateAVP%2C-Total-Portfolio-Rebalancing-Services/1360092366/",
+          "title": "Associate/AVP, Total Portfolio Rebalancing Services",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AssociateAVP%2C-Total-Portfolio-Rebalancing-Services/1360092366/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-Software-Developer%2C-Technology-Group-%281-Year-Contract%29/1209185801/",
+          "title": "AVP, Software Developer, Technology Group (1 Year Contract)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-Software-Developer%2C-Technology-Group-%281-Year-Contract%29/1209185801/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVPVP%2C-IAM-Engineer-%28Development-Lead%29%2C-Technology-Group/1358677566/",
+          "title": "AVP/VP, IAM Engineer (Development Lead), Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVPVP%2C-IAM-Engineer-%28Development-Lead%29%2C-Technology-Group/1358677566/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-SVP%2C-Head-of-Service-Management-%28Global-Infrastructure-&amp;-Cyber%29%2C-Technology-Group/1330506566/",
+          "title": "SVP, Head of Service Management (Global Infrastructure & Cyber), Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-SVP%2C-Head-of-Service-Management-%28Global-Infrastructure-&amp;-Cyber%29%2C-Technology-Group/1330506566/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VP%2C-Project-Manager-%28Infrastructure-and-Cybersecurity-Resilience%29%2C-Technology-Group/1359898066/",
+          "title": "VP, Project Manager (Infrastructure and Cybersecurity Resilience), Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VP%2C-Project-Manager-%28Infrastructure-and-Cybersecurity-Resilience%29%2C-Technology-Group/1359898066/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-SVP%2C-Global-Head-of-Service-Desk%2C-Technology-Group/1359901166/",
+          "title": "SVP, Global Head of Service Desk, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-SVP%2C-Global-Head-of-Service-Desk%2C-Technology-Group/1359901166/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-Associate%2C-Administration-&amp;-Business-Support/1359880166/",
+          "title": "Associate, Administration & Business Support",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-Associate%2C-Administration-&amp;-Business-Support/1359880166/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VP%2C-SRE-Engineer-%28Splunk%29%2C-Technology-Group/1359890566/",
+          "title": "VP, SRE Engineer (Splunk), Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VP%2C-SRE-Engineer-%28Splunk%29%2C-Technology-Group/1359890566/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-Information-&amp;-Technology-Risk-Manager-%28Control-Assurance-&amp;-Enablement%29/1359866466/",
+          "title": "AVP, Information & Technology Risk Manager (Control Assurance & Enablement)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-Information-&amp;-Technology-Risk-Manager-%28Control-Assurance-&amp;-Enablement%29/1359866466/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-Associate%2C-Private-Equity%2C-Global-Investments%2C-Strategy-&amp;-Risk/1208350701/",
+          "title": "Associate, Private Equity, Global Investments, Strategy & Risk",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-Associate%2C-Private-Equity%2C-Global-Investments%2C-Strategy-&amp;-Risk/1208350701/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-L2-Application-Support-Engineer-%28Digital-Enterprise-Services%29%2C-Technology-Group/1330420566/",
+          "title": "AVP, L2 Application Support Engineer (Digital Enterprise Services), Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-L2-Application-Support-Engineer-%28Digital-Enterprise-Services%29%2C-Technology-Group/1330420566/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/London-Associate%2C-Private-Credit-Group/1212872266/",
+          "title": "Associate, Private Credit Group",
+          "company": "GIC",
+          "location": "London",
+          "application_url": "https://careers.gic.com.sg/job/London-Associate%2C-Private-Credit-Group/1212872266/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/New-York-Executive-Assistant%2C-Infrastructure/1355739966/",
+          "title": "Executive Assistant, Infrastructure",
+          "company": "GIC",
+          "location": "New",
+          "application_url": "https://careers.gic.com.sg/job/New-York-Executive-Assistant%2C-Infrastructure/1355739966/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AssociateAVP%2C-External-Managers%2C-MacroFixed-Income-Portfolio-Manager/1214241466/",
+          "title": "Associate/AVP, External Managers, Macro/Fixed Income - Portfolio Manager",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AssociateAVP%2C-External-Managers%2C-MacroFixed-Income-Portfolio-Manager/1214241466/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-SVPMD%2C-Head%2C-Credit-Risk-Management/1357172566/",
+          "title": "SVP/MD, Head, Credit Risk Management",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-SVPMD%2C-Head%2C-Credit-Risk-Management/1357172566/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVPVP%2C-Total-Portfolio-Data-Analyst/1355731866/",
+          "title": "AVP/VP, Total Portfolio Data Analyst",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVPVP%2C-Total-Portfolio-Data-Analyst/1355731866/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/New-York-Associate%2C-Private-Equity%2C-Funds-&amp;-Co-Investments-Group-%28Summer-2026-Start%29/1216918201/",
+          "title": "Associate, Private Equity, Funds & Co-Investments Group (Summer 2026 Start)",
+          "company": "GIC",
+          "location": "New",
+          "application_url": "https://careers.gic.com.sg/job/New-York-Associate%2C-Private-Equity%2C-Funds-&amp;-Co-Investments-Group-%28Summer-2026-Start%29/1216918201/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-Information-&amp;-Technology-Risk-Manager-%28Governance-and-Risk-Oversight%29/1357079366/",
+          "title": "AVP, Information & Technology Risk Manager (Governance and Risk Oversight)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-Information-&amp;-Technology-Risk-Manager-%28Governance-and-Risk-Oversight%29/1357079366/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-Workplace-Management-%281-year-contract%29/1358539566/",
+          "title": "AVP, Workplace Management (1-year contract)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-Workplace-Management-%281-year-contract%29/1358539566/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-Associate%2C-Controller%2C-Investment-Operations/1357027866/",
+          "title": "Associate, Controller, Investment Operations",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-Associate%2C-Controller%2C-Investment-Operations/1357027866/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/London-AVP%2C-Trader%2C-Global-Trading-Unit%2C-Portfolio-Execution-&amp;-Solutions-Group-Cross-Asset/1357035166/",
+          "title": "AVP, Trader, Global Trading Unit, Portfolio Execution & Solutions Group - Cross Asset",
+          "company": "GIC",
+          "location": "London",
+          "application_url": "https://careers.gic.com.sg/job/London-AVP%2C-Trader%2C-Global-Trading-Unit%2C-Portfolio-Execution-&amp;-Solutions-Group-Cross-Asset/1357035166/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VP%2C-Joint-Ventures-Operational-Due-Diligence%2C-Real-Estate/1359670866/",
+          "title": "VP, Joint Ventures Operational Due Diligence, Real Estate",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VP%2C-Joint-Ventures-Operational-Due-Diligence%2C-Real-Estate/1359670866/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/New-York-AssociateAVP%2C-Trader%2C-Global-Trading-Unit%2C-Portfolio-Execution-&amp;-Solutions-Group-Equities/1359712266/",
+          "title": "Associate/AVP, Trader, Global Trading Unit, Portfolio Execution & Solutions Group - Equities",
+          "company": "GIC",
+          "location": "New",
+          "application_url": "https://careers.gic.com.sg/job/New-York-AssociateAVP%2C-Trader%2C-Global-Trading-Unit%2C-Portfolio-Execution-&amp;-Solutions-Group-Equities/1359712266/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVPVP%2C-Data-Engineer%2C-Technology-Group/1214006266/",
+          "title": "AVP/VP, Data Engineer, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVPVP%2C-Data-Engineer%2C-Technology-Group/1214006266/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AssociateAVP%2C-Data-Engineer%2C-AI-Alpha-Group/1330237566/",
+          "title": "Associate/AVP, Data Engineer, AI Alpha Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AssociateAVP%2C-Data-Engineer%2C-AI-Alpha-Group/1330237566/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VP%2C-Platform-Engineer-%28Enterprise-Service-Management%29%2C-Technology-Group/1356893966/",
+          "title": "VP, Platform Engineer (Enterprise Service Management), Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VP%2C-Platform-Engineer-%28Enterprise-Service-Management%29%2C-Technology-Group/1356893966/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-SVP%2C-Total-Portfolio-Risk/1331365366/",
+          "title": "SVP, Total Portfolio Risk",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-SVP%2C-Total-Portfolio-Risk/1331365366/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVPVP%2C-Software-Engineer-%28C%29%2C-Technology-Group/1331360366/",
+          "title": "AVP/VP, Software Engineer (C#), Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVPVP%2C-Software-Engineer-%28C%29%2C-Technology-Group/1331360366/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-Associate%2C-Real-Estate-Portfolio-Monitoring/1356856066/",
+          "title": "Associate, Real Estate Portfolio Monitoring",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-Associate%2C-Real-Estate-Portfolio-Monitoring/1356856066/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVPVP%2C-Portfolio-Manager-%28Portfolio-Solutions%29/1356886866/",
+          "title": "AVP/VP, Portfolio Manager (Portfolio Solutions)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVPVP%2C-Portfolio-Manager-%28Portfolio-Solutions%29/1356886866/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VP%2C-Voice-&amp;-Unified-Communications-Engineer%2C-Technology-Group/1331300566/",
+          "title": "VP, Voice & Unified Communications Engineer, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VP%2C-Voice-&amp;-Unified-Communications-Engineer%2C-Technology-Group/1331300566/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/San-Francisco-AVP%2C-GIC-Global-Markets-Development-CA-94101/1358275866/",
+          "title": "AVP, GIC Global Markets Development",
+          "company": "GIC",
+          "location": "San",
+          "application_url": "https://careers.gic.com.sg/job/San-Francisco-AVP%2C-GIC-Global-Markets-Development-CA-94101/1358275866/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/San-Francisco-VP%2C-GIC-Global-Markets-Development-CA-94101/1358275766/",
+          "title": "VP, GIC Global Markets Development",
+          "company": "GIC",
+          "location": "San",
+          "application_url": "https://careers.gic.com.sg/job/San-Francisco-VP%2C-GIC-Global-Markets-Development-CA-94101/1358275766/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VP%2C-EUI-Desktop-&amp;-VDI-Engineer%2C-Technology-Group/1356808466/",
+          "title": "VP, EUI Desktop & VDI Engineer, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VP%2C-EUI-Desktop-&amp;-VDI-Engineer%2C-Technology-Group/1356808466/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/London-AnalystAssociate%2C-Real-Estate/1215417001/",
+          "title": "Analyst/Associate, Real Estate",
+          "company": "GIC",
+          "location": "London",
+          "application_url": "https://careers.gic.com.sg/job/London-AnalystAssociate%2C-Real-Estate/1215417001/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AnalystAssociate%2C-Risk-Analyst%2C-Analysis-&amp;-Reporting-%28Contract%29/1332147066/",
+          "title": "Analyst/Associate, Risk Analyst, Analysis & Reporting (Contract)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AnalystAssociate%2C-Risk-Analyst%2C-Analysis-&amp;-Reporting-%28Contract%29/1332147066/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/New-York-AVP%2C-Investment-Tax%2C-Americas/1358275966/",
+          "title": "AVP, Investment Tax, Americas",
+          "company": "GIC",
+          "location": "New",
+          "application_url": "https://careers.gic.com.sg/job/New-York-AVP%2C-Investment-Tax%2C-Americas/1358275966/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-Total-Portfolio-Data-Business-Analyst/1356810766/",
+          "title": "AVP, Total Portfolio Data Business Analyst",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-Total-Portfolio-Data-Business-Analyst/1356810766/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/New-York-AVPVP%2C-Co-Investment-Sourcer%2C-External-Managers/1213838166/",
+          "title": "AVP/VP, Co-Investment Sourcer, External Managers",
+          "company": "GIC",
+          "location": "New",
+          "application_url": "https://careers.gic.com.sg/job/New-York-AVPVP%2C-Co-Investment-Sourcer%2C-External-Managers/1213838166/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-Project-&amp;-Data-Enablement-Analyst-%281-year-contract%29/1332087966/",
+          "title": "AVP, Project & Data Enablement Analyst (1-year contract)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-Project-&amp;-Data-Enablement-Analyst-%281-year-contract%29/1332087966/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AssociateAVP%2C-Total-Portfolio-Sustainability-Investment-Research-&amp;-Strategy/1331231566/",
+          "title": "Associate/AVP, Total Portfolio Sustainability Investment Research & Strategy",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AssociateAVP%2C-Total-Portfolio-Sustainability-Investment-Research-&amp;-Strategy/1331231566/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/London-Associate%2C-Integrated-Strategies-Group/1358128366/",
+          "title": "Associate, Integrated Strategies Group",
+          "company": "GIC",
+          "location": "London",
+          "application_url": "https://careers.gic.com.sg/job/London-Associate%2C-Integrated-Strategies-Group/1358128366/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-Business-Data-Operations/1332004166/",
+          "title": "AVP, Business Data Operations",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-Business-Data-Operations/1332004166/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VPSVP%2C-Business-Architecture/1359537466/",
+          "title": "VP/SVP, Business Architecture",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VPSVP%2C-Business-Architecture/1359537466/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-Portfolio-Manager-%28Rates-&amp;-FX-Volatility%29/1358061866/",
+          "title": "Portfolio Manager (Rates & FX Volatility)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-Portfolio-Manager-%28Rates-&amp;-FX-Volatility%29/1358061866/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-Control-Room-%28Contract%29/1358059266/",
+          "title": "AVP, Control Room (Contract)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-Control-Room-%28Contract%29/1358059266/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VP%2C-Risk-Analytics-Product-Manager/1356599266/",
+          "title": "VP, Risk Analytics Product Manager",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VP%2C-Risk-Analytics-Product-Manager/1356599266/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VP%2C-Data-Governance-Lead-%28Data-Stewardship%29%2C-Technology-Group/1359479466/",
+          "title": "VP, Data Governance Lead (Data Stewardship), Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VP%2C-Data-Governance-Lead-%28Data-Stewardship%29%2C-Technology-Group/1359479466/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-Data-Governance-%28Data-Stewardship%29%2C-Technology-Group/1359479366/",
+          "title": "AVP, Data Governance (Data Stewardship), Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-Data-Governance-%28Data-Stewardship%29%2C-Technology-Group/1359479366/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVPVP%2C-External-Managers%2C-Equities-Portfolio-Manager/1328486366/",
+          "title": "AVP/VP, External Managers, Equities - Portfolio Manager",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVPVP%2C-External-Managers%2C-Equities-Portfolio-Manager/1328486366/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-Incident-and-Problem-Management%2C-Technology-Group/1357996966/",
+          "title": "AVP, Incident and Problem Management, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-Incident-and-Problem-Management%2C-Technology-Group/1357996966/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VP%2C-Active-Directory-&amp;-Entra-ID-Engineer%2C-Technology-Group/1357998966/",
+          "title": "VP, Active Directory & Entra ID Engineer, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VP%2C-Active-Directory-&amp;-Entra-ID-Engineer%2C-Technology-Group/1357998966/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/London-Associate%2C-Real-Estate-Portfolio-Monitoring/1359397266/",
+          "title": "Associate, Real Estate Portfolio Monitoring",
+          "company": "GIC",
+          "location": "London",
+          "application_url": "https://careers.gic.com.sg/job/London-Associate%2C-Real-Estate-Portfolio-Monitoring/1359397266/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VPSVP%2C-Business-Analyst%2C-Technology-Group/1328418666/",
+          "title": "VP/SVP, Business Analyst, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VPSVP%2C-Business-Analyst%2C-Technology-Group/1328418666/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-Associate%2C-Vendor-Operations-Administrator%2C-Technology-Group-%281-Year-Contract%29/1359309866/",
+          "title": "Associate, Vendor Operations Administrator, Technology Group (1 Year Contract)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-Associate%2C-Vendor-Operations-Administrator%2C-Technology-Group-%281-Year-Contract%29/1359309866/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VP%2C-Programme-Manager%2C-Technology-Group/1359343266/",
+          "title": "VP, Programme Manager, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VP%2C-Programme-Manager%2C-Technology-Group/1359343266/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-PMO-Operations-&amp;-Governance%2C-Technology-Group/1359303166/",
+          "title": "AVP, PMO Operations & Governance, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-PMO-Operations-&amp;-Governance%2C-Technology-Group/1359303166/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VPSVP%2C-Programme-Manager%2C-Technology-Group/1209626101/",
+          "title": "VP/SVP, Programme Manager, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VPSVP%2C-Programme-Manager%2C-Technology-Group/1209626101/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AssociateAVP%2C-Business-Analyst%2C-PE-COO-Office-%282-year-contract%29/1356466866/",
+          "title": "Associate/AVP, Business Analyst, PE COO Office (2-year contract)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AssociateAVP%2C-Business-Analyst%2C-PE-COO-Office-%282-year-contract%29/1356466866/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AssociateAVP%2C-External-Managers%2C-Portfolio-Construction-and-Risk-Credit/1213501766/",
+          "title": "Associate/AVP, External Managers, Portfolio Construction and Risk - Credit",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AssociateAVP%2C-External-Managers%2C-Portfolio-Construction-and-Risk-Credit/1213501766/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/New-York-Associate%2C-Integrated-Strategies-Group/1331019166/",
+          "title": "Associate, Integrated Strategies Group",
+          "company": "GIC",
+          "location": "New",
+          "application_url": "https://careers.gic.com.sg/job/New-York-Associate%2C-Integrated-Strategies-Group/1331019166/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVPVP%2C-Information-&amp;-Technology-Risk-Manager-%28Third-Party-&amp;-AI-Supply-Chain-Risk-Oversight%29/1356330966/",
+          "title": "AVP/VP, Information & Technology Risk Manager (Third-Party & AI Supply Chain Risk Oversight)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVPVP%2C-Information-&amp;-Technology-Risk-Manager-%28Third-Party-&amp;-AI-Supply-Chain-Risk-Oversight%29/1356330966/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-Operational-Resilience-and-Business-Continuity/1357794266/",
+          "title": "AVP, Operational Resilience and Business Continuity",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-Operational-Resilience-and-Business-Continuity/1357794266/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AssociateAVP%2C-Procurement-Services%2C-Enterprise-Sourcing-and-Procurement/1357794066/",
+          "title": "Associate/AVP, Procurement Services, Enterprise Sourcing and Procurement",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AssociateAVP%2C-Procurement-Services%2C-Enterprise-Sourcing-and-Procurement/1357794066/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VP%2C-Network-Operations%2C-Technology-Group/1356329766/",
+          "title": "VP, Network Operations, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VP%2C-Network-Operations%2C-Technology-Group/1356329766/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-Associate%2C-Infrastructure%2C-Investments-Asia/1356281866/",
+          "title": "Associate, Infrastructure, Investments - Asia",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-Associate%2C-Infrastructure%2C-Investments-Asia/1356281866/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VPSVP%2C-Investment-Analyst-%28Financials%29/1357799766/",
+          "title": "VP/SVP, Investment Analyst (Financials)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VPSVP%2C-Investment-Analyst-%28Financials%29/1357799766/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VPSVP%2C-Investment-Risk-%28Real-Estate%29/1357788366/",
+          "title": "VP/SVP, Investment Risk (Real Estate)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VPSVP%2C-Investment-Risk-%28Real-Estate%29/1357788366/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-VP%2C-Information-&amp;-Technology-Risk-Manager-%28Data-&amp;-Applications-Risk-Oversight%29/1356330766/",
+          "title": "VP, Information & Technology Risk Manager (Data & Applications Risk Oversight)",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-VP%2C-Information-&amp;-Technology-Risk-Manager-%28Data-&amp;-Applications-Risk-Oversight%29/1356330766/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/New-York-Associate%2C-Infrastructure/1328291966/",
+          "title": "Associate, Infrastructure",
+          "company": "GIC",
+          "location": "New",
+          "application_url": "https://careers.gic.com.sg/job/New-York-Associate%2C-Infrastructure/1328291966/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-Investment-Risk/1359201466/",
+          "title": "AVP, Investment Risk",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-Investment-Risk/1359201466/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AssociateAVP%2C-Data-Scientist%2C-Investment-Insights-Group/1207263501/",
+          "title": "Associate/AVP, Data Scientist, Investment Insights Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AssociateAVP%2C-Data-Scientist%2C-Investment-Insights-Group/1207263501/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-Corporate-Communications%2C-Corporate-Affairs-&amp;-Communications/1357026366/",
+          "title": "AVP, Corporate Communications, Corporate Affairs & Communications",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-Corporate-Communications%2C-Corporate-Affairs-&amp;-Communications/1357026366/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-Network-Management/1356989066/",
+          "title": "AVP, Network Management",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-Network-Management/1356989066/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVPVP%2C-Insider-Threat%2C-Cyber-Security-Assurance-&amp;-Defense%2C-Technology-Group/1358470366/",
+          "title": "AVP/VP, Insider Threat, Cyber Security Assurance & Defense, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVPVP%2C-Insider-Threat%2C-Cyber-Security-Assurance-&amp;-Defense%2C-Technology-Group/1358470366/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        },
+        {
+          "source_id": "sfrmk:GIC:/job/Singapore-AVP%2C-Threat-Prevention%2C-Cyber-Security-Assurance-&amp;-Defense%2C-Technology-Group/1358470466/",
+          "title": "AVP, Threat Prevention, Cyber Security Assurance & Defense, Technology Group",
+          "company": "GIC",
+          "location": "Singapore",
+          "application_url": "https://careers.gic.com.sg/job/Singapore-AVP%2C-Threat-Prevention%2C-Cyber-Security-Assurance-&amp;-Defense%2C-Technology-Group/1358470466/",
+          "date_posted": "2026-04-23",
+          "source": "successfactors:GIC"
+        }
+      ]
+    },
+    {
+      "firm": "CDPQ",
+      "ok": true,
+      "count": 29,
+      "items": [
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Analyste-principal-e----Solutions-numriques-et-analytiques---Portefeuille-global_R04847",
+          "title": "Analyste principal(e)*, Solutions numériques et analytiques – Portefeuille global",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Analyste-principal-e----Solutions-numriques-et-analytiques---Portefeuille-global_R04847",
+          "date_posted": "Publié aujourd'hui",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Analyste--Immobilier_R04844",
+          "title": "Analyste, Immobilier",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Analyste--Immobilier_R04844",
+          "date_posted": "Publié hier",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Dveloppeur--euse---Solutions-Numriques-et-Analytiques-Dposants_R04790-1",
+          "title": "Développeur(-euse), Solutions numériques et analytiques déposants",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Dveloppeur--euse---Solutions-Numriques-et-Analytiques-Dposants_R04790-1",
+          "date_posted": "Publié il y a 6 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Adjoint-e--de-direction---Marchs-liquides_R04842",
+          "title": "Adjoint(e) de direction - Marchés liquides",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Adjoint-e--de-direction---Marchs-liquides_R04842",
+          "date_posted": "Publié il y a 6 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Adjoint-e--administratif--ve--principal-e-----Gestions-des-risques_R04843",
+          "title": "Adjoint(e) administratif(-ve) principal(e) *, Gestions des risques",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Adjoint-e--administratif--ve--principal-e-----Gestions-des-risques_R04843",
+          "date_posted": "Publié il y a 6 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Conseiller--re--principal-e----Construction-de-portefeuille_R04839",
+          "title": "Conseiller(-ère) principal(e)*, Construction de portefeuille",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Conseiller--re--principal-e----Construction-de-portefeuille_R04839",
+          "date_posted": "Publié il y a 6 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Conseiller--re--principal-e---Communications-internes_R04840-1",
+          "title": "Conseiller(-ère) principal(e), Communications internes",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Conseiller--re--principal-e---Communications-internes_R04840-1",
+          "date_posted": "Publié il y a 7 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Conseiller--re--principal-e----Stratgie-et-excution---Placement-priv-international_R04841",
+          "title": "Conseiller(-ère) principal(e)*, Stratégie et exécution - Placement privé international",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Conseiller--re--principal-e----Stratgie-et-excution---Placement-priv-international_R04841",
+          "date_posted": "Publié il y a 7 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Analyste-principal-e---Analytique---Finance-et-services-d-entreprise_R04812",
+          "title": "Analyste principal(e)*, Analytique - Finance et services d'entreprise",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Analyste-principal-e---Analytique---Finance-et-services-d-entreprise_R04812",
+          "date_posted": "Publié il y a 7 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Conseiller--re--principal-e---risques---cyberscurit-et-technologies-de-rupture_R04815",
+          "title": "Conseiller(-ère) principal(e), risques – cybersécurité et technologies de rupture",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Conseiller--re--principal-e---risques---cyberscurit-et-technologies-de-rupture_R04815",
+          "date_posted": "Publié il y a 9 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Premier--re--conseiller--re---Analyse-et-performance-financire--FP-A-_R04813",
+          "title": "Premier(-ère) conseiller(-ère), Analyse et performance financière (FP&A)",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Premier--re--conseiller--re---Analyse-et-performance-financire--FP-A-_R04813",
+          "date_posted": "Publié il y a 9 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Dveloppeur--euse--principal-e---Automatisation-de-processus_R04808",
+          "title": "Développeur(-euse) principal(e), Automatisation de processus",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Dveloppeur--euse--principal-e---Automatisation-de-processus_R04808",
+          "date_posted": "Publié il y a 9 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Londres/Analyste-principal-e----Dette-prive_R04817",
+          "title": "Analyste principal(e)*, Dette privée",
+          "company": "CDPQ",
+          "location": "Londres",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Londres/Analyste-principal-e----Dette-prive_R04817",
+          "date_posted": "Publié il y a 9 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Concepteur--trice--principal-e--de-logiciel--Fiabilit-des-services_R04688",
+          "title": "Concepteur(-trice) principal(e), FinOps",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Concepteur--trice--principal-e--de-logiciel--Fiabilit-des-services_R04688",
+          "date_posted": "Publié il y a 9 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Administrateur--trice---Plateforme-rseau-scuris--Palo-Alto-_R04785",
+          "title": "Administrateur(-trice), Plateforme réseau sécurisé Palo Alto",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Administrateur--trice---Plateforme-rseau-scuris--Palo-Alto-_R04785",
+          "date_posted": "Publié il y a 9 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Premier--re--conseiller-re----Affaires-juridiques---Placement-priv---transactionnel_R04809",
+          "title": "Premier(-ère) conseiller(-ère)*, Affaires juridiques — Placement privé / transactionnel",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Premier--re--conseiller-re----Affaires-juridiques---Placement-priv---transactionnel_R04809",
+          "date_posted": "Publié il y a 9 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Dveloppeur--euse--principal-e---Plateforme-AWS_R04788",
+          "title": "Développeur(-euse) principal(e), Plateforme AWS",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Dveloppeur--euse--principal-e---Plateforme-AWS_R04788",
+          "date_posted": "Publié il y a 10 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Conseiller--re--principal-e----Comptabilit-et-performance-financire_R04806",
+          "title": "Conseiller(-ère) principal(e)*, Comptabilité et performance financière",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Conseiller--re--principal-e----Comptabilit-et-performance-financire_R04806",
+          "date_posted": "Publié il y a 15 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Adjoint-e--administratif--ve--principal-e---Fonds-d-investissement-et-gestion-externe---Marchs-privs_R04784",
+          "title": "Adjoint(e) administratif(-ve) principal(e), Fonds d’investissement et gestion externe – Marchés privés",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Adjoint-e--administratif--ve--principal-e---Fonds-d-investissement-et-gestion-externe---Marchs-privs_R04784",
+          "date_posted": "Publié il y a 15 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Analyste-principal-e---Revue-diligente-oprationnelle_R04805",
+          "title": "Analyste principal(e), Revue diligente opérationnelle",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Analyste-principal-e---Revue-diligente-oprationnelle_R04805",
+          "date_posted": "Publié il y a 15 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Premier--re--conseiller--re---Investissement-durable_R04759",
+          "title": "Premier(-ère) conseiller(-ère), Investissement durable",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Premier--re--conseiller--re---Investissement-durable_R04759",
+          "date_posted": "Publié il y a 21 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Conseiller--re--principal-e---valuation_R04800",
+          "title": "Conseiller(-ère) principal(e), Évaluation",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Conseiller--re--principal-e---valuation_R04800",
+          "date_posted": "Publié il y a 22 jour(s)",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Conseillre--Approvisionnement_R04775",
+          "title": "Premier(-ère) conseiller(-ère) , Approvisionnements spécialisés",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Conseillre--Approvisionnement_R04775",
+          "date_posted": "Publié il y a plus de 30 jours",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Rceptionniste_R04771-1",
+          "title": "Réceptionniste",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Rceptionniste_R04771-1",
+          "date_posted": "Publié il y a plus de 30 jours",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Premier--re--analyste--Gouvernance-de-donnes_R04761",
+          "title": "Premier(-ère) analyste, Gestion de données",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Premier--re--analyste--Gouvernance-de-donnes_R04761",
+          "date_posted": "Publié il y a plus de 30 jours",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Premierre-analyste--Gestion-durable-des-terres-et-ressources-naturelles_R03966",
+          "title": "Premier(-ère) analyste, Infrastructure – Actifs réels et ressources naturelles - Investissements privés",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Premierre-analyste--Gestion-durable-des-terres-et-ressources-naturelles_R03966",
+          "date_posted": "Publié il y a plus de 30 jours",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Mexique/Analyste--Placements-privs--Infrastructures_R04275",
+          "title": "Analyste, Infrastructures, Amérique latine",
+          "company": "CDPQ",
+          "location": "Mexique",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Mexique/Analyste--Placements-privs--Infrastructures_R04275",
+          "date_posted": "Publié il y a plus de 30 jours",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Montral/Premier--re--conseiller--re---Gouvernance-financire_R04598",
+          "title": "Premier(-ère) conseiller(-ère), Gouvernance financière",
+          "company": "CDPQ",
+          "location": "Montréal",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Montral/Premier--re--conseiller--re---Gouvernance-financire_R04598",
+          "date_posted": "Publié il y a plus de 30 jours",
+          "source": "workday:CDPQ"
+        },
+        {
+          "source_id": "workday:CDPQ:/job/Mumbai/Analyst--Real-Estate_R04547",
+          "title": "Analyste, Immobilier",
+          "company": "CDPQ",
+          "location": "Mumbai",
+          "application_url": "https://cdpq.wd10.myworkdayjobs.com/job/Mumbai/Analyst--Real-Estate_R04547",
+          "date_posted": "Publié il y a plus de 30 jours",
+          "source": "workday:CDPQ"
+        }
+      ]
+    },
+    {
+      "firm": "TPG",
+      "ok": true,
+      "count": 2,
+      "items": [
+        {
+          "source_id": "greenhouse:tpgcareers:7694908003",
+          "title": "Associate, Office of CAO",
+          "company": "TPG",
+          "location": "New York City",
+          "application_url": "https://job-boards.greenhouse.io/tpgcareers/jobs/7694908003",
+          "date_posted": "2026-04-10",
+          "source": "greenhouse:tpgcareers",
+          "raw_department": "Credit Finance"
+        },
+        {
+          "source_id": "greenhouse:tpgcareers:7698762003",
+          "title": "Employee Co-Investment Reporting, Vice President",
+          "company": "TPG",
+          "location": "Fort Worth",
+          "application_url": "https://job-boards.greenhouse.io/tpgcareers/jobs/7698762003",
+          "date_posted": "2026-04-15",
+          "source": "greenhouse:tpgcareers",
+          "raw_department": "Services Operations"
+        }
+      ]
+    },
+    {
+      "firm": "DFC",
+      "ok": false,
+      "count": 0,
+      "error": "USAJOBS 401"
     }
   ]
 }

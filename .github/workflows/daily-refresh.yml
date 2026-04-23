@@ -1,0 +1,58 @@
+name: Daily job refresh
+
+on:
+  schedule:
+    # 11:00 UTC every day (≈ 5:00 AM Mexico City / 6:00 AM Eastern, year-round)
+    - cron: "0 11 * * *"
+  workflow_dispatch:        # lets you trigger a run manually from the Actions tab
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: daily-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Ensure manual seed (first run only)
+        run: node scripts/seed-manual-from-existing.js
+
+      - name: Fetch from public job APIs
+        run: node scripts/refresh.js
+
+      - name: Merge auto + manual into data.js
+        run: node scripts/merge.js
+
+      - name: Create / update pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore(data): daily refresh ${{ github.run_id }}"
+          branch: automated/daily-refresh
+          delete-branch: false
+          title: "Daily refresh — ${{ github.run_id }}"
+          body: |
+            **Automated daily refresh** (GitHub Actions, zero Perplexity credits).
+
+            - Fetches MD+ roles from ~50 curated firms via free public APIs.
+            - Preserves every job in `data/manual/jobs.json` (pinned / human-curated).
+            - Sanity guard aborted if auto-jobs count drops > 30 %.
+            - Backup saved to `backups/auto-YYYY-MM-DD.json`.
+
+            Review the diff. If it looks good → **Merge**. If anything is off → **Close** (nothing changes).
+          labels: |
+            automated
+            daily-refresh

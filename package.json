@@ -1,0 +1,13 @@
+{
+  "name": "gs-executive-search",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "seed-manual": "node scripts/seed-manual-from-existing.js",
+    "refresh": "node scripts/refresh.js",
+    "merge": "node scripts/merge.js",
+    "daily": "npm run seed-manual && npm run refresh && npm run merge"
+  },
+  "engines": { "node": ">=20" }
+}

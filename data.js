@@ -3666,6 +3666,20 @@ window.APP_DATA = {
       "date_added": "2026-04-23",
       "salary": null,
       "notes": "ImpactPool lists Posting End Date / application deadline as 4/28/2026 11:59 PM EST; duty station is flexible across IDB Invest country offices. PROTECTED — DFI/multilateral organization."
+    },
+    {
+      "id": 185,
+      "title": "Director, Strategic Investor Relations",
+      "company": "IFC (World Bank Group)",
+      "region": "North America",
+      "industry": "development finance institutions",
+      "goldie_fit": "Senior capital mobilization / investor engagement leadership role at a DFI; aligns with her global fund management and DFI leadership background.",
+      "suggested_recruiter": null,
+      "source_url": "https://www.unjobnet.org/jobs/detail/85892819",
+      "date_posted": "2026-04-27",
+      "date_added": "2026-04-29",
+      "salary": null,
+      "notes": "Grade GI; term duration 4 years; closing date 2026-05-18 (UTC). PROTECTED — DFI/multilateral organization."
     }
   ],
   "companies": [
@@ -11879,5 +11893,14 @@ window.APP_DATA = {
       "last_scan_date": "2026-04-23"
     }
   ],
-  "last_updated": "2026-04-28T08:06:01-04:00"
+  "last_updated": "2026-04-29T07:05:13-04:00",
+  "updates": [
+    {
+      "id": "auto-update-2026-04-29",
+      "type": "jobs",
+      "title": "Daily Search: 1 New Job(s) Added",
+      "message": "Automatically added 1 new MD+ openings: Director, Strategic Investor Relations",
+      "date": "2026-04-29T07:05:11-04:00"
+    }
+  ]
 };

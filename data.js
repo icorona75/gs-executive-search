@@ -3680,6 +3680,20 @@ window.APP_DATA = {
       "date_added": "2026-04-29",
       "salary": null,
       "notes": "Grade GI; term duration 4 years; closing date 2026-05-18 (UTC). PROTECTED — DFI/multilateral organization."
+    },
+    {
+      "id": 186,
+      "title": "Upstream and Advisory Manager FIG, LAC",
+      "company": "IFC (World Bank Group)",
+      "region": "Latin America & Caribbean",
+      "industry": "Development finance institution",
+      "goldie_fit": "Senior (GH-grade) leadership role in a DFI with focus on private capital mobilization, upstream development, and advisory/investment outcomes—strong match to Goldie’s emerging markets + development finance + capital markets/fund strategy leadership background.",
+      "suggested_recruiter": null,
+      "source_url": "https://www.impactpool.org/jobs/1207073",
+      "date_posted": null,
+      "date_added": "2026-04-30",
+      "salary": null,
+      "notes": "Closing date shown as 4/30/2026 11:59pm UTC; role is manager-level leadership within IFC FIG LAC (GH grade). PROTECTED — DFI/multilateral organization."
     }
   ],
   "companies": [
@@ -11893,8 +11907,15 @@ window.APP_DATA = {
       "last_scan_date": "2026-04-23"
     }
   ],
-  "last_updated": "2026-04-29T08:13:22-04:00",
+  "last_updated": "2026-04-30T07:05:18-04:00",
   "updates": [
+    {
+      "id": "auto-update-2026-04-30",
+      "type": "jobs",
+      "title": "Daily Search: 1 New Job(s) Added",
+      "message": "Automatically added 1 new MD+ openings: Upstream and Advisory Manager FIG, LAC",
+      "date": "2026-04-30T07:05:15-04:00"
+    },
     {
       "id": "auto-update-2026-04-29",
       "type": "jobs",

@@ -3656,6 +3656,24 @@ window.APP_DATA = {
       "salary": null,
       "notes": "Closing date shown as 4/30/2026 11:59pm UTC; role is manager-level leadership within IFC FIG LAC (GH grade). PROTECTED — DFI/multilateral organization.",
       "location": "TBD"
+    },
+    {
+      "title": "Deputy Chief Investment Officer",
+      "company": "Federal Retirement Thrift Investment Board (FRTIB)",
+      "location": "Washington, DC",
+      "region": "United States",
+      "role_type": "CIO / Investment Leadership",
+      "seniority": "Deputy CIO",
+      "platform": "USAJOBS",
+      "url": "https://www.usajobs.gov/job/866718200",
+      "date_posted": "2026-04-27",
+      "compensation": "$169,279 - $197,200",
+      "experience_required": "GS-14 equivalent specialized experience; institutional investment oversight, manager selection/oversight, procurement.",
+      "description": "Deputy to the CIO for the Thrift Savings Plan (TSP); oversees investment policies, risk management, performance analysis, and external manager selection/oversight; manages staff and resources.",
+      "fit_summary": "Senior institutional investment leadership role aligned with CIO / Head of Investments track; significant manager oversight and investment governance responsibilities.",
+      "apply_by": "2026-05-18",
+      "last_checked": "2026-05-10",
+      "id": 184
     }
   ],
   "companies": [
@@ -11869,7 +11887,7 @@ window.APP_DATA = {
       "last_scan_date": "2026-04-23"
     }
   ],
-  "last_updated": "2026-05-05T12:11:23Z",
+  "last_updated": "2026-05-10T12:31:30.920Z",
   "updates": [
     {
       "id": "auto-update-2026-04-30",

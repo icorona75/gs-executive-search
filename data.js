@@ -3704,6 +3704,18 @@ window.APP_DATA = {
       "apply_by": "2026-05-18",
       "last_checked": "2026-05-10",
       "id": 186
+    },
+    {
+      "id": 187,
+      "title": "SVP, Head of Retirement Fiduciary Services",
+      "company": "Sentinel Group",
+      "location": "Remote or Hybrid (Wakefield, MA; travel monthly)",
+      "platform": "ApplytoJob",
+      "url": "https://sentinelgroup.applytojob.com/apply/MV4xuRxFDh/SVP-Head-Of-Retirement-Fiduciary-Services",
+      "date_posted": "",
+      "description": "Senior executive leading Sentinel Pension Advisors fiduciary advisory business; manages CIO, investment analyst team, and plan advisors; drives strategy, growth, and fiduciary governance.",
+      "notes": "15+ years experience; oversees investment governance and directly manages CIO/investment analysts.",
+      "compensation": "$170,000 - $240,000 salary range (posted)"
     }
   ],
   "companies": [
@@ -11917,7 +11929,7 @@ window.APP_DATA = {
       "last_scan_date": "2026-04-23"
     }
   ],
-  "last_updated": "2026-05-15T12:33:05.588Z",
+  "last_updated": "2026-05-17T12:32:24.129Z",
   "updates": [
     {
       "id": "auto-update-2026-04-30",

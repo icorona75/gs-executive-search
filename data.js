@@ -3716,6 +3716,18 @@ window.APP_DATA = {
       "description": "Senior executive leading Sentinel Pension Advisors fiduciary advisory business; manages CIO, investment analyst team, and plan advisors; drives strategy, growth, and fiduciary governance.",
       "notes": "15+ years experience; oversees investment governance and directly manages CIO/investment analysts.",
       "compensation": "$170,000 - $240,000 salary range (posted)"
+    },
+    {
+      "company": "CalPERS (California Public Employees' Retirement System)",
+      "title": "Deputy Chief Investment Officer, Private Markets",
+      "location": "Sacramento, CA (Hybrid)",
+      "salary": "$28,325.00 - $47,208.33 per month (plus incentives)",
+      "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=503404",
+      "platform": "CalCareers",
+      "date_posted": "Until Filled (posted on CalCareers)",
+      "description": "Executive-level investment leadership role in CalPERS Investment Office (INVO), collaborating with the CIO on private markets investment decision-making and strategy in a complex institutional setting.",
+      "notes": "Strong fit for Goldie Shturman (institutional private markets leadership; deputy CIO). Review requires executive search firm support per posting.",
+      "id": 188
     }
   ],
   "companies": [
@@ -11929,7 +11941,7 @@ window.APP_DATA = {
       "last_scan_date": "2026-04-23"
     }
   ],
-  "last_updated": "2026-05-17T12:32:24.129Z",
+  "last_updated": "2026-05-18T12:35:41.375Z",
   "updates": [
     {
       "id": "auto-update-2026-04-30",

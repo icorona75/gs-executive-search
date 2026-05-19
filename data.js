@@ -3728,6 +3728,24 @@ window.APP_DATA = {
       "description": "Executive-level investment leadership role in CalPERS Investment Office (INVO), collaborating with the CIO on private markets investment decision-making and strategy in a complex institutional setting.",
       "notes": "Strong fit for Goldie Shturman (institutional private markets leadership; deputy CIO). Review requires executive search firm support per posting.",
       "id": 188
+    },
+    {
+      "title": "Director of Private Equity",
+      "company": "City of Austin Employees’ Retirement System (COAERS)",
+      "location": "Austin, TX (Hybrid)",
+      "type": "Full-time",
+      "url": "https://www.coaers.org/director-of-private-equity",
+      "description": "Senior private equity investment role reporting to the CIO; sources/evaluates PE opportunities, conducts due diligence/financial analysis, and manages the PE portfolio.",
+      "salary": "Competitive (public sector); benefits included",
+      "experience": "3–5+ years institutional private equity / investment management / IB or similar",
+      "posted_date": "2026-02-06",
+      "source": "COAERS careers",
+      "tags": [
+        "Private Equity",
+        "Institutional Investor",
+        "Senior Investment"
+      ],
+      "id": 189
     }
   ],
   "companies": [
@@ -11941,7 +11959,7 @@ window.APP_DATA = {
       "last_scan_date": "2026-04-23"
     }
   ],
-  "last_updated": "2026-05-18T12:35:41.375Z",
+  "last_updated": "2026-05-19T12:31:24.892Z",
   "updates": [
     {
       "id": "auto-update-2026-04-30",

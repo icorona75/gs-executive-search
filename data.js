@@ -3746,6 +3746,21 @@ window.APP_DATA = {
         "Senior Investment"
       ],
       "id": 189
+    },
+    {
+      "platform": "LiveAndWorkInMaine",
+      "company": "Bowdoin College",
+      "title": "Senior Vice President and Chief Investments Officer",
+      "location": "Brunswick, ME, United States",
+      "url": "https://careers.liveandworkinmaine.com/job/eyyvcm/senior-vice-president-and-chief-investments-officer/brunswick/me",
+      "date_posted": "2026-05-15",
+      "seniority": "CIO / Chief Investment Officer",
+      "function": "Endowment / Institutional Investments",
+      "description": "Chief Investment Officer (CIO) role responsible for endowment investment performance, portfolio oversight, manager sourcing/evaluation, investment recommendations, rebalancing, Investment Committee communications, and team management; search managed by SpencerStuart.",
+      "requirements": "Preferably 15 years relevant investment experience; endowment/foundation/pension/sovereign/family office/investment management background; track record of superior investment performance; team management/mentorship experience.",
+      "compensation": null,
+      "notes": "Spencer Stuart search contacts: sburleyreid@spencerstuart.com; tmaher@spencerstuart.com.",
+      "id": 190
     }
   ],
   "companies": [
@@ -11959,7 +11974,7 @@ window.APP_DATA = {
       "last_scan_date": "2026-04-23"
     }
   ],
-  "last_updated": "2026-05-19T12:31:24.892Z",
+  "last_updated": "2026-05-20T12:33:01.554Z",
   "updates": [
     {
       "id": "auto-update-2026-04-30",
